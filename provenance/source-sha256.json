@@ -86,7 +86,6 @@
   "vendor/flygym_demo/complex_terrain/assets/single_steps_flybody.meta.json": "b22bba44c402a334dc23de491f613bdb58c0d4c3e262fc081b507b16909ee486",
   "vendor/flygym_demo/complex_terrain/assets/single_steps_flybody.npz": "25c4d9ae6fa2adf7f4e30c696b8c07f8810721e352feb17e462b094defe2736b",
   "vendor/flygym_demo/complex_terrain/assets/single_steps_untethered.pkl": "1e5b28bb6b3f50ac95a04773ea37af28d05e26d03bd90fdba57fa1b3eacfaf8c",
-  "vendor/flygym_demo/complex_terrain/assets/ventral_replay.mp4": "892eb4263d381e58c63b4239169b605f4474fdc0f735e4712836c2157430f5d0",
   "vendor/flygym_demo/complex_terrain/common.py": "306b5a287de6aa26a3de110dbe16f706b9df8c592386b6fdc770d6724d38ffd8",
   "vendor/flygym_demo/complex_terrain/cpg_controller.py": "86804054621f35e28c74f0a88db6a73faa17db586f5554db00674c9851eab592",
   "vendor/flygym_demo/complex_terrain/flybody_step_extraction.py": "c72d0c2ada11c11346af792bd0c1d44441d834625889cc8c30ceb4a8f2b222d2",
