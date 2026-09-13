@@ -8,3 +8,5 @@
 - **Wet-lab measurements:** The Uploading Lab, measurement `MEAS-HACKATHON-VIDEO-20260912-R3`. Selected recordings made 12 September 2026; measurement revision 13 September 2026. The numeric inputs preserve the supplied exploratory, unreviewed status. Raw animal videos and personal filesystem paths are not bundled.
 
 Original Uploading Lab experiment code is provided under the repository's MIT license. Third-party files and data retain the licenses listed above.
+
+Installed dependency versions, declared licences and bundled licence texts are recorded in [provenance/dependency-licenses.json](provenance/dependency-licenses.json). FFmpeg is installed through ImageIO; its binary retains the licence supplied by its distributor.

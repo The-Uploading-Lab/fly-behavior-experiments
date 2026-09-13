@@ -2,6 +2,8 @@
 
 Run the two hackathon experiments locally: the comparison with 25 wet-lab recording records, and a global neuronal-aging hypothesis. Both use the same 188,508-neuron BANC-based model. Optional videos replay the computed body poses.
 
+**[Watch the 2:18 recorded demo](https://github.com/The-Uploading-Lab/fly-behavior-experiments/releases/download/v1.0.0/hackathon-demo.mp4).**
+
 ## Install
 
 Install [Git](https://git-scm.com/downloads) and [uv](https://docs.astral.sh/uv/getting-started/installation/), then:
