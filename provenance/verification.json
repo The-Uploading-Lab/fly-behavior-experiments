@@ -1,0 +1,41 @@
+{
+  "platform": "macOS arm64",
+  "python": "3.12.13",
+  "fresh_uv_sync": "passed",
+  "unit_tests": {
+    "passed": 8,
+    "failed": 0
+  },
+  "simulation_comparisons": [
+    {
+      "case": "control-walk",
+      "exact": true,
+      "different_fields": [],
+      "original_receipt_sha256": "5c16e80431ac21f3495eefe8553921eee6239cb6841fd94c2759a4656cac4998",
+      "portable_receipt_sha256": "37fa9b1f689c4d640abc90ee99e1a2c981d9d61d85add7ed0fb96fb5aa89822c"
+    },
+    {
+      "case": "control-puff",
+      "exact": true,
+      "different_fields": [],
+      "original_receipt_sha256": "da41304973f3903ea4fce449a05d5d8f781b8713b55de84b87c3c613c398354e",
+      "portable_receipt_sha256": "dd721599a0658c28df729d7dbf7f2e45653c4ab785683062c914ccabbf88019e"
+    },
+    {
+      "case": "ibuprofen-walk",
+      "exact": true,
+      "different_fields": [],
+      "original_receipt_sha256": "6d4787f889002c52a0cc8ea062ada405357b354348bf26c0c3c74e5b339e8064",
+      "portable_receipt_sha256": "bac32816fdaf6df9e6fd919bb659b26d04b0f7d94996c5c2fe81278467eaeff3"
+    },
+    {
+      "case": "ibuprofen-puff",
+      "exact": true,
+      "different_fields": [],
+      "original_receipt_sha256": "92f8ab68e548da20f72251bf47859e035cddf6ac54b035ff02ea13f8dfe5c08a",
+      "portable_receipt_sha256": "a7a83f6409cdfca6a58f3c070f40978073707d6f15cff2301757c4c9af187f40"
+    }
+  ],
+  "control_video_export": "passed; preview inspected",
+  "remaining_tests": "Stopped at user request to publish before the submission deadline; full portable aging series and final wetlab aggregation were not run in this verification session."
+}

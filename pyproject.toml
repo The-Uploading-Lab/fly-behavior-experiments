@@ -1,0 +1,24 @@
+[project]
+name = "fly-behavior-experiments"
+version = "1.0.0"
+description = "Reproduce the hackathon fly treatment comparison and neuronal aging experiment"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "numpy==2.4.6",
+  "numba==0.66.0",
+  "llvmlite==0.48.0",
+  "scipy==1.18.0",
+  "pandas==3.0.5",
+  "pyarrow==25.0.0",
+  "mujoco==3.9.0",
+  "flygym==2.1.0",
+  "h5py==3.16.0",
+  "networkx==3.6.1",
+  "matplotlib==3.11.1",
+  "pillow==12.3.0",
+  "imageio==2.37.4",
+  "imageio-ffmpeg==0.6.0",
+]
+
+[tool.uv]
+package = false

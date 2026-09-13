@@ -1,0 +1,20 @@
+{
+  "id": "fixed-native-walk-visual125-lplc2-quarter-complete-ttm",
+  "antennal_gf_gain": {
+    "left": 1.05,
+    "right": 2.5
+  },
+  "wing_source": "steady",
+  "fixed_sensory_layout": true,
+  "native_ttm": true,
+  "joint_excursion_gain": {
+    "CTr_pitch": 0.91,
+    "FTi_pitch": 1.12,
+    "lh_FTi_pitch": 1.15,
+    "rh_FTi_pitch": 1.15
+  },
+  "walking_stiffness_floor": 51,
+  "right_visual_gf_gain": 1.25,
+  "lplc2_gf_gain": 0.25,
+  "complete_ttm_twitch": true
+}

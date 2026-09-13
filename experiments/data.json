@@ -1,0 +1,16 @@
+{
+  "banc_888_meta.feather": {
+    "sha256": "819bbcff476e52702d6f8d8604ce1f12d1d7b11942281df2f49df2a73a6f15a5",
+    "bytes": 57550610,
+    "url": "https://github.com/The-Uploading-Lab/fly-behavior-experiments/releases/download/v1.0.0/banc_888_meta.feather",
+    "upstream": "https://doi.org/10.7910/DVN/7WTH1N",
+    "license": "CC BY 4.0"
+  },
+  "banc_888_edgelist_simple_v3.feather": {
+    "sha256": "8c296e946f3c69a8c7222f30ad75fa8a98eeb189124fec6df829c9125f4be64b",
+    "bytes": 359161658,
+    "url": "https://github.com/The-Uploading-Lab/fly-behavior-experiments/releases/download/v1.0.0/banc_888_edgelist_simple_v3.feather",
+    "upstream": "https://doi.org/10.7910/DVN/7WTH1N",
+    "license": "CC BY 4.0"
+  }
+}

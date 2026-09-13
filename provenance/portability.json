@@ -1,0 +1,16 @@
+{
+  "baseline_commit": "4cd49ae74223b6616c73466e3e71f277527fd52d",
+  "changed_original_modules": [
+    "cns_metal.py",
+    "lanes/longevity/ageing/integrated_probe.py"
+  ],
+  "changes": {
+    "simulator/lanes/longevity/ageing/integrated_probe.py": "standalone source manifest replaces fleet Git references",
+    "simulator/cns_metal.py": "optional fcntl import for CPU-only Windows usage"
+  },
+  "BANC_license_metadata": {
+    "doi": "10.7910/DVN/7WTH1N",
+    "license": "CC BY 4.0",
+    "checked": "2026-09-13"
+  }
+}

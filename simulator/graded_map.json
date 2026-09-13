@@ -1,0 +1,142 @@
+{
+ "_contract": "cns graded set: default EMPTY = bit-identical. A cell type joins 'enabled' ONLY with adult-Drosophila release evidence (citation here). Cross-species entries need CEO approval. Written 2026-08-18 from the 53-agent literature hunt (adversarially verified, 47 candidates).",
+ "enabled": {
+  "L1": {
+   "citations": [
+    "Zheng et al. 2006 J Gen Physiol 127:495-510",
+    "Clark et al. 2011 Neuron 70:1165-1177"
+   ],
+   "evidence": "non-spiking graded Vm in vivo + causal lamina feedback release (ort/ebony/shibire-ts); graded bidirectional presynaptic terminal Ca",
+   "banc_rows": 1665,
+   "in_walking_rig": false
+  },
+  "L2": {
+   "citations": [
+    "Zheng et al. 2006 J Gen Physiol 127:495-510",
+    "Yang et al. 2016 Cell 166:245-257",
+    "Reiff et al. 2010 Nat Neurosci 13:973-978"
+   ],
+   "evidence": "graded non-spiking voltage AND graded Ca at the axon-terminal output compartment",
+   "banc_rows": 1680,
+   "in_walking_rig": false
+  },
+  "APL": {
+   "citations": [
+    "Amin et al. 2020 eLife 9:e56954"
+   ],
+   "evidence": "spatially graded local GABA release onto KCs (functional postsynaptic readout); model as compartmentalized graded",
+   "banc_rows": 1,
+   "in_walking_rig": false
+  },
+  "HSN": {
+   "citations": [
+    "Schnell et al. 2010 J Neurophysiol 103:1647-1657 doi:10.1152/jn.00950.2009",
+    "Fujiwara et al. 2017 Nat Neurosci 20:72-81 doi:10.1038/nn.4435",
+    "Raghu et al. 2007 J Comp Neurol 502:598-610 doi:10.1002/cne.21319"
+   ],
+   "evidence": "adult HSN is non-spiking with graded direction/speed-sensitive membrane responses and has presynaptic synaptobrevin specializations at its axon terminal; graded chemical release is inferred from the joint physiological/anatomical evidence, not directly imaged",
+   "banc_rows": 2,
+   "in_walking_rig": true
+  },
+  "HSE": {
+   "citations": [
+    "Schnell et al. 2010 J Neurophysiol 103:1647-1657 doi:10.1152/jn.00950.2009",
+    "Fujiwara et al. 2017 Nat Neurosci 20:72-81 doi:10.1038/nn.4435",
+    "Raghu et al. 2007 J Comp Neurol 502:598-610 doi:10.1002/cne.21319"
+   ],
+   "evidence": "adult HSE is non-spiking with graded direction/speed-sensitive membrane responses and has presynaptic synaptobrevin specializations at its axon terminal; graded chemical release is inferred from the joint physiological/anatomical evidence, not directly imaged",
+   "banc_rows": 2,
+   "in_walking_rig": true
+  },
+  "HSS": {
+   "citations": [
+    "Schnell et al. 2010 J Neurophysiol 103:1647-1657 doi:10.1152/jn.00950.2009",
+    "Fujiwara et al. 2017 Nat Neurosci 20:72-81 doi:10.1038/nn.4435",
+    "Raghu et al. 2007 J Comp Neurol 502:598-610 doi:10.1002/cne.21319"
+   ],
+   "evidence": "adult HSS is non-spiking with graded direction/speed-sensitive membrane responses and has presynaptic synaptobrevin specializations at its axon terminal; graded chemical release is inferred from the joint physiological/anatomical evidence, not directly imaged",
+   "banc_rows": 2,
+   "in_walking_rig": true
+  }
+ },
+ "mapping_unresolved": {
+  "R1-R6 outer photoreceptors": {
+   "citations": [
+    "Zheng et al. 2006 J Gen Physiol 127:495-510"
+   ],
+   "evidence": "tonic graded histaminergic release, causal (shibire-ts)",
+   "problem": "no distinct BANC cell_type; retina photoreceptor class is essentially R7/R8 (924+914 of 1846); R1-6 not enabled until a key exists"
+  },
+  "B1 / AMMC-B1 (aPN1)": {
+   "citations": [
+    "Azevedo & Wilson 2017 Neuron 96:446-460",
+    "Zhou et al. 2015 eLife 4:e08477"
+   ],
+   "evidence": "spiking physiologically impossible (depolarization block) while downstream release demonstrated -- release necessarily graded",
+   "problem": "BANC key not identified (JO-B are the sensory JONs, not these PNs); map before enabling"
+  }
+ },
+ "contested": {
+  "CT1": {
+   "citations": [
+    "Meier & Borst 2019 Curr Biol 29:1545-1550"
+   ],
+   "issue": "verified twice with opposite tiers: per-column graded terminal Ca (same class of evidence as L1) vs cytosolic-GCaMP objection and no voltage recording anywhere. Editorial call pending: the house standard for terminal-Ca-as-release-proxy.",
+   "banc_rows": 2,
+   "in_walking_rig": false,
+   "banc_rows_note": "Corrected 2026-09-06 05:23 (judge) from 1. BANC carries BOTH CT1s: the typed row 720575941473029495 (whose `side` metadata reads left while its arbor is in the RIGHT lobe) and the untyped, transmitter-blank row 720575941481834208, typed CT1/GABA by cell_type_patch.json on 2026-09-05. MCNS has exactly two, CT1_L and CT1_R.",
+   "why_this_entry_now_gates_a_route": "Lane C's C-N70 (2026-09-06 05:13) closed the uncoupled compartment route: 664 electrically independent SPIKING states delivered exactly zero to left T4/T5. The citation on this entry, Meier & Borst 2019, measures per-column GRADED terminal calcium, so the compartment claim and the graded claim are one measurement and the build implemented half of it. The re-run with the candidate states in the graded set does NOT need this entry resolved: a contested-evidence arm runs default-off and carries the HYPOTHESIS label under Robin's 2026-08-19 approval. The editorial call recorded in `issue` gates only the claim that CT1 IS graded, not the test."
+  }
+ },
+ "pending_ceo_cross_species": {
+  "hemilineages 13A/13B/9A (premotor inhibitory, leg neuromeres)": {
+   "citations": [
+    "Burrows & Siegler 1978 J Physiol 285:231-255",
+    "Burrows 1979 Science 204:81-83",
+    "Siegler 1981 J Neurophysiol 46:296-309",
+    "Buschges 1990 J Exp Biol 151:133-160",
+    "Gebehart, Hooper & Buschges 2022 Curr Biol"
+   ],
+   "evidence": "canonical locust/stick-insect nonspiking premotor interneurons: graded, spike-free, tonic chemical release onto leg motoneurons; FeCO-driven",
+   "problem": "NO adult-Drosophila release demonstration exists (Agrawal et al. adult recordings are WEAK on release); homology is by analogy, no published chain. THE walking-rig-relevant set -- enabling requires CEO approval per the directive.",
+   "in_walking_rig": true,
+   "resolved": "APPROVED as working hypothesis by Robin 2026-08-19 (see enabled_cross_species_hypothesis._approval) and reaffirmed as a dial SEARCH by the measured-structure directive, Robin 2026-09-01. Kept here for provenance; nothing is pending. The 2026-08-31 blanket arm at fixed dials (0/12 standing) closed that one point, not the search."
+  }
+ },
+ "excluded_with_reason": {
+  "L3": "terminal Ca only, slow sensor, no voltage/release data (Silies 2013)",
+  "R7/R8": "identity+receptor genetics, no release-mode evidence (Gao 2008); Ca imaging cannot distinguish graded from spike-driven",
+  "13A/13B/9A adult recordings": "Agrawal et al.: recordings exist but no release-mode evidence in adult Drosophila",
+  "Mi1/Tm1/Tm2/Tm3/T4/T5": "Ca-imaging-only; spike question unresolved (Behnia 2014, Gruntman 2018/2019)"
+ },
+ "enabled_cross_species_hypothesis": {
+  "_approval": "Robin, 2026-08-19: 'if it's smartest to do something with graded synapses we should do it. just tell me what' -- cross-species homology adopted as a WORKING HYPOTHESIS, not as adult-fly evidence. Every result produced under this set carries the HYPOTHESIS label.",
+  "hemilineages": [
+   "13A",
+   "13B",
+   "09A"
+  ],
+  "citations": [
+   "Burrows & Siegler 1978 J Physiol 285:231-255 (locust NSIs: graded, spike-free release onto leg MNs)",
+   "Burrows 1979 Science 204:81-83",
+   "Siegler 1981 J Neurophysiol 46:296-309",
+   "Buschges 1990 J Exp Biol 151:133-160 (stick insect FeCO NSIs)",
+   "Gebehart, Hooper & Buschges 2022 Curr Biol"
+  ],
+  "rationale": "premotor interneurons fire 4-9 Hz against a 10-24 Hz gait cycle -- a spike-rate code undersamples inter-leg phase; three fly-wbe constraint families (coord.tri_index, cmd.MDN_direction, cmd.DNg100_dose) fail in the direction this mechanism predicts",
+  "activation": "th[\"graded\"] = \"hyp\""
+ },
+ "enabled_pugliese_oscillator_hypothesis": {
+  "_approval": "Robin, 2026-09-01: apply graded transmission to neurons known graded or that could be. Pugliese/Tuthill oscillator types are the walking-relevant could-be set. Default-off, hypothesis-labelled, searchable. Not adult-Drosophila release evidence; do not copy into 'enabled'.",
+  "cell_types": [
+   "IN17A001",
+   "INXXX466",
+   "IN16B036",
+   "IN19A007"
+  ],
+  "citations": [
+   "Pugliese / Tuthill / Brunton VNC rate model (v2 2026-04-30): E1=IN17A001, E2=INXXX466, I1=IN16B036, FANC often I2=IN19A007; rate model used because walking premotor cells are often non-spiking"
+  ],
+  "activation": "th[\"graded\"] = \"pugliese_osc\""
+ }
+}

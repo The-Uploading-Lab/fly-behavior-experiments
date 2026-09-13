@@ -1,0 +1,16 @@
+{
+ "c_thorax-lm_coxa-yaw": -0.04363323129985824,
+ "c_thorax-lm_coxa-roll": -0.6265732014659643,
+ "c_thorax-lm_coxa-pitch": 0.5811946409141117,
+ "lm_coxa-lm_trochanterfemur-roll": -0.1466076571675237,
+ "lm_coxa-lm_trochanterfemur-pitch": 0.9791297103688189,
+ "lm_trochanterfemur-lm_tibia-pitch": 0.5166174585903216,
+ "lm_tibia-lm_tarsus1-pitch": -0.9354964790689606,
+ "c_thorax-rm_coxa-yaw": -0.04363323129985824,
+ "c_thorax-rm_coxa-roll": -0.6265732014659643,
+ "c_thorax-rm_coxa-pitch": 0.5811946409141117,
+ "rm_coxa-rm_trochanterfemur-roll": -0.1466076571675237,
+ "rm_coxa-rm_trochanterfemur-pitch": 0.9791297103688189,
+ "rm_trochanterfemur-rm_tibia-pitch": 0.5166174585903216,
+ "rm_tibia-rm_tarsus1-pitch": -0.9354964790689606
+}
