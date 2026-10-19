@@ -1,0 +1,41 @@
+{
+  "checked_date": "2026-10-19",
+  "platform": "macOS arm64",
+  "python": "3.12.13",
+  "uv_sync_locked": "passed",
+  "source_export": {
+    "status": "passed",
+    "files_byte_identical_to_pinned_run_commit": 31,
+    "source_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+    "runtime_configuration_equals_tested_arm": true,
+    "python_syntax": "passed",
+    "manifest_covers_every_exported_source_file": true
+  },
+  "component_tests": {
+    "command": "uv run python model-review/test_components.py",
+    "passed": 6,
+    "failed": 0,
+    "scope": "Snapshot hashes and syntax; motor-table consistency; runtime-key recognition; antagonist split and activation; two-neuron conductance response and deterministic CPU replay; encoder position/velocity algebra. Synthetic fixtures, not biological validation."
+  },
+  "existing_hackathon_tests": {
+    "command": "uv run python -m unittest discover -s tests -v",
+    "passed": 8,
+    "failed": 0,
+    "existing_source_manifest_check": "passed; no existing simulator or experiment code changed"
+  },
+  "native_host_library_compile": {
+    "status": "passed",
+    "command": "clang -O2 -fobjc-arc -dynamiclib -framework Metal -framework Foundation -o <temporary-output>/libcnsengine.dylib model-review/source/gpu/cns_engine.m",
+    "scope": "Host library compilation only. The temporary binary is not distributed, not source-stamped for runtime use, and was not used to execute GPU kernels."
+  },
+  "documentation_links": "passed",
+  "git_diff_check": "passed",
+  "publication_scan": "No absolute personal paths or credential patterns found in the exported files by the targeted scan.",
+  "not_run": [
+    "Full 188508-neuron build and parameter readback",
+    "October retained-model end-to-end walking replay",
+    "The 24-run RL7 retention comparison",
+    "Native GPU execution or CPU/GPU parity",
+    "New biological validation or trained-connectome-null comparison"
+  ]
+}

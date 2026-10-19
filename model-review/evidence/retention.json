@@ -1,0 +1,164 @@
+{
+  "K": [
+    7,
+    8
+  ],
+  "M": [
+    3,
+    1
+  ],
+  "arm": "RL7",
+  "arm_theta_sha256": "8938ec2181f2665225ec73bcd4bc57dd25f666c5b7e6c8fff2cf91fad2ff5a49",
+  "blocks": 2,
+  "design": "83177ced-cfa1-4772-9ebb-8ee4027c7d4e",
+  "generality": "FEMALE-ONLY",
+  "label": "partial: the fast class is OPEN and keeps the body's law at its measured rest, so this retention is section 7 item 2's partial and not Done",
+  "laws": {
+    "fast": {
+      "law": "the body's: reset at rest, brake adapt_b_mv 2.45 over tau_w 50 ms, tau_mem 4.08 ms, no hold-down",
+      "rest_mV": -68.0,
+      "rest_rows": "all 84, the two rows the body left unrested among them",
+      "rows": 84,
+      "verdict": "OPEN (no law of 124 read MET on both readers and 190227's step)"
+    },
+    "intermediate": {
+      "law": "reset 2 mV above rest (mn_reset_offset_by_id +2.0), adapt_b_mv 0 (the brake removed), no hold-down, each row's own tau_mem (4.32 to 11.27 ms)",
+      "rest_mV": -60.0,
+      "rest_rows": "210; the 13 size_rule_unrested rows rest at -52 on every arm, since mn_vrest_by_id refuses them",
+      "rows": 223,
+      "verdict": "MET (reset +2)"
+    },
+    "slow": {
+      "law": "reset 18 mV below rest (mn_reset_offset_by_id -18.0), the body's brake adapt_b_mv 2.45 over tau_w 50 ms kept, hold-down form A (dg 10, tau_g 8 ms, reversal at rest e_rel_mv 0, latch 2 ms and 2 mV), the exact update (mn_exact_by_id), tau_mem 13.1 ms",
+      "rest_mV": -48.0,
+      "rest_rows": "all 84",
+      "rows": 84,
+      "verdict": "MET (H7.03); H6 OPEN"
+    }
+  },
+  "male_check": "not run: design 83177ced has no male arm",
+  "objective": "O = K + M (design section 7): K the open conflicts of the arm's pooled two-block card after the v3.10 filter at the two-block spread (the phase rows once), M the motor classes whose law the measured readouts refuse; floor standing 18 of 24; an arm retains on a lower O with neither the v3.7 count veto nor the v3.8 floor veto holding it, regressions and improvements tallied over both blocks",
+  "open_conflicts": [
+    10,
+    9
+  ],
+  "qualifying": [
+    24,
+    24
+  ],
+  "reader_commit": "c61794cde9c8aa121b61aba259c49ae1518b7b50",
+  "retained_utc": "2026-10-15T19:28:00Z",
+  "route": "partial: two classes MET, one OPEN",
+  "rows_moved": {
+    "gait.contra_phase": {
+      "B": {
+        "open": true,
+        "pooled_median": 0.338,
+        "v310_flag": true
+      },
+      "RL7": {
+        "block_medians": [
+          0.3673,
+          0.3977
+        ],
+        "open": false,
+        "pooled_median": 0.3775,
+        "v310_flag": true
+      },
+      "band": [
+        0.35,
+        0.65
+      ]
+    },
+    "gait.speed": {
+      "B": {
+        "open": false,
+        "pooled_median": 2.5001,
+        "v310_flag": false
+      },
+      "RL7": {
+        "block_medians": [
+          1.958,
+          2.2333
+        ],
+        "open": false,
+        "pooled_median": 2.0185,
+        "v310_flag": true
+      },
+      "band": [
+        2.0,
+        45.0
+      ]
+    },
+    "posture.footfall_separation": {
+      "B": {
+        "open": false,
+        "pooled_median": 1.0982,
+        "v310_flag": false
+      },
+      "RL7": {
+        "block_medians": [
+          1.1131,
+          1.1116
+        ],
+        "open": true,
+        "pooled_median": 1.1121,
+        "v310_flag": false
+      },
+      "band": [
+        1.02,
+        1.11
+      ]
+    },
+    "posture.nonfoot_force": {
+      "B": {
+        "open": false,
+        "pooled_median": 0.0003,
+        "v310_flag": false
+      },
+      "RL7": {
+        "block_medians": [
+          0.0001,
+          0.0
+        ],
+        "open": false,
+        "pooled_median": 0.0,
+        "v310_flag": true
+      },
+      "band": [
+        0.0,
+        0.05
+      ]
+    }
+  },
+  "run_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+  "seeds": [
+    219203,
+    219226
+  ],
+  "standing": [
+    24,
+    24
+  ],
+  "study": "b6890108-05d1-4795-8157-f47276d1d672",
+  "vetoes": {
+    "held": false,
+    "held_per_block_count_veto": [
+      true,
+      false
+    ],
+    "improvements": [
+      "card-RL7-219203-219214.json: gait.contra_phase",
+      "card-RL7-219215-219226.json: gait.contra_phase",
+      "card-RL7-219215-219226.json: flyscore.posture_variability",
+      "floor: posture.body_height"
+    ],
+    "regressions": [
+      "card-RL7-219203-219214.json: gait.speed",
+      "card-RL7-219203-219214.json: posture.footfall_separation",
+      "card-RL7-219203-219214.json: flyscore.lr_asymmetry",
+      "card-RL7-219215-219226.json: posture.footfall_separation"
+    ],
+    "tally": "over both blocks, as the design defines the regression per row per block"
+  }
+}

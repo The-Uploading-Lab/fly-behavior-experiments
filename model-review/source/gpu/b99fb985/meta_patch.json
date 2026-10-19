@@ -1,0 +1,613 @@
+[
+ {
+  "banc_888_id": "720575941412310929",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941436666400",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941441238107",
+  "field": "side",
+  "before": "right",
+  "after": "left",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941441984207",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941443315663",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "TRANSFERRED",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2; BANC status LR_TYPE_CONFLICT,MANC_MATCH_WRONG_SIDE and MCNS carries the type one per side per segment"
+ },
+ {
+  "banc_888_id": "720575941453283241",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941455232237",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941458304211",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941461633220",
+  "field": "side",
+  "before": "right",
+  "after": "left",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941474620970",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941475312480",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941477887139",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941478428465",
+  "field": "side",
+  "before": "right",
+  "after": "left",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941479830947",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941480449699",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941482245318",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941486980560",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941503699543",
+  "field": "side",
+  "before": "right",
+  "after": "left",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941507406114",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941507760656",
+  "field": "side",
+  "before": "right",
+  "after": "left",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941528557259",
+  "field": "side",
+  "before": "right",
+  "after": "left",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941532534872",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941535040234",
+  "field": "side",
+  "before": "right",
+  "after": "left",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941535087594",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941536498202",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941541386076",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941546508321",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941549372159",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941553667867",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941568308474",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941573665693",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941574728520",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "TRANSFERRED",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2; BANC status LR_TYPE_CONFLICT,MANC_MATCH_WRONG_SIDE and MCNS carries the type one per side per segment"
+ },
+ {
+  "banc_888_id": "720575941577119825",
+  "field": "side",
+  "before": "left",
+  "after": "left",
+  "flip": false,
+  "group": "A",
+  "label": null,
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2",
+  "reason": "the Azevedo-identified left tergotrochanter extensor (nerve left_first_abdominal_nerve, manual annotation): a motor neuron's cord output is own-side by anatomy, so the output rule carries no evidence about it, and motormap.py reads side (line 276), so a flip would move it to the other leg"
+ },
+ {
+  "banc_888_id": "720575941600540201",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941603458750",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941610042029",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941612790035",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941626158794",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941630174917",
+  "field": "side",
+  "before": "right",
+  "after": "left",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941646255777",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941650844437",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941662483068",
+  "field": "side",
+  "before": "right",
+  "after": "left",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941662694712",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "HYPOTHESIS",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2"
+ },
+ {
+  "banc_888_id": "720575941669504755",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "TRANSFERRED",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2; BANC status LR_TYPE_CONFLICT,MANC_MATCH_WRONG_SIDE and MCNS carries the type one per side per segment"
+ },
+ {
+  "banc_888_id": "720575941702096602",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "A",
+  "label": "TRANSFERRED",
+  "citation": "hypothesis 49da428f, critique 757583f4, gap a2078695: the row's output share onto targets labelled its own side exceeds 0.5 on the pinned BANC 888 files; design 543c8da2 section 2; BANC status LR_TYPE_CONFLICT,MANC_MATCH_WRONG_SIDE and MCNS carries the type one per side per segment"
+ },
+ {
+  "banc_888_id": "720575941486978256",
+  "field": "side",
+  "before": "right",
+  "after": "left",
+  "flip": true,
+  "group": "B",
+  "label": "HYPOTHESIS",
+  "citation": "design 543c8da2 section 2 group B (critique 757583f4 condition 3): the T3 19B row's own-side output share on cord targets exceeds 0.5; TRANSFERRED where the flip reproduces MCNS's T3 side split for the type"
+ },
+ {
+  "banc_888_id": "720575941562682624",
+  "field": "side",
+  "before": "right",
+  "after": "left",
+  "flip": true,
+  "group": "B",
+  "label": "HYPOTHESIS",
+  "citation": "design 543c8da2 section 2 group B (critique 757583f4 condition 3): the T3 19B row's own-side output share on cord targets exceeds 0.5; TRANSFERRED where the flip reproduces MCNS's T3 side split for the type"
+ },
+ {
+  "banc_888_id": "720575941476041265",
+  "field": "side",
+  "before": "right",
+  "after": "left",
+  "flip": true,
+  "group": "B",
+  "label": "HYPOTHESIS",
+  "citation": "design 543c8da2 section 2 group B (critique 757583f4 condition 3): the T3 19B row's own-side output share on cord targets exceeds 0.5; TRANSFERRED where the flip reproduces MCNS's T3 side split for the type"
+ },
+ {
+  "banc_888_id": "720575941503488491",
+  "field": "side",
+  "before": "left",
+  "after": "right",
+  "flip": true,
+  "group": "B",
+  "label": "TRANSFERRED",
+  "citation": "design 543c8da2 section 2 group B (critique 757583f4 condition 3): the T3 19B row's own-side output share on cord targets exceeds 0.5; TRANSFERRED where the flip reproduces MCNS's T3 side split for the type"
+ },
+ {
+  "banc_888_id": "720575941425384532",
+  "field": "side",
+  "before": "right",
+  "after": "left",
+  "flip": true,
+  "group": "B",
+  "label": "HYPOTHESIS",
+  "citation": "design 543c8da2 section 2 group B (critique 757583f4 condition 3): the T3 19B row's own-side output share on cord targets exceeds 0.5; TRANSFERRED where the flip reproduces MCNS's T3 side split for the type"
+ },
+ {
+  "banc_888_id": "720575941470269248",
+  "field": "side",
+  "before": "right",
+  "after": "left",
+  "flip": true,
+  "group": "B",
+  "label": "TRANSFERRED",
+  "citation": "design 543c8da2 section 2 group B (critique 757583f4 condition 3): the T3 19B row's own-side output share on cord targets exceeds 0.5; TRANSFERRED where the flip reproduces MCNS's T3 side split for the type"
+ },
+ {
+  "banc_888_id": "720575941565919847",
+  "field": "side",
+  "before": "right",
+  "after": "left",
+  "flip": true,
+  "group": "B",
+  "label": "HYPOTHESIS",
+  "citation": "design 543c8da2 section 2 group B (critique 757583f4 condition 3): the T3 19B row's own-side output share on cord targets exceeds 0.5; TRANSFERRED where the flip reproduces MCNS's T3 side split for the type"
+ },
+ {
+  "banc_888_id": "720575941505985409",
+  "field": "side",
+  "before": "right",
+  "after": "left",
+  "flip": true,
+  "group": "B",
+  "label": "HYPOTHESIS",
+  "citation": "design 543c8da2 section 2 group B (critique 757583f4 condition 3): the T3 19B row's own-side output share on cord targets exceeds 0.5; TRANSFERRED where the flip reproduces MCNS's T3 side split for the type"
+ },
+ {
+  "banc_888_id": "720575941480784381",
+  "field": "side",
+  "before": "right",
+  "after": "left",
+  "flip": true,
+  "group": "B",
+  "label": "HYPOTHESIS",
+  "citation": "design 543c8da2 section 2 group B (critique 757583f4 condition 3): the T3 19B row's own-side output share on cord targets exceeds 0.5; TRANSFERRED where the flip reproduces MCNS's T3 side split for the type"
+ },
+ {
+  "banc_888_id": "720575941552267838",
+  "field": "side",
+  "before": "right",
+  "after": "left",
+  "flip": true,
+  "group": "B",
+  "label": "TRANSFERRED",
+  "citation": "design 543c8da2 section 2 group B (critique 757583f4 condition 3): the T3 19B row's own-side output share on cord targets exceeds 0.5; TRANSFERRED where the flip reproduces MCNS's T3 side split for the type"
+ },
+ {
+  "banc_888_id": "720575941615300249",
+  "field": "side",
+  "before": "right",
+  "after": "left",
+  "flip": true,
+  "group": "B",
+  "label": "HYPOTHESIS",
+  "citation": "design 543c8da2 section 2 group B (critique 757583f4 condition 3): the T3 19B row's own-side output share on cord targets exceeds 0.5; TRANSFERRED where the flip reproduces MCNS's T3 side split for the type"
+ },
+ {
+  "banc_888_id": "720575941481345987",
+  "field": "side",
+  "before": "right",
+  "after": "left",
+  "flip": true,
+  "group": "B",
+  "label": "HYPOTHESIS",
+  "citation": "design 543c8da2 section 2 group B (critique 757583f4 condition 3): the T3 19B row's own-side output share on cord targets exceeds 0.5; TRANSFERRED where the flip reproduces MCNS's T3 side split for the type"
+ },
+ {
+  "banc_888_id": "720575941479762794",
+  "field": "cell_type",
+  "before": null,
+  "after": "IN19B012",
+  "flip": false,
+  "group": "X",
+  "label": "TRANSFERRED",
+  "citation": "notes 1e9595c8, 405dde7b and 5588d347, R297 6a2bffe5, gap 2b852ab6, critique 81114e5e: positional and partner-based homology with the left T3 IN19B012 (MANC auto label INXXX235, no manc_match)"
+ },
+ {
+  "banc_888_id": "720575941479762794",
+  "field": "hemilineage",
+  "before": null,
+  "after": "19B",
+  "flip": false,
+  "group": "X",
+  "label": "TRANSFERRED",
+  "citation": "notes 1e9595c8, 405dde7b and 5588d347, R297 6a2bffe5, gap 2b852ab6, critique 81114e5e: positional and partner-based homology with the left T3 IN19B012 (MANC auto label INXXX235, no manc_match)"
+ },
+ {
+  "banc_888_id": "720575941479762794",
+  "field": "neuromere",
+  "before": null,
+  "after": "T3",
+  "flip": false,
+  "group": "X",
+  "label": "TRANSFERRED",
+  "citation": "notes 1e9595c8, 405dde7b and 5588d347, R297 6a2bffe5, gap 2b852ab6, critique 81114e5e: positional and partner-based homology with the left T3 IN19B012 (MANC auto label INXXX235, no manc_match)"
+ },
+ {
+  "banc_888_id": "720575941479762794",
+  "field": "super_class",
+  "before": null,
+  "after": "ventral_nerve_cord_intrinsic",
+  "flip": false,
+  "group": "X",
+  "label": "TRANSFERRED",
+  "citation": "notes 1e9595c8, 405dde7b and 5588d347, R297 6a2bffe5, gap 2b852ab6, critique 81114e5e: positional and partner-based homology with the left T3 IN19B012 (MANC auto label INXXX235, no manc_match)"
+ }
+]

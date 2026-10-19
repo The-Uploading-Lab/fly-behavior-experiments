@@ -1,0 +1,258 @@
+{
+  "checked_date": "2026-10-19",
+  "config_transformation": "Remove top-level keys beginning with underscore (research history and annotations); preserve every runtime key and value. Extract winner from the champion file. Serialize sorted JSON.",
+  "files": {
+    "config/champion-wm1.json": {
+      "bytes": 598612,
+      "sha256": "c8627bcf3bc6a562f81ef62633dfde897ea1447418f631c63b84d674db2bc089"
+    },
+    "config/retained-build.json": {
+      "bytes": 922143,
+      "sha256": "6e7bd2f14d59ff753ea03c73c9f3cfb1ec96645750a262c9fca0d4e042dc5e14"
+    },
+    "evidence/retention.json": {
+      "bytes": 4633,
+      "sha256": "6e70df43cf23be21957132774cf80eb9315d85d634c313822683335a5608f70d"
+    },
+    "motor-neuron-parameters.json": {
+      "bytes": 185083,
+      "sha256": "6a508662d189ec4cd1462995143d13f7a1e41bf51678d26ad76f045d29edfc04"
+    },
+    "source/abdomen.py": {
+      "bytes": 10774,
+      "sha256": "c0f17e17f3545c6c010d8664380a8fd99c6b7d46f3a78ed29c534fdab23cccba",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "abdomen.py"
+    },
+    "source/body.py": {
+      "bytes": 68700,
+      "sha256": "c756c4700bd5d116e7cf7640fd1f83a2dd2a0cfee7bd1131a6e0592c3b2c7478",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "body.py"
+    },
+    "source/cell_type_patch.json": {
+      "bytes": 5997,
+      "sha256": "11c69367f464ec528f2b22c9f8146b31b1cc1cb3e84fcfd4922b5095b67440e5",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "cell_type_patch.json"
+    },
+    "source/closed_loop.py": {
+      "bytes": 11366,
+      "sha256": "8bd4e395daa949787a9bdbf0ec62ea8641857680780454a0a64c8b8f3c2e7380",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "closed_loop.py"
+    },
+    "source/cns.py": {
+      "bytes": 327958,
+      "sha256": "cfb2c4fc2d3b8a6caae51887d663a666af461a3648825abb41a931e212a422db",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "cns.py"
+    },
+    "source/cns_metal.py": {
+      "bytes": 218551,
+      "sha256": "1ace9eeed919a4358cee10f5e6a5dc00becd082654e63774acf0fc2a2f28ea58",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "cns_metal.py"
+    },
+    "source/compiled_body_positions.py": {
+      "bytes": 4550,
+      "sha256": "0eae43305e2cdf2216f47f0d745a70d4a0a80cd9e27b9f8be5c987263e6d075c",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "compiled_body_positions.py"
+    },
+    "source/cruse1.py": {
+      "bytes": 14197,
+      "sha256": "f137d2df17346a537994a0e18d9bcf52d61de2f4f4b727d554f4a7f6ac60ed9b",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "cruse1.py"
+    },
+    "source/data/dof_ranges.json": {
+      "bytes": 2792,
+      "sha256": "19632554b1059887de8c442b37d3a83d255528f260bd59a293069527a8c58223",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "data/dof_ranges.json"
+    },
+    "source/gpu/Makefile": {
+      "bytes": 1277,
+      "sha256": "4d53734aa61bdd2e76a44dafbb5023519009a7acb287c9066cb647d701cec18e",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "gpu/Makefile"
+    },
+    "source/gpu/b6890108/classes.json": {
+      "bytes": 12195,
+      "sha256": "455943b841fec5c390a04ccd9ea1f8627e0c20783ea3322074d2bd6ad2b39f7e",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "gpu/b6890108/classes.json"
+    },
+    "source/gpu/b99fb985/meta_patch.json": {
+      "bytes": 22978,
+      "sha256": "a16e128205b495568036a819859f40e82c63ed767e2b0f80fb30effbb6f29d73",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "gpu/b99fb985/meta_patch.json"
+    },
+    "source/gpu/build_cuda.sh": {
+      "bytes": 1750,
+      "sha256": "b2062527440f758cbbd454a8070308a129f0838eea054d3dd6717eccd7e98bd2",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "gpu/build_cuda.sh"
+    },
+    "source/gpu/cns_engine.cu": {
+      "bytes": 227175,
+      "sha256": "8acdbc7f7be546ffb20c4356d421218666b388f8aba17048e31197cd13253917",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "gpu/cns_engine.cu"
+    },
+    "source/gpu/cns_engine.h": {
+      "bytes": 12027,
+      "sha256": "146c67f1e8adcb5881366d1d0835c157acbf2541ff012fb6eb3240777efca53f",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "gpu/cns_engine.h"
+    },
+    "source/gpu/cns_engine.m": {
+      "bytes": 162346,
+      "sha256": "476de0d37530d6210b76c35759ea956c14a9bd296957e918a19e99b1afa72ffa",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "gpu/cns_engine.m"
+    },
+    "source/gpu/fall_controls.py": {
+      "bytes": 7369,
+      "sha256": "33e88b240d8219e92a27c7ca61745ac35dccc7a7344fa2daabb70c070820bf14",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "gpu/fall_controls.py"
+    },
+    "source/gpu/lamina_walk/s5585.json": {
+      "bytes": 243405,
+      "sha256": "0ca1955d256f22855e13bc1701027c948c02be5a3f208930932278a9bfb9432f",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "gpu/lamina_walk/s5585.json"
+    },
+    "source/gpu/transmitter/selector.py": {
+      "bytes": 7403,
+      "sha256": "1c32fdde08e8139e7b8d3f8c8091b760eca4d757d650252463266cf74de999e9",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "gpu/transmitter/selector.py"
+    },
+    "source/gpu/window_hooks.py": {
+      "bytes": 17219,
+      "sha256": "ba3cd7e481772ae3020285365b2d23ad7a2d13d8e48d559159c46f3b6f9e75be",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "gpu/window_hooks.py"
+    },
+    "source/graded_map.json": {
+      "bytes": 29569,
+      "sha256": "6c164faf81f34a674d9024d2b1ce74f8933c7d26841d2a2c4a3955985574c99f",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "graded_map.json"
+    },
+    "source/load_loop.py": {
+      "bytes": 13411,
+      "sha256": "dbcccdd8b015a581ee912a040be6798fc343b35ceac13599d61c06777c42985b",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "load_loop.py"
+    },
+    "source/motormap.py": {
+      "bytes": 18909,
+      "sha256": "1b02b63ef221bbb18eddac227dcc0671b55db0c64d835fe4412f0f24dfcba748",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "motormap.py"
+    },
+    "source/muscle_split.py": {
+      "bytes": 5379,
+      "sha256": "106ee00b74237e7c67148c32516208affb544a991e1abe77dc03663fd5c62fc1",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "muscle_split.py"
+    },
+    "source/nobody.py": {
+      "bytes": 7654,
+      "sha256": "7f8f3f4b907e63df9918b7b222e72959a0d121aa09ebf43094c44f30e483cf6e",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "nobody.py"
+    },
+    "source/regression_walk.py": {
+      "bytes": 32060,
+      "sha256": "d0769e0fa1dfce096259835ebf3349dbd0e87b3fd072356cfe11cee9af1024ef",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "regression_walk.py"
+    },
+    "source/results-round10.json": {
+      "bytes": 5970,
+      "sha256": "86ebd430db3a23ed276989723e6cc94f78f7e18a638a16209c1d6e0291d7b43f",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "results-round10.json"
+    },
+    "source/rhythm_detect.py": {
+      "bytes": 12125,
+      "sha256": "b4fe7331dd03aa4cde0d590daa698220d7cfcbf2862fcd8a02f53b873f552722",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "rhythm_detect.py"
+    },
+    "source/stage0.py": {
+      "bytes": 17026,
+      "sha256": "061104f7e5e70f3a2dc5fc3d16d529676dcabc45da8162f23e04a04019607259",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "stage0.py"
+    },
+    "source/transmitter_map.json": {
+      "bytes": 3725,
+      "sha256": "37a9cef2c0ab8c6e5869b309f352d1c32bebe077b9f5543f1e3f7fc98186a9b0",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "transmitter_map.json"
+    },
+    "source/walk_search.py": {
+      "bytes": 979705,
+      "sha256": "9bcb99893a1f64228d2a0fed9a26f5f41cc06fe768bae31075a9471fccfbe7fd",
+      "transformation": "none",
+      "upstream_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+      "upstream_path": "walk_search.py"
+    }
+  },
+  "formal_champion": "wm1",
+  "formal_champion_record": "b31c6cb5-99dd-47fa-8b0e-d50b9b978ae6",
+  "omitted_build_annotation_keys": [
+    "_retained",
+    "_transferred",
+    "_defaulted",
+    "_h1r2",
+    "_law"
+  ],
+  "retained_build_record": "4711744a-850a-48e1-ae2f-88c3e863fbb2",
+  "retention_commit": "4c2331df28c84f640b345920141cefdf2b9c2e1c",
+  "runtime_config_equals_tested_arm": true,
+  "schema": "fly-model-source-review-v1",
+  "scope": "Source inspection and component tests. This is not a standalone full-network replay distribution. The existing hackathon runner is unchanged.",
+  "source_commit": "90872f6a70f44db3738c0c6830b167dae2686ad1",
+  "upstream_build_file_sha256": "7167953a434d1a899993486c30913fdf0dae57588d42bf31907b1f536f70a6d6",
+  "upstream_champion_file_sha256": "3a21ddb794be23cb61f2015746c68f739746b4b4abbc10654546ffa8696bd970",
+  "upstream_repository": "The-Uploading-Lab/fly-wbe",
+  "upstream_tested_arm_sha256": "8938ec2181f2665225ec73bcd4bc57dd25f666c5b7e6c8fff2cf91fad2ff5a49"
+}

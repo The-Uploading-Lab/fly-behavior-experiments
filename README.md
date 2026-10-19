@@ -2,6 +2,8 @@
 
 Built by **TimeFlies**: Karolina Gustavsson, Ali Onur Özkan and Robin Gustafsson.
 
+**The [model review guide](model-review/README.md) covers the neuron, muscle and sensory models.** It includes the formal champion's parameters, the newer retained research configuration from 15 October 2026, matching research source, and known limitations. The runnable hackathon experiments below keep their original September model.
+
 Run the two hackathon experiments locally: the comparison with 25 wet-lab recording records, and a global neuronal-aging hypothesis. Both use the same 188,508-neuron BANC-based model. Optional videos replay the computed body poses.
 
 **[Watch the 2:18 recorded demo](https://github.com/The-Uploading-Lab/fly-behavior-experiments/releases/download/v1.0.0/hackathon-demo.mp4).**

@@ -1,0 +1,6849 @@
+{
+  "description": "391 leg motor rows, joined from the retained theta and its class map. These are declared overrides, not a freshly constructed network readback. Classes are transferred or inferred assignments; they are not 391 independent physiological measurements.",
+  "rows": [
+    {
+      "banc_888_id": "720575941402088304",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941409042603",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941447103669",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941448798133",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941450561358",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941454495145",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941454830131",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941455787245",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941458992031",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941459422623",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941459438224",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.65,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941461333648",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941463793552",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941468687581",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941470082423",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941470212471",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941471301728",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941478187841",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941478281440",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941479987619",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941480138976",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941481071802",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941481179066",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941481634383",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941488203209",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941488287797",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941491293415",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941493231536",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941494164864",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941494963582",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941496173947",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941498748489",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941498960546",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941503128626",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941508440193",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941508453761",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941516874094",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941524748877",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941524856164",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941525586507",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941527458562",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941531180261",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941531470821",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941534943937",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941537008370",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.65,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941538992021",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941543372649",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941547393825",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941549899892",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941553691876",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941558861839",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941559281679",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941560573608",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941561204626",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941564818688",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941568553330",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941573346120",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941573516296",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941573687049",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941574355016",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941583323358",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941585484766",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941587428151",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941592225831",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941593715569",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941593843589",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941596095877",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941610608604",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941611319017",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941611652627",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941621725948",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941623218172",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.47767779805685273,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.830885365586064,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941623920586",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941624174844",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941627243372",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941632311739",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941633013484",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941636735861",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941639281525",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941644192200",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941649945329",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941684824815",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941687653238",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941720479034",
+      "class": "fast",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.325,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.08,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 0.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -68.0
+    },
+    {
+      "banc_888_id": "720575941353301552",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.5431072762878301,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.110721965256668,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941399414563",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7837416918984479,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 6.041180633169523,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941404729712",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.420130771062469,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.566371165186554,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941406488494",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.8661935567300133,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 6.792874015245687,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941408338862",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.5431072762878301,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.110721965256668,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941409035691",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9964000648507891,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 8.004938393235662,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941410034859",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.47767779805685273,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.830885365586064,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941411838612",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7837416918984479,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 6.041180633169523,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941414478484",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.47767779805685273,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.830885365586064,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941415020572",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.5431072762878301,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.110721965256668,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941428327160",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9766643767547631,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.819367883757896,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941428654255",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9075861955593394,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.174996682753999,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941430029449",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.1145223596147704,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 9.12854458460111,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941431154647",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.0319019821976323,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 8.340346664849488,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941431160824",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.0319019821976323,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 8.340346664849488,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941431976718",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.47767779805685273,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.830885365586064,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941434753568",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941435830546",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.504694016080036,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.948888514962485,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941435859232",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.0319019821976323,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 8.340346664849488,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941436960735",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.49469754574984,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.9056484235861895,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941439667986",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.4050006854636319,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.4934914199369445,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941447846990",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.515923601088643,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.9968929534100415,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941450546857",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7530020362182,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.898379033292566,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941451737978",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.1461792592670021,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 9.433273535720168,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941451840425",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.1732458096799943,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 9.694970682992155,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941452885043",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941454080237",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7837416918984479,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 6.041180633169523,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941460703245",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.44226718505409013,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.670392908758906,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941461179859",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941461624845",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.1732458096799943,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 9.694970682992155,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941462096528",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.515923601088643,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.9968929534100415,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941464194902",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.3738541098123662,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.338493143451368,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941464925462",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.4050006854636319,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.4934914199369445,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941468774667",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.420130771062469,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.566371165186554,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941469045111",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.300138035780202,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 10.935443935125567,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941469052535",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.8190066528008406,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 6.3610936055763565,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941470371851",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.6018469630020579,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.346218118182714,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941471300448",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.44226718505409013,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.670392908758906,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941471300960",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.5431072762878301,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.110721965256668,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941474499377",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.47767779805685273,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.830885365586064,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941474769204",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941475791722",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.2170761293956611,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 10.12095446473446,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941478307380",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.6018469630020579,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.346218118182714,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941479472258",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.5690606479774423,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.216451482821495,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941479728291",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.47767779805685273,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.830885365586064,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941480482755",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941481583814",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941483728326",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.8190066528008406,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 6.3610936055763565,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941485233616",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941486064962",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.6018469630020579,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.346218118182714,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941486583046",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.4050006854636319,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.4934914199369445,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941487732432",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7530020362182,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.898379033292566,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941487752144",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.47767779805685273,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.830885365586064,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941488205769",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.0319019821976323,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 8.340346664849488,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941488644300",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941489123047",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.6289274537286395,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.450438254953043,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941491272393",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9075861955593394,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.174996682753999,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941491494606",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.8511627304573198,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 6.65488424461974,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941496126793",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.0319019821976323,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 8.340346664849488,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941496149473",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.5431072762878301,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.110721965256668,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941497568199",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941497881417",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941499865211",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.3738541098123662,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.338493143451368,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941499964555",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.65,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.529822397321522,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": -52.0,
+      "rest_override_mV": null
+    },
+    {
+      "banc_888_id": "720575941501926706",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.504694016080036,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.948888514962485,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941501929010",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9766643767547631,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.819367883757896,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941501934423",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941503422187",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.65,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.529822397321522,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": -52.0,
+      "rest_override_mV": null
+    },
+    {
+      "banc_888_id": "720575941504396567",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.4050006854636319,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.4934914199369445,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941505496610",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.44226718505409013,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.670392908758906,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941505568069",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9766643767547631,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.819367883757896,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941505580066",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.44226718505409013,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.670392908758906,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941505891422",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.6546020368580152,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.546945831217592,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941506261538",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.5431072762878301,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.110721965256668,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941507209029",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.6289274537286395,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.450438254953043,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941507883649",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.1145223596147704,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 9.12854458460111,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941508205185",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.1145223596147704,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 9.12854458460111,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941509003792",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941511197516",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.6289274537286395,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.450438254953043,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941512935779",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.251020119608957,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 10.452681058442773,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941513362252",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.8190066528008406,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 6.3610936055763565,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941515355795",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.318473312795884,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 11.116469013042504,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941515898873",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941517661356",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.39401178201733655,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.439595960399003,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941517726936",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.5431072762878301,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.110721965256668,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941517889708",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941518851694",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.2170761293956611,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 10.12095446473446,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941519179480",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.65,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.529822397321522,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": -52.0,
+      "rest_override_mV": null
+    },
+    {
+      "banc_888_id": "720575941519971511",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7530020362182,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.898379033292566,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941521271475",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941523135223",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.37912641050522883,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.36522657690713,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941523368779",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.5431072762878301,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.110721965256668,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941524172875",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.5690606479774423,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.216451482821495,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941524365337",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.2170761293956611,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 10.12095446473446,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941524746573",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.504694016080036,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.948888514962485,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941526615554",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.6546020368580152,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.546945831217592,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941527847608",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.65,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.529822397321522,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": -52.0,
+      "rest_override_mV": null
+    },
+    {
+      "banc_888_id": "720575941527948932",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.5431072762878301,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.110721965256668,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941528662438",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.43005198591875926,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.613363420532973,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941530206155",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941531195595",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.1732458096799943,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 9.694970682992155,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941531504357",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941532427754",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9766643767547631,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.819367883757896,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941532464562",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.3339500782817892,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 11.269610283731962,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941535897098",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.3738541098123662,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.338493143451368,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941536577880",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9075861955593394,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.174996682753999,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941536923624",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7837416918984479,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 6.041180633169523,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941537495489",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.65,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.529822397321522,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": -52.0,
+      "rest_override_mV": null
+    },
+    {
+      "banc_888_id": "720575941538082453",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.47767779805685273,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.830885365586064,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941538128626",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9766643767547631,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.819367883757896,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941539565916",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.65,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.529822397321522,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": -52.0,
+      "rest_override_mV": null
+    },
+    {
+      "banc_888_id": "720575941542417500",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941542454876",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.47767779805685273,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.830885365586064,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941542738524",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.4050006854636319,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.4934914199369445,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941543648105",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.318473312795884,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 11.116469013042504,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941547132040",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.579109785976917,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.256661557403566,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941549009663",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9075861955593394,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.174996682753999,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941549456673",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.420130771062469,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.566371165186554,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941549819710",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9554063152501073,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.620205153755691,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941549915252",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941551010695",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941551356570",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.4050006854636319,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.4934914199369445,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941553503460",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.65,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.529822397321522,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": -52.0,
+      "rest_override_mV": null
+    },
+    {
+      "banc_888_id": "720575941554483354",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941556245156",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.1145223596147704,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 9.12854458460111,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941556297811",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.5431072762878301,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.110721965256668,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941556850771",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.5690606479774423,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.216451482821495,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941558562093",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9964000648507891,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 8.004938393235662,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941558995950",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.8190066528008406,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 6.3610936055763565,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941559314989",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.0319019821976323,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 8.340346664849488,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941561433746",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.65,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.529822397321522,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": -52.0,
+      "rest_override_mV": null
+    },
+    {
+      "banc_888_id": "720575941562065920",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.65,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.529822397321522,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": -52.0,
+      "rest_override_mV": null
+    },
+    {
+      "banc_888_id": "720575941562150568",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.5431072762878301,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.110721965256668,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941562367239",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9075861955593394,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.174996682753999,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941565553920",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.37912641050522883,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.36522657690713,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941566924135",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.1145223596147704,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 9.12854458460111,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941568546418",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9075861955593394,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.174996682753999,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941568724980",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.6289274537286395,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.450438254953043,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941569766302",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9075861955593394,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.174996682753999,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941570833736",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9964000648507891,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 8.004938393235662,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941572050077",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941573296822",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7837416918984479,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 6.041180633169523,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941574008502",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941574013085",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.2170761293956611,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 10.12095446473446,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941574383247",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9554063152501073,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.620205153755691,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941574626973",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.0319019821976323,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 8.340346664849488,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941577004881",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.65,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.529822397321522,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": -52.0,
+      "rest_override_mV": null
+    },
+    {
+      "banc_888_id": "720575941578439513",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.420130771062469,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.566371165186554,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941579753849",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.6289274537286395,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.450438254953043,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941580731001",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.0319019821976323,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 8.340346664849488,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941582911865",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9075861955593394,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.174996682753999,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941584932486",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.420130771062469,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.566371165186554,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941587334199",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.0319019821976323,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 8.340346664849488,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941589587710",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.43005198591875926,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.613363420532973,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941589657598",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9075861955593394,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.174996682753999,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941590014007",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.6018469630020579,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.346218118182714,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941590872171",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.43005198591875926,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.613363420532973,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941591037547",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.504694016080036,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.948888514962485,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941591121463",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.5431072762878301,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.110721965256668,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941592581671",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.2170761293956611,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 10.12095446473446,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941594091397",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.5431072762878301,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.110721965256668,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941595151237",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941595299111",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941595712448",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9075861955593394,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.174996682753999,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941602293177",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7982470395256167,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 6.1724745344814655,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941606209726",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9075861955593394,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.174996682753999,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941608273226",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.6018469630020579,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.346218118182714,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941609393766",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9766643767547631,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.819367883757896,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941610029642",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.1461792592670021,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 9.433273535720168,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941610064102",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941610358761",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941610567597",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9075861955593394,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.174996682753999,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941611054154",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.6018469630020579,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.346218118182714,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941611361811",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.65,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.529822397321522,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": -52.0,
+      "rest_override_mV": null
+    },
+    {
+      "banc_888_id": "720575941611369705",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.300138035780202,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 10.935443935125567,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941611707923",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.5431072762878301,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.110721965256668,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941611750419",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.2170761293956611,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 10.12095446473446,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941611945389",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.65,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.529822397321522,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": -52.0,
+      "rest_override_mV": null
+    },
+    {
+      "banc_888_id": "720575941612158026",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.8661935567300133,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 6.792874015245687,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941612256476",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.49469754574984,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.9056484235861895,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941613374172",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.420130771062469,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.566371165186554,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941622252796",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941623130108",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941623147978",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941623403116",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9075861955593394,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.174996682753999,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941625549211",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9075861955593394,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.174996682753999,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941625808330",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.5431072762878301,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.110721965256668,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941626654410",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941627155238",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.49469754574984,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.9056484235861895,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941630145989",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.3695165768883751,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.316340389028782,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941630970604",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.8190066528008406,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 6.3610936055763565,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941631437292",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.1732458096799943,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 9.694970682992155,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941631437548",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941631837856",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.44226718505409013,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.670392908758906,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941631840453",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.5431072762878301,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.110721965256668,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941632094880",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.0319019821976323,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 8.340346664849488,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941633243067",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9075861955593394,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.174996682753999,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941633843141",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.0319019821976323,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 8.340346664849488,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941637140597",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.1145223596147704,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 9.12854458460111,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941638063391",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.6289274537286395,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.450438254953043,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941640958053",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7837416918984479,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 6.041180633169523,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941641008741",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.0319019821976323,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 8.340346664849488,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941641621330",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.1461792592670021,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 9.433273535720168,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941641623327",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.8661935567300133,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 6.792874015245687,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941642303944",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9075861955593394,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.174996682753999,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941642444449",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.1732458096799943,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 9.694970682992155,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941643180901",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.6546020368580152,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.546945831217592,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941643248328",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.318473312795884,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 11.116469013042504,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941644474312",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.65,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.529822397321522,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": -52.0,
+      "rest_override_mV": null
+    },
+    {
+      "banc_888_id": "720575941645259128",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.5431072762878301,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.110721965256668,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941649909489",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.8190066528008406,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 6.3610936055763565,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941651528177",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.6174988972832244,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.406768538170076,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941655736344",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.504694016080036,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.948888514962485,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941656372304",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.504694016080036,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.948888514962485,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941658392344",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.47767779805685273,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.830885365586064,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941665281011",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941679001021",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.9075861955593394,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 7.174996682753999,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941680979133",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.47767779805685273,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.830885365586064,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941689495515",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941691080155",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 1.1732458096799943,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 9.694970682992155,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941720492346",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941722047290",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.47767779805685273,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 4.830885365586064,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941733197355",
+      "class": "intermediate",
+      "exact_update": false,
+      "holddown": null,
+      "input_scale_override": 0.7020802423275183,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 0.0,
+        "tau_mem_ms": 5.719964072410198,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": 2.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -60.0
+    },
+    {
+      "banc_888_id": "720575941350444592",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941391252886",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941411709073",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941415175196",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941425056084",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941432965902",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941436891103",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941438181205",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941442381738",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941443907754",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941445324564",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941447844430",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941471839296",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941476434996",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941478122659",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941478577231",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941481621501",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941482859718",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941483515389",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941483752077",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941484865346",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941489684937",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941494146176",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941494740094",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941497037218",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941497863497",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941500579913",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941501921419",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941502759767",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941502849623",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941505660801",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941506034049",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941507031612",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941511883985",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941513385306",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941518133464",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941518204888",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941519664856",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941521190835",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941524966169",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941525308582",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941526437988",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 0.44226718505409013,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 4.670392908758906,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941527171000",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941527245496",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941531923147",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941538762701",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941545479868",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941548546696",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941552926747",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941553597502",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941554765722",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941555493156",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941556144100",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941557543918",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941559306355",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941559978797",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941561977088",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941563271058",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941563973174",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941565315638",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941568355066",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941571652616",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941572076445",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941573784990",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941577119825",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941578679121",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941580680825",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941593802373",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941595856540",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941604612086",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941605019582",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941618260607",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941627566474",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941637141109",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941639506207",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941642450021",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941667370739",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941667380979",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941668553639",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941668683687",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941685804044",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941688270744",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941691007896",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    },
+    {
+      "banc_888_id": "720575941692129243",
+      "class": "slow",
+      "exact_update": true,
+      "holddown": {
+        "dg": 10.0,
+        "e_rel_mv": 0.0,
+        "form": "A",
+        "latch_ms": 2.0,
+        "latch_mv": 2.0,
+        "tau_g_ms": 8.0
+      },
+      "input_scale_override": 1.5166666666666668,
+      "membrane_override": {
+        "adapt_a": 0.0,
+        "adapt_b_mv": 2.45,
+        "tau_mem_ms": 13.1,
+        "tau_w_ms": 50.0
+      },
+      "reset_offset_mV": -18.0,
+      "rest_default_mV_if_no_override": null,
+      "rest_override_mV": -48.0
+    }
+  ]
+}
