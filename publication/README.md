@@ -4,6 +4,10 @@ This package accompanies the review draft *Construction and retrospective evalua
 
 The [claim-to-command map](REPRODUCIBILITY.md) distinguishes complete simulation routes, recalculation from saved observations and pipelines still needing export.
 
+## Replicated follow-up
+
+The [follow-up protocol](FOLLOWUP_PROTOCOL.md) fixes six noise blocks and four independent null assignments before execution. It adds a startup-preserving temporal shift and a narrow delay distribution with exactly the original timestep-rounded mean. `followup.py` runs each complete block and `analyse_followup.py` checks the full 138-trial grid, then reports paired effects with crossed noise/assignment resampling. Execution and results will be recorded separately; the existence of these commands does not imply the full experiment has completed.
+
 ## Run the muscle model and null controls
 
 ```sh

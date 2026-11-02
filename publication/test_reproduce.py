@@ -53,6 +53,37 @@ class ControlTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "Missing or duplicated"):
                 analyse(root)
 
+    def test_crossed_bootstrap_keeps_assignment_as_shared_unit(self):
+        from analyse_followup import bootstrap_mean
+        # Six identical noise rows with two shared assignment outcomes.
+        # Resampling individual cells would incorrectly narrow the interval.
+        a = np.tile([1., 3.], (6, 1))
+        self.assertEqual(bootstrap_mean(a, np.random.default_rng(8), 4000), [1., 3.])
+        self.assertEqual(bootstrap_mean(np.ones(6), np.random.default_rng(8), 100), [1., 1.])
+        with self.assertRaises(ValueError):
+            bootstrap_mean(np.array([1., np.nan]), np.random.default_rng(8))
+
+    def test_clock_mean_null_preserves_integer_delivery_sum(self):
+        reference = np.geomspace(.01, 23., 1000)
+        original_slots = np.maximum(1, np.rint(reference / .1)).astype(int)
+        result = delay_control(reference, "delay-narrow-clock-mean", 17)
+        slots = np.maximum(1, np.rint(result / .1)).astype(int)
+        self.assertEqual(int(slots.sum()), int(original_slots.sum()))
+        self.assertLessEqual(int(np.ptp(slots)), 1)
+        np.testing.assert_array_equal(result, delay_control(reference, "delay-narrow-clock-mean", 17))
+        other = delay_control(reference, "delay-narrow-clock-mean", 18)
+        np.testing.assert_array_equal(np.sort(result), np.sort(other))
+        self.assertFalse(np.array_equal(result, other))
+        np.testing.assert_array_equal(delay_control(np.array([0., .1, .14]), "delay-narrow-clock-mean", 17), np.full(3, .1))
+
+    def test_shift_after_startup_keeps_initialization_and_tail_distribution(self):
+        reference = np.arange(2400 * 3, dtype=float).reshape(2400, 3)
+        shifted, receipt = stiffness_schedule(reference, "stiffness-shift-after-startup", 17)
+        np.testing.assert_array_equal(reference[:200], shifted[:200])
+        np.testing.assert_array_equal(np.sort(reference[200:], axis=0), np.sort(shifted[200:], axis=0))
+        np.testing.assert_array_equal(np.roll(shifted[200:], -receipt["offset_ticks"], axis=0), reference[200:])
+        self.assertFalse(np.array_equal(reference[200:], shifted[200:]))
+
     def test_actual_inhibitory_scaling_changes_only_incoming_negative_weights(self):
         import pandas as pd
         sys.path.insert(0, str(HERE / "delay-model"))

@@ -56,6 +56,20 @@ def stiffness_schedule(reference, mode, assignment_seed):
     if mode == "stiffness-mean":
         return np.broadcast_to(reference.mean(axis=0), reference.shape).copy(), {
             "operation": "per-joint temporal mean"}
+    if mode == "stiffness-shift-after-startup":
+        # Frozen 2.5 ms body tick: preserve the first 500 ms exactly.
+        startup = 200
+        if len(reference) < startup + 4:
+            raise ValueError("Startup-preserving shift needs at least 204 ticks")
+        tail = reference[startup:]
+        offset = int(np.random.default_rng(assignment_seed).integers(
+            len(tail) // 4, 3 * len(tail) // 4 + 1))
+        shifted = reference.copy()
+        shifted[startup:] = np.roll(tail, offset, axis=0)
+        np.testing.assert_array_equal(shifted[:startup], reference[:startup])
+        np.testing.assert_array_equal(np.sort(shifted[startup:], axis=0), np.sort(tail, axis=0))
+        return shifted, {"operation": "common circular shift after preserved startup",
+                         "startup_ticks": startup, "offset_ticks": offset}
     if mode == "stiffness-shift":
         offset = int(np.random.default_rng(assignment_seed).integers(
             len(reference) // 4, 3 * len(reference) // 4 + 1))
@@ -70,6 +84,21 @@ def delay_control(reference, mode, assignment_seed):
     reference = np.asarray(reference)
     if mode == "delay-uniform":
         return np.full_like(reference, reference.mean())
+    if mode == "delay-narrow-clock-mean":
+        # The September engine rounds to 0.1 ms slots with a one-slot floor.
+        # Two adjacent slot values are the narrowest integer distribution
+        # with exactly the original integer slot sum.
+        if reference.ndim != 1 or not len(reference) or not np.isfinite(reference).all():
+            raise ValueError("A nonempty finite delay vector is required")
+        slots = np.maximum(1, np.rint(reference / .1)).astype(np.int64)
+        lower, high_count = divmod(int(slots.sum()), len(slots))
+        narrow = np.full(len(slots), lower, dtype=np.int64)
+        selected = np.random.default_rng(assignment_seed).permutation(len(slots))[:high_count]
+        narrow[selected] += 1
+        result = narrow.astype(float) * .1
+        np.testing.assert_array_equal(np.maximum(1, np.rint(result / .1)), narrow)
+        assert int(narrow.sum()) == int(slots.sum())
+        return result
     if mode == "delay-shuffle":
         result = reference[np.random.default_rng(assignment_seed).permutation(len(reference))]
         np.testing.assert_array_equal(np.sort(result), np.sort(reference))
@@ -110,11 +139,11 @@ def mechanical_metrics(arrays, dt_s):
             "contact_tip_speed_mean_mm_s": float(slip[trans:][mask[trans:]].mean()) if mask[trans:].any() else None}
 
 
-def main():
+def main(followup=False):
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--seeds", type=int, nargs="+", default=[201303], help="Paired neural noise seeds")
-    ap.add_argument("--null-seeds", type=int, nargs="+", default=[9001], help="Independent assignment/shift seeds")
-    ap.add_argument("--out", type=Path, default=REPO / "outputs/publication/controls")
+    ap.add_argument("--seeds", type=int, nargs="+", default=([2026110301] if followup else [201303]), help="Paired neural noise seeds")
+    ap.add_argument("--null-seeds", type=int, nargs="+", default=([2026110311, 2026110312, 2026110313, 2026110314] if followup else [9001]), help="Independent assignment/shift seeds")
+    ap.add_argument("--out", type=Path, default=REPO / ("outputs/publication/followup" if followup else "outputs/publication/controls"))
     args = ap.parse_args()
     if len(set(args.seeds)) != len(args.seeds) or len(set(args.null_seeds)) != len(args.null_seeds):
         ap.error("Duplicate seeds would duplicate deterministic trials")
@@ -137,13 +166,24 @@ def main():
     shutil.copytree(HERE / "delay-model", work)
     for name in json.loads((REPO / "experiments/data.json").read_text()):
         (work / "data" / name).symlink_to(REPO / "simulator/data" / name)
-    source_files = [HERE / "reproduce.py", HERE / "PROTOCOL.md", HERE / "manifest.json", REPO / "uv.lock"]
+    protocol_path = HERE / ("FOLLOWUP_PROTOCOL.md" if followup else "PROTOCOL.md")
+    source_files = [HERE / "reproduce.py", protocol_path, HERE / "manifest.json", REPO / "uv.lock"]
+    if followup:
+        source_files.extend([HERE / "followup.py", HERE / "analyse_followup.py", HERE / "analyse_controls.py"])
+    fixed_modes = ["base", "stiffness-replay", "stiffness-mean", "activation", "delay-uniform", "inhibition-unscaled", "motor-zero"]
+    null_modes = ["stiffness-shift", "delay-shuffle"]
+    if followup:
+        null_modes += ["stiffness-shift-after-startup", "delay-narrow-clock-mean"]
     provenance = {"historical_source_commit": SOURCE_COMMIT, "backend": "numpy",
                   "release_commit": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=REPO, text=True).strip(),
                   "source_hashes": {str(p.relative_to(REPO)): sha(p) for p in source_files},
                   "python": sys.version, "platform": platform.platform(),
                   "packages": {p: importlib.metadata.version(p) for p in ("numpy", "scipy", "pandas", "mujoco", "flygym")},
                   "noise_seeds": args.seeds, "null_seeds": args.null_seeds, "duration_ms": 6000,
+                  "protocol_version": 2 if followup else 1,
+                  "execution_host": platform.node(), "machine": platform.machine(),
+                  "numerical_environment": {k: os.environ.get(k) for k in ("OPENBLAS_CORETYPE", "OPENBLAS_NUM_THREADS", "OMP_NUM_THREADS", "MKL_NUM_THREADS", "NPY_DISABLE_CPU_FEATURES")},
+                  "slurm": {k: os.environ.get(k) for k in ("SLURM_JOB_ID", "SLURM_ARRAY_TASK_ID", "SLURM_JOB_NODELIST", "SLURM_CPUS_PER_TASK")},
                   "status": "running", "rows": []}
     write_json(output / "summary.json", provenance)
     os.chdir(work)
@@ -206,8 +246,8 @@ def main():
         for seed in args.seeds:
             baseline = None
             baseline_neural_hash = None
-            cases = [(m, None) for m in ("base", "stiffness-replay", "stiffness-mean", "activation", "delay-uniform", "inhibition-unscaled", "motor-zero")]
-            cases += [(m, ns) for ns in args.null_seeds for m in ("stiffness-shift", "delay-shuffle")]
+            cases = [(m, None) for m in fixed_modes]
+            cases += [(m, ns) for ns in args.null_seeds for m in null_modes]
             for mode, null_seed in cases:
                 label = f"{mode}-{seed}" + (f"-null{null_seed}" if null_seed is not None else "")
                 case = output / label

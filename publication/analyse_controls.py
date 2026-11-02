@@ -16,7 +16,13 @@ def analyse(path):
     seeds, null_seeds = summary["noise_seeds"], summary["null_seeds"]
     fixed = ["base", "stiffness-replay", "stiffness-mean", "activation", "delay-uniform", "inhibition-unscaled", "motor-zero"]
     expected = {(m, s, None) for m in fixed for s in seeds}
-    expected |= {(m, s, ns) for m in ("stiffness-shift", "delay-shuffle") for s in seeds for ns in null_seeds}
+    version = summary.get("protocol_version", 1)
+    if version not in (1, 2):
+        raise ValueError(f"Unsupported protocol version: {version}")
+    random_modes = ["stiffness-shift", "delay-shuffle"]
+    if version == 2:
+        random_modes += ["stiffness-shift-after-startup", "delay-narrow-clock-mean"]
+    expected |= {(m, s, ns) for m in random_modes for s in seeds for ns in null_seeds}
     actual = {(r["mode"], r["seed"], r["null_seed"]) for r in rows}
     if len(rows) != len(expected) or actual != expected:
         raise ValueError("Missing or duplicated planned trial")
