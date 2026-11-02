@@ -9,9 +9,9 @@ export OPENBLAS_CORETYPE=Haswell MUJOCO_GL=glfw
 export UV_CACHE_DIR="$PWD/outputs/uv-cache"
 export MPLCONFIGDIR="$PWD/outputs/matplotlib-$SLURM_JOB_ID"
 mkdir -p outputs/publication "$MPLCONFIGDIR"
-python3 -m venv outputs/bootstrap-env
-outputs/bootstrap-env/bin/python -m pip install --disable-pip-version-check 'uv==0.12.0'
-outputs/bootstrap-env/bin/uv sync --locked --python python3
+# Prepare the locked environment on the login node before submitting this
+# compute job; compute nodes do not have reliable package-index DNS.
+test -x .venv/bin/python
 # Reuse only the two exact public inputs. The normal launcher independently
 # verifies these hashes again before every experiment.
 python3 - <<'PY'

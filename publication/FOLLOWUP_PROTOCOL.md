@@ -39,3 +39,19 @@ For each intervention report the raw paired differences from its matching base. 
 An exploratory 95% percentile bootstrap interval for the mean displacement difference uses 20,000 resamples and analysis seed 2026110321. For deterministic arms, resample the six noise blocks. For randomized arms, independently resample six noise indices and four assignment indices, keeping their crossed matrix. This interval depends on the sampled noise and assignment distributions and is approximate with six by four realizations. It cannot establish animal-level uncertainty, equivalence, optimized-family superiority or connectome specificity. No significance threshold or p-value decision is used.
 
 Before combining shards, the reader verifies the complete planned grid, case records, output hashes, source hashes, environment and control identities. Each identity replay must match all saved mechanical arrays and neural activity. The startup null must preserve startup; the clock-mean null must preserve the exact slot sum. A failed invariant stops interpretation and remains in the execution record. Raw traces and unsuccessful outcomes are published with the analysis.
+
+## Cluster setup
+
+The cluster's live storage notice requires data and environments under `/data/robin`, not `/home`. Prepare a private checkout there. The first bootstrap attempt (Slurm 37826) failed while installing uv because package-index DNS was unavailable on the compute node; no simulation ran. Environment installation is therefore performed on the login node, where editing and installation are allowed, with simulation restricted to Slurm workers. The failed log is retained. The setup commands from the checkout root are:
+
+```sh
+python3 -m venv outputs/bootstrap-env
+outputs/bootstrap-env/bin/python -m pip install --index-url=https://pypi.org/simple uv==0.12.0
+UV_CACHE_DIR="$PWD/outputs/uv-cache" outputs/bootstrap-env/bin/uv sync --locked --python python3
+mkdir -p outputs/cluster-logs
+sbatch --partition=normal --cpus-per-task=1 --mem=6G --time=00:25:00 \
+  --array=0-0%1 --job-name=publication-bootstrap \
+  --output=outputs/cluster-logs/%x-%A_%a.out publication/cluster_bootstrap.sh
+```
+
+After the bootstrap receipt and runtime are inspected, submit `publication/cluster_followup.sh` as array `0-5%3` with one CPU and 6 GB per task and a wall limit based on the probe. No model evaluation runs on the login node. The bootstrap verifies the two existing public input files by their released hashes before linking them into the private checkout.
