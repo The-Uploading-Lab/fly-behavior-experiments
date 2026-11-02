@@ -61,3 +61,7 @@ The model uses FlyGym and MuJoCo. Existing dependency license notices and vendor
 ## Release checks
 
 The [verification receipt](verification.json) records a fresh clone and dependency installation, public input downloads, all eight repository tests and all six model-component tests. The reanalysis and figure commands completed. A six-second NumPy trial also completed in each of two installations, with identical body and neural trace hashes. Its speed was 0.9413 mm/s; the archived Metal result for the same nominal seed was 1.0226 mm/s. Only this one CPU arm and seed was rerun for the export. The source commit tested and command receipts are recorded explicitly.
+
+## Dependency security status
+
+GitHub reported 82 open alert entries covering 41 distinct Pillow advisories on 2 November 2026, including [an image-decoding advisory](https://github.com/python-pillow/Pillow/security/advisories/GHSA-5x8w-8jj5-q52h). The existing reproduction environment pins Pillow 12.3.0. The reported fixes require 13.0.0; a resolver check rejected that upgrade because FlyGym 2.1.0 requires Pillow below 13. A compatible FlyGym/Pillow migration and regression checks remain separate work. The standard-library numeric reanalysis command does not install these dependencies.
