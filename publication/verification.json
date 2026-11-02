@@ -1,0 +1,137 @@
+{
+  "checked_utc": "2026-11-02T22:11:07.155669+00:00",
+  "tested_source_commit": "cea24610970c52fa0ce3ad3a6ec3e9c878beb109",
+  "clean_clone": true,
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "python": "3.12.13",
+  "install": "uv sync --locked",
+  "data_route": "Downloaded both pinned BANC inputs through public GitHub release URLs and checked SHA-256 in a new clone",
+  "checks": [
+    {
+      "command": "python3 publication/analyse.py",
+      "result": "all source hashes passed; output matched the first installation; muscle, delay, calcium and walking-support numeric assertions passed"
+    },
+    {
+      "command": "uv run python publication/plot.py",
+      "result": "two figures exported in PNG, SVG and PDF"
+    },
+    {
+      "command": "uv run python -m unittest discover -s tests -v",
+      "result": "8 tests passed"
+    },
+    {
+      "command": "uv run python model-review/test_components.py",
+      "result": "6 tests passed"
+    },
+    {
+      "command": "uv run python publication/replay_delay.py --arm base --seed 201303",
+      "result": "full six-second NumPy trial completed; trace hashes equal across two installations"
+    }
+  ],
+  "cpu_replay": {
+    "historical_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+    "backend": "numpy",
+    "arm": "base",
+    "seed": 201303,
+    "timing_seconds": {
+      "import_and_initialization": 1.370012165978551,
+      "simulation_and_trace_export": 109.81213158398168,
+      "total": 111.18214374996023
+    },
+    "record": {
+      "seed": 201303,
+      "raw": 5.18,
+      "up": 0.71,
+      "standing": false,
+      "final_tilt_deg": 9.31,
+      "standing_v32": true,
+      "commanded_step_hz": null,
+      "endogenous_timing": true,
+      "nonfoot": 0.0036,
+      "nonfoot_force": 0.0002,
+      "freq": 12.363636363636363,
+      "swing_ms": 5.0,
+      "duty": 0.5845454545454545,
+      "contra": 0.38461538461538464,
+      "freq_tip": 5.272727272727273,
+      "swing_tip_ms": 30.0,
+      "duty_tip": 0.7356818181818181,
+      "contra_tip": 0.32700760777683857,
+      "speed": 0.9412898723620272,
+      "rom": {
+        "fFTi": 83.98113423060006,
+        "fCTr": 85.32374774454,
+        "mFTi": 18.693135325073936,
+        "mCTr": 19.552026319776836,
+        "hFTi": 72.86306288421073,
+        "hCTr": 47.51974699880148
+      },
+      "lifts": [
+        15,
+        20,
+        34,
+        28,
+        31,
+        34
+      ],
+      "freq_tip_h": 4.090909090909091,
+      "swing_tip_h_ms": 51.25,
+      "duty_tip_h": 0.7020454545454546,
+      "contra_tip_h": 0.4084507042253521,
+      "lifts_h": [
+        14,
+        20,
+        23,
+        24,
+        27,
+        23
+      ],
+      "freq_tip_h10": 3.7272727272727275,
+      "swing_tip_h10_ms": 55.0,
+      "duty_tip_h10": 0.7034090909090909,
+      "lifts_h10": [
+        13,
+        17,
+        21,
+        22,
+        26,
+        23
+      ],
+      "one_tick_frac_h": 0.0076,
+      "flicker_frac": 0.0429,
+      "R1i": 0.005,
+      "R1c": 0.005,
+      "R1i_tip": 0.1891,
+      "R1c_tip": 0.005,
+      "R5": 0.005,
+      "trace_rows": 11345,
+      "dng100_spikes": {
+        "720575941626500746": 747,
+        "720575941500851362": 758
+      },
+      "qualifies_v35": false,
+      "arm": "base",
+      "delay_vec": {
+        "mean": 6.2401,
+        "min": 0.118,
+        "max": 23.623,
+        "n_over_6.24": 58578
+      },
+      "n_intersegmental_edges": [
+        0
+      ],
+      "wall_seconds": 109.8
+    },
+    "comparison_limit": "Historical archived replay used Metal. Backend RNG and numerical differences require comparison before numerical equivalence is claimed."
+  },
+  "trace_sha256": {
+    "base-201303.npz": "e3d133b9bded66fd8575f811c3f454d06c96340fb3bd7740f4797bf3652f6807",
+    "trace-base-201303.npz": "62e5379dc8f1ec91eb8f9cf4a125fc27204057a0f4c0d241067cbbd50ea5a1c9"
+  },
+  "limits": [
+    "One CPU arm and seed was executed in each installation, not all 36 trials.",
+    "CPU speed 0.9412898723620272 mm/s differs from the archived Metal result 1.022573611008371 mm/s for this seed. This is an execution and same-backend repeatability check, not cross-backend equivalence.",
+    "Component checks do not establish biological validity.",
+    "Historical study summaries outside this delay trial were not rerun."
+  ]
+}

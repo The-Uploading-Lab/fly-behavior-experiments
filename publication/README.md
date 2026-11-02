@@ -57,3 +57,7 @@ Walking observations: DeAngelis, Zavatone-Veth and Clark, [eLife 2019](https://d
 Calcium observations: Ketkar et al., [eLife 2022](https://doi.org/10.7554/eLife.74937). The released numbers are source-normalized summary features used in earlier model development. L2 response direction and the L1 observation model remain interpretive limitations.
 
 The model uses FlyGym and MuJoCo. Existing dependency license notices and vendored compatibility code are documented in [THIRD_PARTY.md](../THIRD_PARTY.md) and `provenance/dependency-licenses.json`. Project-authored code and records follow the repository license; upstream data and software retain their original licenses. The private scientific-review manuscript and meeting notes are not distributed in this package.
+
+## Release checks
+
+The [verification receipt](verification.json) records a fresh clone and dependency installation, public input downloads, all eight repository tests and all six model-component tests. The reanalysis and figure commands completed. A six-second NumPy trial also completed in each of two installations, with identical body and neural trace hashes. Its speed was 0.9413 mm/s; the archived Metal result for the same nominal seed was 1.0226 mm/s. Only this one CPU arm and seed was rerun for the export. The source commit tested and command receipts are recorded explicitly.
