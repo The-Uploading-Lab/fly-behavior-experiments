@@ -133,5 +133,10 @@
     "CPU speed 0.9412898723620272 mm/s differs from the archived Metal result 1.022573611008371 mm/s for this seed. This is an execution and same-backend repeatability check, not cross-backend equivalence.",
     "Component checks do not establish biological validity.",
     "Historical study summaries outside this delay trial were not rerun."
-  ]
+  ],
+  "subsequent_figure_layout_check": {
+    "change": "Moved Figure 2 legend into empty plot area to avoid overlapping animal observations",
+    "command": "uv run python publication/plot.py",
+    "result": "passed; source data and computations unchanged"
+  }
 }

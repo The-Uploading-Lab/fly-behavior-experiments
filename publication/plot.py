@@ -39,6 +39,6 @@ for ax,cell in zip(axs,['L1','L2']):
     ax.plot([r['level'] for r in rr],[r['simulated'] for r in rr],'s--',color='#28647d',label='H4 model')
     ax.set(title=cell,xlabel='Relative light intensity',ylim=(0,1),xticks=[.25,.5,.75,1])
 axs[0].set_ylabel('10 s response / transition peak')
-axs[1].legend(frameon=False,fontsize=8,loc='lower right')
+axs[1].legend(frameon=False,fontsize=8,loc='center right',bbox_to_anchor=(1,.55))
 for ext in ['png','pdf','svg']:fig.savefig(OUT/f'fig2-calcium-comparison.{ext}',dpi=240)
 plt.close(fig)
