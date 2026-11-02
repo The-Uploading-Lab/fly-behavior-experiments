@@ -1,0 +1,1852 @@
+{
+  "exported_utc": "2026-11-02T22:08:00Z",
+  "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+  "public_website": "https://theuploadinglab.ai/fly/diary",
+  "files": [
+    {
+      "path": "research-history/diary/01-the-bet.md",
+      "sha256": "b47cea60abc41d5d4af4075e764326fa7f687970f4ca2e77b7cbf8fb552cd5cf",
+      "bytes": 907,
+      "source_path": "diary/01-the-bet.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/02-the-ledger.md",
+      "sha256": "e9657cd5bfcdb9869d7eed81bcc92278b628df41951fb4866cc1af3b6d388fe8",
+      "bytes": 1048,
+      "source_path": "diary/02-the-ledger.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/03-bistability.md",
+      "sha256": "f35626bcd8f8e41f071558b070b76667c968aa50c0ac9f8a9978e2dcce4e0311",
+      "bytes": 1247,
+      "source_path": "diary/03-bistability.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/04-the-rhythm.md",
+      "sha256": "174d26b2ad593a42f681a76302765794db7c375602436523ed70e1c67dcdad1b",
+      "bytes": 1396,
+      "source_path": "diary/04-the-rhythm.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/05-first-walkers.md",
+      "sha256": "4f9264ecbe930094718dd3a46c26729167a03abe5d73b6c9313a093ee7c689d0",
+      "bytes": 1281,
+      "source_path": "diary/05-first-walkers.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/06-the-glue.md",
+      "sha256": "899b5fd8c3542b7348918f8a4f2291e5a230c8bfff371b09f910da5f99273ce0",
+      "bytes": 1363,
+      "source_path": "diary/06-the-glue.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/07-t025.md",
+      "sha256": "6f56771817b9766beb65d31012eca3712ef3552b1c69f16458f22a129ae5e366",
+      "bytes": 1498,
+      "source_path": "diary/07-t025.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/08-instruments.md",
+      "sha256": "6e8924afa2d3d6870352234725634aa46457214abadc2a58821f865b2b699410",
+      "bytes": 1425,
+      "source_path": "diary/08-instruments.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/09-the-phasic-fly.md",
+      "sha256": "fd303d4ae5b8643df64fb0fd2aee3ca023e001aa85100139964e8413fa5684f8",
+      "bytes": 3713,
+      "source_path": "diary/09-the-phasic-fly.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/10-the-second-fly.md",
+      "sha256": "7be5663e55b41a25c26f9f903f100361bdad3a063f676794345c11b62ed9dfe9",
+      "bytes": 3315,
+      "source_path": "diary/10-the-second-fly.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/100-the-bodys-derivative-survives-a-tick-and-not-a-footfall.md",
+      "sha256": "5324ef1a6f601e8093c6e7a090bd9abb46286f570275feddbc517e68b20f87e7",
+      "bytes": 14588,
+      "source_path": "diary/100-the-bodys-derivative-survives-a-tick-and-not-a-footfall.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/11-five-collapses.md",
+      "sha256": "989a8b8f6fcda141ce97d71b36f5599aac05976924eec3bff5bd34c2ecf7fd49",
+      "bytes": 5406,
+      "source_path": "diary/11-five-collapses.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/12-the-wall-was-in-the-body.md",
+      "sha256": "4f5eaa699fb3a69821174af515c951f7c5758841637ac96eed64c96e785e3dc1",
+      "bytes": 10560,
+      "source_path": "diary/12-the-wall-was-in-the-body.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/13-the-scoreboard-was-the-problem.md",
+      "sha256": "ec67d0fa71fbb225f51af89b306eaff0d6fce39f0c1d6160f9f51d4df8d980db",
+      "bytes": 21062,
+      "source_path": "diary/13-the-scoreboard-was-the-problem.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/14-the-male-fly.md",
+      "sha256": "7d45357fbf775bb03e6bc7add3be58698ae0563833734db305e86fe01ee806d7",
+      "bytes": 12669,
+      "source_path": "diary/14-the-male-fly.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/15-the-mechanism-costs-a-leg.md",
+      "sha256": "fcffc0a71b7dd395dafeb0c4fa9a9250b31bdbac1a641fbc9c3def37032e1e87",
+      "bytes": 8596,
+      "source_path": "diary/15-the-mechanism-costs-a-leg.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/16-the-silent-zeros.md",
+      "sha256": "4837a6d8012e413ae27c01fb4bbb9a1f9379aff50e66014794e4d09ce7df13d9",
+      "bytes": 8305,
+      "source_path": "diary/16-the-silent-zeros.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/17-what-we-cannot-see.md",
+      "sha256": "b2f75f26de4c830649605a477353d447ae42b3c0f947e2ba0726560945c840fc",
+      "bytes": 8621,
+      "source_path": "diary/17-what-we-cannot-see.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/18-the-first-judged-cycle.md",
+      "sha256": "7a1d8754531d05eee31d75ebcc8c74b21355f883392c0a6db10d5143668e00a2",
+      "bytes": 5064,
+      "source_path": "diary/18-the-first-judged-cycle.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/19-the-fly-that-walks-in-place.md",
+      "sha256": "e2aaf8afc9962f7d7dcf8a92d5b7a8f540388ba8243e0a9ee24d246f5c332b08",
+      "bytes": 4281,
+      "source_path": "diary/19-the-fly-that-walks-in-place.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/20-the-fly-that-vibrates-in-place.md",
+      "sha256": "6bc03b2b98b41aabfe377be2a9a7e07478e71e6c6e416166fe13784ca5dde8e8",
+      "bytes": 2734,
+      "source_path": "diary/20-the-fly-that-vibrates-in-place.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/20-the-uncrowned-fly.md",
+      "sha256": "7aee0c1fb3b681ccd717829aca173528c4ba8a6dd630d6279cb562337964bea5",
+      "bytes": 9666,
+      "source_path": "diary/20-the-uncrowned-fly.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/21-the-audit-days.md",
+      "sha256": "ac168ee4fe8d5b1544ead2479729bdc060e1280d9f6ccad64d39cdedef3246f4",
+      "bytes": 3184,
+      "source_path": "diary/21-the-audit-days.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/22-the-space-between-two-flies.md",
+      "sha256": "f7b94bc5078f9fe78918da612a999f138098a7e8949c2ed86bbd150d8456544d",
+      "bytes": 4473,
+      "source_path": "diary/22-the-space-between-two-flies.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/23-the-first-fly-at-fly-cadence.md",
+      "sha256": "562220dfc0d378708305350df88b9b7ca79743395a81098c681e555137bcea52",
+      "bytes": 4800,
+      "source_path": "diary/23-the-first-fly-at-fly-cadence.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/24-the-order-and-the-energy.md",
+      "sha256": "c29e79c686524231c1d4faeab18b667521192dbbdd91ee91b77262dd65c14a96",
+      "bytes": 3781,
+      "source_path": "diary/24-the-order-and-the-energy.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/25-the-seat-outlives-the-harness.md",
+      "sha256": "77539f21be848f22f3dd8c0efd96d540fc373a9f0ab5f8e7d17949289f797825",
+      "bytes": 2029,
+      "source_path": "diary/25-the-seat-outlives-the-harness.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/26-the-lane-outlives-the-detour.md",
+      "sha256": "d51ab54218bd6b5ba7ed4f991ee328e491e7e833d20113326c49fae2bc8907e8",
+      "bytes": 2320,
+      "source_path": "diary/26-the-lane-outlives-the-detour.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/27-the-same-rows-a-different-interval.md",
+      "sha256": "fab4e365c7f0836a734de1b36b4cc378b864c38a45e76bbd8f5e63eeff2a2544",
+      "bytes": 2056,
+      "source_path": "diary/27-the-same-rows-a-different-interval.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/28-the-gap-inside-the-gap.md",
+      "sha256": "cf9c24c612e31a21001fa12e67af8dbd318271f919110f1af5d4e67ac25d5fe3",
+      "bytes": 2085,
+      "source_path": "diary/28-the-gap-inside-the-gap.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/29-the-seat-changes-hands-again.md",
+      "sha256": "959e5be371a8a9c7530b620169433f36df3b18a16f6adb9fdfb4b09d9bb74cc1",
+      "bytes": 2860,
+      "source_path": "diary/29-the-seat-changes-hands-again.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/30-the-fifth-seat-comes-back.md",
+      "sha256": "d6773cd7d310c1a1ba7f154e79399c41ad55b7f7938c6ddd617f66a300e94a6d",
+      "bytes": 2805,
+      "source_path": "diary/30-the-fifth-seat-comes-back.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/31-the-migration-completes.md",
+      "sha256": "e19597007442584606ebda9c3c601199c3b2216f226d2a046f5e30ab40692a5c",
+      "bytes": 2614,
+      "source_path": "diary/31-the-migration-completes.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/32-the-seat-swaps-back.md",
+      "sha256": "6b8ce9328d5cd4bd16184e8d7b858b8a52295bb6bb04b92a5af3edaffd3ddff5",
+      "bytes": 2544,
+      "source_path": "diary/32-the-seat-swaps-back.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/33-the-day-of-refutations.md",
+      "sha256": "32fffb29c51cd9ed3c1ce8b1c3b62605938b883ef1f19447b6aca60824986fe0",
+      "bytes": 2696,
+      "source_path": "diary/33-the-day-of-refutations.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/34-the-old-fly-clears-the-new-bar.md",
+      "sha256": "303429fe18387a04d6aebfd8f825538cc2ce4eefe85a2b3509508269bf5953c8",
+      "bytes": 6328,
+      "source_path": "diary/34-the-old-fly-clears-the-new-bar.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/35-seventeen-pfgs-have-zero-fast-output.md",
+      "sha256": "53f545c77a61c946eb55d560b9ef80fb967a033c7ead0cd16aca834a74c7bbf5",
+      "bytes": 2616,
+      "source_path": "diary/35-seventeen-pfgs-have-zero-fast-output.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/36-twelve-more-reused-seeds.md",
+      "sha256": "4c4992104d92e1d62bb68314ac2e7e003f5d86a668eae62827340261eebcb0fe",
+      "bytes": 2921,
+      "source_path": "diary/36-twelve-more-reused-seeds.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/37-the-champion-falls-over-at-the-corrected-knees.md",
+      "sha256": "fd8402bb5a3303026e728b1b09331a033746a1e1e2e025f04382529c49c1e942",
+      "bytes": 9779,
+      "source_path": "diary/37-the-champion-falls-over-at-the-corrected-knees.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/38-the-body-enters-the-retinal-movie.md",
+      "sha256": "47c0ca6374f53b29b3b7889038d70606f9cda783dae58d2c67903ecf1fca70fd",
+      "bytes": 5924,
+      "source_path": "diary/38-the-body-enters-the-retinal-movie.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/39-load-feedback-doubles-neural-turn.md",
+      "sha256": "0722fa8b707c807d684b5ffc062b990b4585cb524d5fcc597fbb16f489381db6",
+      "bytes": 16587,
+      "source_path": "diary/39-load-feedback-doubles-neural-turn.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/40-neural-phase-selected-halt-held.md",
+      "sha256": "21651ab266e9ce958eb1338b857ad25cce3ed79d308089d972b270b53414f786",
+      "bytes": 3618,
+      "source_path": "diary/40-neural-phase-selected-halt-held.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/41-the-phase-that-carries-the-turn.md",
+      "sha256": "5d8ad886099d7168e65a10877acb23963714ab67958b13fc432d169dc5a27fbe",
+      "bytes": 3883,
+      "source_path": "diary/41-the-phase-that-carries-the-turn.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/42-the-day-the-lanes-got-agency.md",
+      "sha256": "ce7d73f82b5fc3b5021b014217f55f8763380f05b3030dff37c10823ddce33fb",
+      "bytes": 4804,
+      "source_path": "diary/42-the-day-the-lanes-got-agency.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/43-five-bands-clean.md",
+      "sha256": "16b6a26a51a7b10bd8a297dc35700fc785372fb9d8996d7c4e77ffea3bc347e3",
+      "bytes": 3910,
+      "source_path": "diary/43-five-bands-clean.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/44-anatomy-cuts-where-gait-cannot.md",
+      "sha256": "d29517a86a164278fcddf016222b76e6f01e19eabf439f89ebaa41d1244ce482",
+      "bytes": 5041,
+      "source_path": "diary/44-anatomy-cuts-where-gait-cannot.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/45-the-first-fly-whose-cadence-is-its-own.md",
+      "sha256": "c766ed8bd426319d6d5511e2c4a27716d8f771e6db09958dbdfd15a892fee6f0",
+      "bytes": 4941,
+      "source_path": "diary/45-the-first-fly-whose-cadence-is-its-own.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/46-the-fly-the-search-had-asked-for.md",
+      "sha256": "9f25a285a07175a1326ebef1e072ae9b4b0954b3136f99608a470195e593efd6",
+      "bytes": 6479,
+      "source_path": "diary/46-the-fly-the-search-had-asked-for.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/47-the-command-was-a-clamp.md",
+      "sha256": "c399b6b8c145869be4740beb4aec8303fe7b002b9ece51eb43aeaf7bf97477cc",
+      "bytes": 6842,
+      "source_path": "diary/47-the-command-was-a-clamp.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/48-the-fly-walks-without-being-told-to.md",
+      "sha256": "f162b8904e88eb75efedbec3c55adcc2935065544282f95270e5b2576d9ae729",
+      "bytes": 9142,
+      "source_path": "diary/48-the-fly-walks-without-being-told-to.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/49-the-floor-is-one-leg.md",
+      "sha256": "e03b1c09745c6a1a387200719e938990c7d6db106d4b139a1f6ed510c641df48",
+      "bytes": 9862,
+      "source_path": "diary/49-the-floor-is-one-leg.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/50-the-first-tie-went-to-more-seeds.md",
+      "sha256": "7b1b2e3dcdf3bd0cbb23a24393076088aaa281da1123c157a6b9669beb8c3328",
+      "bytes": 10868,
+      "source_path": "diary/50-the-first-tie-went-to-more-seeds.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/51-the-hip-set-the-pace.md",
+      "sha256": "fbec7ee56e0df2b20a6dbc29239165d5b34fd85c0ce88eb2ad61e1ef0c8862a3",
+      "bytes": 8614,
+      "source_path": "diary/51-the-hip-set-the-pace.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/52-the-small-cells-were-doing-the-work.md",
+      "sha256": "397176d32781f7f86a5aa5af7a04bc58056ffedade23d413fb6e4f085fd4e7d6",
+      "bytes": 7841,
+      "source_path": "diary/52-the-small-cells-were-doing-the-work.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/53-the-abdomen-steadied-the-fly.md",
+      "sha256": "3a92653d33d7cf00f3d45004eeca50e42f9f28e6a3a798bffd6e231d727bb184",
+      "bytes": 10119,
+      "source_path": "diary/53-the-abdomen-steadied-the-fly.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/54-the-fly-could-not-feel-its-legs.md",
+      "sha256": "299348a3cf3f3589ca8d6e2cf6bcf123a2977fb59fb5df4044f01d193885392b",
+      "bytes": 6792,
+      "source_path": "diary/54-the-fly-could-not-feel-its-legs.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/55-the-eye-worked-and-the-legs-did-not-hear-it.md",
+      "sha256": "7fa749d957b8e7e54f2711632905e6587652ee3c003bf1462a45b9fa7cc122a6",
+      "bytes": 9361,
+      "source_path": "diary/55-the-eye-worked-and-the-legs-did-not-hear-it.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/56-three-corrections-that-cost-nothing-and-one-that-won.md",
+      "sha256": "bf7f2e5d290742cd1129377022152826777db156f0fbe2d8ccf94236ab3b0935",
+      "bytes": 7583,
+      "source_path": "diary/56-three-corrections-that-cost-nothing-and-one-that-won.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/57-the-cord-does-not-take-orders.md",
+      "sha256": "8e7e6090a54ad9c969c07aa8b2b0e7e10e6183b749acaa287de1640ba52bf2a8",
+      "bytes": 6438,
+      "source_path": "diary/57-the-cord-does-not-take-orders.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/58-the-dial-nobody-could-turn.md",
+      "sha256": "f0442e7221cadfb6cb649120ce07de2e464de93726025de172d6f7a69c4e3a17",
+      "bytes": 6202,
+      "source_path": "diary/58-the-dial-nobody-could-turn.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/59-the-window-was-the-null.md",
+      "sha256": "009800ec6c7615b50464230d04314e847a91ca07c4bd30b494bbc4e6b2521537",
+      "bytes": 27746,
+      "source_path": "diary/59-the-window-was-the-null.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/60-the-bar-counts-the-half-that-is-right.md",
+      "sha256": "79581134a83886fa3ff7aa96576e957b505e856a2314f797ec91836b55296fbe",
+      "bytes": 16976,
+      "source_path": "diary/60-the-bar-counts-the-half-that-is-right.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/61-the-check-that-ran-and-nobody-read.md",
+      "sha256": "6508175ef57f54088e4b2f1c7f333e3453223797aac21b08c8a937830b8f60c6",
+      "bytes": 18364,
+      "source_path": "diary/61-the-check-that-ran-and-nobody-read.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/62-the-title-that-went-against-the-count.md",
+      "sha256": "fe787fdd730ef80279b920bb06c2da1b7f7174ca29ee93db2dafde62a4c5680e",
+      "bytes": 4023,
+      "source_path": "diary/62-the-title-that-went-against-the-count.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/63-the-two-lanes-that-met-in-the-middle.md",
+      "sha256": "3ee07b62e0a434e9a0a45bf5eb1d52d6a7e301d4a8171da09d2ecfb15ce0f41b",
+      "bytes": 7888,
+      "source_path": "diary/63-the-two-lanes-that-met-in-the-middle.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/64-the-correction-that-cost-nothing.md",
+      "sha256": "7505e1578bbd4c3b7bfbfea9ff3b34e4f06029036ba9e036baf08d17568992aa",
+      "bytes": 6268,
+      "source_path": "diary/64-the-correction-that-cost-nothing.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/65-the-engine-that-repeats.md",
+      "sha256": "96c4ee474fb09f3ba9c518c490cbbdc97bbc53b1d67b5e9faaceda6768aa3784",
+      "bytes": 1754,
+      "source_path": "diary/65-the-engine-that-repeats.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/66-the-row-the-instrument-could-not-read.md",
+      "sha256": "1cb5c12a98fbde38a04e933ecd6cd4c9dfd8dc2a7075f75c80b27a2fd22e8c63",
+      "bytes": 5824,
+      "source_path": "diary/66-the-row-the-instrument-could-not-read.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/67-twelve-seeds-cannot-see-it.md",
+      "sha256": "a96a38ddb9c07a686862cd5fd2c4fc215ada0379c1a58d4f2dae4487493b8012",
+      "bytes": 9593,
+      "source_path": "diary/67-twelve-seeds-cannot-see-it.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/68-the-champion-that-falls.md",
+      "sha256": "f595147b1001b5280d05d30c6f8a7c257f5a1bf210575f4f752b3bccd95c1820",
+      "bytes": 7533,
+      "source_path": "diary/68-the-champion-that-falls.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/69-the-full-board-count.md",
+      "sha256": "5293e4eb4725cd0dc89ad7d38b77c8d4a1f545e8e2efc6519c94404cb6127218",
+      "bytes": 3963,
+      "source_path": "diary/69-the-full-board-count.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/70-standing-is-an-execution-path-claim.md",
+      "sha256": "c8105e1dfd019b117a4aa1927f49f3475b6d5488e591c18abcfab44d51837211",
+      "bytes": 16744,
+      "source_path": "diary/70-standing-is-an-execution-path-claim.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/71-the-head-row-was-the-right-hind-tarsus.md",
+      "sha256": "f4470f809de4a955b463d70f448b0d02d9b9ba58ac36567995c1a60bcddae1fe",
+      "bytes": 6590,
+      "source_path": "diary/71-the-head-row-was-the-right-hind-tarsus.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/72-five-nominal-rows-became-zero.md",
+      "sha256": "bb4d38e103d248511389b4f3ed41f2fe33b3d84a0f1c0474d007545010eba75a",
+      "bytes": 4047,
+      "source_path": "diary/72-five-nominal-rows-became-zero.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/73-four-projected-rows-carry-predictable-structure.md",
+      "sha256": "eb6fd8262c5471ee19f59886d7d1faec17e099268045e1737a529ee4eacbc796",
+      "bytes": 3299,
+      "source_path": "diary/73-four-projected-rows-carry-predictable-structure.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/74-one-trace-two-statistics.md",
+      "sha256": "a4c050dda9c19301c1182f1ff497e41385bb1ae476ed432325d837da9b670a32",
+      "bytes": 3761,
+      "source_path": "diary/74-one-trace-two-statistics.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/75-one-agent-takes-the-complete-parameter-search.md",
+      "sha256": "91d6b84aac0e5aa20bc9c5b8d189bee494b546ad38b0c8d04aa55a5d00b0a61b",
+      "bytes": 52655,
+      "source_path": "diary/75-one-agent-takes-the-complete-parameter-search.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/76-visual-parameters-and-response-evidence.md",
+      "sha256": "b5b1d5aaa7fcba33614b8f6ee9b48d9b321b3a80085b0c4b07795fbf1a077804",
+      "bytes": 2452,
+      "source_path": "diary/76-visual-parameters-and-response-evidence.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/77-male-standing-and-joint-transfer.md",
+      "sha256": "bbd31ae9cace127af89dd9cac1c67fb0110345c43450c257c8492e879eea6340",
+      "bytes": 23492,
+      "source_path": "diary/77-male-standing-and-joint-transfer.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/78-walking-flight-motor-selection.md",
+      "sha256": "d8bd22ab0f5d97be51fd86c4e98c95bf154c792fa2500b826300a7cbd0398f3f",
+      "bytes": 40800,
+      "source_path": "diary/78-walking-flight-motor-selection.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/79-two-fresh-seeds-do-not-predict-twenty-four.md",
+      "sha256": "50790d6df8e8b491018f4de2a24bc4bf1f55db8bb7201d178c8e2e032ff9dea5",
+      "bytes": 5975,
+      "source_path": "diary/79-two-fresh-seeds-do-not-predict-twenty-four.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/80-the-champion-skates-and-its-one-asymmetry-is-six-cells.md",
+      "sha256": "4f10adf13f9a72458d8263e9e1444cb65f4c49442d37f1b02a1f0e70c0808754",
+      "bytes": 26286,
+      "source_path": "diary/80-the-champion-skates-and-its-one-asymmetry-is-six-cells.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/81-two-seconds-of-flight-with-silenced-motor-inputs.md",
+      "sha256": "45a758abc0aff34571e5362e14ab6c74e9643699ee6488d865be35f702c30e8c",
+      "bytes": 9414,
+      "source_path": "diary/81-two-seconds-of-flight-with-silenced-motor-inputs.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/82-correct-neurons-change-the-phase.md",
+      "sha256": "5fe8921caa79d7d7c6e977b062d58b8b8d53a9d3e8e3f2cf3a693360b1293693",
+      "bytes": 7315,
+      "source_path": "diary/82-correct-neurons-change-the-phase.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/83-null-test-examples-two-shuffles-at-the-champions-settings.md",
+      "sha256": "322b72bda5f0bd8b005c48bceda46f985f01196323c5b8099ea381dcf505df48",
+      "bytes": 6495,
+      "source_path": "diary/83-null-test-examples-two-shuffles-at-the-champions-settings.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/84-one-cord-cell-at-half-output-stands-more-and-walks-slower.md",
+      "sha256": "b040ced860996c7a7ead6a3cc9fb1139e2fac26f58a2e1d66d8b7d9e18c175c2",
+      "bytes": 6605,
+      "source_path": "diary/84-one-cord-cell-at-half-output-stands-more-and-walks-slower.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/85-the-fly-that-flies-is-not-yet-the-fly-that-walks.md",
+      "sha256": "098484bbf3935d5451aa23b17a7ba60781edc72ec8bd88217a618226ca8af8c2",
+      "bytes": 3842,
+      "source_path": "diary/85-the-fly-that-flies-is-not-yet-the-fly-that-walks.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/86-the-same-budget-on-three-wirings.md",
+      "sha256": "0f1c93993898959cb04e11b684dbc10a79cb86281c7836a1ff800c45ef694e72",
+      "bytes": 7204,
+      "source_path": "diary/86-the-same-budget-on-three-wirings.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/87-twenty-four-of-twenty-four-on-the-count.md",
+      "sha256": "e32df703a2f735ee443aeca3b64e84e801d812f0c5474e6d6ac3694af5005ea7",
+      "bytes": 8543,
+      "source_path": "diary/87-twenty-four-of-twenty-four-on-the-count.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/88-the-front-knee-opens-and-six-runs-fall.md",
+      "sha256": "a24ad19eeae50a27f545f5f056b7c497ca9fb8db9c8b9ac547132e437637e21a",
+      "bytes": 9077,
+      "source_path": "diary/88-the-front-knee-opens-and-six-runs-fall.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/89-the-image-drive-onto-t4-turns-excitatory-and-the-walk-does-not-change.md",
+      "sha256": "5d988050d70c1c7309866194c777388ae2d29b0e46dce456a4028fad4cdb9a69",
+      "bytes": 5796,
+      "source_path": "diary/89-the-image-drive-onto-t4-turns-excitatory-and-the-walk-does-not-change.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/90-the-brain-noise-the-fly-never-uses-is-what-holds-its-front-legs-apart.md",
+      "sha256": "e1a90bb6889ca265b040404d9b79bc53f48ea6990a6fdd20c1db35d89432b25f",
+      "bytes": 7425,
+      "source_path": "diary/90-the-brain-noise-the-fly-never-uses-is-what-holds-its-front-legs-apart.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/91-half-the-glue-and-the-fly-stops-falling.md",
+      "sha256": "af1f3b8be10b54949bca0291f407499c9881eba4de8e9baec3ce41a8bf2c8487",
+      "bytes": 5394,
+      "source_path": "diary/91-half-the-glue-and-the-fly-stops-falling.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/92-six-legs-six-step-rates.md",
+      "sha256": "44d85a93853a8b9ddef1b95ab6a61f6c02820326a864d90db839716e5a0a4557",
+      "bytes": 19369,
+      "source_path": "diary/92-six-legs-six-step-rates.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/93-the-model-read-against-the-papers-with-nothing-running.md",
+      "sha256": "d951dfb856cc7e636ae0c6d3b9cde766ce79ea85b8cc3f342c20ebff604a268c",
+      "bytes": 12942,
+      "source_path": "diary/93-the-model-read-against-the-papers-with-nothing-running.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/94-the-animals-own-instrument-and-the-leg-that-swings-without-lifting.md",
+      "sha256": "d3da0379d86886cb297e5327bdc78191a27d8cc70822fc5b59ba917275a3df40",
+      "bytes": 13108,
+      "source_path": "diary/94-the-animals-own-instrument-and-the-leg-that-swings-without-lifting.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/95-nine-public-clips-the-diary-owed-and-not-one-of-them-a-gain.md",
+      "sha256": "f0f2e4d9936887785becdafca5487c2fdd860a80331d4e3f1a8b5e2c03493f7e",
+      "bytes": 9746,
+      "source_path": "diary/95-nine-public-clips-the-diary-owed-and-not-one-of-them-a-gain.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/96-the-leg-that-will-not-lift-stands-a-third-of-a-millimetre-deeper.md",
+      "sha256": "5ef1d6741357e99e38443455454bbee0ad9b813fa83392c4ff8dedaf31e294a1",
+      "bytes": 4882,
+      "source_path": "diary/96-the-leg-that-will-not-lift-stands-a-third-of-a-millimetre-deeper.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/97-the-gyroscope-answers-the-wings-and-points-the-wrong-way.md",
+      "sha256": "c2465a770814668ff4d5091bfda5f79aa8a6f733b20bc0a094b62659a111caec",
+      "bytes": 6726,
+      "source_path": "diary/97-the-gyroscope-answers-the-wings-and-points-the-wrong-way.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/98-the-front-legs-step-together-because-the-brain-says-so.md",
+      "sha256": "93e58b7bfd1749fe2308210ba424cc119379d16ba802540fac63d808906caa5d",
+      "bytes": 11808,
+      "source_path": "diary/98-the-front-legs-step-together-because-the-brain-says-so.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/99-the-blocked-foot-lifts-when-the-claw-sensors-tell-the-truth.md",
+      "sha256": "69c1d230ce91156168b2e62f41f9b578e19e403856069d1d8a8841f712b3daa1",
+      "bytes": 7934,
+      "source_path": "diary/99-the-blocked-foot-lifts-when-the-claw-sensors-tell-the-truth.md",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/cv20-body-reafferent-neural-parent-seed60214-sim-yaw.jpg",
+      "sha256": "df17d643557cb130e7e68763d5aa1c024255cc1752b2ffe9627907bde61a464f",
+      "bytes": 15338,
+      "source_path": "diary/assets/cv20-body-reafferent-neural-parent-seed60214-sim-yaw.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/cv20-body-reafferent-neural-parent-seed60214-sim-yaw_web.mp4",
+      "sha256": "ff032035284f128f8422539588037fcd52316039ffa43d621f59db3bda007051",
+      "bytes": 52479,
+      "source_path": "diary/assets/cv20-body-reafferent-neural-parent-seed60214-sim-yaw_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/cv29-hs-gated-outer-load-seed59030.jpg",
+      "sha256": "7b0d21e7885442885d44b1d3bd9ad9d99dc20fa9c3746b815120eb8cd691e08a",
+      "bytes": 24819,
+      "source_path": "diary/assets/cv29-hs-gated-outer-load-seed59030.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/cv29-hs-gated-outer-load-seed59030_web.mp4",
+      "sha256": "0458de06ce41d1d7a4303737fd6ec32ea7993d77fa2db4ebf0a90063c09647fc",
+      "bytes": 48305,
+      "source_path": "diary/assets/cv29-hs-gated-outer-load-seed59030_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_0730_autonomous_window_2026-08-28.png",
+      "sha256": "3dcec6d3a94367de9618f2a56b86543ae60eaf95b4c252658658ed4b67be609a",
+      "bytes": 134236,
+      "source_path": "diary/assets/fig_0730_autonomous_window_2026-08-28.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_1224_window_close_2026-08-28.png",
+      "sha256": "b0cd9af91fa879b7fbdb8a956dbd84224fdc8557541da208da55a3fd4244321b",
+      "bytes": 219466,
+      "source_path": "diary/assets/fig_1224_window_close_2026-08-28.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_2006_model_progress_2026-08-28.png",
+      "sha256": "064ffd6649bbe23dfe382a4576d0371212303b6a2d39cf4d42477b0f3da0864b",
+      "bytes": 236785,
+      "source_path": "diary/assets/fig_2006_model_progress_2026-08-28.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_2200_model_boundary_2026-08-27.png",
+      "sha256": "c29e8f1ab54d7c6ebe82a701d357988e3adf01d8b67d3f419862b1d81866f082",
+      "bytes": 145950,
+      "source_path": "diary/assets/fig_2200_model_boundary_2026-08-27.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_axis_blind_2026-08-30.png",
+      "sha256": "cd1a836df14c2312126a001f781b53a2944508fbbb903ba8b14c1ad248c4be37",
+      "bytes": 90557,
+      "source_path": "diary/assets/fig_axis_blind_2026-08-30.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_cd1le_inventory_2026-08-27.png",
+      "sha256": "4a8aaf0fc01974d76417cfa6ec35f2db6a35172cf68a308b4a2a77edbdc3f65a",
+      "bytes": 172470,
+      "source_path": "diary/assets/fig_cd1le_inventory_2026-08-27.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_cd1mc_checker_power_2026-08-29.png",
+      "sha256": "5565ae29285b5c27c42828e2fd5e0effdc2fa3bc1236afc70918a88ad2155fac",
+      "bytes": 82847,
+      "source_path": "diary/assets/fig_cd1mc_checker_power_2026-08-29.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_cd1mf_saturation_2026-08-30.png",
+      "sha256": "45c357073bfad24b044377834c281c7b68d0d78e6d065d7f76a557c79c01767d",
+      "bytes": 62358,
+      "source_path": "diary/assets/fig_cd1mf_saturation_2026-08-30.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_cde_status_2026-08-26-v3.png",
+      "sha256": "fe8b45852c49bc8cf7c3cb5c9311cc8e1b4a805643a552bdc796b6347de31ddb",
+      "bytes": 655716,
+      "source_path": "diary/assets/fig_cde_status_2026-08-26-v3.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_cde_status_2026-08-26.svg",
+      "sha256": "c36a08ea0da6b526b6223d36dadd5ce9cf254740b2ea23e766814c8bd6a44e33",
+      "bytes": 5582,
+      "source_path": "diary/assets/fig_cde_status_2026-08-26.svg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_controller_split_ttm_2026-08-25.png",
+      "sha256": "500f507dbd34de4cfd6076ec7ef66158703aa03bbc600596b5786fd6f3b2ec22",
+      "bytes": 141702,
+      "source_path": "diary/assets/fig_controller_split_ttm_2026-08-25.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_cv41_vs_quantum_halt_2026-09-01.png",
+      "sha256": "93fe82374a1078e8f9f130de2de5adab0c1b1c098814b325017cf584a8c4dc3f",
+      "bytes": 31507,
+      "source_path": "diary/assets/fig_cv41_vs_quantum_halt_2026-09-01.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_damping_trade_2026-08-29.png",
+      "sha256": "179f8d13b601e5f8a39e9dcfc1d4f1fcc69a5bb115e018c6712cdfecdb08231d",
+      "bytes": 104070,
+      "source_path": "diary/assets/fig_damping_trade_2026-08-29.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_evidence_depth_2026-08-27.png",
+      "sha256": "1a02d56e0d86a308b40c4c2942821a3327c7fb5333b49b025935a2c51aa8f31a",
+      "bytes": 131376,
+      "source_path": "diary/assets/fig_evidence_depth_2026-08-27.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_f0_behavior_tradeoff_2026-08-27.png",
+      "sha256": "efd7e96e712e4741e50fe6acde909e677671cbd9a1236562f01f275b69b33c0c",
+      "bytes": 135376,
+      "source_path": "diary/assets/fig_f0_behavior_tradeoff_2026-08-27.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_feco_first_synapse_2026-08-27.png",
+      "sha256": "9abb4c54e42dfbcabf6ed82aef0ba1444f4656eea7d58ab7224d87cb0d10a111",
+      "bytes": 154746,
+      "source_path": "diary/assets/fig_feco_first_synapse_2026-08-27.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_fused_head_adapter_2026-09-08.png",
+      "sha256": "84ce5aa8f1259e52fd97d52edd0e3f4b042402d442be1e6fb40cf2e1b10f705e",
+      "bytes": 146386,
+      "source_path": "diary/assets/fig_fused_head_adapter_2026-09-08.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_gf_peak_carry_forward_2026-08-24.png",
+      "sha256": "67bf427b60d99644558b223bf068ae4fb7d73903ceada6b7b35d5454bb99d1fd",
+      "bytes": 120755,
+      "source_path": "diary/assets/fig_gf_peak_carry_forward_2026-08-24.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_interp_2026-08-23.png",
+      "sha256": "c246903e86f47af716072e60b7b038d49c2551d269e6c8beef232b8c302010a1",
+      "bytes": 61323,
+      "source_path": "diary/assets/fig_interp_2026-08-23.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_lpi11_compartments_2026-08-24.png",
+      "sha256": "d19152706664cc7cb8b32deb4d3b83c3c089a48c768efd25e9d648bc46c1b90f",
+      "bytes": 122163,
+      "source_path": "diary/assets/fig_lpi11_compartments_2026-08-24.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_lpi11_topology_2026-08-24.png",
+      "sha256": "c73ae7f688a9a67a0386aa5f1c2bd86554e33366d954e8685c1bdeb80386b126",
+      "bytes": 231348,
+      "source_path": "diary/assets/fig_lpi11_topology_2026-08-24.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_lplc2_2026-08-23.png",
+      "sha256": "9f3729449f1f243099d4d28aed92033b8dce2740960e420e1a33f09d3fa4d90a",
+      "bytes": 60638,
+      "source_path": "diary/assets/fig_lplc2_2026-08-23.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_lplc2_t4t5_silencing_timing_2026-08-24.png",
+      "sha256": "46f9f3ed77b4cfdc73299c84a0d7223da42de723af509abbbbb737312329c63c",
+      "bytes": 62728,
+      "source_path": "diary/assets/fig_lplc2_t4t5_silencing_timing_2026-08-24.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_lplc2suspects_2026-08-24.png",
+      "sha256": "44dda4b66de163fbe475d6840ee2eec0e60eea8e2b28ca81baea111ccad263e1",
+      "bytes": 45814,
+      "source_path": "diary/assets/fig_lplc2suspects_2026-08-24.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_outmass_attribution_2026-08-30.png",
+      "sha256": "2189959738885e7e73ed58058f01a182052a2c19cad1cd7c2369410a1e093492",
+      "bytes": 100332,
+      "source_path": "diary/assets/fig_outmass_attribution_2026-08-30.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_phase_instrument_2026-09-07.png",
+      "sha256": "21730b086264322168590196debea108dfcb10bbc32afdb7fd96caba274821a5",
+      "bytes": 205265,
+      "source_path": "diary/assets/fig_phase_instrument_2026-09-07.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_r23_2026-08-24.png",
+      "sha256": "dd2c2fd305155f32480812fac39a7102efe72565410fa1548df205fae36e538e",
+      "bytes": 49261,
+      "source_path": "diary/assets/fig_r23_2026-08-24.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_r554_familywise_2026-09-08.png",
+      "sha256": "868c34ef24633508a5a582b8130b2bd62f27df08d7e1c82c08add613466afb21",
+      "bytes": 62945,
+      "source_path": "diary/assets/fig_r554_familywise_2026-09-08.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_r554_recoverable_2026-09-08.png",
+      "sha256": "cc480e71936e4080f105494a6d5cc28a2c657268364de28f7abf899d6d6b6402",
+      "bytes": 65781,
+      "source_path": "diary/assets/fig_r554_recoverable_2026-09-08.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_raw_vs_model_2026-08-30.png",
+      "sha256": "95c2f0a30dd6cc6cc53517c9a45af01a6224eb914f8ff77c35765aeb8dea5635",
+      "bytes": 123224,
+      "source_path": "diary/assets/fig_raw_vs_model_2026-08-30.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_released_loom_stimulus_profiles_2026-08-24.png",
+      "sha256": "2da2a0d668298477d6193885b3a68e128c82f35025e7e97e5a802554690eadcc",
+      "bytes": 123019,
+      "source_path": "diary/assets/fig_released_loom_stimulus_profiles_2026-08-24.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_seed_mirror_overlap_2026-08-31.png",
+      "sha256": "d0a9f77011f20eb6265098f7f4cc80f7a64a77c8958cc09ec7cd8410c89e50cf",
+      "bytes": 178555,
+      "source_path": "diary/assets/fig_seed_mirror_overlap_2026-08-31.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_travelaccount_2026-08-24.png",
+      "sha256": "8690aa30f3d28a9f84d144dea78fd1170d35767893793b29b54b43ef60179738",
+      "bytes": 62410,
+      "source_path": "diary/assets/fig_travelaccount_2026-08-24.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_ttm_force_decomposition_2026-08-26.png",
+      "sha256": "a5b011a440449175f13bb8c92da24c32ada551c55ec4c5b8a40b961e777810ef",
+      "bytes": 64418,
+      "source_path": "diary/assets/fig_ttm_force_decomposition_2026-08-26.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_ttm_force_gap_2026-08-26.png",
+      "sha256": "338ff70f85465a904cb63ad161f27d4a59db4573bf8cb4d7eaf01cd1424b99e9",
+      "bytes": 101590,
+      "source_path": "diary/assets/fig_ttm_force_gap_2026-08-26.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_two_shortcuts_rejected_2026-08-27.png",
+      "sha256": "eb7d987552b9278db8e14299a61a6e277fa57b3d39a70402613a2efe98aed9a7",
+      "bytes": 169963,
+      "source_path": "diary/assets/fig_two_shortcuts_rejected_2026-08-27.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fig_v888_identifier_namespace_2026-08-26.png",
+      "sha256": "7666a53b0b37c73f60258503e52315dae2e3773abb20f02ebef72815831f90b2",
+      "bytes": 114320,
+      "source_path": "diary/assets/fig_v888_identifier_namespace_2026-08-26.png",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/fl5e_phase_S2_M1_tau5_Kf2.6_Ka0.65_bilat_kp50_rel4.sha256-09ed0bd0950ad5b5114b09f3f90f4bbd36f8735eb56dd61040c3e06c5bc2f17b.jpg",
+      "sha256": "189a0efab0fc0cc8d1ea9b863da76b85ab2c33a9eaa624d9f392514754786dcf",
+      "bytes": 144749,
+      "source_path": "diary/assets/fl5e_phase_S2_M1_tau5_Kf2.6_Ka0.65_bilat_kp50_rel4.sha256-09ed0bd0950ad5b5114b09f3f90f4bbd36f8735eb56dd61040c3e06c5bc2f17b.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/r19-neural-contact-stance-seed100036.jpg",
+      "sha256": "58ea0af796e523d32f855ce27e279d1b4388728d8fcea9caa006b2689a77722f",
+      "bytes": 30740,
+      "source_path": "diary/assets/r19-neural-contact-stance-seed100036.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_allfeet.jpg",
+      "sha256": "ac18125f9d44457f372b854187e9f8d505d2981cb30e2e9a2947db7bf407cff1",
+      "bytes": 11825,
+      "source_path": "diary/assets/walker_allfeet.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_allfeet_web.mp4",
+      "sha256": "ccfa82ecb16a7f11fba6c0a14c23bd86ac28865631a4eb3d3e184dffda5dc8ec",
+      "bytes": 468801,
+      "source_path": "diary/assets/walker_allfeet_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_b_13ba_claw_seed32909.jpg",
+      "sha256": "33035aa1eca936c0f1fed75f0634a49e05901013b19eec76478e5ce3a6c048d5",
+      "bytes": 52561,
+      "source_path": "diary/assets/walker_b_13ba_claw_seed32909.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_b_hp_dropped_seed33101.jpg",
+      "sha256": "5d921672f18717a17d24bcbf84f28eb0fb73302b53bd712da775537ac2906ebc",
+      "bytes": 53236,
+      "source_path": "diary/assets/walker_b_hp_dropped_seed33101.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_b_roll_force_seed33402.jpg",
+      "sha256": "e2c1a33875ecdcc48aad17a7ec1a37fe72edbf87e05b1e3cab7e42a6e4f6000f",
+      "bytes": 53553,
+      "source_path": "diary/assets/walker_b_roll_force_seed33402.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_cd1d_loadonly.jpg",
+      "sha256": "265b505370cdb95af72660567be876ad7e3e560d40d973b6efd0b4ab3da648aa",
+      "bytes": 52982,
+      "source_path": "diary/assets/walker_cd1d_loadonly.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_cd1r_mu5.jpg",
+      "sha256": "b78dbbae64fedfc8ce66a884f2582a829fc0d9cae78d80fddb87cc1810f95578",
+      "bytes": 53952,
+      "source_path": "diary/assets/walker_cd1r_mu5.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_clock.jpg",
+      "sha256": "34bad6565e2c90088870fda9ee45eb9d4167656cd746fbcfaf878f2e48c1a916",
+      "bytes": 12259,
+      "source_path": "diary/assets/walker_clock.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_clock_web.mp4",
+      "sha256": "f29a8ad1e1d78ad579ff3a6354fd9882f6c1683d69f21d33ae4d374b5e4dc9ea",
+      "bytes": 515555,
+      "source_path": "diary/assets/walker_clock_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_core.jpg",
+      "sha256": "e88de7ee59c2cdc4218139da807b26361a187bbacfb29daf1f58f0ce78ef4cbb",
+      "bytes": 12241,
+      "source_path": "diary/assets/walker_core.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_core_web.mp4",
+      "sha256": "72fd5f3cb8c1d5760408720629af6ca74a14a5e79e8d29c5edbf51667c742b7e",
+      "bytes": 680891,
+      "source_path": "diary/assets/walker_core_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_d4wave.jpg",
+      "sha256": "60847e5ec0503cd68f03585e2f0d55996e8b051e442d54ec09e0b9fa7fde1410",
+      "bytes": 11914,
+      "source_path": "diary/assets/walker_d4wave.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_d4wave_web.mp4",
+      "sha256": "2eee53a1acf730e67e7ceffbb42534931e01731404d2708fe0f512dae47401d8",
+      "bytes": 330888,
+      "source_path": "diary/assets/walker_d4wave_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_d_measured_step_sync_g050_seed60154.jpg",
+      "sha256": "d70b8dfa3e62869abca56f0467ab01b54626bbfdd79e2735d6021e8178e44880",
+      "bytes": 11128,
+      "source_path": "diary/assets/walker_d_measured_step_sync_g050_seed60154.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_f0_30_seed80008.jpg",
+      "sha256": "04c0623151e153b55e3fdb741604bbecf4b85f64ca8198cc84f5e253401aa79f",
+      "bytes": 51820,
+      "source_path": "diary/assets/walker_f0_30_seed80008.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_f0_control_seed80008.jpg",
+      "sha256": "4f5e859af66337b90d2ef1aa5cefbc9c8fdd92692d6ad1bf83dd662d8050960c",
+      "bytes": 51519,
+      "source_path": "diary/assets/walker_f0_control_seed80008.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_f0_seed80008_compare.jpg",
+      "sha256": "d90df8aec79ec79fc6576fe896bdedaa0feb21ac2277bbafacc30786eddd927c",
+      "bytes": 51009,
+      "source_path": "diary/assets/walker_f0_seed80008_compare.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_f23.jpg",
+      "sha256": "66ff6a99f583e7acde1b55e9b1b6a9bcdbea595df6b17e85b2dac6584931a455",
+      "bytes": 13168,
+      "source_path": "diary/assets/walker_f23.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_f23_web.mp4",
+      "sha256": "82edcdc22c18973e9ad26b12bdb207bc7ef4962b68ce7219e3fe376aba20a6ba",
+      "bytes": 551877,
+      "source_path": "diary/assets/walker_f23_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_f25.jpg",
+      "sha256": "cb97d0fc463aaaed831fb029367ad746777553483fcb75a79b4cb7eaf17ab44d",
+      "bytes": 13664,
+      "source_path": "diary/assets/walker_f25.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_f25_web.mp4",
+      "sha256": "6fd30750c6983a4ba5bf95009145f49cb43b3227658ccd9805ce5dcedf0aab70",
+      "bytes": 648169,
+      "source_path": "diary/assets/walker_f25_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_f28.jpg",
+      "sha256": "324c5b93fd8bb7392d4fa6969de56f50c20fbce66d7ad494bd166873371b1f98",
+      "bytes": 12854,
+      "source_path": "diary/assets/walker_f28.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_f28_web.mp4",
+      "sha256": "12ab66fa24921fef077b78c9b896c7133f682bd9e6214f24e3288caec9d54cff",
+      "bytes": 593308,
+      "source_path": "diary/assets/walker_f28_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_fidelity.jpg",
+      "sha256": "4dc3b94b46d1d2711b0deecaa89ab6cb166caf06a8c9ba6fc56e4d4ac83bd324",
+      "bytes": 11884,
+      "source_path": "diary/assets/walker_fidelity.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_fidelity_web.mp4",
+      "sha256": "3bceba6324145ba95c59d966e333feb8e4e07e1ec6b8516de641b15662852a34",
+      "bytes": 456756,
+      "source_path": "diary/assets/walker_fidelity_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_freefoot.jpg",
+      "sha256": "617e5dddd7fb9e717158ea1d6285557cb17ccda0bd7de5b8101fef273bdfb352",
+      "bytes": 11469,
+      "source_path": "diary/assets/walker_freefoot.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_freefoot_web.mp4",
+      "sha256": "60d221a25d0bb4ef4da5cf5622580cd45b1a43ba1243961bb9e4608e101c2f42",
+      "bytes": 432783,
+      "source_path": "diary/assets/walker_freefoot_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_gradient.jpg",
+      "sha256": "8992f68700a057e32cef7ee988d1ae06ab84d4266627326178393c8a8cce8852",
+      "bytes": 10110,
+      "source_path": "diary/assets/walker_gradient.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_gradient_web.mp4",
+      "sha256": "d60c6884564ca08dc2475edb68feae03f24de36ce0181b99894f5bd9680451f2",
+      "bytes": 536163,
+      "source_path": "diary/assets/walker_gradient_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_loadonly_f36.jpg",
+      "sha256": "e158880206e1993a37748eb005ab42ac435f4225bc3d635360d6dbadca134e5a",
+      "bytes": 54190,
+      "source_path": "diary/assets/walker_loadonly_f36.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_m1_r1i.jpg",
+      "sha256": "7c250d945a3b1964cdf2e4194ded6b54e54ead3140e3ebbdff03abf14ee570e1",
+      "bytes": 10923,
+      "source_path": "diary/assets/walker_m1_r1i.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_m1_r1i_web.mp4",
+      "sha256": "ccc5d10fa9b74d0d432a15f73e5953d2d53a2cf60b2a48721fdbc2f19b66f89a",
+      "bytes": 286558,
+      "source_path": "diary/assets/walker_m1_r1i_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_manc_first.jpg",
+      "sha256": "4c58c013effa8fd1a70de4144423045021290a940df212c5a0a87dc73657225e",
+      "bytes": 13938,
+      "source_path": "diary/assets/walker_manc_first.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_manc_first_web.mp4",
+      "sha256": "e4d94c29692102e549801fb6c965ecad6184fb5b56d7ab3728f4cdfca36444d2",
+      "bytes": 155695,
+      "source_path": "diary/assets/walker_manc_first_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_manc_steps.jpg",
+      "sha256": "a77a68b432cb897d3abc1222f7def2c80ab59f80cb56f13e0180c6df526776ec",
+      "bytes": 16470,
+      "source_path": "diary/assets/walker_manc_steps.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_manc_steps_web.mp4",
+      "sha256": "5f171b7c78eab44fbcbc307768da2acac6c14f06527d5db275c37df0985f01a4",
+      "bytes": 336121,
+      "source_path": "diary/assets/walker_manc_steps_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_mc1_first.jpg",
+      "sha256": "f756f6595b3eef88b86d9e8b3fbd21ad7bee09bebfe6cabd5fdc96e04d15585a",
+      "bytes": 48906,
+      "source_path": "diary/assets/walker_mc1_first.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_mg1.jpg",
+      "sha256": "d5c08ba20e10c6190120b2f803b93f37469ba2d231eedad5e448c24fbf12a4ba",
+      "bytes": 15586,
+      "source_path": "diary/assets/walker_mg1.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_mg1_web.mp4",
+      "sha256": "2e6c4d7e36b515a9e28c09d02b1c22cb9b612733579ddb79399a93d13aee1981",
+      "bytes": 687374,
+      "source_path": "diary/assets/walker_mg1_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_mid_interp.jpg",
+      "sha256": "54845409e9085b751463282c1c7593d787eda9913c9129d8b9b5d931ea449180",
+      "bytes": 52096,
+      "source_path": "diary/assets/walker_mid_interp.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_muscle.jpg",
+      "sha256": "abacfadcdc53d75bc7201cd4660a9c88a46451a91cbc6302fc77d29a406a6ac8",
+      "bytes": 12059,
+      "source_path": "diary/assets/walker_muscle.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_muscle_web.mp4",
+      "sha256": "c875b66c46c8c0a4d365da107f26f9509a8257ef953407a2018dd3d54dfc27cd",
+      "bytes": 255133,
+      "source_path": "diary/assets/walker_muscle_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_p150.jpg",
+      "sha256": "035cc16ad01090e3ef7e64835780df1c16a16085c91eeffe7248c4b1b78fbaf1",
+      "bytes": 13555,
+      "source_path": "diary/assets/walker_p150.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_p150_web.mp4",
+      "sha256": "9794a5785682e502fb0ac57d8635a15db6006831174b679687a2e0a1898bd24f",
+      "bytes": 474550,
+      "source_path": "diary/assets/walker_p150_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_r23.jpg",
+      "sha256": "b25de22f7781c50dd6b090aa7403cd8a65baef9e300e658b00ca1f2593b74928",
+      "bytes": 54603,
+      "source_path": "diary/assets/walker_r23.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_round2.jpg",
+      "sha256": "a38aef581fdf4fe3b6179f6e3811c08dd49b8639bb324bba32c6ded5376b52dd",
+      "bytes": 12684,
+      "source_path": "diary/assets/walker_round2.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_round2_web.mp4",
+      "sha256": "6b87befe6dde4c8272d789554ed6b8b0ff7947661a1a5c5e81605cf8f2273ff8",
+      "bytes": 329306,
+      "source_path": "diary/assets/walker_round2_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_sixstep.jpg",
+      "sha256": "952cdd9a57ebc65b1a185283446fe25ec2a6d4fddbf146b668db3909f296caba",
+      "bytes": 12650,
+      "source_path": "diary/assets/walker_sixstep.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_sixstep_web.mp4",
+      "sha256": "c1d7e7abcb81851f0abd2de0d9ed6be6a6ede30e066731a83f61d7de2f3f5e28",
+      "bytes": 325346,
+      "source_path": "diary/assets/walker_sixstep_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_split.jpg",
+      "sha256": "b65004d1d5da985a6113a3f2dc8e64f3117ee003b10f69afc7d20240480b7b6f",
+      "bytes": 11917,
+      "source_path": "diary/assets/walker_split.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_split_web.mp4",
+      "sha256": "f3df82d2e4ab6ff27831dd2091e17494407d7f261371952031a123c5fd0c7f59",
+      "bytes": 723685,
+      "source_path": "diary/assets/walker_split_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_stride.jpg",
+      "sha256": "09e1a7cb652f71366433e8eab0534e921108ee179ad887ac1205150ca69b1adb",
+      "bytes": 11884,
+      "source_path": "diary/assets/walker_stride.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_stride_web.mp4",
+      "sha256": "b69c21746e4e30ef7b7ab3a0d90eca25fdd0f11eda7cf96443e31f7cf2cfd728",
+      "bytes": 733356,
+      "source_path": "diary/assets/walker_stride_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_t025.jpg",
+      "sha256": "d5de8c138796d7f39ed0986408b90608c797aac3589767d88c620f6af58e80ca",
+      "bytes": 14294,
+      "source_path": "diary/assets/walker_t025.jpg",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/diary/assets/walker_t025_web.mp4",
+      "sha256": "99774d5240a99efbeab89d3208c203922b15b2827138d4356cc8459873c92757",
+      "bytes": 469820,
+      "source_path": "diary/assets/walker_t025_web.mp4",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "2cea69e7ab1d70783d9de7614aeeea49cdc85f6e 2026-09-19T08:04:44+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/pages/fly-champion-parameters.html",
+      "sha256": "352705c0f9be55ceb84ef290401f1b513195a7a57dd64678bb82a4a6eaea9b8a",
+      "bytes": 505872,
+      "source_path": "fly-champion-parameters.html",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "212375df8ac5f4929398c183c561c7155b659199 2026-09-19T08:12:23+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/pages/fly-diary.html",
+      "sha256": "316a826393edab0be22c5cb8bd1f94a72b836f0f50412c3704a22edf0196abf7",
+      "bytes": 1786075,
+      "source_path": "fly-diary.html",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "158358de958bca89ec9cbad90b9e9bbdd7e51042 2026-09-19T12:23:55+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/pages/fly-hall-of-fame.html",
+      "sha256": "5b41216a464b60bc17232d9b441fde84c2ba9c8fe772e3178ccd3c44f14eecb9",
+      "bytes": 166174,
+      "source_path": "fly-hall-of-fame.html",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "212375df8ac5f4929398c183c561c7155b659199 2026-09-19T08:12:23+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/pages/fly-layers.html",
+      "sha256": "5ce995f677c05b0e6cfc6e9dab83d00ba9d310530084717f5738721b3a2d19b5",
+      "bytes": 7408522,
+      "source_path": "fly-layers.html",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "212375df8ac5f4929398c183c561c7155b659199 2026-09-19T08:12:23+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/pages/fly-ledger.html",
+      "sha256": "fece29eb9d108e361535fc32a98fbcef539198c65f26bf863384d36078d9cdf4",
+      "bytes": 10098,
+      "source_path": "fly-ledger.html",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "212375df8ac5f4929398c183c561c7155b659199 2026-09-19T08:12:23+03:00",
+      "transformation": "none"
+    },
+    {
+      "path": "research-history/pages/fly-null-tests.html",
+      "sha256": "6a08f6bd8ff22fbd39cc880f1c14949468396c16eade2e34678421434a382dd9",
+      "bytes": 21574,
+      "source_path": "fly-null-tests.html",
+      "source_commit": "d8900f9667a8cd06462e2bb1cac361da070b1cc0",
+      "last_change": "212375df8ac5f4929398c183c561c7155b659199 2026-09-19T08:12:23+03:00",
+      "transformation": "none"
+    }
+  ]
+}

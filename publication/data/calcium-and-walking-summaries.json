@@ -1,0 +1,2217 @@
+{
+  "date": "2026-10-31",
+  "calcium": {
+    "kind": "New descriptive errors calculated from archived, already-exposed model and animal summaries",
+    "model_commit": "033b55cd5a33add0f4b444323241134069d0de8c",
+    "theta_sha256": "05f7f686e6e68ad286985b03f8182c417dab54df5de79264884bda776527c114",
+    "retention_unit": "10 s response divided by the transition peak, source-normalized fluorescence",
+    "retention": [
+      {
+        "cell": "L1",
+        "run": "K25",
+        "level": 0.25,
+        "observed": 0.494,
+        "simulated": 0.844479357148735,
+        "error": 0.350479357148735,
+        "source": "ba0b03b9-2b1a-458c-a201-cdc76d06f542"
+      },
+      {
+        "cell": "L2",
+        "run": "K25",
+        "level": 0.25,
+        "observed": 0.138,
+        "simulated": 0.8424020485719966,
+        "error": 0.7044020485719966,
+        "source": "ba0b03b9-2b1a-458c-a201-cdc76d06f542"
+      },
+      {
+        "cell": "L1",
+        "run": "K50",
+        "level": 0.5,
+        "observed": 0.582,
+        "simulated": 0.8450911008370336,
+        "error": 0.2630911008370337,
+        "source": "ba0b03b9-2b1a-458c-a201-cdc76d06f542"
+      },
+      {
+        "cell": "L2",
+        "run": "K50",
+        "level": 0.5,
+        "observed": 0.244,
+        "simulated": 0.84245866603411,
+        "error": 0.59845866603411,
+        "source": "ba0b03b9-2b1a-458c-a201-cdc76d06f542"
+      },
+      {
+        "cell": "L1",
+        "run": "K75",
+        "level": 0.75,
+        "observed": 0.63,
+        "simulated": 0.845741208075375,
+        "error": 0.215741208075375,
+        "source": "ba0b03b9-2b1a-458c-a201-cdc76d06f542"
+      },
+      {
+        "cell": "L2",
+        "run": "K75",
+        "level": 0.75,
+        "observed": 0.158,
+        "simulated": 0.8424869213428212,
+        "error": 0.6844869213428212,
+        "source": "ba0b03b9-2b1a-458c-a201-cdc76d06f542"
+      },
+      {
+        "cell": "L1",
+        "run": "K100",
+        "level": 1.0,
+        "observed": 0.68,
+        "simulated": 0.8464122071763379,
+        "error": 0.16641220717633787,
+        "source": "ba0b03b9-2b1a-458c-a201-cdc76d06f542"
+      },
+      {
+        "cell": "L2",
+        "run": "K100",
+        "level": 1.0,
+        "observed": 0.045,
+        "simulated": 0.842467930263626,
+        "error": 0.797467930263626,
+        "source": "ba0b03b9-2b1a-458c-a201-cdc76d06f542"
+      }
+    ],
+    "retention_by_cell": {
+      "L1": {
+        "n_conditions": 4,
+        "mean_signed_error": 0.2489309683093704,
+        "mae": 0.2489309683093704,
+        "rmse": 0.2580164717058561
+      },
+      "L2": {
+        "n_conditions": 4,
+        "mean_signed_error": 0.6962038915531384,
+        "mae": 0.6962038915531384,
+        "rmse": 0.6997879082750853
+      }
+    },
+    "peaks": [
+      {
+        "cell": "L1",
+        "run": "K100",
+        "transition": "on",
+        "observed_s": 0.45,
+        "simulated_s": 1.4000000000000001,
+        "error_s": 0.9500000000000002,
+        "source": "3a7e3c5d-00d9-470c-aa34-5581be8aa80d"
+      },
+      {
+        "cell": "L1",
+        "run": "K100",
+        "transition": "off",
+        "observed_s": 0.3,
+        "simulated_s": 2.1,
+        "error_s": 1.8,
+        "source": "3a7e3c5d-00d9-470c-aa34-5581be8aa80d"
+      },
+      {
+        "cell": "L2",
+        "run": "K100",
+        "transition": "on",
+        "observed_s": 0.4,
+        "simulated_s": 1.4000000000000001,
+        "error_s": 1.0,
+        "source": "3a7e3c5d-00d9-470c-aa34-5581be8aa80d"
+      },
+      {
+        "cell": "L2",
+        "run": "K100",
+        "transition": "off",
+        "observed_s": 0.35,
+        "simulated_s": 1.7000000000000002,
+        "error_s": 1.35,
+        "source": "3a7e3c5d-00d9-470c-aa34-5581be8aa80d"
+      },
+      {
+        "cell": "L1",
+        "run": "K25",
+        "transition": "on",
+        "observed_s": 0.45,
+        "simulated_s": 1.4000000000000001,
+        "error_s": 0.9500000000000002,
+        "source": "3a7e3c5d-00d9-470c-aa34-5581be8aa80d"
+      },
+      {
+        "cell": "L1",
+        "run": "K25",
+        "transition": "off",
+        "observed_s": 0.1,
+        "simulated_s": 2.3000000000000003,
+        "error_s": 2.2,
+        "source": "3a7e3c5d-00d9-470c-aa34-5581be8aa80d"
+      },
+      {
+        "cell": "L2",
+        "run": "K25",
+        "transition": "on",
+        "observed_s": 0.4,
+        "simulated_s": 1.4000000000000001,
+        "error_s": 1.0,
+        "source": "3a7e3c5d-00d9-470c-aa34-5581be8aa80d"
+      },
+      {
+        "cell": "L2",
+        "run": "K25",
+        "transition": "off",
+        "observed_s": 0.2,
+        "simulated_s": 1.7000000000000002,
+        "error_s": 1.5000000000000002,
+        "source": "3a7e3c5d-00d9-470c-aa34-5581be8aa80d"
+      }
+    ],
+    "peak_unit": "seconds after light transition",
+    "peak_by_cell": {
+      "L1": {
+        "n_conditions": 4,
+        "mean_signed_error": 1.475,
+        "mae": 1.475,
+        "rmse": 1.572020992226249
+      },
+      "L2": {
+        "n_conditions": 4,
+        "mean_signed_error": 1.2125000000000001,
+        "mae": 1.2125000000000001,
+        "rmse": 1.232122153035161
+      }
+    },
+    "limits": [
+      "Archived H4 body, not the qh1 delay experiment and not a new simulation.",
+      "No paired delay arms exist in this input, so these errors identify no delay effect.",
+      "Conditions are repeated measurements of one model connectome, not independent animals; no p value or confidence interval is calculated from them.",
+      "Error is against animal medians in the saved reader; raw fluorescence time-course error is a separate pending calculation.",
+      "Normalization by the transition peak hides absolute response amplitude; report both when raw matched traces are available.",
+      "L2 direction is contested in the source. Retain that qualification and do not promote this scalar error into a biological pass/fail.",
+      "L1 readout depends on lag and release-law settings; the active group is fitting this dataset, so it is development evidence."
+    ]
+  },
+  "walking": {
+    "arms": [
+      {
+        "arm": "base",
+        "n": 6,
+        "standing": 6,
+        "speed_median_mm_s": 0.9375206696414431,
+        "lift_rate_median_hz": 3.4545454545454546,
+        "tip_down_fraction_median": 0.7425,
+        "speed_covered_runs": 6,
+        "rows": [
+          {
+            "seed": 201303,
+            "speed_mm_s": 1.022573611008371,
+            "lift_rate_hz": 3.4545454545454546,
+            "tip_down_fraction": 0.7190909090909091,
+            "matched_speed_bin": [
+              1.0,
+              1.5
+            ]
+          },
+          {
+            "seed": 201304,
+            "speed_mm_s": 0.9730829648289189,
+            "lift_rate_hz": 3.909090909090909,
+            "tip_down_fraction": 0.7377272727272728,
+            "matched_speed_bin": [
+              0.5,
+              1.0
+            ]
+          },
+          {
+            "seed": 201305,
+            "speed_mm_s": 0.8869297106396743,
+            "lift_rate_hz": 3.3636363636363633,
+            "tip_down_fraction": 0.7270454545454546,
+            "matched_speed_bin": [
+              0.5,
+              1.0
+            ]
+          },
+          {
+            "seed": 201306,
+            "speed_mm_s": 0.6845146002166175,
+            "lift_rate_hz": 3.4545454545454546,
+            "tip_down_fraction": 0.7472727272727273,
+            "matched_speed_bin": [
+              0.5,
+              1.0
+            ]
+          },
+          {
+            "seed": 201307,
+            "speed_mm_s": 1.3710074480451029,
+            "lift_rate_hz": 3.2727272727272725,
+            "tip_down_fraction": 0.7568181818181818,
+            "matched_speed_bin": [
+              1.0,
+              1.5
+            ]
+          },
+          {
+            "seed": 201308,
+            "speed_mm_s": 0.9019583744539673,
+            "lift_rate_hz": 3.4545454545454546,
+            "tip_down_fraction": 0.7740909090909092,
+            "matched_speed_bin": [
+              0.5,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "arm": "flat6",
+        "n": 6,
+        "standing": 6,
+        "speed_median_mm_s": 0.40006785011781876,
+        "lift_rate_median_hz": 3.6363636363636367,
+        "tip_down_fraction_median": 0.7830681818181818,
+        "speed_covered_runs": 2,
+        "rows": [
+          {
+            "seed": 201303,
+            "speed_mm_s": 0.313059603910931,
+            "lift_rate_hz": 3.909090909090909,
+            "tip_down_fraction": 0.7486363636363635,
+            "matched_speed_bin": null
+          },
+          {
+            "seed": 201304,
+            "speed_mm_s": 0.32981066683234145,
+            "lift_rate_hz": 3.7272727272727275,
+            "tip_down_fraction": 0.7547727272727273,
+            "matched_speed_bin": null
+          },
+          {
+            "seed": 201305,
+            "speed_mm_s": 0.6938233794293708,
+            "lift_rate_hz": 3.5454545454545454,
+            "tip_down_fraction": 0.7740909090909092,
+            "matched_speed_bin": [
+              0.5,
+              1.0
+            ]
+          },
+          {
+            "seed": 201306,
+            "speed_mm_s": 0.470325033403296,
+            "lift_rate_hz": 2.7272727272727275,
+            "tip_down_fraction": 0.8386363636363636,
+            "matched_speed_bin": null
+          },
+          {
+            "seed": 201307,
+            "speed_mm_s": 0.22526626849506345,
+            "lift_rate_hz": 3.7272727272727275,
+            "tip_down_fraction": 0.7931818181818182,
+            "matched_speed_bin": null
+          },
+          {
+            "seed": 201308,
+            "speed_mm_s": 0.9073217447893012,
+            "lift_rate_hz": 3.2727272727272725,
+            "tip_down_fraction": 0.7920454545454545,
+            "matched_speed_bin": [
+              0.5,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "arm": "flat15",
+        "n": 6,
+        "standing": 5,
+        "speed_median_mm_s": 0.4083406968579954,
+        "lift_rate_median_hz": 3.090909090909091,
+        "tip_down_fraction_median": 0.7088636363636364,
+        "speed_covered_runs": 1,
+        "rows": [
+          {
+            "seed": 201304,
+            "speed_mm_s": 0.34100954920471865,
+            "lift_rate_hz": 3.0,
+            "tip_down_fraction": 0.7018181818181819,
+            "matched_speed_bin": null
+          },
+          {
+            "seed": 201305,
+            "speed_mm_s": 0.438186292408522,
+            "lift_rate_hz": 3.5454545454545454,
+            "tip_down_fraction": 0.6990909090909091,
+            "matched_speed_bin": null
+          },
+          {
+            "seed": 201306,
+            "speed_mm_s": 0.291608009141447,
+            "lift_rate_hz": 3.090909090909091,
+            "tip_down_fraction": 0.7554545454545454,
+            "matched_speed_bin": null
+          },
+          {
+            "seed": 201307,
+            "speed_mm_s": 0.4083406968579954,
+            "lift_rate_hz": 2.909090909090909,
+            "tip_down_fraction": 0.7095454545454545,
+            "matched_speed_bin": null
+          },
+          {
+            "seed": 201308,
+            "speed_mm_s": 0.5823744607789657,
+            "lift_rate_hz": 3.4545454545454546,
+            "tip_down_fraction": 0.7088636363636364,
+            "matched_speed_bin": [
+              0.5,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "arm": "noshort",
+        "n": 6,
+        "standing": 6,
+        "speed_median_mm_s": 0.9494153472443326,
+        "lift_rate_median_hz": 3.5,
+        "tip_down_fraction_median": 0.7625,
+        "speed_covered_runs": 5,
+        "rows": [
+          {
+            "seed": 201303,
+            "speed_mm_s": 1.0292148041726112,
+            "lift_rate_hz": 3.4545454545454546,
+            "tip_down_fraction": 0.7256818181818182,
+            "matched_speed_bin": [
+              1.0,
+              1.5
+            ]
+          },
+          {
+            "seed": 201304,
+            "speed_mm_s": 1.0942367483383082,
+            "lift_rate_hz": 3.5454545454545454,
+            "tip_down_fraction": 0.7613636363636364,
+            "matched_speed_bin": [
+              1.0,
+              1.5
+            ]
+          },
+          {
+            "seed": 201305,
+            "speed_mm_s": 0.4567111021169689,
+            "lift_rate_hz": 3.4545454545454546,
+            "tip_down_fraction": 0.7636363636363637,
+            "matched_speed_bin": null
+          },
+          {
+            "seed": 201306,
+            "speed_mm_s": 0.9968045043796749,
+            "lift_rate_hz": 3.8181818181818183,
+            "tip_down_fraction": 0.7831818181818182,
+            "matched_speed_bin": [
+              0.5,
+              1.0
+            ]
+          },
+          {
+            "seed": 201307,
+            "speed_mm_s": 0.735713666189542,
+            "lift_rate_hz": 3.090909090909091,
+            "tip_down_fraction": 0.775,
+            "matched_speed_bin": [
+              0.5,
+              1.0
+            ]
+          },
+          {
+            "seed": 201308,
+            "speed_mm_s": 0.9020261901089903,
+            "lift_rate_hz": 3.8181818181818183,
+            "tip_down_fraction": 0.7404545454545455,
+            "matched_speed_bin": [
+              0.5,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "arm": "nolong",
+        "n": 6,
+        "standing": 6,
+        "speed_median_mm_s": 0.5068293477855028,
+        "lift_rate_median_hz": 3.3181818181818183,
+        "tip_down_fraction_median": 0.7535227272727272,
+        "speed_covered_runs": 3,
+        "rows": [
+          {
+            "seed": 201303,
+            "speed_mm_s": 0.46065218941216346,
+            "lift_rate_hz": 2.5454545454545454,
+            "tip_down_fraction": 0.7547727272727273,
+            "matched_speed_bin": null
+          },
+          {
+            "seed": 201304,
+            "speed_mm_s": 0.8491855537848942,
+            "lift_rate_hz": 3.545454545454546,
+            "tip_down_fraction": 0.7522727272727272,
+            "matched_speed_bin": [
+              0.5,
+              1.0
+            ]
+          },
+          {
+            "seed": 201305,
+            "speed_mm_s": 0.582073486138396,
+            "lift_rate_hz": 3.3636363636363638,
+            "tip_down_fraction": 0.7418181818181818,
+            "matched_speed_bin": [
+              0.5,
+              1.0
+            ]
+          },
+          {
+            "seed": 201306,
+            "speed_mm_s": 0.13544855443623874,
+            "lift_rate_hz": 3.272727272727273,
+            "tip_down_fraction": 0.7552272727272727,
+            "matched_speed_bin": null
+          },
+          {
+            "seed": 201307,
+            "speed_mm_s": 0.35990288093648526,
+            "lift_rate_hz": 3.5454545454545454,
+            "tip_down_fraction": 0.7163636363636363,
+            "matched_speed_bin": null
+          },
+          {
+            "seed": 201308,
+            "speed_mm_s": 0.5530065061588421,
+            "lift_rate_hz": 3.090909090909091,
+            "tip_down_fraction": 0.7625,
+            "matched_speed_bin": [
+              0.5,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "arm": "perm",
+        "n": 6,
+        "standing": 6,
+        "speed_median_mm_s": 0.34583149941422703,
+        "lift_rate_median_hz": 3.2727272727272725,
+        "tip_down_fraction_median": 0.8223863636363636,
+        "speed_covered_runs": 1,
+        "rows": [
+          {
+            "seed": 201303,
+            "speed_mm_s": 0.05570879005005014,
+            "lift_rate_hz": 3.272727272727273,
+            "tip_down_fraction": 0.8406818181818182,
+            "matched_speed_bin": null
+          },
+          {
+            "seed": 201304,
+            "speed_mm_s": 0.3246438556668524,
+            "lift_rate_hz": 3.2727272727272725,
+            "tip_down_fraction": 0.8009090909090909,
+            "matched_speed_bin": null
+          },
+          {
+            "seed": 201305,
+            "speed_mm_s": 0.27453574741453884,
+            "lift_rate_hz": 3.6363636363636367,
+            "tip_down_fraction": 0.793409090909091,
+            "matched_speed_bin": null
+          },
+          {
+            "seed": 201306,
+            "speed_mm_s": 0.36701914316160167,
+            "lift_rate_hz": 2.8181818181818183,
+            "tip_down_fraction": 0.8409090909090908,
+            "matched_speed_bin": null
+          },
+          {
+            "seed": 201307,
+            "speed_mm_s": 0.5527265467199292,
+            "lift_rate_hz": 3.272727272727273,
+            "tip_down_fraction": 0.8040909090909091,
+            "matched_speed_bin": [
+              0.5,
+              1.0
+            ]
+          },
+          {
+            "seed": 201308,
+            "speed_mm_s": 0.3731942135718971,
+            "lift_rate_hz": 3.1818181818181817,
+            "tip_down_fraction": 0.8452272727272727,
+            "matched_speed_bin": null
+          }
+        ]
+      }
+    ],
+    "animal_speed_targets": [
+      {
+        "speed_mm_s": [
+          0.5,
+          1.0
+        ],
+        "n": 190,
+        "n_flies": 139,
+        "duty": {
+          "n": 190,
+          "p5": 0.931,
+          "p25": 0.961,
+          "median": 0.968,
+          "p75": 0.973,
+          "p95": 0.983
+        },
+        "step_hz": {
+          "n": 190,
+          "p5": 1.027,
+          "p25": 1.122,
+          "median": 1.255,
+          "p75": 1.681,
+          "p95": 3.778
+        },
+        "swing_ms": {
+          "n": 190,
+          "p5": 13.333,
+          "p25": 20.0,
+          "median": 20.0,
+          "p75": 26.667,
+          "p95": 33.333
+        },
+        "stance_ms": {
+          "n": 190,
+          "p5": 248.333,
+          "p25": 575.0,
+          "median": 766.667,
+          "p75": 866.667,
+          "p95": 946.667
+        },
+        "stride_mm": {
+          "n": 190,
+          "p5": 0.171,
+          "p25": 0.441,
+          "median": 0.593,
+          "p75": 0.752,
+          "p95": 0.877
+        },
+        "cam_travel_mm": {
+          "n": 190,
+          "p5": 0.173,
+          "p25": 0.423,
+          "median": 0.65,
+          "p75": 0.843,
+          "p95": 1.089
+        },
+        "duty_median_fly_boot95": [
+          0.9664,
+          0.9699
+        ],
+        "share_duty_above_0_83": 0.9842
+      },
+      {
+        "speed_mm_s": [
+          1.0,
+          1.5
+        ],
+        "n": 466,
+        "n_flies": 260,
+        "duty": {
+          "n": 466,
+          "p5": 0.936,
+          "p25": 0.951,
+          "median": 0.96,
+          "p75": 0.965,
+          "p95": 0.972
+        },
+        "step_hz": {
+          "n": 466,
+          "p5": 1.02,
+          "p25": 1.163,
+          "median": 1.376,
+          "p75": 1.78,
+          "p95": 2.927
+        },
+        "swing_ms": {
+          "n": 466,
+          "p5": 13.333,
+          "p25": 26.667,
+          "median": 26.667,
+          "p75": 33.333,
+          "p95": 40.0
+        },
+        "stance_ms": {
+          "n": 466,
+          "p5": 328.333,
+          "p25": 540.0,
+          "median": 700.0,
+          "p75": 826.667,
+          "p95": 946.667
+        },
+        "stride_mm": {
+          "n": 466,
+          "p5": 0.449,
+          "p25": 0.721,
+          "median": 0.91,
+          "p75": 1.083,
+          "p95": 1.294
+        },
+        "cam_travel_mm": {
+          "n": 466,
+          "p5": 0.41,
+          "p25": 0.719,
+          "median": 0.909,
+          "p75": 1.121,
+          "p95": 1.404
+        },
+        "duty_median_fly_boot95": [
+          0.9583,
+          0.9606
+        ],
+        "share_duty_above_0_83": 0.9957
+      },
+      {
+        "speed_mm_s": [
+          1.5,
+          1.9
+        ],
+        "n": 453,
+        "n_flies": 276,
+        "duty": {
+          "n": 453,
+          "p5": 0.915,
+          "p25": 0.938,
+          "median": 0.948,
+          "p75": 0.956,
+          "p95": 0.964
+        },
+        "step_hz": {
+          "n": 453,
+          "p5": 1.084,
+          "p25": 1.351,
+          "median": 1.685,
+          "p75": 2.174,
+          "p95": 3.75
+        },
+        "swing_ms": {
+          "n": 453,
+          "p5": 20.0,
+          "p25": 26.667,
+          "median": 33.333,
+          "p75": 33.333,
+          "p95": 40.0
+        },
+        "stance_ms": {
+          "n": 453,
+          "p5": 246.667,
+          "p25": 426.667,
+          "median": 560.0,
+          "p75": 706.667,
+          "p95": 889.333
+        },
+        "stride_mm": {
+          "n": 453,
+          "p5": 0.468,
+          "p25": 0.77,
+          "median": 1.004,
+          "p75": 1.242,
+          "p95": 1.561
+        },
+        "cam_travel_mm": {
+          "n": 453,
+          "p5": 0.488,
+          "p25": 0.76,
+          "median": 1.022,
+          "p75": 1.222,
+          "p95": 1.564
+        },
+        "duty_median_fly_boot95": [
+          0.9459,
+          0.95
+        ],
+        "share_duty_above_0_83": 0.9956
+      },
+      {
+        "speed_mm_s": [
+          1.9,
+          2.5
+        ],
+        "n": 834,
+        "n_flies": 402,
+        "duty": {
+          "n": 834,
+          "p5": 0.894,
+          "p25": 0.923,
+          "median": 0.936,
+          "p75": 0.945,
+          "p95": 0.957
+        },
+        "step_hz": {
+          "n": 834,
+          "p5": 1.24,
+          "p25": 1.667,
+          "median": 2.055,
+          "p75": 2.632,
+          "p95": 4.688
+        },
+        "swing_ms": {
+          "n": 834,
+          "p5": 20.0,
+          "p25": 26.667,
+          "median": 33.333,
+          "p75": 33.333,
+          "p95": 40.0
+        },
+        "stance_ms": {
+          "n": 834,
+          "p5": 186.667,
+          "p25": 348.333,
+          "median": 456.667,
+          "p75": 566.667,
+          "p95": 769.0
+        },
+        "stride_mm": {
+          "n": 834,
+          "p5": 0.466,
+          "p25": 0.849,
+          "median": 1.084,
+          "p75": 1.321,
+          "p95": 1.744
+        },
+        "cam_travel_mm": {
+          "n": 834,
+          "p5": 0.474,
+          "p25": 0.823,
+          "median": 1.058,
+          "p75": 1.309,
+          "p95": 1.619
+        },
+        "duty_median_fly_boot95": [
+          0.9333,
+          0.9375
+        ],
+        "share_duty_above_0_83": 0.9928
+      },
+      {
+        "speed_mm_s": [
+          2.5,
+          3.0
+        ],
+        "n": 744,
+        "n_flies": 406,
+        "duty": {
+          "n": 744,
+          "p5": 0.871,
+          "p25": 0.906,
+          "median": 0.92,
+          "p75": 0.933,
+          "p95": 0.944
+        },
+        "step_hz": {
+          "n": 744,
+          "p5": 1.562,
+          "p25": 2.02,
+          "median": 2.5,
+          "p75": 3.125,
+          "p95": 5.556
+        },
+        "swing_ms": {
+          "n": 744,
+          "p5": 20.0,
+          "p25": 26.667,
+          "median": 33.333,
+          "p75": 33.333,
+          "p95": 40.0
+        },
+        "stance_ms": {
+          "n": 744,
+          "p5": 160.0,
+          "p25": 293.333,
+          "median": 366.667,
+          "p75": 460.0,
+          "p95": 600.0
+        },
+        "stride_mm": {
+          "n": 744,
+          "p5": 0.502,
+          "p25": 0.88,
+          "median": 1.099,
+          "p75": 1.353,
+          "p95": 1.754
+        },
+        "cam_travel_mm": {
+          "n": 744,
+          "p5": 0.537,
+          "p25": 0.853,
+          "median": 1.091,
+          "p75": 1.339,
+          "p95": 1.686
+        },
+        "duty_median_fly_boot95": [
+          0.918,
+          0.922
+        ],
+        "share_duty_above_0_83": 0.9892
+      },
+      {
+        "speed_mm_s": [
+          3.0,
+          4.0
+        ],
+        "n": 1698,
+        "n_flies": 624,
+        "duty": {
+          "n": 1698,
+          "p5": 0.833,
+          "p25": 0.88,
+          "median": 0.902,
+          "p75": 0.917,
+          "p95": 0.934
+        },
+        "step_hz": {
+          "n": 1698,
+          "p5": 1.875,
+          "p25": 2.459,
+          "median": 3.0,
+          "p75": 3.947,
+          "p95": 6.818
+        },
+        "swing_ms": {
+          "n": 1698,
+          "p5": 20.0,
+          "p25": 26.667,
+          "median": 33.333,
+          "p75": 33.333,
+          "p95": 40.0
+        },
+        "stance_ms": {
+          "n": 1698,
+          "p5": 126.667,
+          "p25": 220.0,
+          "median": 300.0,
+          "p75": 373.333,
+          "p95": 493.333
+        },
+        "stride_mm": {
+          "n": 1698,
+          "p5": 0.505,
+          "p25": 0.894,
+          "median": 1.159,
+          "p75": 1.412,
+          "p95": 1.838
+        },
+        "cam_travel_mm": {
+          "n": 1698,
+          "p5": 0.546,
+          "p25": 0.855,
+          "median": 1.133,
+          "p75": 1.379,
+          "p95": 1.733
+        },
+        "duty_median_fly_boot95": [
+          0.9,
+          0.9038
+        ],
+        "share_duty_above_0_83": 0.9658
+      },
+      {
+        "speed_mm_s": [
+          4.0,
+          5.0
+        ],
+        "n": 1704,
+        "n_flies": 621,
+        "duty": {
+          "n": 1704,
+          "p5": 0.778,
+          "p25": 0.84,
+          "median": 0.87,
+          "p75": 0.891,
+          "p95": 0.915
+        },
+        "step_hz": {
+          "n": 1704,
+          "p5": 2.344,
+          "p25": 3.191,
+          "median": 4.054,
+          "p75": 5.556,
+          "p95": 8.333
+        },
+        "swing_ms": {
+          "n": 1704,
+          "p5": 20.0,
+          "p25": 26.667,
+          "median": 33.333,
+          "p75": 33.333,
+          "p95": 40.0
+        },
+        "stance_ms": {
+          "n": 1704,
+          "p5": 93.333,
+          "p25": 153.333,
+          "median": 213.333,
+          "p75": 280.0,
+          "p95": 380.0
+        },
+        "stride_mm": {
+          "n": 1704,
+          "p5": 0.532,
+          "p25": 0.807,
+          "median": 1.126,
+          "p75": 1.401,
+          "p95": 1.863
+        },
+        "cam_travel_mm": {
+          "n": 1704,
+          "p5": 0.539,
+          "p25": 0.839,
+          "median": 1.095,
+          "p75": 1.383,
+          "p95": 1.759
+        },
+        "duty_median_fly_boot95": [
+          0.8667,
+          0.8718
+        ],
+        "share_duty_above_0_83": 0.8011
+      },
+      {
+        "speed_mm_s": [
+          5.0,
+          7.0
+        ],
+        "n": 3958,
+        "n_flies": 855,
+        "duty": {
+          "n": 3958,
+          "p5": 0.714,
+          "p25": 0.783,
+          "median": 0.824,
+          "p75": 0.853,
+          "p95": 0.886
+        },
+        "step_hz": {
+          "n": 3958,
+          "p5": 3.191,
+          "p25": 4.412,
+          "median": 6.0,
+          "p75": 7.5,
+          "p95": 10.0
+        },
+        "swing_ms": {
+          "n": 3958,
+          "p5": 20.0,
+          "p25": 26.667,
+          "median": 33.333,
+          "p75": 33.333,
+          "p95": 40.0
+        },
+        "stance_ms": {
+          "n": 3958,
+          "p5": 73.333,
+          "p25": 106.667,
+          "median": 140.0,
+          "p75": 193.333,
+          "p95": 280.0
+        },
+        "stride_mm": {
+          "n": 3958,
+          "p5": 0.611,
+          "p25": 0.83,
+          "median": 1.034,
+          "p75": 1.329,
+          "p95": 1.845
+        },
+        "cam_travel_mm": {
+          "n": 3958,
+          "p5": 0.597,
+          "p25": 0.825,
+          "median": 1.05,
+          "p75": 1.306,
+          "p95": 1.729
+        },
+        "duty_median_fly_boot95": [
+          0.8182,
+          0.8261
+        ],
+        "share_duty_above_0_83": 0.4358
+      },
+      {
+        "speed_mm_s": [
+          7.0,
+          10.0
+        ],
+        "n": 11114,
+        "n_flies": 1032,
+        "duty": {
+          "n": 11114,
+          "p5": 0.647,
+          "p25": 0.714,
+          "median": 0.75,
+          "p75": 0.783,
+          "p95": 0.826
+        },
+        "step_hz": {
+          "n": 11114,
+          "p5": 5.172,
+          "p25": 6.818,
+          "median": 7.895,
+          "p75": 8.824,
+          "p95": 10.714
+        },
+        "swing_ms": {
+          "n": 11114,
+          "p5": 26.667,
+          "p25": 26.667,
+          "median": 33.333,
+          "p75": 33.333,
+          "p95": 40.0
+        },
+        "stance_ms": {
+          "n": 11114,
+          "p5": 60.0,
+          "p25": 80.0,
+          "median": 93.333,
+          "p75": 113.333,
+          "p95": 160.0
+        },
+        "stride_mm": {
+          "n": 11114,
+          "p5": 0.788,
+          "p25": 0.988,
+          "median": 1.126,
+          "p75": 1.271,
+          "p95": 1.605
+        },
+        "cam_travel_mm": {
+          "n": 11114,
+          "p5": 0.713,
+          "p25": 0.915,
+          "median": 1.099,
+          "p75": 1.302,
+          "p95": 1.646
+        },
+        "duty_median_fly_boot95": [
+          0.75,
+          0.75
+        ],
+        "share_duty_above_0_83": 0.0408
+      },
+      {
+        "speed_mm_s": [
+          10.0,
+          15.0
+        ],
+        "n": 46258,
+        "n_flies": 1182,
+        "duty": {
+          "n": 46258,
+          "p5": 0.571,
+          "p25": 0.625,
+          "median": 0.667,
+          "p75": 0.692,
+          "p95": 0.75
+        },
+        "step_hz": {
+          "n": 46258,
+          "p5": 7.5,
+          "p25": 8.824,
+          "median": 9.375,
+          "p75": 10.714,
+          "p95": 12.5
+        },
+        "swing_ms": {
+          "n": 46258,
+          "p5": 26.667,
+          "p25": 33.333,
+          "median": 33.333,
+          "p75": 40.0,
+          "p95": 40.0
+        },
+        "stance_ms": {
+          "n": 46258,
+          "p5": 46.667,
+          "p25": 60.0,
+          "median": 66.667,
+          "p75": 80.0,
+          "p95": 93.333
+        },
+        "stride_mm": {
+          "n": 46258,
+          "p5": 1.047,
+          "p25": 1.232,
+          "median": 1.346,
+          "p75": 1.456,
+          "p95": 1.624
+        },
+        "cam_travel_mm": {
+          "n": 46258,
+          "p5": 0.891,
+          "p25": 1.112,
+          "median": 1.292,
+          "p75": 1.484,
+          "p95": 1.777
+        },
+        "duty_median_fly_boot95": [
+          0.6667,
+          0.6667
+        ],
+        "share_duty_above_0_83": 0.0005
+      },
+      {
+        "speed_mm_s": [
+          15.0,
+          20.0
+        ],
+        "n": 83023,
+        "n_flies": 1235,
+        "duty": {
+          "n": 83023,
+          "p5": 0.5,
+          "p25": 0.538,
+          "median": 0.583,
+          "p75": 0.615,
+          "p95": 0.667
+        },
+        "step_hz": {
+          "n": 83023,
+          "p5": 9.375,
+          "p25": 10.714,
+          "median": 11.538,
+          "p75": 12.5,
+          "p95": 13.636
+        },
+        "swing_ms": {
+          "n": 83023,
+          "p5": 33.333,
+          "p25": 33.333,
+          "median": 40.0,
+          "p75": 40.0,
+          "p95": 40.0
+        },
+        "stance_ms": {
+          "n": 83023,
+          "p5": 40.0,
+          "p25": 46.667,
+          "median": 53.333,
+          "p75": 53.333,
+          "p95": 66.667
+        },
+        "stride_mm": {
+          "n": 83023,
+          "p5": 1.298,
+          "p25": 1.447,
+          "median": 1.552,
+          "p75": 1.656,
+          "p95": 1.813
+        },
+        "cam_travel_mm": {
+          "n": 83023,
+          "p5": 1.095,
+          "p25": 1.335,
+          "median": 1.508,
+          "p75": 1.689,
+          "p95": 1.966
+        },
+        "duty_median_fly_boot95": [
+          0.5714,
+          0.5833
+        ],
+        "share_duty_above_0_83": 0.0
+      },
+      {
+        "speed_mm_s": [
+          20.0,
+          25.0
+        ],
+        "n": 80987,
+        "n_flies": 1255,
+        "duty": {
+          "n": 80987,
+          "p5": 0.4,
+          "p25": 0.455,
+          "median": 0.5,
+          "p75": 0.538,
+          "p95": 0.583
+        },
+        "step_hz": {
+          "n": 80987,
+          "p5": 11.538,
+          "p25": 12.5,
+          "median": 12.5,
+          "p75": 13.636,
+          "p95": 15.0
+        },
+        "swing_ms": {
+          "n": 80987,
+          "p5": 33.333,
+          "p25": 33.333,
+          "median": 40.0,
+          "p75": 40.0,
+          "p95": 46.667
+        },
+        "stance_ms": {
+          "n": 80987,
+          "p5": 26.667,
+          "p25": 33.333,
+          "median": 40.0,
+          "p75": 46.667,
+          "p95": 46.667
+        },
+        "stride_mm": {
+          "n": 80987,
+          "p5": 1.488,
+          "p25": 1.633,
+          "median": 1.742,
+          "p75": 1.834,
+          "p95": 1.991
+        },
+        "cam_travel_mm": {
+          "n": 80987,
+          "p5": 1.29,
+          "p25": 1.533,
+          "median": 1.698,
+          "p75": 1.869,
+          "p95": 2.137
+        },
+        "duty_median_fly_boot95": [
+          0.5,
+          0.5
+        ],
+        "share_duty_above_0_83": 0.0
+      },
+      {
+        "speed_mm_s": [
+          25.0,
+          30.0
+        ],
+        "n": 42495,
+        "n_flies": 1206,
+        "duty": {
+          "n": 42495,
+          "p5": 0.333,
+          "p25": 0.4,
+          "median": 0.455,
+          "p75": 0.455,
+          "p95": 0.5
+        },
+        "step_hz": {
+          "n": 42495,
+          "p5": 12.5,
+          "p25": 13.636,
+          "median": 13.636,
+          "p75": 15.0,
+          "p95": 16.667
+        },
+        "swing_ms": {
+          "n": 42495,
+          "p5": 33.333,
+          "p25": 40.0,
+          "median": 40.0,
+          "p75": 40.0,
+          "p95": 46.667
+        },
+        "stance_ms": {
+          "n": 42495,
+          "p5": 20.0,
+          "p25": 26.667,
+          "median": 33.333,
+          "p75": 33.333,
+          "p95": 40.0
+        },
+        "stride_mm": {
+          "n": 42495,
+          "p5": 1.672,
+          "p25": 1.811,
+          "median": 1.911,
+          "p75": 2.021,
+          "p95": 2.18
+        },
+        "cam_travel_mm": {
+          "n": 42495,
+          "p5": 1.483,
+          "p25": 1.715,
+          "median": 1.871,
+          "p75": 2.036,
+          "p95": 2.297
+        },
+        "duty_median_fly_boot95": [
+          0.4545,
+          0.4545
+        ],
+        "share_duty_above_0_83": 0.0
+      },
+      {
+        "speed_mm_s": [
+          30.0,
+          40.0
+        ],
+        "n": 11788,
+        "n_flies": 774,
+        "duty": {
+          "n": 11788,
+          "p5": 0.25,
+          "p25": 0.333,
+          "median": 0.4,
+          "p75": 0.4,
+          "p95": 0.455
+        },
+        "step_hz": {
+          "n": 11788,
+          "p5": 13.636,
+          "p25": 15.0,
+          "median": 15.0,
+          "p75": 16.667,
+          "p95": 16.667
+        },
+        "swing_ms": {
+          "n": 11788,
+          "p5": 33.333,
+          "p25": 40.0,
+          "median": 40.0,
+          "p75": 40.0,
+          "p95": 46.667
+        },
+        "stance_ms": {
+          "n": 11788,
+          "p5": 20.0,
+          "p25": 20.0,
+          "median": 26.667,
+          "p75": 26.667,
+          "p95": 33.333
+        },
+        "stride_mm": {
+          "n": 11788,
+          "p5": 1.824,
+          "p25": 2.007,
+          "median": 2.09,
+          "p75": 2.226,
+          "p95": 2.43
+        },
+        "cam_travel_mm": {
+          "n": 11788,
+          "p5": 1.659,
+          "p25": 1.894,
+          "median": 2.046,
+          "p75": 2.212,
+          "p95": 2.495
+        },
+        "duty_median_fly_boot95": [
+          0.4,
+          0.4
+        ],
+        "share_duty_above_0_83": 0.0
+      },
+      {
+        "speed_mm_s": [
+          1.5,
+          1.9
+        ],
+        "n": 453,
+        "n_flies": 276,
+        "duty": {
+          "n": 453,
+          "p5": 0.915,
+          "p25": 0.938,
+          "median": 0.948,
+          "p75": 0.956,
+          "p95": 0.964
+        },
+        "step_hz": {
+          "n": 453,
+          "p5": 1.084,
+          "p25": 1.351,
+          "median": 1.685,
+          "p75": 2.174,
+          "p95": 3.75
+        },
+        "swing_ms": {
+          "n": 453,
+          "p5": 20.0,
+          "p25": 26.667,
+          "median": 33.333,
+          "p75": 33.333,
+          "p95": 40.0
+        },
+        "stance_ms": {
+          "n": 453,
+          "p5": 246.667,
+          "p25": 426.667,
+          "median": 560.0,
+          "p75": 706.667,
+          "p95": 889.333
+        },
+        "stride_mm": {
+          "n": 453,
+          "p5": 0.468,
+          "p25": 0.77,
+          "median": 1.004,
+          "p75": 1.242,
+          "p95": 1.561
+        },
+        "cam_travel_mm": {
+          "n": 453,
+          "p5": 0.488,
+          "p25": 0.76,
+          "median": 1.022,
+          "p75": 1.222,
+          "p95": 1.564
+        },
+        "duty_median_fly_boot95": [
+          0.9459,
+          0.95
+        ],
+        "share_duty_above_0_83": 0.9956
+      }
+    ],
+    "animal_protocol": "isoD1 females, free walking on glass at 34 C, 150 frames/s, eight recordings",
+    "source_reader_check": {
+      "speed_window_mm_s": [
+        1.5,
+        1.9
+      ],
+      "old_3_to_25_hz_all_steps_median_hz": 6.8182,
+      "revised_1_to_25_hz_steady_steps_median_hz": 1.6854
+    },
+    "comparison_status": "Diagnostic side-by-side only; common observation rule required before numerical gait error",
+    "limits": [
+      "The archived simulation uses tip-height hysteresis and completed-lift counts; the animal reader uses smoothed camera-plane foot velocity and complete steady cycles.",
+      "Do not subtract these gait values to claim prediction error. Resample simulated foot positions to 150 Hz and apply the source reader to both.",
+      "Archived speed is displacement after settling; animal bins use cycle-mean forward speed. Per-run bin matching is preliminary.",
+      "Trials below 0.5 mm/s are outside these extracted animal bins; no nearest-bin extrapolation is allowed.",
+      "The animal record already influenced development. Temperature and spontaneous versus DNg100-driven walking also differ.",
+      "The initial 3 Hz step selection excludes slow steady cycles; use the corrected 1 to 25 Hz steady-step extraction.",
+      "Animal uncertainty must resample recordings or verified animals, not tracked fragments. Do not use the old fly-ID bootstrap as independent-animal uncertainty."
+    ]
+  },
+  "calcium_inputs": {
+    "sheets": 20,
+    "conditions": 58,
+    "trace_condition_count": 395,
+    "missing_samples": 76,
+    "rows": [
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20201019_SS67405_Zorro",
+        "cell": "Zorro",
+        "condition": "water",
+        "n_traces": 6,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.909825998603706e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20201019_SS67405_Zorro",
+        "cell": "Zorro",
+        "condition": "sugar",
+        "n_traces": 6,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.944296410264171e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20201019_SS67405_Zorro",
+        "cell": "Zorro",
+        "condition": "bitter",
+        "n_traces": 6,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.981590748695877e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20201014_SS48947_Clavicle",
+        "cell": "Clavicle",
+        "condition": "water",
+        "n_traces": 9,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.993783905969662e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20201014_SS48947_Clavicle",
+        "cell": "Clavicle",
+        "condition": "sugar",
+        "n_traces": 9,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.976754287219776e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20201014_SS48947_Clavicle",
+        "cell": "Clavicle",
+        "condition": "bitter",
+        "n_traces": 9,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.948056115129315e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20200804_SS47082_G2N-1",
+        "cell": "G2N-1",
+        "condition": "water",
+        "n_traces": 6,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.958673013005788e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20200804_SS47082_G2N-1",
+        "cell": "G2N-1",
+        "condition": "sugar",
+        "n_traces": 6,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 9,
+        "max_mean_rounding_error": 4.975816292523971e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20200804_SS47082_G2N-1",
+        "cell": "G2N-1",
+        "condition": "bitter",
+        "n_traces": 6,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.9796869788509834e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20211103_SS50091_Rattle",
+        "cell": "Rattle",
+        "condition": "water",
+        "n_traces": 6,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.970203387782285e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20211103_SS50091_Rattle",
+        "cell": "Rattle",
+        "condition": "sugar",
+        "n_traces": 6,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.801697957476994e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20211103_SS50091_Rattle",
+        "cell": "Rattle",
+        "condition": "bitter",
+        "n_traces": 6,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.667097496746653e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20210322_SS37122_Usnea",
+        "cell": "Usnea",
+        "condition": "water",
+        "n_traces": 7,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.899675278106919e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20210322_SS37122_Usnea",
+        "cell": "Usnea",
+        "condition": "sugar",
+        "n_traces": 7,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.97584484002514e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20210322_SS37122_Usnea",
+        "cell": "Usnea",
+        "condition": "bitter",
+        "n_traces": 7,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.977227227409391e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20200812_SS48944_FMIn",
+        "cell": "FMIn",
+        "condition": "water",
+        "n_traces": 5,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.959119884606275e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20200812_SS48944_FMIn",
+        "cell": "FMIn",
+        "condition": "sugar",
+        "n_traces": 5,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.996065530143978e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20200812_SS48944_FMIn",
+        "cell": "FMIn",
+        "condition": "bitter",
+        "n_traces": 5,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.896918796799821e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20201028_SS68204_Phantom",
+        "cell": "Phantom",
+        "condition": "water",
+        "n_traces": 5,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 20,
+        "max_mean_rounding_error": 4.655636665600125e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20201028_SS68204_Phantom",
+        "cell": "Phantom",
+        "condition": "sugar",
+        "n_traces": 5,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 20,
+        "max_mean_rounding_error": 4.9795278958993106e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20201028_SS68204_Phantom",
+        "cell": "Phantom",
+        "condition": "bitter",
+        "n_traces": 5,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 20,
+        "max_mean_rounding_error": 4.890003180614208e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20211103_SS31386_Bract",
+        "cell": "Bract",
+        "condition": "water",
+        "n_traces": 8,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.960603615294934e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20211103_SS31386_Bract",
+        "cell": "Bract",
+        "condition": "sugar",
+        "n_traces": 8,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.973373514294277e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20211103_SS31386_Bract",
+        "cell": "Bract",
+        "condition": "bitter",
+        "n_traces": 8,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.957154841139788e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20201103_SS31345_Fdg",
+        "cell": "Fdg",
+        "condition": "water",
+        "n_traces": 8,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.995329591046989e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20201103_SS31345_Fdg",
+        "cell": "Fdg",
+        "condition": "sugar",
+        "n_traces": 8,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.884186926310506e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20201103_SS31345_Fdg",
+        "cell": "Fdg",
+        "condition": "bitter",
+        "n_traces": 8,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.884545355866507e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20210817_SS47744_Roundup",
+        "cell": "Roundup",
+        "condition": "water",
+        "n_traces": 6,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.993020946671492e-06,
+        "baseline_qualification": "Source baseline unresolved"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20210817_SS47744_Roundup",
+        "cell": "Roundup",
+        "condition": "sugar",
+        "n_traces": 6,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.9825309548431895e-06,
+        "baseline_qualification": "Source baseline unresolved"
+      },
+      {
+        "file": "elife-79887-fig3-data1.xlsx",
+        "sheet": "20210817_SS47744_Roundup",
+        "cell": "Roundup",
+        "condition": "bitter",
+        "n_traces": 6,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.945260973852894e-06,
+        "baseline_qualification": "Source baseline unresolved"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "SS46913_Fdg_Opto",
+        "cell": "Fdg",
+        "condition": "ppk28",
+        "n_traces": 5,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.982085014211546e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "SS46913_Fdg_Opto",
+        "cell": "Fdg",
+        "condition": "Gr5a",
+        "n_traces": 6,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.953180039546454e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "SS46913_Fdg_Opto",
+        "cell": "Fdg",
+        "condition": "Gr66a",
+        "n_traces": 7,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.926164093400909e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "ppk28_Dessicated",
+        "cell": "ppk28-GAL4",
+        "condition": "Fed",
+        "n_traces": 8,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.9006321246256035e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "ppk28_Dessicated",
+        "cell": "ppk28-GAL4",
+        "condition": "2 hour dessicated",
+        "n_traces": 5,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.949266985798673e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "ppk28_Psuedodessicated",
+        "cell": "ppk28-GAL4",
+        "condition": "1 hour low osmolality AHL",
+        "n_traces": 10,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.832029586065989e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "ppk28_Psuedodessicated",
+        "cell": "ppk28-GAL4",
+        "condition": "1 hour high osmolality AHL (Pseudodessicated)",
+        "n_traces": 10,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.956560840704144e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "20210803_SS48947_Clavicle",
+        "cell": "Clavicle",
+        "condition": "water",
+        "n_traces": 7,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.9367847946082954e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "20210803_SS48947_Clavicle",
+        "cell": "Clavicle",
+        "condition": "sugar",
+        "n_traces": 7,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.959585684540489e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "20210803_SS48947_Clavicle",
+        "cell": "Clavicle",
+        "condition": "bitter",
+        "n_traces": 7,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.99638828895671e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "20210809_SS47082_G2N-1",
+        "cell": "G2N-1",
+        "condition": "water",
+        "n_traces": 5,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 7,
+        "max_mean_rounding_error": 4.906743112074313e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "20210809_SS47082_G2N-1",
+        "cell": "G2N-1",
+        "condition": "sugar",
+        "n_traces": 5,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.883927802432769e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "20210809_SS47082_G2N-1",
+        "cell": "G2N-1",
+        "condition": "bitter",
+        "n_traces": 5,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.992388070501619e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "20211105_SS50091_Rattle",
+        "cell": "Rattle",
+        "condition": "water",
+        "n_traces": 8,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.929301661868099e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "20211105_SS50091_Rattle",
+        "cell": "Rattle",
+        "condition": "sugar",
+        "n_traces": 8,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.982829394865884e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "20211105_SS50091_Rattle",
+        "cell": "Rattle",
+        "condition": "bitter",
+        "n_traces": 8,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.932279314851656e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "20210322_SS37122_Usnea",
+        "cell": "Usnea",
+        "condition": "water",
+        "n_traces": 7,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.99799612361379e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "20210322_SS37122_Usnea",
+        "cell": "Usnea",
+        "condition": "sugar",
+        "n_traces": 7,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.769152402813413e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "20210322_SS37122_Usnea",
+        "cell": "Usnea",
+        "condition": "bitter",
+        "n_traces": 7,
+        "frames": 55,
+        "dt_s": 1.2,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.58206099073627e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "20210910_SS47744_Roundup",
+        "cell": "Roundup",
+        "condition": "water",
+        "n_traces": 8,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.9788356216648455e-06,
+        "baseline_qualification": "Source baseline unresolved"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "20210910_SS47744_Roundup",
+        "cell": "Roundup",
+        "condition": "sugar",
+        "n_traces": 8,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.999193068962182e-06,
+        "baseline_qualification": "Source baseline unresolved"
+      },
+      {
+        "file": "elife-79887-fig3-figsupp1-data1.xlsx",
+        "sheet": "20210910_SS47744_Roundup",
+        "cell": "Roundup",
+        "condition": "bitter",
+        "n_traces": 8,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.9999518528312525e-06,
+        "baseline_qualification": "Source baseline unresolved"
+      },
+      {
+        "file": "elife-79887-fig5-data1.xlsx",
+        "sheet": "20211027_SS47082_Opto",
+        "cell": "G2N-1",
+        "condition": "Gr5a",
+        "n_traces": 7,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.9769954700851216e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig5-data1.xlsx",
+        "sheet": "20211027_SS47082_Opto",
+        "cell": "G2N-1",
+        "condition": "Gr5a-Gr66a",
+        "n_traces": 7,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.949010122851094e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig5-data1.xlsx",
+        "sheet": "20211027_SS47082_Opto",
+        "cell": "G2N-1",
+        "condition": "Gr66a",
+        "n_traces": 6,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.989052237398817e-06,
+        "baseline_qualification": "Use source-specific baseline convention"
+      },
+      {
+        "file": "elife-79887-fig5-data1.xlsx",
+        "sheet": "20211028_SS47744_Opto",
+        "cell": "Roundup",
+        "condition": "Gr5a",
+        "n_traces": 7,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.999384739801105e-06,
+        "baseline_qualification": "Source baseline unresolved"
+      },
+      {
+        "file": "elife-79887-fig5-data1.xlsx",
+        "sheet": "20211028_SS47744_Opto",
+        "cell": "Roundup",
+        "condition": "Gr5a-Gr66a",
+        "n_traces": 8,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.990684042929794e-06,
+        "baseline_qualification": "Source baseline unresolved"
+      },
+      {
+        "file": "elife-79887-fig5-data1.xlsx",
+        "sheet": "20211028_SS47744_Opto",
+        "cell": "Roundup",
+        "condition": "Gr66a",
+        "n_traces": 6,
+        "frames": 80,
+        "dt_s": 0.67,
+        "missing_samples": 0,
+        "max_mean_rounding_error": 4.9951903021358546e-06,
+        "baseline_qualification": "Source baseline unresolved"
+      }
+    ],
+    "status": "Input validated; no model prediction or held-out performance computed",
+    "limits": [
+      "Repeated tastants and trials share flies. Trace-condition count is not independent animal count.",
+      "Cross-record exposure audit and verified cell mapping precede any held-out claim.",
+      "Slow sampling cannot directly resolve millisecond transmission delays; any test concerns their downstream effect on calcium dynamics.",
+      "Roundup baseline differs from the stated method; exclude absolute time-course error until the baseline is reconciled."
+    ]
+  },
+  "verified_inputs": {
+    "duty_result.json": "619c2e65f1c790f31a589efb3f9641f9922496ec3d252a0732d2ad36466eb139",
+    "floor_result.json": "84751e59cda05709674e0685ba559400d2cfe0addc76b6cfce13c903469ac763",
+    "shiu-calcium-processed.json": "6f7452fbbe617f2415c10fcda41f62dd9bf37af7f57425921e642811f57510c3",
+    "h4-calcium-statistics.json": "e71d4f1cbe2d1e7177c8f9dcea1cf3e6562b45cfccfa1dd915c4eafa0f3559c3"
+  }
+}

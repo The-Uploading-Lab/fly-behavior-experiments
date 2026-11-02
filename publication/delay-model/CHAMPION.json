@@ -1,0 +1,427 @@
+{
+ "theta": {
+  "F_ref": 58.40389950539453,
+  "F_ref_k": 9.691633909365923,
+  "abd_gain": 0.2,
+  "adapt_b": 1.0418521601266768,
+  "adh": "flex",
+  "adh_gain": 30.08132709972743,
+  "adh_thresh": 1.9241619083840713,
+  "bal_target": 0.43518666209117285,
+  "body_joint_tau_act_ms": {
+   "lf_CTr_pitch": 6.0,
+   "lh_CTr_pitch": 6.0,
+   "lm_CTr_pitch": 6.0,
+   "rf_CTr_pitch": 6.0,
+   "rh_CTr_pitch": 6.0,
+   "rm_CTr_pitch": 6.0
+  },
+  "camp_gain": 85.29273565616757,
+  "cbased": true,
+  "claw": -1,
+  "cmd": "DNg100",
+  "cmd_hz": 94.26185930344745,
+  "delay": 6.240070568279721,
+  "delay_delivery": "queue",
+  "delay_groups": 0,
+  "delay_mode": "length",
+  "drive_scale": 0.005947307965211898,
+  "f0_hz": 20.550407688381515,
+  "filt": "exact",
+  "g_sec": 0.00019826521568765804,
+  "graded": "19a006_13ba",
+  "graded_every": 5,
+  "graded_gain": 0.00037922116771739055,
+  "graded_slope": 4.598099524238326,
+  "graded_v50": -49.37637650226951,
+  "hook": -1,
+  "inh_gain": 1.0,
+  "k_gain": 140.06200744279136,
+  "k_min": 40.78940804645981,
+  "k_mode": "load",
+  "mn_gains": "size",
+  "phasic": 1.9670855240223841,
+  "ranges": "measured",
+  "shunt": true,
+  "signs": "measured",
+  "size_span": 10.0,
+  "spike_reg": 44.0,
+  "tau_joint": 30.0,
+  "tau_w": 270.97700471360525,
+  "tick_ms": 2.5,
+  "w_syn_scale": 1.0113670590845238,
+  "zeta": 3.0,
+  "backend": "metal"
+ },
+ "theta_file": "results-qh1-theta.json",
+ "champion_of_record": "qh1",
+ "live_title": {
+  "bar": "v3.6",
+  "holder": null,
+  "since": "2026-09-04 00:45 EEST",
+  "note": "TITLE BAR v3.6 (AGENTS.md, judge, 2026-09-04 00:45): cadence and lifts are read with hysteresis AND a 10 ms minimum swing episode (regression_walk.py _h10 fields). The v3.5 title closed with qh1 as its last champion (one defence held); qh1 remains champion of record and no past number is re-read. On the v3.6 read qh1's own 24 title seeds give 4.45 Hz median and 3 of 24 qualifying. The v3.6 title is crowned only by meeting the bar on two independent 12-seed batteries under lanes/judge/title_match_v36.py."
+ },
+ "title_won": "2026-09-03 20:46 EEST, v3.5 live title taken on the ordering clause (items 1-4): on the holder's 24 paired judge seeds (30001-30024, Metal engine of commit b22495039, spike_reg 44, exclusive lock held per run, qg1 replayed in isolation as the pair) qh1 qualified 23/24 against qg1's 22/24; discordant seeds 30010 and 30020 (qh1 stood, qg1 fell) against 30009 (qg1 stood, qh1 fell). Both qh1 batteries met the clause on their own: 11/12 standing and qualifying, then 12/12 and 12/12. qh1 is qg1 with one added key, abd_gain 0.2: the weighted-mean abdominal motor spike count per tick, from BANC's 168 abdominal motor neurons folded onto the body's five abdomen links by neuromere, drives the ten abdomen DOFs at that gain (map, 30 degree range and +1 signs assumed; gain searched). Every other key is identical to qg1. The theta commands no step frequency anywhere; cadence is a model output, read with hysteresis.",
+ "record": {
+  "substrate": "BANC female, whole CNS, 188,508 neurons / 13,620,865 edges",
+  "standing": "11/12 battery 1; 12/12 battery 2 (tilt-based v3.2 clause); 23/24 against qg1's 22/24 on the same seeds, engine and isolated condition: qh1 fell on 30009 (tilt 171.5 deg) where qg1 stood; qg1 fell on 30010 (77.6) and 30020 (155.7) where qh1 stood; qh1 standing runs final tilt 9.86 to 13.86 degrees",
+  "cadence_hz": 5.818,
+  "cadence_read": "hysteresis (v3.4 instrument, freq_tip_h): median over the 23 standing runs, range 5.00 to 7.45 Hz, 23 of 23 inside 5-16 Hz, four within 0.5 Hz of the floor (30017 at 5.00); qg1 on the same seeds 6.77 Hz median (5.55-9.45)",
+  "cadence_endogenous": true,
+  "qualifying_runs": "11/12, 12/12 (bar: >= 2 each); 23/24 paired against qg1's 22/24",
+  "paired_comparison": {
+   "clause": "v3.3 ordering clause items 1-4 under v3.5: challenger runs the holder's paired judge seeds on the holder's engine (Metal); higher qualifying count over the 24 takes the title; an equal count would have gone to item 5 (48 seeds) and did not arise",
+   "seeds": "30001-30024",
+   "engine": "metal, walk_search.py 311a0d8f754eda9d, cns.py 6b0a676fb4dea450, dylib e4d8240aa14cae58, execution commit b22495039, FLY_WBE_METAL_LOCK_MODE=exclusive held per Metal run",
+   "qh1_qualifying": 23,
+   "qg1_qualifying": 22,
+   "discordant": {
+    "qh1_only": [
+     30010,
+     30020
+    ],
+    "qg1_only": [
+     30009
+    ]
+   },
+   "holder_arm": "qg1 replayed under the same isolated condition (lanes/judge/2026-09-03-title-v35-qg1-isolated-battery{1,2}.json), equal to its recorded batteries lanes/judge/2026-09-03-title-v35-span10-battery{1,2}.json on every field of every seed",
+   "receipts": [
+    "lanes/judge/2026-09-03-title-v35-qg1abd02-battery1.json",
+    "lanes/judge/2026-09-03-title-v35-qg1abd02-battery2.json",
+    "lanes/judge/2026-09-03-title-v35-qg1-isolated-battery1.json",
+    "lanes/judge/2026-09-03-title-v35-qg1-isolated-battery2.json"
+   ]
+  },
+  "metal_replay_caveat": "The engine's relaxed float-atomic scatter is load-dependent (two measured instances, seeds 201060 and 100273). This match held the exclusive lock per Metal run with lane processes interleaving between runs; qg1's isolated replay reproducing its parallel-battery record shows the 17:3x load did not alter those trajectories. Exact replay under heavier loads is not established.",
+  "video": "walker_qh1_body.mp4",
+  "video_seed": 30020,
+  "video_note": "Seed 30020 replayed on the real body from evaluate()'s own capture under the exclusive lock: qg1 falls on this seed at 155.7 degrees, qh1 stands and steps at 7.00 Hz on the hysteresis read. CNS panel in the site's layer colours, brain at the top, six-leg ground loads under the body.",
+  "open_conflicts": [
+   "gait.speed: 0.9819 mm/s median over 11 standing judge-card runs against the real 2-45 (0 of 11)",
+   "gait.straightness_5p5s: 0.1526 at 30 fps against the 0.50 floor (0 of 11)",
+   "posture.body_height: 1.2245 mm against 0.80-0.89 (0 of 11)",
+   "rom.front_fti_deg: 75.5203 deg against 81.2-112 (0 of 11)",
+   "coord.R1i on tip stance: 2/11 runs (load stance passes 11/11)",
+   "gait.phase_lf_rf/lm_rm/lh_rh_deg: |mean| 57.0, 24.1, 28.2 deg where the real fly is 178-180 (both sides of each segment step together)",
+   "hind left-right cadence: left hind 4.364 Hz median (under the 5 Hz floor), right hind 6.364",
+   "abdomen.abd_range_deg: assumed and load-bearing (posture closure needs about 25 deg of abdominal range or more; lane D 21:25); abd_signs and mn_joint_map are not load-bearing for the champion's behaviour (random signs and a shuffled map leave standing and cadence unchanged)",
+   "sensory.feco_flexion_population: claw and hook -1 (zero flexion-tuned cells), carried from ng1"
+  ],
+  "notes": [
+   "Margin one seed on 24 paired, 2 discordant against 1; the clause is a count rule (item 3) and crowned on it.",
+   "Cadence moved down toward the floor (median 5.82 against qg1's 6.77); on the 21 seeds where both stood qh1 steps slower on 16 and travels further on 13.",
+   "2026-09-04 00:45 EEST: v3.6 re-read of the title seeds: hysteresis 5.82 Hz (23/23 at the floor) against 4.45 Hz with a 10 ms minimum (3/23); qualifying 23/24 under v3.5, 3/24 under v3.6.",
+   "2026-09-04 01:10 EEST: v3.6.1 record (exact joint integrator, lanes/judge/2026-09-04-title-v36-qh1-exact-battery1.json, lanes/judge/2026-09-04-title-v36-qh1-exact-battery2.json): standing 21/24, qualifying 0/24, cadence 3.45 Hz on the 10 ms read (hysteresis 3.45, no one-tick episodes), speed 0.95 mm/s. The holder's pair for v3.6 matches."
+  ],
+  "defences": [
+   {
+    "date": "2026-09-03 22:37 EEST",
+    "challenger": "qh1 + presyn_gain_by_id (lane E's R229 label-permuted leaf transferred in R230: 12 verified-GABA rows at outgoing gain 0.5, 12 verified-ACh rows at 2.0), lanes/judge/theta-qh1-r230-permuted-nominee.json sha256 0668a681624d6bcc, nominated by lane E at 22:03 (exchange/2026-09-03-2203-laneE-r230-judge-packet.md) after 3/3 qualifying and 2/3 paired displacement wins on fresh lane seeds 100276-100278; the judge reconstructed the 188,508-row vector from the 24 entries (sha256 5842b0c6f5dff051, equal to lane E's receipt)",
+    "result": "qh1 keeps: 23/24 against 16/24 paired qualifying on 30001-30024, both arms isolated (exclusive lock per run, Metal, execution commit 4c54ad945 for the challenger; the holder's pair is its coronation record); challenger batteries 8/12 and 8/12 (each passes the standing >= 6 and qualifying >= 2 clause on its own)",
+    "discordant": {
+     "challenger_only": [
+      30009
+     ],
+     "holder_only": [
+      30002,
+      30003,
+      30010,
+      30012,
+      30014,
+      30015,
+      30019,
+      30020
+     ]
+    },
+    "receipts": [
+     "lanes/judge/2026-09-03-title-v35-qh1r230-battery1.json",
+     "lanes/judge/2026-09-03-title-v35-qh1r230-battery2.json"
+    ],
+    "pair": [
+     "lanes/judge/2026-09-03-title-v35-qg1abd02-battery1.json",
+     "lanes/judge/2026-09-03-title-v35-qg1abd02-battery2.json"
+    ],
+    "reading": "the leaf that beat qh1 on two of three lane seeds fell on eight of the judge's 24 where qh1 stood; where both stood (15 seeds) the challenger travelled further on 4 and stepped faster on 6; cadence medians 5.77 against 5.82 Hz, speed 0.87 against 1.14 mm/s. Attribution of the leaf stays nonspecific (a label-permuted control); its lane-seed transfer record is 2 wins, 2 losses over four fresh lane seeds (R230, R231) and 8 of 24 here. First defence of the qh1 title."
+   }
+  ],
+  "bar": "v3.5",
+  "nominated_from": {
+   "nominated": "2026-09-03 19:59 EEST, lane D packet exchange/2026-09-03-1959-laneD-judge-packet.md, frozen theta lanes/D/theta-qg1-abd02-nomination.json sha256 4bc4ba31104bcaff (19:54, before any run)",
+   "basis": "twelve paired fresh lane seeds 60626-60640, Metal, single worker, isolated: qg1 + abd_gain 0.2 qualifying 11/12 against qg1's 8/12 (rescued 60626, 60628, 60633, 60639; lost 60634); reverses lane D's 19:17 five-seed drop, whose standing read was cruder than the clause",
+   "lineage": "lane B 11:01 abdominal MN census -> judge 12:30 abdomen adapter (gap.abdomen_actuation step 2) -> lane D 18:12 gain 0.3 posture in band 5/5 -> lane D 19:17 low-gain screen -> 19:54 frozen theta -> 19:59 nomination"
+  },
+  "post_coronation_card": {
+   "date": "2026-09-03 21:23 EEST",
+   "receipt": "lanes/judge/2026-09-03-card-qh1-metal.json",
+   "numpy_confirmation": "lanes/judge/2026-09-03-card-qh1-numpy-confirm.json",
+   "standing": "11/12",
+   "closed_on_qh1": [
+    "flyscore.posture_variability",
+    "gait.swing_ms",
+    "posture.footfall_separation",
+    "rom.front_ctr_deg and the four middle/hind sweeps",
+    "flyscore tripod_contrast, gait_signal_quality, lr_asymmetry",
+    "coord.R1i (load), coord.R1c, reflex.R5",
+    "gait.cadence, gait.duty, gait.all_feet_lifts, posture.nonfoot_force"
+   ],
+   "agreement": "NumPy confirmation (2/3 standing on seeds 30146-30148, 170.3 s): seed 30146: standing same (NumPy True, Metal True); pv NumPy 0.0425 vs Metal 0.0449; band verdicts agree on pv, swing, sep, height, speed, straight | seed 30147: standing DIFFERS (NumPy False, Metal True); pv NumPy 0.0481 vs Metal 0.035; band verdicts agree on pv, sep, height, straight | seed 30148: standing DIFFERS (NumPy True, Metal False); pv NumPy 0.0413 vs Metal 0.0474; band verdicts agree on pv, sep, height; DISAGREE on straight"
+  }
+ },
+ "lineage": [
+  {
+   "id": "qg1",
+   "bar": "v3.5",
+   "reign": "2026-09-03 17:45 to 20:46 EEST",
+   "how_lost": "v3.5 ordering clause: 22/24 (isolated replay of its own record, equal on every field) against qh1's 23/24 on the paired seeds 30001-30024; net one seed (fell 30010 and 30020 where qh1 stood, stood 30009 where qh1 fell). No defence was fought.",
+   "theta_file": "results-qg1-theta.json",
+   "defences_held": [],
+   "live_title_at_loss": {
+    "bar": "v3.5",
+    "holder": "qg1",
+    "since": "2026-09-03 17:45 EEST",
+    "note": "First champion crowned under v3.5 (Metal engine, hysteresis read, endogenous timing). Recorded title verdict on holder nc1's Metal record (30001-30024): 22/24 qualifying against 0/24. The v3.5 title had been VACANT since 16:08. Exact replay of the historical parallel match is unproven after the Metal contention correction; no count was regraded."
+   },
+   "title_won_text": "2026-09-03 17:45 EEST, v3.5 live title taken on the ordering clause (items 1-4): on the holder's 24 paired judge seeds (30001-30024, Metal engine of commit 48e6f69ce, spike_reg 44, nc1's Metal record of 16:02 as the pair) qg1 qualified 22/24 against nc1's 0/24; 22 discordant seeds, all qg1's, none the other way. Both 12-seed batteries met the clause on their own: 11/12 standing and 11/12 qualifying, twice. qg1 is nc1 with one added key, size_span 10.0: the per-motor-neuron force gain that nc1 spread over Azevedo 2020's measured 770-fold twitch range is compressed to a 10-fold range (gain ** (ln 10 / ln 770)), so the small motor neurons that fire under this drive deliver force the silent largest cells were holding. Every other key is identical to nc1. The theta commands no step frequency anywhere; cadence is a model output, read with hysteresis.",
+   "record_at_loss": {
+    "substrate": "BANC female, whole CNS, 188,508 neurons / 13,620,865 edges",
+    "standing": "11/12 battery 1; 11/12 battery 2 (tilt-based v3.2 clause); 22/24 against nc1's 22/24 on the same seeds and engine, on different seeds: qg1 fell on 30010 (tilt 77.6 deg) and 30020 (155.7 deg) where nc1 stood, nc1 fell on 30003 and 30014 where qg1 stood; standing runs final tilt 9.73 to 14.18 degrees",
+    "cadence_hz": 6.773,
+    "cadence_read": "hysteresis (v3.4 instrument, freq_tip_h): median over the 22 standing runs, range 5.55 to 9.45 Hz, 22 of 22 inside 5-16 Hz; nc1 on the same seeds and engine 3.64 Hz median (2.64-4.27), 22 of 22 under the 5 Hz floor",
+    "cadence_endogenous": true,
+    "qualifying_runs": "11/12, 11/12 (bar: >= 2 each); 22/24 paired against nc1's 0/24",
+    "paired_comparison": {
+     "clause": "v3.3 ordering clause items 1-4 under v3.5: challenger runs the holder's paired judge seeds on the holder's engine (Metal, v3.5); higher qualifying count over the 24 takes the title",
+     "seeds": "30001-30024",
+     "engine": "metal, walk_search.py 311a0d8f754eda9d, cns.py 6b0a676fb4dea450, regression_walk.py e9895eba572fbc46, dylib e4d8240aa14cae58, execution commit 48e6f69ce",
+     "qg1_qualifying": 22,
+     "nc1_qualifying": 0,
+     "discordant": {
+      "qg1_only": [
+       30001,
+       30002,
+       30003,
+       30004,
+       30005,
+       30006,
+       30007,
+       30008,
+       30009,
+       30011,
+       30012,
+       30013,
+       30014,
+       30015,
+       30016,
+       30017,
+       30018,
+       30019,
+       30021,
+       30022,
+       30023,
+       30024
+      ],
+      "nc1_only": []
+     },
+     "mcnemar_two_sided_p": 4.76837158203125e-07,
+     "note": "the clause is a count rule; the p-value is context (22 discordant seeds all one way, exact two-sided binomial 2^-21). nc1's 22 losses are every one of its standing runs under the 5 Hz floor on the hysteresis read; qg1's two losses are falls. Lane A's pre-registered prediction (packet 17:20, before any judge seed): 18-22 of 24; result 22. The 22-0 verdict remains the recorded title result. A later contention probe found load-dependent Metal scatter, so exact replay of these historical title rows is not established; no title count is regraded without a decision-grade isolated replay.",
+     "receipts": [
+      "lanes/judge/2026-09-03-title-v35-span10-battery1.json",
+      "lanes/judge/2026-09-03-title-v35-span10-battery2.json"
+     ],
+     "holder_receipts": [
+      "lanes/judge/2026-09-03-title-v35-nc1-metal-battery1.json",
+      "lanes/judge/2026-09-03-title-v35-nc1-metal-battery2.json"
+     ]
+    },
+    "metal_replay_caveat": {
+     "status": "RECORDED VERDICT; EXACT REPLAY UNPROVEN",
+     "finding": "Metal's relaxed atomic float scatter is load-dependent. Six simultaneous replays of nc1 seed 201060 split into two internally exact families: four runs at 1.81 mm, 10.08 deg tilt and 3.727 Hz, and two at 1.31 mm, 8.76 deg and 3.818 Hz; solo and light-load replays gave the first family. The earlier claim that Metal is bit-identical to itself across processes is withdrawn.",
+     "consequence": "qg1 remains champion of record at the recorded 22/24 against nc1's 0/24. Those counts are not regraded. Any Metal run intended to support a title, champion, registry row or scientific claim now takes the exclusive cross-worktree Metal lock; routine BUILD runs take the shared lock.",
+     "source": "lanes/A/2026-09-03-1815-metal-replay-under-contention.md; lanes/A/2026-09-03-cd1qe-replay-201060-contention6.jsonl"
+    },
+    "video": "walker_qg1_body.mp4",
+    "video_seed": 30003,
+    "video_note": "seed 30003, the first seed of the block where nc1 fell and qg1 stood; replayed on the real body from evaluate()'s own capture, parity 7.3671 mm against the receipt's 7.37; CNS panel in the site layer colours, brain at the top of frame, six-leg ground-load strip under the body",
+    "open_conflicts": {
+     "mn_rest_physiology": {
+      "status": "OPEN",
+      "finding": "rows 27/28, species-level: motor neurons silent at rest against a measured ~30 Hz, no recruitment ordering under drive; sufficient cause identified (tonic input) but the Poisson scaffold failed two sized confirmations and the real source is a literature hunt",
+      "source": "CONSTRAINT-REGISTRY.json rows 27-28, gap.mn_tonic_on_arm"
+     },
+     "feco_flexion_population": {
+      "status": "CONFLICT",
+      "finding": "under claw -1, hook -1 the encoder assigns 0 flexion-tuned claw and hook afferents against the two populations per organ Mamiya, Gurung and Tuthill 2018 report; carried from ng1, the bar never asked about sensory composition; lane A's parity bodies price the fix at about 0.37 Hz of cadence (CD1-OZ, CD1-PE)",
+      "source": "CONSTRAINT-REGISTRY.json sensory.feco_flexion_population"
+     },
+     "displacement_trade": {
+      "status": "NONE",
+      "finding": "median displacement of standing runs 4.13 and 4.28 mm per battery against nk1's 3.86 and 4.47 on the same seeds; 4.15 against 4.11 mm over 24; displacement orders nothing under the clause and did not move",
+      "source": "lanes/judge/2026-09-03-title-v33-ctr-tau6-battery{1,2}.json"
+     },
+     "selection_scope": {
+      "status": "BOUNDARY",
+      "finding": "the vision-lineage selection's closures were measured on the C-V41 taped body and do not transfer to this champion. qg1 now has its own CD1-QI card: duty and five joint ROM rows pass, while front FTi ROM and tip-stance ipsilateral coordination conflict.",
+      "source": "CONSTRAINT-REGISTRY.json rows 29-30 notes; lanes/A/2026-09-03-cd1qi-qg1-card.json"
+     },
+     "card_regrade_2026_09_03": {
+      "status": "CONFLICT x5 on qg1's post-coronation card; two candidate promotions held",
+      "finding": "Lane A CD1-QI, seeds 201117-201128, Metal serial: 10/12 stood. Conflicts on the 10 standing runs are front FTi ROM 74.4 deg against 81.2-112 (2/10), net gait speed 1.43 mm/s against 2-45 (0/10), body height 1.224 mm against 0.80-0.89 (0/10), tip-stance ipsilateral coordination 1/10, and straightness 0.3689 against 0.50-0.98. Observed candidate closures are footfall separation 1.089 body lengths (10/10) and hysteresis swing 16.25 ms (7/10); exact registry promotion is held for one isolated Metal replay. Confirmed passes: duty 0.76, contralateral phase 0.45, tip-stance contralateral coordination 10/10, load-channel ipsilateral and contralateral coordination 10/10 each, load reflex R5 8/10, non-foot force 10/10, front CTr 80.7 deg and every middle and hind ROM row 10/10; unsigned yaw rate 75.1 deg/s is in band.",
+      "source": "lanes/A/2026-09-03-cd1qi-qg1-card.json; CONSTRAINT-REGISTRY.json"
+     },
+     "gait_speed_and_hind_drag": {
+      "status": "CONFLICT (re-read on qg1)",
+      "finding": "CD1-QI reads median net speed 1.43 mm/s against the real 2-45 band and straightness 0.3689 against 0.50-0.98. Both hind feet still drag forward while loaded: left +0.79 mm/s with 0/10 propelling, right +0.33 mm/s with 1/10 propelling; the left middle foot is near neutral (+0.04, 3/10 propelling). Unsigned yaw rate 75.1 deg/s is in the real band, so speed remains limited by short stroke and slip rather than a yaw-rate conflict.",
+      "source": "CONSTRAINT-REGISTRY.json gait.speed and gait.straightness_5p5s; lanes/A/2026-09-03-cd1qi-qg1-card.json"
+     },
+     "posture_variability": {
+      "status": "CONFLICT on crowned qg1; abdomen candidate unpromoted",
+      "finding": "qg1 with abdomen off reads 0.0155 rad against the real 0.0256-0.0859 band. Lane D's qg1 + abd_gain 0.3 five-seed screen put all five reads in band at 0.042-0.057 and stood 4/5, but cost about one in-band cadence leg. Gain 1.0 toppled 3/5. Closure requires the crowned winner's paired standing title runs in band, not merely a nonzero abdomen gain.",
+      "source": "CONSTRAINT-REGISTRY.json flyscore.posture_variability and gap.abdomen_actuation; lanes/D/2026-09-03-qg1-abd-posture-result.json"
+     },
+     "cd1qe_replay_diff": {
+      "status": "DIAGNOSED (instrument, not the fly)",
+      "finding": "the disagreement is caused by load-dependent ordering of relaxed atomic float scatter in the Metal backend. Six simultaneous seed-201060 replays split exactly 4 at 1.81 mm, 10.08 deg and 3.727 Hz and 2 at 1.31 mm, 8.76 deg and 3.818 Hz; solo and three-process light-load runs gave the first family. This diagnoses the CD1-QE replay difference but does not establish an exact replay of the historical parallel title batteries.",
+      "source": "lanes/A/2026-09-03-1815-metal-replay-under-contention.md; lanes/A/2026-09-03-cd1qe-replay-201060-contention6.jsonl"
+     }
+    },
+    "post_coronation_per_leg": {
+     "source": "lanes/judge/2026-09-03-qg1-perleg-replay-laneD-seeds.json",
+     "finding": "On 11 standing runs, tripod_contrast is in band 11/11 and tri_index has median +0.0875, with 9/11 inside the real -0.194 to 0.751 band: coord.tri_index is PASS and is no longer an open conflict. Five of six legs have median cadence in the battery instrument's 5-16 Hz band; left front/middle/hind and right front/middle/hind medians are 6.91/5.64/4.91 and 10.73/5.64/8.00 Hz, so left hind remains below the floor."
+    },
+    "post_coronation_fidelity_screen": {
+     "status": "NO_COMPONENT_COMPATIBLE",
+     "finding": "Lane E R222 tested three isolated additions to qg1 on reused seed 100273: cell-type-first membrane parameters, the same membrane changes on only the 24 current graded rows, and annotation-tied synaptic decay with an analytic conductance update. None met the registered compatibility criteria, so there is no defence, theta change or fresh confirmation.",
+     "source": "lanes/E/2026-09-03-nc1-size-span-fidelity-decomposition-r222-result.json"
+    },
+    "notes": "Third champion whose body differs from its parent by one number, and the first crowned on the Metal engine and the hysteresis cadence read. size_span 10.0 compresses the static size-principle gain (mn_gains 'size': 770**(-f) by input-synapse rank) to 10**(-f), leaving the eight 1.0 force overlays and singleton pools unchanged. Lane A's mechanism reading (CD1-QE, seed-level per-MN rates on nc1): under nc1's drive the largest motor neurons in each pool are silent and the small ones fire at 36-78 Hz, so at a 770-fold span the firing cells delivered 1/250 to 1/770 of a large cell's force and the hind levator pool summed to 0.001 activation; at span 10 the same firing pattern delivers usable force. The first-order activation model has no tetanic summation, so the compression stands in for the fused force real muscle holds at those rates (CALIBRATION-LEDGER mn.size_gain_span). Carries nc1's mechanisms unchanged: body_joint_tau_act_ms 6.0 on the six CTr_pitch joints, signs=measured, per-neuron length delays, conductance synapses with shunting, the 19a006_13ba graded set with searched dials. Two nominations were filed; span 30 (10 of 18 qualifying on lane seeds, misses on the floor) was not matched and stands as a lineage candidate. Lane D's qg1 plus abd_gain 0.3 five-seed screen stood 4/5 and put posture variability in band on the standing runs, but cost about one cadence leg; it is a candidate signal, not a champion closure.",
+    "video_metrics_panel": "walker_qg1_scored.mp4",
+    "defences": [],
+    "bar": "v3.5",
+    "nominated_from": {
+     "nominated": "2026-09-03 17:20 EEST, lane A packet exchange/2026-09-03-1720-laneA-judge-packet.md, frozen winner sha16 c27b37fb1cf63967 (file lanes/A/theta-cd1qg-span10.json sha256 9cd79f7210d0fe3a at battery time)",
+     "basis": "CD1-QF (201099-201104) and CD1-QG (201105-201116), Metal, whole graph: span 10 qualifies 16 of 18 fresh seeds and stands 16 of 18 (falls 201100 tilt 170.8, 201109 tilt 134.0) against nc1's 0 of 18 qualifying on the same seeds; meets the 8/12 nomination bar; no judge seed seen",
+     "seam": "size_span ported onto main in commit 48e6f69ce (walk_search.py, default-off, absent = bit-identical, lanes/A/probe.py BIT-IDENTICAL)",
+     "match": "batteries 1 and 2 in parallel on Metal, 17:31-17:34, wall 178.4 + 176.1 s (about 15 s per seed)"
+    }
+   }
+  },
+  {
+   "id": "nc1",
+   "bar": "v3.3",
+   "reign": "2026-09-03 09:58 to 17:45 EEST (v3.3 title 09:58-14:59; champion of record through the VACANT v3.4 and v3.5 titles until this match)",
+   "how_lost": "v3.5 ordering clause: 0/24 on its own Metal record against qg1's 22/24 on the paired seeds 30001-30024; every nc1 standing run is under the 5 Hz floor on the hysteresis read. Two v3.3 defences held (knee-plus-hip body 24-22, FeCO parity body 24-23).",
+   "theta_file": "results-nc1-theta.json",
+   "defences_held": [
+    {
+     "date": "2026-09-03 11:15 EEST",
+     "challenger": "nc1 + 6 ms body_joint_tau_act_ms on the six FTi_pitch joints (both joint families at 6 ms), lanes/judge/theta-nc1-fti-tau6-challenger.json sha256 291239310c221b6c, nominated by the judge at 10:54 from lane B's 10:47 packet before any judge seed ran",
+     "result": "nc1 keeps: 24/24 against 22/24 paired qualifying on 30001-30024; challenger batteries 11/12 and 11/12 (both pass on their own), standing 12/12 and 12/12",
+     "receipts": [
+      "lanes/judge/2026-09-03-title-v33-nc1-fti-tau6-battery1.json",
+      "lanes/judge/2026-09-03-title-v33-nc1-fti-tau6-battery2.json"
+     ]
+    },
+    {
+     "date": "2026-09-03 12:20 EEST",
+     "challenger": "nc1-parity: nc1's winner with the FeCO encoder carrying both populations on every leg (claw null, hook null, index-parity split) and graded_slope 8.0, lanes/A/theta-nc1-parity-challenger.json sha256 66c4d64828e7ce12, nominated by lane A 11:21 before any judge seed ran",
+     "result": "nc1 keeps: 24/24 against 23/24 paired qualifying on 30001-30024; challenger batteries 12/12 and 11/12 (both pass on their own), standing 12/12 and 12/12; one discordant seed, 30024, standing at tip cadence 4.64 Hz under the 5 Hz floor; no tie, so items 5 and 6 were not reached",
+     "receipts": [
+      "lanes/judge/2026-09-03-title-v33-nc1-parity-battery1.json",
+      "lanes/judge/2026-09-03-title-v33-nc1-parity-battery2.json"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nk1",
+   "bar": "v3.3",
+   "reign": "2026-09-03 09:11 to 2026-09-03 09:58 EEST",
+   "how_lost": "ordering clause: 19/24 against nc1's 24/24 on its own paired seeds 30001-30024; no defence held (nc1 was the first challenger).",
+   "theta_file": "results-nk1-theta.json"
+  },
+  {
+   "id": "ng1",
+   "bar": "v3.3",
+   "reign": "2026-09-02 19:49 to 2026-09-03 09:11 EEST",
+   "how_lost": "ordering clause item 5: 19/24 tie on the paired seeds, then 12/24 against nk1's 17/24 on the extension; 31 against 36 over 48. Eight defences held before it (union-graded, slope 8, R154 13B rest, and five more).",
+   "theta_file": "results-ng1-theta.json"
+  },
+  {
+   "id": "nl1",
+   "bar": "v3.3",
+   "reign": "2026-09-02 12:35 to 19:49 EEST",
+   "how_lost": "ordering clause: 15/24 paired qualifying against ng1's 19/24",
+   "theta_file": "results-nl1-theta.json"
+  },
+  {
+   "id": "r23",
+   "bar": "v3.1",
+   "note": "last champion under v3.1; v3.2 closed VACANT"
+  },
+  {
+   "id": "f23",
+   "bar": "v2"
+  },
+  {
+   "id": "p150",
+   "bar": "v2"
+  },
+  {
+   "id": "t025",
+   "bar": "v2"
+  }
+ ],
+ "corrections": [
+  {
+   "date": "2026-09-02 18:30 EEST",
+   "by": "judge",
+   "what": "three theta keys corrected from their stated values to the values the engine applied in both title batteries and the champion clip",
+   "stated": {
+    "graded_every": 5,
+    "graded_v50": -49.37637650226951,
+    "graded_slope": 4.598099524238326
+   },
+   "applied": {
+    "graded_every": 1,
+    "graded_v50": -48.0,
+    "graded_slope": 2.5
+   },
+   "cause": "main's walk_search.py (blob 249be064) never read graded_every, graded_v50 or graded_slope; cns.py defaults ran instead. Lane A's branch had carried the pass-through since aef872ef5 (2026-09-01 18:37), so lane A's CD1-NH search and CD1-NL confirmation measured a fly with the stated values applied, while the two judge batteries on main (execution commit 64c8cd320e37) and the walker_nl1 render measured this one.",
+   "verification": "seed 30003 replayed on main HEAD 5391e122a: bit-identical to lanes/judge/2026-09-02-title-v33-battery1.json (26/26 fields). Same seed with the stated values applied: raw 5.5 mm, freq_tip 5.0, tilt 8.62, lifts [22,23,33,55,11,33] - a different fly. Lane A's walk_search pass-through with this corrected theta: bit-identical to the battery row (fold gate, 26/26).",
+   "consequence": "The crowned nl1 is the fly these applied values describe; the title stands on the batteries as run. The fly with the stated values applied is a distinct candidate and has not been title-matched. results-nl1-theta.json is the judge-owned theta of record from this correction on; lanes/A/theta-cd1nl-candidate.json is unchanged and now (post-fold) runs the OTHER fly."
+  },
+  {
+   "date": "2026-09-02 19:49 EEST",
+   "by": "judge",
+   "what": "title change nl1 -> ng1; the fly with the STATED graded dials applied, which the 18:30 correction named as an untested candidate, was title-matched on the holder's 24 paired seeds and won under the ordering clause",
+   "verification": "both ng1 receipts carry execution_commit a476f5663, engine d13ab3f0, cns e36d5d7f, battery 6c727336, theta sha f38ead76ef72e13c (lanes/A/theta-cd1nl-candidate.json, post-fold, which runs the stated dials); results-ng1-theta.json equals that winner plus inh_gain 1.0"
+  },
+  {
+   "date": "2026-09-03 09:11 EEST",
+   "by": "judge",
+   "what": "title change ng1 -> nk1 under ordering clause item 5, the first title decided on an extension",
+   "verification": "all four nk1 receipts carry theta sha fa97264599edb4e3 (the nomination file at battery time), engine f5c83dc63c877e3b, cns ebf0eb7bdfa726e7, battery 6c7273365be6faf9; batteries 1-2 execution commit 4e1c13494, batteries 3-4 and both ng1 extension batteries b84b0a35a; results-nk1-theta.json equals that winner. ng1's base-24 rows are its 2026-09-02 receipts (engine d13ab3f0beb00852), reproduced bit-identically by every probe-gated fold since."
+  },
+  {
+   "date": "2026-09-03 09:58 EEST",
+   "by": "judge",
+   "what": "title change nk1 -> nc1 under the ordering clause, the shortest reign on record (nk1 held the title 09:11 to 09:58 with no defence)",
+   "verification": "both nc1 receipts carry theta sha 08fa23fe457d1b72 (the nomination file at battery time), execution commit a9babf17d, engine 072a3cbb09da81be, cns d7ebac3530d83c5a, in a worktree pinned to that commit; results-nc1-theta.json equals that winner. nk1's 24 rows are its 2026-09-03 battery 1-2 receipts (engine f5c83dc63c877e3b), reproduced bit-identically by every probe-gated fold since, including the two on main between (a9babf17d, c00cda515)."
+  },
+  {
+   "date": "2026-09-03 20:46 EEST",
+   "by": "judge",
+   "what": "title change qg1 -> qh1 under the ordering clause (23 against 22 on the paired seeds). qg1's title batteries, replayed one at a time under the exclusive Metal lock, equal their 17:31-17:34 parallel record on every field of every seed, so the 19:12 caveat that exact replay of that record was unproven is discharged for that load; it stands for heavier loads (seeds 201060 six-wide, 100273 three-wide).",
+   "verification": "qh1 receipts carry theta sha 4bc4ba31104bcaff (lane D's frozen nomination, byte-equal to lanes/judge/theta-qg1-abd02-nominee.json), execution commit b22495039, engine 311a0d8f754eda9d, cns 6b0a676fb4dea450, dylib e4d8240aa14cae58, metal_lock_mode exclusive; results-qh1-theta.json winner equals that nominee plus backend metal (45 keys). Holder receipts lanes/judge/2026-09-03-title-v35-qg1-isolated-battery{1,2}.json compared field by field against lanes/judge/2026-09-03-title-v35-span10-battery{1,2}.json: zero differences outside wall time."
+  },
+  {
+   "date": "2026-09-04 00:45 EEST",
+   "by": "judge",
+   "what": "bar v3.6: a hysteresis swing episode counts only if it lasts at least 10 ms. On the champion's own 24 title seeds, re-read with the new fields (equal to the coronation record on every existing field, 24 of 24), the hysteresis read gives 5.82 Hz median with 23 of 23 standing runs at the 5 Hz floor and the 10 ms read gives 4.45 Hz with 3 of 23; one-tick episodes are 26% of the count. The v3.5 title closes with qh1 as its last champion; the v3.6 title starts VACANT; qh1 remains champion of record.",
+   "verification": [
+    "lanes/judge/2026-09-04-title-v35-qh1-h10-reread-battery1.json",
+    "lanes/judge/2026-09-04-title-v35-qh1-h10-reread-battery2.json"
+   ]
+  }
+ ]
+}

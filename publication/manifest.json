@@ -1,0 +1,232 @@
+{
+  "status": "public reproduction inputs; no new biological experiments",
+  "files": [
+    {
+      "path": "data/muscle-configuration-rows.json",
+      "sha256": "8824956288beac211d0d92bee1ec50929078f382ebd1662e10dfdbcdc389773f",
+      "source_filename": "S01-results-title-match.json",
+      "transformation": "none",
+      "kind": "archived computed results or extracted summaries; see README for independence limits"
+    },
+    {
+      "path": "data/delay-replay-rows.json",
+      "sha256": "c5243c89413df8cadce56c681b5dad4b22089af2df622ee547e1639ac7f759b2",
+      "source_filename": "historical-replay.json",
+      "transformation": "Absolute local paths reduced to basenames; Only scientific records and source revision retained; local resource-admission logs omitted",
+      "kind": "archived computed results or extracted summaries; see README for independence limits",
+      "source_sha256": "3c11016cd9302b9a6cac13ffa74b8075dae3f232a9dc6afbe7d29069923a9e8d"
+    },
+    {
+      "path": "data/delay-replay-summary.json",
+      "sha256": "830af427978f64622dc2431cf2ab0e6f24b9418f338d4253622775323717096e",
+      "source_filename": "historical-replay-summary.json",
+      "transformation": "none",
+      "kind": "archived computed results or extracted summaries; see README for independence limits"
+    },
+    {
+      "path": "data/calcium-and-walking-summaries.json",
+      "sha256": "d5883e42c97819a94e53d99f69505dc4e971253de98e51ad1964e82c6ee2f632",
+      "source_filename": "saved-data-evaluation.json",
+      "transformation": "none",
+      "kind": "archived computed results or extracted summaries; see README for independence limits"
+    },
+    {
+      "path": "data/inhibitory-scaling-summaries.json",
+      "sha256": "61f2550d4596cc33e6390608f185ebea03c4cb36f129d77f13a63293b489069c",
+      "source_filename": "balance-evidence-extract.json",
+      "transformation": "none",
+      "kind": "archived computed results or extracted summaries; see README for independence limits"
+    },
+    {
+      "path": "data/walking-observer-results.json",
+      "sha256": "971b1e1f95da396a94a7b9dbf82225cc4dc9c4248098f56a8ff7447ee3f372d6",
+      "source_filename": "walking-observer-results.json",
+      "transformation": "Absolute local paths reduced to basenames",
+      "kind": "archived computed results or extracted summaries; see README for independence limits",
+      "source_sha256": "b52750f91451644d5b74b662d6597e174bda9a0f2a5a2c74b24c06c20b73bee8"
+    },
+    {
+      "path": "data/timing-fixture.json",
+      "sha256": "bfe4752a3213fc4e33a2e429074c3ceeab93bd404af1677d4523d87fb0ae39ad",
+      "source_filename": "timing-fixture.json",
+      "transformation": "none",
+      "kind": "archived computed results or extracted summaries; see README for independence limits"
+    },
+    {
+      "path": "delay-model/abdomen.py",
+      "sha256": "00614701b0d4b3d10a49dc8db096008553c33c1b3d3524f67240b8f407e34698",
+      "source_filename": "abdomen.py",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical simulator source or configuration"
+    },
+    {
+      "path": "delay-model/body.py",
+      "sha256": "7d0a1bb95f40f399c3f7c5082555bf8028644485c827f68ca395b40882ee3b13",
+      "source_filename": "body.py",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical simulator source or configuration"
+    },
+    {
+      "path": "delay-model/cd1sc_delay_dispersion.py",
+      "sha256": "f81391c24cb59b6fd0d8f79f86a35b46255d9c9e0e12454cc25f5eaaa0064946",
+      "source_filename": "cd1sc_delay_dispersion.py",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical simulator source or configuration"
+    },
+    {
+      "path": "delay-model/closed_loop.py",
+      "sha256": "8bd4e395daa949787a9bdbf0ec62ea8641857680780454a0a64c8b8f3c2e7380",
+      "source_filename": "closed_loop.py",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical simulator source or configuration"
+    },
+    {
+      "path": "delay-model/cns.py",
+      "sha256": "467aed97ace87d09c55a853f3b133edea474cbd0020a2e5c580d04192a12399e",
+      "source_filename": "cns.py",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical simulator source or configuration"
+    },
+    {
+      "path": "delay-model/cns_metal.py",
+      "sha256": "8cde77ba71123d79e438f19405e632f71e3df14cc1f94b99600b4d4337439c79",
+      "source_filename": "cns_metal.py",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical simulator source or configuration"
+    },
+    {
+      "path": "delay-model/cruse1.py",
+      "sha256": "87a0e321602b1f01f8eeea3fc9e21589e2f4f108e075dc8906b018b1add8ec29",
+      "source_filename": "cruse1.py",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical simulator source or configuration"
+    },
+    {
+      "path": "delay-model/load_loop.py",
+      "sha256": "dbcccdd8b015a581ee912a040be6798fc343b35ceac13599d61c06777c42985b",
+      "source_filename": "load_loop.py",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical simulator source or configuration"
+    },
+    {
+      "path": "delay-model/motormap.py",
+      "sha256": "947e9c0df5776d282ddcec6a79f676f7d5ebc46e7e4a62735c18374476833ea1",
+      "source_filename": "motormap.py",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical simulator source or configuration"
+    },
+    {
+      "path": "delay-model/muscle_split.py",
+      "sha256": "106ee00b74237e7c67148c32516208affb544a991e1abe77dc03663fd5c62fc1",
+      "source_filename": "muscle_split.py",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical simulator source or configuration"
+    },
+    {
+      "path": "delay-model/nobody.py",
+      "sha256": "7f8f3f4b907e63df9918b7b222e72959a0d121aa09ebf43094c44f30e483cf6e",
+      "source_filename": "nobody.py",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical simulator source or configuration"
+    },
+    {
+      "path": "delay-model/regression_walk.py",
+      "sha256": "517adcdb8dc57a58efa233023e1000de31714b90f8286baff7d5441383c31cf7",
+      "source_filename": "regression_walk.py",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical simulator source or configuration"
+    },
+    {
+      "path": "delay-model/rhythm_detect.py",
+      "sha256": "b4fe7331dd03aa4cde0d590daa698220d7cfcbf2862fcd8a02f53b873f552722",
+      "source_filename": "rhythm_detect.py",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical simulator source or configuration"
+    },
+    {
+      "path": "delay-model/stage0.py",
+      "sha256": "061104f7e5e70f3a2dc5fc3d16d529676dcabc45da8162f23e04a04019607259",
+      "source_filename": "stage0.py",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical simulator source or configuration"
+    },
+    {
+      "path": "delay-model/walk_search.py",
+      "sha256": "8f3bf90cbb748091c1c94bf95cc7e0d4ac812237b7adaeebae501b255db98eee",
+      "source_filename": "walk_search.py",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical simulator source or configuration"
+    },
+    {
+      "path": "delay-model/results-qh1-theta.json",
+      "sha256": "4c2c10563661055d57897be19ff33e6ef5590f640d19383912d860c6155869ac",
+      "source_filename": "results-qh1-theta.json",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical simulator source or configuration"
+    },
+    {
+      "path": "delay-model/CHAMPION.json",
+      "sha256": "d1d7736ad4eba60f9fbd8a4c5d0094f172934a02cc25a6be1d39ce122ef06679",
+      "source_filename": "CHAMPION.json",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical simulator source or configuration"
+    },
+    {
+      "path": "delay-model/results-round10.json",
+      "sha256": "86ebd430db3a23ed276989723e6cc94f78f7e18a638a16209c1d6e0291d7b43f",
+      "source_filename": "results-round10.json",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical simulator source or configuration"
+    },
+    {
+      "path": "delay-model/data/dof_ranges.json",
+      "sha256": "19632554b1059887de8c442b37d3a83d255528f260bd59a293069527a8c58223",
+      "source_filename": "data/dof_ranges.json",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical simulator source or configuration"
+    },
+    {
+      "path": "delay-model/graded_map.json",
+      "sha256": "52f478019a392a7d708a5dc9d075379246143aac2d10342d6a779e5065ddf52a",
+      "source_filename": "graded_map.json",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical simulator source or configuration"
+    },
+    {
+      "path": "delay-model/transmitter_map.json",
+      "sha256": "37a9cef2c0ab8c6e5869b309f352d1c32bebe077b9f5543f1e3f7fc98186a9b0",
+      "source_filename": "transmitter_map.json",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical simulator source or configuration"
+    },
+    {
+      "path": "delay-model/lanes/A/results-cd1mh-r1-signs.json",
+      "sha256": "6f3cf8288ca3939781fba295dc4868da353e00692fdf7eb0841e2fc15f45237a",
+      "source_filename": "lanes/A/results-cd1mh-r1-signs.json",
+      "source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "transformation": "none",
+      "kind": "historical motor-sign calibration"
+    }
+  ]
+}

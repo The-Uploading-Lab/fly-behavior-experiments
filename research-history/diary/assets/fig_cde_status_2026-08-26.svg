@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="1" stop-color="#171d2e"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 42px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #f7f8fb; }
+      .sub { font: 500 21px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #aeb8cf; }
+      .lane { font: 700 29px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #f7f8fb; }
+      .status { font: 700 18px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: 1px; }
+      .head { font: 700 22px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #edf1f8; }
+      .body { font: 500 19px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #b9c2d6; }
+      .small { font: 500 16px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #8f9ab3; }
+      .mono { font: 600 17px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #dfe7f5; }
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="80" y="82" class="title">Exact gates survived; unsafe transitions were caught</text>
+  <text x="80" y="120" class="sub">Fly-WBE judge · 22:00 C/D/E pass closed 26 Aug 2026 · no tolerance, seed, title or champion movement</text>
+
+  <rect x="80" y="155" width="700" height="115" rx="20" fill="#161f34" stroke="#2c3852"/>
+  <circle cx="115" cy="193" r="9" fill="#66d19e"/>
+  <text x="140" y="202" class="lane">A · reducer repair verified</text>
+  <text x="115" y="238" class="body">25 checks + full-CNS probes pass; cloud identity still gates the scientific rerun.</text>
+
+  <rect x="820" y="155" width="700" height="115" rx="20" fill="#161f34" stroke="#2c3852"/>
+  <circle cx="855" cy="193" r="9" fill="#66d19e"/>
+  <text x="880" y="202" class="lane">B · verified, deliberately capped</text>
+  <text x="855" y="238" class="body">Torque accumulation risk reproduced; ownership-safe rung waits for 07:00.</text>
+
+  <rect x="80" y="310" width="460" height="430" rx="24" fill="#141d31" stroke="#31405d" stroke-width="2"/>
+  <text x="115" y="360" class="lane">Lane C · vision transit</text>
+  <text x="115" y="394" class="status" fill="#66d19e">EXACT DECISIONS PASS</text>
+  <text x="115" y="438" class="head">V49 identity</text>
+  <text x="115" y="470" class="body">• 186 licensed cells</text>
+  <text x="115" y="500" class="body">• all protected hashes + counts exact</text>
+  <text x="115" y="530" class="body">• 0 non-float differences</text>
+  <text x="115" y="570" class="mono">projection d0163c7c…9ce8</text>
+  <line x1="115" y1="594" x2="505" y2="594" stroke="#2f3c58"/>
+  <text x="115" y="630" class="status" fill="#f2b84b">FLYVIS TRANSPORT BLOCKED</text>
+  <text x="115" y="662" class="body">Pinned source exact; checkpoint download</text>
+  <text x="115" y="690" class="body">www.googleapis.com TCP 443 fails (errno 101).</text>
+  <text x="115" y="720" class="small">Next: change provider internet access · V54 closed</text>
+
+  <rect x="570" y="310" width="460" height="430" rx="24" fill="#141d31" stroke="#31405d" stroke-width="2"/>
+  <text x="605" y="360" class="lane">Lane D · compass source</text>
+  <text x="605" y="394" class="status" fill="#66d19e">VERSION BRIDGE VALIDATED</text>
+  <text x="605" y="438" class="head">Exact v1.2.1 → v1.1 bridge</text>
+  <text x="605" y="470" class="body">• 127 / 127 BANC rows</text>
+  <text x="605" y="500" class="body">• 87 / 87 distinct IDs</text>
+  <text x="605" y="530" class="body">• 0 missing, duplicate or drift rows</text>
+  <text x="605" y="570" class="mono">bridge f7cb0483…604de</text>
+  <line x1="605" y1="594" x2="995" y2="594" stroke="#2f3c58"/>
+  <text x="605" y="630" class="status" fill="#ef6b73">UNSAFE SNAPSHOT REJECTED</text>
+  <text x="605" y="662" class="body">Forged identity/year could become current;</text>
+  <text x="605" y="690" class="body">production never called the coordinate join.</text>
+  <text x="605" y="720" class="small">Next: validated transaction correction 7 · Q4 non-usable</text>
+
+  <rect x="1060" y="310" width="460" height="430" rx="24" fill="#141d31" stroke="#31405d" stroke-width="2"/>
+  <text x="1095" y="360" class="lane">Lane E · MANC provenance</text>
+  <text x="1095" y="394" class="status" fill="#66d19e">DELTA SURFACE EXACT</text>
+  <text x="1095" y="438" class="head">Unguessed → guessed artifact</text>
+  <text x="1095" y="470" class="body">• 23,188 ordered rows × 2</text>
+  <text x="1095" y="500" class="body">• 2,764 changed rows, exactly marked</text>
+  <text x="1095" y="530" class="body">• 14 complete transition families</text>
+  <text x="1095" y="570" class="mono">JSON 09b37e59…714a</text>
+  <line x1="1095" y1="594" x2="1485" y2="594" stroke="#2f3c58"/>
+  <text x="1095" y="630" class="status" fill="#f2b84b">GUESSED TRANSFORM ABSENT</text>
+  <text x="1095" y="662" class="body">The audit exposes what changed, not why;</text>
+  <text x="1095" y="690" class="body">witness IDs remain explicitly non-selectors.</text>
+  <text x="1095" y="720" class="small">Next: explicit source provenance · male grading closed</text>
+
+  <rect x="80" y="780" width="1440" height="70" rx="18" fill="#10182a" stroke="#26334e"/>
+  <text x="110" y="823" class="head">Value credit: Lane E</text>
+  <text x="350" y="823" class="body">Turned an opaque adapter into a reproduced 14-family surface without reverse-engineering its rule.</text>
+</svg>

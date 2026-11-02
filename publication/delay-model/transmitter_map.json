@@ -1,0 +1,23 @@
+{
+ "_contract": "Citation-gated per-cell-type transmitter overrides, judge-owned (AGENTS.md measured-structure directive, 2026-09-01; seam opened 2026-09-03 from lane C's C-A9 and C-V90). cns._resolve_nt applies every entry in `enabled` after the verified-over-predicted resolution and before the motor-neuron override, so each listed cell_type's every row takes the listed transmitter token from SimParams.nt_sign. A theta enables the whole section with transmitter_map: \"map\"; absent = empty = bit-identical (lanes/A/probe.py). Every entry names its citations, the annotation it corrects and its evidence rank: measured for the type, homology from a measured class, or hypothesis. No type joins on a prediction alone, and a lane proposes an entry in a judge packet rather than editing this file. The run receipt (LAST_EXTRAS['transmitter_map']) reports rows overridden and rows whose fast sign changed; a type predicted gaba and mapped to glutamate keeps its -1, so the two counts differ. Two clauses added 2026-09-03 15:45 EEST from lane C's C-V94 (judge): (1) membership matches BANC `cell_type` only; rows labelled by the FlyWire alignment column alone are not covered, because an alignment label is a prediction and no type joins on a prediction alone, so an entry meant to cover alignment-only rows names them by banc_row under `corrects`. (2) On a body carrying bal_target, a map entry whose sign flip shifts a postsynaptic cell's E/I ratio also shifts that cell's homeostatic inhibition scaling at construction, so a map arm is never a pure sign manipulation there: C-V94 moved the right HS resting release ~2x with sight off where silencing was bit-identical. Every map result on a balanced body pairs against a silencing arm, and a claim about the flipped sign alone needs the balance computed before the map is applied (engine route, not built).",
+ "enabled": {
+  "LPi14": {
+   "transmitter": "glutamate",
+   "citations": [
+    "Mauss et al. 2014 J Neurosci 34:2254-2263, doi:10.1523/JNEUROSCI.3938-13.2014 (null-direction inhibition onto HS and VS cells is glutamatergic, via GluCl, measured pharmacologically and optogenetically)",
+    "Mauss et al. 2015 Cell 162:351-363, doi:10.1016/j.cell.2015.06.035 (LPi3-4 and LPi4-3 are glutamatergic lobula plate intrinsic neurons that carry null-direction inhibition onto lobula plate tangential cells)"
+   ],
+   "evidence": "homology: the measured glutamatergic LPi class extended to BANC's LPi14 type. Lane C's C-A9 (2026-09-03, edge counts, vision/results-c-a9-lpi14-null-direction-interneuron.json) shows row 71832 takes 25,351 of 33,909 input synapses from T4b/T5b (16.4 to 1 over a-subtypes) and sends 2,370 synapses onto the three right HS cells, which take 24,194 from a-subtypes and 65 from b: the Mauss 2015 architecture, in BANC. C-V90 (seed 59119, paired, both backends) shows silencing that one row raises the early-window direction margin from 0.425 to 0.775 (Metal) and 0.810 (NumPy) and is a bit-identical no-op with sight off.",
+   "corrects": {
+    "banc_row": 71832,
+    "banc_id": "720575941446780842",
+    "verified": "acetylcholine",
+    "predicted": "gaba",
+    "note": "BANC meta carries 3 LPi14 rows, all right-sided: 67115 and 69001 predicted gaba with no verification, 71832 verified acetylcholine against its own gaba prediction. Only 71832 changes sign under this entry (+1 to -1); the other two stay -1 (gaba and glutamate share the fast sign in nt_sign)."
+   },
+   "banc_rows": 3,
+   "status": "HYPOTHESIS by homology: measured for the LPi class, inferred for this type. Hardens on a published LPi14 transmitter or on a BANC re-verification of row 71832; results carry this label.",
+   "opened": "2026-09-03 15:1x EEST, judge"
+  }
+ }
+}

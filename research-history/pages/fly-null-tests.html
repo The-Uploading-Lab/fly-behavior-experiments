@@ -1,0 +1,181 @@
+<title>Null test examples</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root { --bg:#f6f7f5; --panel:#eceeea; --ink:#1c2126; --dim:#5c6670;
+  --line:#d4d8d2; --acc:#c25c22; --gold:#a08a10; --bad:#a83a2a; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg:#0a0e15; --panel:#10151f; --ink:#e8ebee; --dim:#8a94a2;
+  --line:#232b38; --acc:#ef8347; --gold:#e8cf3a; --bad:#f08a7a; } }
+:root[data-theme="dark"] {
+  --bg:#0a0e15; --panel:#10151f; --ink:#e8ebee; --dim:#8a94a2;
+  --line:#232b38; --acc:#ef8347; --gold:#e8cf3a; --bad:#f08a7a; }
+* { box-sizing:border-box }
+body { background:var(--bg); color:var(--ink); margin:0;
+  font:16px/1.6 'Avenir Next','Futura',system-ui,sans-serif }
+.wrap { max-width:860px; margin:0 auto; padding:44px 24px 90px }
+h1 { font-size:clamp(30px,5vw,46px); font-weight:600; margin:6px 0 10px;
+  letter-spacing:-.01em; line-height:1.12 }
+h2 { font-size:22px; font-weight:600; margin:0 0 4px }
+h3 { font-size:15px; font-weight:600; margin:22px 0 6px; letter-spacing:.01em }
+.eyebrow { font:600 12px ui-monospace,'SF Mono',monospace;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--dim) }
+.lede { color:var(--dim); font-size:17px; margin:0 0 10px; max-width:64ch }
+.scope { border:1px solid var(--line); border-left:3px solid var(--acc);
+  background:var(--panel); border-radius:10px; padding:14px 18px;
+  font-size:14px; color:var(--dim); margin:24px 0 34px; max-width:70ch }
+.scope b { color:var(--ink) }
+.sectitle { font:600 12px ui-monospace,'SF Mono',monospace;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--dim);
+  margin:40px 0 14px }
+.card { background:var(--panel); border:1px solid var(--line);
+  border-radius:14px; padding:24px 26px; margin:0 0 22px }
+.verdict { font:600 12px ui-monospace,'SF Mono',monospace; letter-spacing:.12em;
+  text-transform:uppercase; margin:0 0 10px }
+.verdict.ok { color:var(--gold) } .verdict.no { color:var(--bad) }
+.card p { margin:0 0 10px; max-width:70ch }
+.vid { margin:14px 0 6px } .vid video { width:100%; border-radius:10px;
+  background:#000; display:block; max-width:100% }
+.cap { font-size:13px; color:var(--dim); margin:6px 0 0; max-width:70ch }
+.tablewrap { overflow-x:auto; margin:0 0 8px }
+table { border-collapse:collapse; font-size:13.5px; min-width:520px }
+th, td { text-align:left; padding:6px 12px 6px 0; border-bottom:1px solid var(--line);
+  vertical-align:top; white-space:nowrap }
+th { font:600 11px ui-monospace,'SF Mono',monospace; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--dim) }
+td.num { font-variant-numeric:tabular-nums }
+.note { font-size:13.5px; color:var(--dim); max-width:70ch }
+code { font:13px ui-monospace,'SF Mono',monospace; background:var(--panel);
+  padding:1px 5px; border-radius:4px }
+pre { background:var(--panel); border:1px solid var(--line); border-radius:10px;
+  padding:12px 14px; overflow-x:auto; font:12.5px/1.5 ui-monospace,'SF Mono',monospace }
+ul { padding-left:20px } li { margin:0 0 6px; max-width:70ch }
+a { color:var(--acc) }
+</style>
+
+<div class="wrap">
+<div class="eyebrow">fly-wbe &middot; null tests</div>
+<h1>Null test examples</h1>
+<p class="lede">How much of the walking is the wiring? The cheapest way to ask is to keep everything else fixed and scramble only who connects to whom. Here is the current champion beside two scrambled copies of its own connectome, run with the same neuron models, the same tuned parameters, the same body and the same random seed.</p>
+
+<div class="scope"><b>Two comparisons on this page, and what each holds fixed.</b> The champion fly, wi1, is the measured female connectome (BANC, 188,508 neurons, 13,620,865 connections) with 56 settings on top, most of them searched: leg joint stiffness, muscle gains, sensory encodings, delays and the like. Both shuffles keep the neuron models, the simulation engine, the six seconds and the twelve random seeds; only the connection table is changed, by a rule that destroys one thing and keeps the rest. <b>Comparison one, directly below: same settings.</b> The shuffles run the champion's 56 settings unchanged, so the question is whether the champion's recipe walks on random wiring. <b>Comparison two, further down: same search budget.</b> Each wiring, the measured one included, had the same thirteen dials searched from scratch with the same procedure and the same 156 runs, and the winners were graded on the same twelve seeds, so the question is whether random wiring can be tuned to walk as well as the real wiring can. Both are screens at twelve seeds per arm, and the budget in comparison two is small next to the champion's lineage; the full-scale version is the project's pre-registered stage 5 and is still to come.</div>
+
+<div class="sectitle">The three flies, same seed 30555</div>
+
+<article class="card">
+<h2>The champion, measured wiring</h2>
+<p class="verdict ok">walks: 8 of 12 seeds stand and step at real-fly cadence</p>
+<p>wi1, the title holder since 7 September 2026. On this seed it travels 12.43 mm in six seconds, steps at 5.18 times a second on the ten millisecond read, and finishes upright at 10.4 degrees of tilt. The panel on the right is the whole nervous system firing, brain at the top; the traces underneath are each foot's load on the ground.</p>
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://theuploadinglab.ai/fly/walker_wi1_body.mp4#t=0.1"></video>
+</figure>
+<p class="cap">Judge seed 30555, the champion's published clip, rendered 7 September 2026. Six seconds of simulation shown at 0.37x speed.</p>
+</article>
+
+<article class="card">
+<h2>Degree-preserving shuffle</h2>
+<p class="verdict no">does not walk: 0 of 12, upright and frozen</p>
+<p>The rule: keep every neuron's number of inputs and outputs exactly, and reassign which neurons they go to at random (the configuration model, done by permuting the target column of the edge table). Everything the wiring diagram says about <em>how connected</em> each cell is survives; everything it says about <em>who talks to whom</em> is gone. The fly stands on its feet and does nothing: 0.07 mm of travel on this seed, no foot lifted on eleven of the twelve seeds. The nervous-system panel is nearly dark: far fewer cells fire than on the measured wiring, and the motor neurons at the bottom stay off.</p>
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://media.theuploadinglab.ai/walker_wi1_null_degree_seed30555.sha256-8563b38fb43269bde0635b4b0808d23fab91b8cc631c85705e9190bbcbf3ae82.mp4#t=0.1"></video>
+</figure>
+<p class="cap">Same seed, same parameters, same engine. Shuffle seed 20260911; the permutation made 215 self-connections and 32,631 duplicate connections out of 13,620,865, counted and kept rather than dropped.</p>
+</article>
+
+<article class="card">
+<h2>Cell-type-preserving shuffle</h2>
+<p class="verdict no">does not walk: 0 of 12, on its back in 11 of 12</p>
+<p>The rule: keep how many connections each cell type sends to each other cell type, and reassign the individual targets at random within the type. This is the null that asks whether the connectome is worth more than its type-level summary, a few thousand numbers instead of thirteen million. It keeps far more structure than the degree shuffle, and the outcome is worse for standing: the fly's legs fire, it pushes off, and it lands on its back within the first second on eleven seeds (final tilt 172 to 173 degrees), and on its side on the twelfth. Neurons with no cell type label, 37 percent of the map, keep their real inputs.</p>
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://media.theuploadinglab.ai/walker_wi1_null_type_seed30555.sha256-08c3299681a96eeeeddda3fd57f45277612f947a5d0e1aae169ed57079a29984.mp4#t=0.1"></video>
+</figure>
+<p class="cap">Same seed, same parameters, same engine. 11,504 cell-type groups; 11,352,175 connections rewired, 2,268,690 left alone because their target cell has no type label; 10,292 self-connections and 551,560 duplicates made.</p>
+</article>
+
+<div class="sectitle">Twelve seeds per arm, the same twelve for all three</div>
+<p class="note">Seeds 30544 to 30555, the second block of the champion's own title match on 7 September 2026. The champion rows below are identical to that match's record, to the digit, because the engine is deterministic. "Stands" is the title bar's own test: final tilt under 51.68 degrees, body height above 1 mm, at least 0.3 mm travelled. "Qualifies" adds at least five lifts on every foot and a step rate between 5 and 16 per second, read with the bar's ten millisecond minimum swing. Medians are over all twelve runs.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>arm</th><th>stands</th><th>qualifies</th><th>median travel</th><th>median step rate</th><th>final tilt, range</th></tr></thead>
+<tbody>
+<tr><td>measured wiring (wi1)</td><td class="num">8 / 12</td><td class="num">8 / 12</td><td class="num">8.95 mm</td><td class="num">5.09 Hz</td><td class="num">10.4 to 15.1 deg upright; 171.5 to 173.2 on the four falls</td></tr>
+<tr><td>degree-preserving shuffle</td><td class="num">0 / 12</td><td class="num">0 / 12</td><td class="num">0.03 mm</td><td class="num">0.00 Hz</td><td class="num">2.4 to 3.3 deg, never moves</td></tr>
+<tr><td>cell-type-preserving shuffle</td><td class="num">0 / 12</td><td class="num">0 / 12</td><td class="num">4.21 mm</td><td class="num">1.18 Hz</td><td class="num">171.9 to 173.0 deg on eleven, 105.3 on one</td></tr>
+</tbody></table></div>
+<p class="note">The type shuffle's 4.21 mm of travel and its step count come from a fly falling over and kicking on its back, not from walking, which is why the standing test comes first in the bar and every other number is read only on standing runs.</p>
+
+<div class="tablewrap"><table>
+<thead><tr><th>seed</th><th>wi1 travel</th><th>wi1 tilt</th><th>degree travel</th><th>degree tilt</th><th>type travel</th><th>type tilt</th></tr></thead>
+<tbody>
+<tr><td>30544</td><td class="num">7.69</td><td class="num">10.9</td><td class="num">0.02</td><td class="num">3.1</td><td class="num">0.23</td><td class="num">173.0</td></tr>
+<tr><td>30545</td><td class="num">10.96</td><td class="num">11.8</td><td class="num">0.03</td><td class="num">2.9</td><td class="num">4.37</td><td class="num">172.6</td></tr>
+<tr><td>30546</td><td class="num">8.68</td><td class="num">11.3</td><td class="num">0.07</td><td class="num">3.1</td><td class="num">7.21</td><td class="num">172.7</td></tr>
+<tr><td>30547</td><td class="num">5.36</td><td class="num">171.9</td><td class="num">0.01</td><td class="num">2.9</td><td class="num">4.47</td><td class="num">171.9</td></tr>
+<tr><td>30548</td><td class="num">9.23</td><td class="num">15.1</td><td class="num">0.03</td><td class="num">2.6</td><td class="num">4.66</td><td class="num">172.6</td></tr>
+<tr><td>30549</td><td class="num">13.08</td><td class="num">10.7</td><td class="num">0.03</td><td class="num">2.9</td><td class="num">3.69</td><td class="num">171.9</td></tr>
+<tr><td>30550</td><td class="num">5.73</td><td class="num">173.2</td><td class="num">0.02</td><td class="num">2.4</td><td class="num">3.56</td><td class="num">172.2</td></tr>
+<tr><td>30551</td><td class="num">16.43</td><td class="num">12.4</td><td class="num">0.02</td><td class="num">3.1</td><td class="num">3.81</td><td class="num">172.5</td></tr>
+<tr><td>30552</td><td class="num">8.66</td><td class="num">171.6</td><td class="num">0.03</td><td class="num">2.8</td><td class="num">6.56</td><td class="num">105.3</td></tr>
+<tr><td>30553</td><td class="num">13.71</td><td class="num">12.1</td><td class="num">0.04</td><td class="num">2.9</td><td class="num">4.47</td><td class="num">172.6</td></tr>
+<tr><td>30554</td><td class="num">7.04</td><td class="num">171.5</td><td class="num">0.02</td><td class="num">3.1</td><td class="num">4.05</td><td class="num">172.6</td></tr>
+<tr><td>30555</td><td class="num">12.43</td><td class="num">10.4</td><td class="num">0.07</td><td class="num">3.3</td><td class="num">3.76</td><td class="num">172.4</td></tr>
+</tbody></table></div>
+<p class="note">Travel in mm over six seconds; tilt in degrees between the body's up axis and the world's, averaged over the final second (0 is upright, 180 is on its back).</p>
+
+
+<div class="sectitle">Same tuning budget, three wirings</div>
+<p class="lede">The fairer half of the question, at a small budget. Each wiring got the same search: thirteen of the champion's dials (joint stiffness, sensory gains, command rate, synaptic delay, adaptation, balance, synaptic scale and the graded-release curve) searched from scratch inside their declared bounds, 40 random draws and then 80 hill-climb steps, one six-second run per candidate on a seed outside the grading block. The 40 random draws are the same settings on all three wirings. The three best candidates per wiring were then graded on the same twelve seeds as above. Pre-registered before the first run, with the prediction that the measured wiring would qualify on more seeds than either shuffle and would not recover the champion's 8 of 12.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>arm</th><th>stands</th><th>qualifies</th><th>median travel</th><th>median step rate</th><th>every foot lifts</th><th>standing candidates in the search</th></tr></thead>
+<tbody>
+<tr><td>measured wiring, re-searched</td><td class="num">12 / 12</td><td class="num">3 / 12</td><td class="num">9.92 mm</td><td class="num">4.73 Hz</td><td class="num">12 / 12 seeds</td><td class="num">62 / 120</td></tr>
+<tr><td>degree-preserving shuffle, searched</td><td class="num">12 / 12</td><td class="num">0 / 12</td><td class="num">3.93 mm</td><td class="num">0.77 Hz</td><td class="num">0 / 12 seeds</td><td class="num">51 / 120</td></tr>
+<tr><td>cell-type-preserving shuffle, searched</td><td class="num">9 / 12</td><td class="num">0 / 12</td><td class="num">6.55 mm</td><td class="num">2.18 Hz</td><td class="num">0 / 12 seeds</td><td class="num">46 / 120</td></tr>
+</tbody></table></div>
+<p class="note">"Stands" is the bar's test again (tilt, height, at least 0.3 mm of travel), which a fly that slides forward without stepping also passes. "Every foot lifts" counts seeds on which each of the six feet left the ground at least five times on the ten millisecond read; it is the part of "qualifies" that separates the arms. The measured arm fails to qualify on nine seeds because its step rate sits at 4.7 per second, just under the 5 Hz floor, with every foot lifting ten to seventeen times.</p>
+
+<article class="card">
+<h2>Measured wiring, searched from scratch</h2>
+<p class="verdict ok">stands 12 of 12, steps on every foot, cadence just under the bar</p>
+<p>The search found a fly that stands on every seed and travels a median 9.9 mm in six seconds, stepping at 4.7 times a second. It is a worse fly than the champion (which stood 8 of 12 but qualified 8 of 12 at 5.1 Hz), which was predicted: 120 evaluations from random settings is far less search than the champion's lineage had.</p>
+<figure class="vid"><video controls playsinline preload="metadata" src="https://media.theuploadinglab.ai/walker_wi1_null_real_seed30555_samebudget.sha256-45ddfb7620401f97448ad920dc903852d64d71301e111ca79bccc502a33be873.mp4#t=0.1"></video></figure>
+<p class="cap">Seed 30555, the search's winner (candidate 87, a hill-climb step). Same engine and body as every other clip on this page.</p>
+</article>
+
+<article class="card">
+<h2>Degree-preserving shuffle, searched from scratch</h2>
+<p class="verdict no">stands 12 of 12, slides 3.9 mm, no foot ever lifts</p>
+<p>With its own search the degree shuffle no longer freezes: it stands on every seed and moves 3.8 to 4.1 mm, the same distance every time. But on all twelve seeds at least one foot never leaves the ground, and the median step rate is under one per second. The search pushed two dials to the edge of their boxes (drive scale to its maximum, the load-sensing gain to its minimum): the body is being shoved along by constant motor drive, not walked.</p>
+<figure class="vid"><video controls playsinline preload="metadata" src="https://media.theuploadinglab.ai/walker_wi1_null_degree_seed30555_samebudget.sha256-4fb930747db4791e7fdb4a28e0cc4489b0b82c1b9e19782f59744cbe37fb4156.mp4#t=0.1"></video></figure>
+<p class="cap">Seed 30555, the search's winner (candidate 56, a hill-climb step).</p>
+</article>
+
+<article class="card">
+<h2>Cell-type-preserving shuffle, searched from scratch</h2>
+<p class="verdict no">stands 9 of 12, travels 6.5 mm, no seed on which every foot lifts</p>
+<p>The type shuffle recovers the most of the three shuffles, which fits what it keeps: type-to-type connection counts. Its winner stands on nine seeds and falls on three, travels a median 6.5 mm, and steps at about two per second with some feet never lifting. Closer to walking than the degree shuffle, still not walking by the bar.</p>
+<figure class="vid"><video controls playsinline preload="metadata" src="https://media.theuploadinglab.ai/walker_wi1_null_type_seed30555_samebudget.sha256-ed87d1001e1f8c4257c6248081ce88a152926096fc1b972322f9c07517697e02.mp4#t=0.1"></video></figure>
+<p class="cap">Seed 30555, the search's winner (candidate 81, a hill-climb step).</p>
+</article>
+
+<p class="note">Both registered predictions held: the measured wiring qualifies on more seeds (3 against 0 and 0) and does not reach the champion's count. What the run adds to the fixed-parameter clips is that the shuffles are not simply dead: given their own tuning, both stand, both move, and neither produces a step cycle in which every leg lifts. One search per wiring, one search seed, 156 runs each; the registration and every run are in <code>lanes/field/2026-09-11-null-examples/</code>. The search was restarted once, at candidate 85 of the degree arm, when the machine began paging and each run slowed from 21 to 86 seconds; it resumed from its logged rows without re-evaluating any.</p>
+
+<div class="sectitle">What this does and does not show</div>
+<ul>
+<li><b>It shows the champion's recipe is specific to the measured wiring.</b> At these 56 settings, two different ways of keeping the wiring's statistics and discarding its particulars both lose walking completely, on every seed, in two different ways: the degree shuffle goes silent, the type shuffle falls.</li>
+<li><b>The fixed-parameter clips do not show that random wiring cannot be tuned to walk.</b> The same-budget section above is the small version of that test: tuned shuffles stand and move, and neither steps on every foot, while the tuned measured wiring does. The full stage 5 experiment, the same procedure at the lineage's scale, is still not run.</li>
+<li><b>An earlier, weaker version went the other way, and it is on the record.</b> On 14 August 2026, at that day's body and parameters and on a nerve-cord-only cut of the graph with connections of ten or more synapses, a degree-preserving shuffle stood and stepped in band on 5 of 8 seeds, as many as the real cut, and the difference showed up only in leg coordination and stability (2 of 6 standing against 4 of 6 on a six-seed battery). The lesson recorded then was that the body loop can manufacture tempo on its own, so tempo alone is not evidence for the wiring. Today's champion is a different body, integrated exactly rather than by a numerical mode, driven through measured sensory encodings, and on it the same shuffle does not move at all. Whether that reflects the wiring or the recipe's brittleness is exactly the stage 5 question.</li>
+<li><b>Twelve seeds is a screen.</b> Zero of twelve against eight of twelve is not a close call, but it is one parameter set, one shuffle draw per null, and one seed block.</li>
+</ul>
+
+<div class="sectitle">Reproduce</div>
+<p class="note">Everything is in the fly-wbe repository at commit <code>c7d79be7e</code> (engine) with the scripts and receipts committed under <code>lanes/field/2026-09-11-null-examples/</code>. Theta <code>results-wi1-theta.json</code>, SHA-256 <code>ba18676b65b3db07…</code>, plus <code>spike_reg</code> 44 as at every title match; deterministic Metal engine, exact joint integration, 6,000 ms per run. The champion clip is the judge's verified replay from the coronation; the shuffle clips replay each run's own capture onto the same body.</p>
+<pre>PYTHONPATH=. .venv/bin/python lanes/field/2026-09-11-null-examples/null_screen.py \
+    lanes/field/2026-09-11-null-examples/null_screen_30544-30555.json real,degree,type
+PYTHONPATH=. .venv/bin/python lanes/field/2026-09-11-null-examples/render_null_clip.py \
+    --null degree --seed 30555 --outdir lanes/field/2026-09-11-null-examples
+PYTHONPATH=. .venv/bin/python lanes/field/2026-09-11-null-examples/render_null_clip.py \
+    --null type --seed 30555 --outdir lanes/field/2026-09-11-null-examples
+PYTHONPATH=. .venv/bin/python lanes/field/2026-09-11-null-examples/same_budget_search.py \
+    lanes/field/2026-09-11-null-examples/same_budget_search.json real,degree,type</pre>
+<p class="note">Shuffle rules are copied from <code>nulls.py</code>, the project's null family (degree, weight, sign, type, type-and-side, full), of which these are two. Made on 11 September 2026 after a reader asked whether the biological wiring had been compared against shuffled connectivity with the neuron models and tuning budget held the same. The first half of that question is answered by the fixed-parameter clips; the second half, at a small budget, by the same-budget section. At the lineage's full scale it is still owed.</p>
+</div>

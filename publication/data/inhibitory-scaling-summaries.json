@@ -1,0 +1,379 @@
+{
+  "status": "archived summaries extracted; no new simulation or raw-card recomputation",
+  "source_hashes": {
+    "balance-stage0.json": "2489ed8dd40fa00d47792c07904262d0c03ecf716b74a7ed9ff64698a0421592",
+    "balance-decision.json": "58419dabccf8814897efe8e100df07dcc9ec7bd521c03c4633141bce9803d71f"
+  },
+  "balance": {
+    "rescaled": 157104,
+    "raised": 134215,
+    "cut": 22889,
+    "solved": 157104,
+    "median": 2.582,
+    "p5": 0.3283,
+    "p95": 10.5142,
+    "at_cap_20": 3466,
+    "exempt": 6025,
+    "no_inhibitory_input": 25405
+  },
+  "exact_type_variance": {
+    "solved_rows": 154037,
+    "typed_rows": 111127,
+    "exact_type_share_typed": 0.7685,
+    "super_class_share": 0.0772,
+    "own_token_share": 0.0376,
+    "log_cable_r2": 0.0134,
+    "log_input_weight_r2": 0.0286,
+    "within_type_fold_per_sd": 1.599
+  },
+  "arms": [
+    {
+      "arm": "C1",
+      "standing": {
+        "arm": 24,
+        "body": 22,
+        "n": 24,
+        "floor": 18,
+        "arm_fell_on": [],
+        "body_fell_on": [
+          223690,
+          223692
+        ],
+        "paired": {
+          "build_only": [
+            223690,
+            223692
+          ],
+          "wm1_only": [],
+          "sign_p_two_sided": 0.5
+        }
+      },
+      "speed_card": {
+        "arm": {
+          "median": 1.2074,
+          "band": [
+            2.0,
+            45.0
+          ],
+          "in_band": "0/24",
+          "grade": "CONFLICT"
+        },
+        "body": {
+          "median": 2.1647,
+          "band": [
+            2.0,
+            45.0
+          ],
+          "in_band": "13/22",
+          "grade": "PASS"
+        }
+      },
+      "retained": false
+    },
+    {
+      "arm": "C2",
+      "standing": {
+        "arm": 21,
+        "body": 22,
+        "n": 24,
+        "floor": 18,
+        "arm_fell_on": [
+          223700,
+          223704,
+          223711
+        ],
+        "body_fell_on": [
+          223690,
+          223692
+        ],
+        "paired": {
+          "build_only": [
+            223690,
+            223692
+          ],
+          "wm1_only": [
+            223700,
+            223704,
+            223711
+          ],
+          "sign_p_two_sided": 1.0
+        }
+      },
+      "speed_card": {
+        "arm": {
+          "median": 1.4018,
+          "band": [
+            2.0,
+            45.0
+          ],
+          "in_band": "0/21",
+          "grade": "CONFLICT"
+        },
+        "body": {
+          "median": 2.1647,
+          "band": [
+            2.0,
+            45.0
+          ],
+          "in_band": "13/22",
+          "grade": "PASS"
+        }
+      },
+      "retained": false
+    },
+    {
+      "arm": "C3",
+      "standing": {
+        "arm": 21,
+        "body": 22,
+        "n": 24,
+        "floor": 18,
+        "arm_fell_on": [
+          223694,
+          223705,
+          223711
+        ],
+        "body_fell_on": [
+          223690,
+          223692
+        ],
+        "paired": {
+          "build_only": [
+            223690,
+            223692
+          ],
+          "wm1_only": [
+            223694,
+            223705,
+            223711
+          ],
+          "sign_p_two_sided": 1.0
+        }
+      },
+      "speed_card": {
+        "arm": {
+          "median": 1.6329,
+          "band": [
+            2.0,
+            45.0
+          ],
+          "in_band": "0/21",
+          "grade": "CONFLICT"
+        },
+        "body": {
+          "median": 2.1647,
+          "band": [
+            2.0,
+            45.0
+          ],
+          "in_band": "13/22",
+          "grade": "PASS"
+        }
+      },
+      "retained": false
+    },
+    {
+      "arm": "C4",
+      "standing": {
+        "arm": 19,
+        "body": 22,
+        "n": 24,
+        "floor": 18,
+        "arm_fell_on": [
+          223697,
+          223703,
+          223705,
+          223707,
+          223712
+        ],
+        "body_fell_on": [
+          223690,
+          223692
+        ],
+        "paired": {
+          "build_only": [
+            223690,
+            223692
+          ],
+          "wm1_only": [
+            223697,
+            223703,
+            223705,
+            223707,
+            223712
+          ],
+          "sign_p_two_sided": 0.453125
+        }
+      },
+      "speed_card": {
+        "arm": {
+          "median": 1.7328,
+          "band": [
+            2.0,
+            45.0
+          ],
+          "in_band": "5/19",
+          "grade": "CONFLICT"
+        },
+        "body": {
+          "median": 2.1647,
+          "band": [
+            2.0,
+            45.0
+          ],
+          "in_band": "13/22",
+          "grade": "PASS"
+        }
+      },
+      "retained": false
+    },
+    {
+      "arm": "M",
+      "standing": {
+        "arm": 18,
+        "body": 22,
+        "n": 24,
+        "floor": 18,
+        "arm_fell_on": [
+          223691,
+          223695,
+          223702,
+          223704,
+          223710,
+          223712
+        ],
+        "body_fell_on": [
+          223690,
+          223692
+        ],
+        "paired": {
+          "build_only": [
+            223690,
+            223692
+          ],
+          "wm1_only": [
+            223691,
+            223695,
+            223702,
+            223704,
+            223710,
+            223712
+          ],
+          "sign_p_two_sided": 0.2890625
+        }
+      },
+      "speed_card": {
+        "arm": {
+          "median": 1.7629,
+          "band": [
+            2.0,
+            45.0
+          ],
+          "in_band": "3/18",
+          "grade": "CONFLICT"
+        },
+        "body": {
+          "median": 2.1647,
+          "band": [
+            2.0,
+            45.0
+          ],
+          "in_band": "13/22",
+          "grade": "PASS"
+        }
+      },
+      "retained": false
+    },
+    {
+      "arm": "F",
+      "standing": {
+        "arm": 24,
+        "body": 22,
+        "n": 24,
+        "floor": 18,
+        "arm_fell_on": [],
+        "body_fell_on": [
+          223690,
+          223692
+        ],
+        "paired": {
+          "build_only": [
+            223690,
+            223692
+          ],
+          "wm1_only": [],
+          "sign_p_two_sided": 0.5
+        }
+      },
+      "speed_card": {
+        "arm": {
+          "median": 2.4809,
+          "band": [
+            2.0,
+            45.0
+          ],
+          "in_band": "20/24",
+          "grade": "PASS"
+        },
+        "body": {
+          "median": 2.1647,
+          "band": [
+            2.0,
+            45.0
+          ],
+          "in_band": "13/22",
+          "grade": "PASS"
+        }
+      },
+      "retained": false
+    },
+    {
+      "arm": "P",
+      "standing": {
+        "arm": 23,
+        "body": 22,
+        "n": 24,
+        "floor": 18,
+        "arm_fell_on": [
+          223696
+        ],
+        "body_fell_on": [
+          223690,
+          223692
+        ],
+        "paired": {
+          "build_only": [
+            223690,
+            223692
+          ],
+          "wm1_only": [
+            223696
+          ],
+          "sign_p_two_sided": 1.0
+        }
+      },
+      "speed_card": {
+        "arm": {
+          "median": 1.5303,
+          "band": [
+            2.0,
+            45.0
+          ],
+          "in_band": "0/23",
+          "grade": "CONFLICT"
+        },
+        "body": {
+          "median": 2.1647,
+          "band": [
+            2.0,
+            45.0
+          ],
+          "in_band": "13/22",
+          "grade": "PASS"
+        }
+      },
+      "retained": false
+    }
+  ],
+  "caution": "speed medians are archived standing-run card summaries, not failure-inclusive primary endpoints"
+}

@@ -1,0 +1,160 @@
+<title>The project from first principles · fly-wbe</title>
+<style>
+:root{
+  --ink:#12161c;--ink-2:#3d4653;--ink-3:#6b7684;
+  --bg:#f6f7f9;--card:#fff;--line:#dfe3e9;
+  --cyan:#0f7f78;--cyan-bg:#e3f2f0;--violet:#6667a8;--violet-bg:#ececf8;
+  --amber:#9a6a12;--amber-bg:#f8f0dd;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Menlo,Consolas,monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+}
+@media(prefers-color-scheme:dark){:root{
+  --ink:#e6eaf0;--ink-2:#a9b4c2;--ink-3:#78838f;
+  --bg:#0d1117;--card:#151b23;--line:#252d38;
+  --cyan:#55c5bc;--cyan-bg:#132927;--violet:#a7a8e8;--violet-bg:#202038;
+  --amber:#e0b453;--amber-bg:#2b2417;
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1000px;margin:0 auto;padding:48px 24px 96px}
+h1,h2,h3{margin:0;line-height:1.18;text-wrap:balance}
+h1{font-size:clamp(34px,5vw,54px);letter-spacing:-.035em}
+h2{font-size:clamp(24px,3vw,31px);letter-spacing:-.02em}
+h3{font-size:17px}
+p{margin:0}
+section{margin-top:72px}
+.eyebrow,.tag,.meta dt{font:600 11px/1.4 var(--mono);letter-spacing:.09em;text-transform:uppercase}
+.eyebrow{color:var(--cyan);margin-bottom:15px}
+.lede{max-width:760px;margin-top:20px;color:var(--ink-2);font-size:18px}
+.lede strong{color:var(--ink)}
+.meta{display:flex;flex-wrap:wrap;gap:16px 42px;margin:30px 0 0}
+.meta div{display:grid;gap:3px}
+.meta dt{color:var(--ink-3)}
+.meta dd{margin:0;font:14px/1.4 var(--mono)}
+.section-intro{max-width:720px;margin-top:10px;color:var(--ink-2)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:24px}
+.card{padding:22px;border-radius:10px;background:var(--card);box-shadow:inset 0 0 0 1px var(--line)}
+.card p{margin-top:10px;color:var(--ink-2)}
+.tag{display:inline-block;margin-bottom:12px;color:var(--cyan)}
+.lanes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:24px}
+.lane{padding:18px;border-radius:10px;background:var(--card);box-shadow:inset 0 0 0 1px var(--line)}
+.lane b{display:block;font-size:15px}
+.lane span{display:block;margin-top:6px;color:var(--ink-3);font-size:13px}
+.judge{margin-top:12px;padding:18px 20px;border-radius:10px;background:var(--violet-bg);color:var(--ink-2)}
+.judge strong{color:var(--violet)}
+.result{margin-top:24px;padding:26px;border-radius:12px;background:var(--cyan-bg)}
+.result h3{font-size:21px;color:var(--cyan)}
+.result p{max-width:760px;margin-top:10px;color:var(--ink-2)}
+.numbers{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.number{padding:16px;border-radius:8px;background:color-mix(in srgb,var(--card) 72%,transparent)}
+.number b{display:block;font:600 21px/1.2 var(--mono);color:var(--ink)}
+.number span{font-size:13px;color:var(--ink-3)}
+.open{margin-top:14px;padding:20px;border-radius:10px;background:var(--amber-bg);color:var(--ink-2)}
+.open strong{color:var(--amber)}
+.snapshot{display:grid;grid-template-columns:448fr 42fr 460fr;gap:4px;margin-top:24px}
+.segment{min-width:90px;padding:18px 14px;border-radius:7px;background:var(--cyan-bg);color:var(--cyan)}
+.segment:nth-child(2){background:var(--violet-bg);color:var(--violet)}
+.segment:nth-child(3){background:var(--amber-bg);color:var(--amber)}
+.segment b{display:block;font:600 22px/1.2 var(--mono)}
+.segment span{font:11px/1.3 var(--mono);text-transform:uppercase}
+.snapshot-note{max-width:760px;margin-top:14px;color:var(--ink-3);font-size:14px}
+.rules{display:grid;gap:12px;margin-top:24px}
+.rule{display:grid;grid-template-columns:32px 1fr;gap:12px;align-items:start}
+.rule-num{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--violet-bg);color:var(--violet);font:600 12px var(--mono)}
+.rule p{color:var(--ink-2)}
+footer{margin-top:72px;color:var(--ink-3);font-size:13px}
+@media(max-width:760px){.grid,.lanes{grid-template-columns:1fr}.snapshot{grid-template-columns:1fr}.numbers{grid-template-columns:1fr}.wrap{padding-top:36px}}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">fly-wbe · the project from first principles</div>
+  <h1>Can a wiring diagram become an animal?</h1>
+  <p class="lede">A connectome tells us which neurons touch. It does not tell us how the animal runs. We take the fly's measured wiring, place it in a physical body, close the loop from sensors to neurons to muscles to the world, and ask one hard question: <strong>does it behave like a living fly?</strong></p>
+  <dl class="meta">
+    <div><dt>Connectome</dt><dd>188,508 neurons</dd></div>
+    <div><dt>Connections</dt><dd>13.6 million synapses</dd></div>
+    <div><dt>Current champion</dt><dd>r23 · crowned 2026-08-24</dd></div>
+    <div><dt>Programmes</dt><dd>walking · vision · compass</dd></div>
+  </dl>
+</header>
+
+<section>
+  <h2>The method</h2>
+  <p class="section-intro">The goal is a lo-fi whole-brain emulation whose behaviour cannot be distinguished from a real fly on fixed measurements. We keep the anatomy measured and make every uncertainty visible.</p>
+  <div class="grid">
+    <article class="card">
+      <span class="tag">01 · Measured wiring</span>
+      <h3>Start with the connectome</h3>
+      <p>We use published connectomes rather than drawing a circuit that produces the answer we want. We tune shared physiology, such as gains and time constants, but never add, remove, or individually reweight synapses.</p>
+    </article>
+    <article class="card">
+      <span class="tag">02 · Closed loop</span>
+      <h3>Give the network a body and a world</h3>
+      <p>A brain is not its activity trace. The model has to sense, move, touch the ground, and receive the consequences of its own actions. Behaviour emerges from that full loop.</p>
+    </article>
+    <article class="card">
+      <span class="tag">03 · Honest unknowns</span>
+      <h3>Label guesses, then search them</h3>
+      <p>Missing physiology becomes an explicit parameter, not a hidden zero. Measured values are constraints. Educated guesses come next. Unmeasured values are searched and remain labelled as guesses.</p>
+    </article>
+    <article class="card">
+      <span class="tag">04 · Living benchmark</span>
+      <h3>Grade the model against the animal</h3>
+      <p>Every claim must survive measured neural or behavioural data. A conflict is useful because it eliminates a wrong model. Once a constraint is earned, it stays in the test battery.</p>
+    </article>
+  </div>
+</section>
+
+<section>
+  <h2>Four lanes, one judge</h2>
+  <p class="section-intro">Research runs in parallel, but findings enter the record only after independent verification.</p>
+  <div class="lanes">
+    <div class="lane"><b>Lane A</b><span>Claude Code, local · walking</span></div>
+    <div class="lane"><b>Lane B</b><span>Cursor, cloud · walking</span></div>
+    <div class="lane"><b>Lane C</b><span>Codex, local · vision</span></div>
+    <div class="lane"><b>Lane D</b><span>Codex Cloud · compass</span></div>
+  </div>
+  <p class="judge"><strong>The judge</strong> reads every packet, reruns decisive results on fresh seeds, records failures and corrections, and merges only what survives into the main ledger and diary.</p>
+</section>
+
+<section>
+  <h2>Where the fly stands today</h2>
+  <p class="section-intro">The walking question has moved from “can it stand?” to “can it go somewhere?”</p>
+  <div class="result">
+    <h3>r23 is the first champion required to step at real-fly cadence</h3>
+    <p>It met the v3.1 title rule on four of five independent 12-seed batteries at measured input regularity. The failed battery is published beside the passes.</p>
+    <div class="numbers">
+      <div class="number"><b>4 of 5</b><span>batteries met the title clause</span></div>
+      <div class="number"><b>5.18 Hz</b><span>judge-battery cadence</span></div>
+      <div class="number"><b>9.1 mm/s</b><span>path speed, inside the fly band</span></div>
+    </div>
+  </div>
+  <p class="open"><strong>The open conflict:</strong> r23 walks at fly cadence and holds its body heading, but its movement has no preferred direction. Net speed is only 0.457 mm/s. The current model contains about 0.4% of the heading-integration circuitry in the simulated slice, while vision is the largest missing input to the descending layer. Lanes C and D now attack those two missing pieces directly.</p>
+</section>
+
+<section>
+  <h2>How much is measured?</h2>
+  <p class="section-intro">The original stage-zero audit counted every scalar by the strength of its justification. It is a dated snapshot, not a claim that the model has stood still.</p>
+  <div class="snapshot">
+    <div class="segment"><b>448</b><span>measured</span></div>
+    <div class="segment"><b>42</b><span>principled</span></div>
+    <div class="segment"><b>460</b><span>arbitrary</span></div>
+  </div>
+  <p class="snapshot-note">Snapshot from 2026-08-06: 48% of 950 scalar values were explicit guesses. That is not hidden uncertainty. It is the search space, and the project narrows it with every measurement.</p>
+</section>
+
+<section>
+  <h2>The rules that keep the result honest</h2>
+  <div class="rules">
+    <div class="rule"><span class="rule-num">1</span><p><strong>Register before running.</strong> Predictions, measures, and pass criteria are committed before the result exists.</p></div>
+    <div class="rule"><span class="rule-num">2</span><p><strong>Never grade on practice runs.</strong> Title matches use fresh seed blocks, followed by independent confirmation.</p></div>
+    <div class="rule"><span class="rule-num">3</span><p><strong>Keep failures and withdrawals.</strong> Broken instruments and wrong claims stay visible with the correction that replaced them.</p></div>
+    <div class="rule"><span class="rule-num">4</span><p><strong>One fly, not separate demos.</strong> As vision, navigation, smell, and flight are added, the same parameter set must keep every behaviour already earned.</p></div>
+  </div>
+</section>
+
+<footer>
+  Updated 2026-08-24 from the committed project ledger, champion record, and judged research diary.
+</footer>
+</div>

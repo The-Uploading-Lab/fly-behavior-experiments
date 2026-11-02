@@ -1,0 +1,919 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Fly Hall of Fame</title>
+<style>
+:root { --bg:#f6f7f5; --panel:#eceeea; --ink:#1c2126; --dim:#5c6670;
+  --line:#d4d8d2; --acc:#c25c22; --gold:#a08a10; --vac:#8c6b1f; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg:#0a0e15; --panel:#10151f; --ink:#e8ebee; --dim:#8a94a2;
+  --line:#232b38; --acc:#ef8347; --gold:#e8cf3a; --vac:#e8cf3a; } }
+:root[data-theme="dark"] {
+  --bg:#0a0e15; --panel:#10151f; --ink:#e8ebee; --dim:#8a94a2;
+  --line:#232b38; --acc:#ef8347; --gold:#e8cf3a; --vac:#e8cf3a; }
+* { box-sizing:border-box }
+body { background:var(--bg); color:var(--ink); margin:0;
+  font:16px/1.6 'Avenir Next','Futura',system-ui,sans-serif }
+.wrap { max-width:860px; margin:0 auto; padding:44px 24px 90px }
+h1 { font-size:clamp(30px,5vw,46px); font-weight:600; margin:6px 0 10px;
+  letter-spacing:-.01em; line-height:1.12 }
+h2 { font-size:24px; font-weight:600; margin:0 }
+h3 { font-size:15px; font-weight:600; margin:22px 0 6px;
+  letter-spacing:.01em }
+.eyebrow { font:600 12px ui-monospace,'SF Mono',monospace;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--dim) }
+.lede { color:var(--dim); font-size:17px; margin:0 0 10px; max-width:64ch }
+.scope { border:1px solid var(--line); border-left:3px solid var(--acc);
+  background:var(--panel); border-radius:10px; padding:14px 18px;
+  font-size:14px; color:var(--dim); margin:24px 0 34px; max-width:70ch }
+.scope b { color:var(--ink) }
+.sectitle { font:600 12px ui-monospace,'SF Mono',monospace;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--dim);
+  margin:40px 0 14px }
+.throne { background:var(--panel); border:1px solid var(--line);
+  border-radius:12px; padding:16px 18px; margin:0 0 10px }
+.trow { display:flex; align-items:baseline; gap:14px; flex-wrap:wrap }
+.tanimal { font-weight:600; font-size:17px }
+.vacant { font:600 11px ui-monospace,'SF Mono',monospace;
+  letter-spacing:.14em; color:var(--vac); border:1px solid currentColor;
+  border-radius:20px; padding:2.5px 10px }
+.held { font:600 12px ui-monospace,'SF Mono',monospace; color:var(--gold) }
+.tsub { font:12px ui-monospace,'SF Mono',monospace; color:var(--dim);
+  margin:6px 0 8px }
+.tnote { font-size:14px; color:var(--dim); margin:0; max-width:68ch }
+.lineage { font-size:13.5px; margin:10px 0 0 }
+.lineage a { color:var(--acc); text-decoration:none; font-weight:600 }
+.lineage a:hover { text-decoration:underline }
+.lineage .sep { color:var(--dim); font-weight:400; margin:0 7px }
+.champ { background:var(--panel); border:1px solid var(--line);
+  border-radius:14px; padding:26px 28px; margin:0 0 22px }
+.chead { display:flex; gap:16px; align-items:center; margin-bottom:12px }
+.rank { font:600 13px ui-monospace,'SF Mono',monospace; color:var(--gold);
+  border:1px solid currentColor; border-radius:50%; width:34px; height:34px;
+  display:grid; place-items:center; flex:none }
+.epithet { font-size:16px; font-weight:400; color:var(--dim) }
+.headline { font-size:17px; margin:0 0 10px; max-width:66ch }
+.reign { font-size:13.5px; color:var(--dim); margin:0 0 18px }
+.reign a { color:var(--acc); text-decoration:none }
+.tagref { font:11.5px ui-monospace,'SF Mono',monospace; color:var(--dim) }
+.judged, .scopeline { font-size:13.5px; color:var(--dim); margin:0 0 8px;
+  max-width:70ch }
+.judged b { color:var(--ink) }
+p { margin:0 0 12px; max-width:68ch; font-size:15px }
+.tablewrap { overflow-x:auto; margin:14px 0 4px }
+table { border-collapse:collapse; width:100%; font-size:13.5px }
+.card th, .card td { text-align:left; padding:7px 12px 7px 0;
+  vertical-align:baseline }
+/* Auto table layout hands surplus width to whichever column it likes, and
+   on nl1's card it gave the nowrap value column 622px of an 859px table.
+   That squeezed the note column to 96px, wrapped one sentence over twelve
+   lines, and inflated a single row to 208px -- the vertical gaps on the
+   page. Fixed layout with declared column widths makes every card row the
+   height of its content instead. Measured on the live DOM: nl1's table
+   891px -> 300px, its worst row 208px -> 57px. The phone breakpoint below
+   sets these cells to display:block, so it is unaffected. */
+.card { table-layout:fixed }
+.card th { font-weight:500; color:var(--dim); white-space:nowrap;
+  width:22% }
+.cval { font:600 13.5px ui-monospace,'SF Mono',monospace; width:26% }
+.cardline { color:var(--ink); padding:8px 10px }
+.card td:last-child { width:52% }
+.cnote { color:var(--dim) }
+.cmp th, .cmp td { text-align:left; padding:8px 16px 8px 0;
+  white-space:nowrap }
+.cmp thead th { font:600 12px ui-monospace,'SF Mono',monospace;
+  color:var(--dim); letter-spacing:.06em }
+.cmp tbody th { font-weight:500; color:var(--dim) }
+.cmp tbody td { font:600 13.5px ui-monospace,'SF Mono',monospace }
+.unit { color:var(--dim); font-weight:400 }
+.sharednote { font-size:13px; color:var(--dim); max-width:70ch }
+.caveats { margin:0; padding-left:20px; max-width:68ch }
+.caveats li { font-size:14.5px; margin-bottom:7px }
+.defence { font-size:14.5px }
+.srcs { font:11.5px ui-monospace,'SF Mono',monospace; color:var(--dim);
+  margin:20px 0 0 }
+.vid video { width:100%; border-radius:10px; background:#000;
+  border:1px solid var(--line); display:block }
+.vid figcaption { font:12px ui-monospace,'SF Mono',monospace;
+  color:var(--dim); margin-top:7px }
+figure { margin:18px 0 6px }
+.lede2 { color:var(--dim); font-size:15.5px; margin:0 0 18px; max-width:68ch }
+.scorenote { color:var(--dim); font-size:14px; margin:0 0 20px; max-width:70ch }
+.animal { background:var(--panel); border:1px solid var(--line);
+  border-radius:12px; padding:16px 18px; margin:0 0 10px }
+.arow { display:flex; align-items:baseline; gap:12px; flex-wrap:wrap }
+.aname { font:600 17px ui-monospace,'SF Mono',monospace; letter-spacing:.02em }
+.awho { font-size:15px; color:var(--dim) }
+.astat { font:12px ui-monospace,'SF Mono',monospace; color:var(--dim);
+  margin:6px 0 9px }
+.abody { font-size:14.5px; margin:0; max-width:68ch }
+.anote { font-size:14px; color:var(--dim); margin:14px 0 0; max-width:70ch }
+.animal-of { font:12px ui-monospace,'SF Mono',monospace; color:var(--dim);
+  margin:3px 0 0 }
+.reignbox { margin:0 0 18px }
+.reignspan { display:flex; align-items:baseline; gap:10px 14px;
+  flex-wrap:wrap }
+.rlabel { font:600 11px ui-monospace,'SF Mono',monospace; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--gold) }
+.rdates { font-size:19px; font-weight:600; letter-spacing:-.01em }
+.rheld { font:12.5px ui-monospace,'SF Mono',monospace; color:var(--dim);
+  border:1px solid var(--line); border-radius:20px; padding:2.5px 10px }
+.rtail { font-size:13.5px; color:var(--dim); margin:7px 0 0 }
+.rtail a { color:var(--acc); text-decoration:none; font-weight:600 }
+.tagref { font:11.5px ui-monospace,'SF Mono',monospace; color:var(--dim);
+  margin-left:6px }
+.tagref b { color:var(--dim); font-weight:600 }
+.params { font-size:13px; color:var(--dim); margin:0 0 12px }
+.params .mono { font:12px ui-monospace,'SF Mono',monospace }
+.params a { color:var(--acc) }
+.erawarn { font-size:14px; color:var(--ink); background:var(--bg);
+  border:1px solid var(--line); border-left:3px solid var(--gold);
+  border-radius:10px; padding:13px 16px; margin:0 0 18px; max-width:70ch }
+/* The verdict card is the most-read thing here, so it stacks rather than
+   scrolls on a phone. The three-champion comparison keeps its columns and
+   scrolls inside .tablewrap: side by side is the whole point of it. */
+@media (max-width:560px) {
+  .wrap { padding:32px 18px 70px }
+  .champ { padding:20px 18px }
+  .card, .card tbody, .card tr, .card th, .card td { display:block; width:100% }
+  .card tr { padding:9px 0 }
+  .card th { white-space:normal; padding:0 }
+  .cval { white-space:normal; font-size:15px; padding:2px 0 0 }
+  .card td { padding:0 }
+  .cnote { display:block; font-size:13px; padding-top:1px }
+}
+</style>
+<div class="wrap">
+<div class="eyebrow">fly-wbe &middot; the champion record</div>
+<h1>The Fly Hall of Fame</h1>
+<p class="lede">Every fly that has held the title, what it was judged
+on, and what it could not do. These are the flies working out whether a
+measured connectome can be turned into a mind that behaves.</p>
+<p class="lede">A champion here is not a different animal. It is the same measured fly wiring, tuned a different way, that stayed on its feet more often than the fly before it. The wiring is not ours and we do not touch it: it was traced from a real Drosophila, synapse by synapse, by other labs. What we search for is the rest of the animal, the numbers the map does not contain, like how fast a leg joint springs back or how hard a foot has to be pressed before it lets go. Find a set that makes the wiring walk, and you have found a candidate explanation for how the real fly does it.</p>
+
+<div class="scope">How a title is won here. The test is written down
+<b>before</b> the fly is run, on random starting conditions nobody has
+seen, and <b>the bar is never widened to let a fly through</b>. A
+challenger has to beat the holder outright, not tie it. When the test
+gets harder, the old test closes rather than reopening, so
+<b>a past champion is never stripped</b>: it keeps exactly what it won,
+and each card tells you what its test measured, which is also a list of
+what nobody asked it.</div>
+
+<div class="sectitle">The three flies</div>
+<p class="lede2">Three real animals sit under this whole project, and every result belongs to one of them. They are not interchangeable. Two are male, one is female, and one of the males is missing his brain, which is exactly the kind of thing that shows up in the numbers.</p><div class="animal" id="animal-BANC">
+  <div class="arow"><span class="aname">BANC</span>
+    <span class="awho">the female</span></div>
+  <p class="astat">188,508 neurons, whole central nervous system</p>
+  <p class="abody">She is the only one of the three who is complete: brain and nerve cord together, one female fly mapped end to end. Every champion this project has ever crowned has been her. When a card below says a fly stood eight times in twelve, it means her wiring, tuned a particular way, stayed upright in eight runs out of twelve.</p>
+</div><div class="animal" id="animal-MANC">
+  <div class="arow"><span class="aname">MANC</span>
+    <span class="awho">male number one</span></div>
+  <p class="astat">102,369 neurons, nerve cord only, no brain</p>
+  <p class="abody">A male, and only the walking half of him. An insect does most of its walking in the ventral nerve cord, the rope of neurons running down its underside, and that is all of him that was ever mapped. He cannot be asked a question that begins in the brain, because his brain does not exist in our data. He has never held a title. His legs step, his load reflexes fire, and his left-right leg coordination is measurably better than hers. He just falls over.</p>
+</div><div class="animal" id="animal-MCNS">
+  <div class="arow"><span class="aname">MCNS</span>
+    <span class="awho">male number two</span></div>
+  <p class="astat">211,577 neurons, whole central nervous system</p>
+  <p class="abody">A second male, and a far more complete one: brain included, and nearly every neuron carries a label where the first male&#x27;s are blank. He joined the project because Robin asked a question nobody had answered, why this male and not that one, and the honest answer turned out to be that no reason had ever been recorded. He is the newest of the three and has not yet produced a title result.</p>
+</div>
+<p class="anote">Having three matters more than it sounds. With two animals, a disagreement is a coin toss and you cannot tell which one is odd. With three you can start asking whether a difference is about being male or just about being that particular fly. Sex is still tangled up with individual here, two males and one female, and that limit is recorded rather than waved away.</p>
+
+<div class="sectitle">Who holds the titles right now</div>
+<div class="throne">
+<div class="trow"><span class="tanimal">BANC female</span><span class="held">wm1</span></div>
+<p class="tsub">whole CNS, 188,508 neurons; not the VNC cut &middot; bar v3.11</p>
+<p class="tnote">2026-09-12 08:24 EEST: wm1 takes the v3.11 throne from wl1 on the qualifying count with the conflict count tied at 7. It is wl1 with one legacy scalar halved, lane C&#x27;s C-N400: the tarsal adhesion gain 30.0813 -&gt; 15.0407, which takes the downforce the adhesion actuator pulls the body with from 2.586 to 1.320 times body weight. It closes no registry row and it falls less: standing 22 of 24 against 19, qualifying 21 against 17, card 12 of 12 against 10 of 12, with no seed the holder qualifies on and the challenger does not. Verdict of record lanes/judge/2026-09-12-title-v311-c-adhhalf-wl1-verdict-DRYRUN.json (a8e14f897).</p>
+<p class="lineage">Line of succession: <a href="#cand5">cand5</a> <span class="sep">then</span>  <a href="#t025">t025</a> <span class="sep">then</span>  <a href="#p150">p150</a> <span class="sep">then</span>  <a href="#f23">f23</a> <span class="sep">then</span>  <a href="#nl1">nl1</a> <span class="sep">then</span>  <a href="#ng1">ng1</a> <span class="sep">then</span>  <a href="#nk1">nk1</a> <span class="sep">then</span>  <a href="#nc1">nc1</a> <span class="sep">then</span>  <a href="#qg1">qg1</a> <span class="sep">then</span>  <a href="#wa1">wa1</a> <span class="sep">then</span>  <a href="#wb1m">wb1m</a> <span class="sep">then</span>  <a href="#wb4">wb4</a> <span class="sep">then</span>  <a href="#wc6">wc6</a> <span class="sep">then</span>  <a href="#wd2">wd2</a> <span class="sep">then</span>  <a href="#we1">we1</a> <span class="sep">then</span>  <a href="#wg1">wg1</a> <span class="sep">then</span>  <a href="#wi1">wi1</a> <span class="sep">then</span>  <a href="#wj1">wj1</a> <span class="sep">then</span>  <a href="#wk1">wk1</a> <span class="sep">then</span>  <a href="#wl1">wl1</a></p>
+</div><div class="throne">
+<div class="trow"><span class="tanimal">MANC male #1</span><span class="vacant">VACANT</span></div>
+<p class="tsub">ventral nerve cord only, no brain &middot; bar v3.2</p>
+<p class="tnote">No champion has ever been crowned on this animal. His best searched recipe, M1, measured standing 3/12 against a bar of 6; a second search with a bigger budget, M5, reached 4/12. His stepping, load reflex and same-side coordination all replicate. His posture and his balance rate are what hold him back.</p>
+
+</div><div class="throne">
+<div class="trow"><span class="tanimal">MCNS male #2</span><span class="vacant">VACANT</span></div>
+<p class="tsub">whole CNS, a second and better male substrate &middot; bar v3.2</p>
+<p class="tnote">VACANT, and now for a measured reason rather than an untested one. Male #2 drove the rig for the first time on 2026-08-19, hours after an adapter rebuild: the file the simulator had been reading was written by a lost script that read the L in a leg-nerve name (ProLN, MesoLN, MetaLN -- LN is LEG NERVE) as LEFT, which filled 3,915 blank-laterality rows with side=&#x27;left&#x27;, deafferented three of his six legs, and left the claw and hook FeCO dials selecting zero cells. Rebuilt: proprioceptors 58/275/289/0/0/0 -&gt; 69/135/138/30/140/151, load sensors 4/4/4/0/0/0 -&gt; 2/2/2/2/2/2, claw 0 hook 0 club 550 -&gt; claw 93 hook 66 club 432. On the female champion&#x27;s recipe, untuned, across 12 fresh seeds he STEPS on every one -- all six legs, 9 to 19 lifts each on the best -- and STANDS on none: uprightness 0.006-0.808 against a gate of 0.90, height 0.509-0.643 against 1.0. He is on the floor the whole time. That is 0/12 on a bar that asks for 6/12, so nothing is crowned here; the footage is in VIDEOS.md as walker_mc1_first.mp4 and is the third fly&#x27;s first behaviour, not a title. His own search has never been run.</p>
+
+</div>
+
+<div class="sectitle">The champions, newest first</div>
+<p class="scorenote">The early clips have a score written for this page. Recent clips are the exact verified simulation captures and may be silent; sound is presentation, not title evidence.</p>
+<article class="champ" id="wm1">
+<div class="chead">
+  <span class="rank">23</span>
+  <div>
+    <h2>wm1 <span class="epithet">stops pulling itself into the floor</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">It takes the title on the qualifying count, 21 runs against 17, with the conflict count tied at 7 and no seed lost the other way. It is wl1 with one number halved: the gain on the tarsal adhesion actuator, which had been pulling the body down with 2.6 times its own weight and now pulls with 1.3. The fly falls twice in twenty-four runs where the champion fell five times.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">from 12 Sep 2026</span>
+    <span class="rheld">still standing</span></div>
+  <p class="rtail">Never beaten. The bar moved instead: title bar v3.11 closed the day a harder one replaced it, so nothing can take this title now. <span class="tagref">git tag <b>wm1</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-wm1-theta.json</span> &middot; sha256 <span class="mono">3a21ddb794be23cb&hellip;</span> &middot; <a href="/fly/champion-parameters#wm1">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://media.theuploadinglab.ai/walker_wm1_body.sha256-248fdd8a0e0db8333e06352c4873893de6c974d4c0e6ed4770ec04f479f743d1.mp4#t=0.1"></video>
+<figcaption>Judge battery 1 seed 30534, the median qualifying run of twenty-one by speed rather than the best (fastest qualifying 2.2599 mm/s on 30545, slowest 1.3219 on 30540): 1.7316 mm/s of ground, tilt 11.33 degrees, 9.52 mm travelled, cadence 20.9 steps a second on the raw read; wl1 also qualifies on this seed. Replay parity against the battery row: displacement 9.5241 mm and final tilt 11.3349 degrees against the receipt&#x27;s 11.33 (lanes/judge/2026-09-12-render-wm1.log).</figcaption>
+</figure>
+
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on title bar v3.11.</b> Every v3.10 clause. The standing gate becomes an absolute floor: over the 24 paired seeds a challenger standing fewer than 18 times is held whatever else it closes, and one at or above 18 is not held on standing however far below the holder it sits; a champion crowning below 24 of 24 standing opens gap.the_champion_falls with an owner and an expiry, and its record states its standing count beside the title. Robin&#x27;s decision of 2026-09-07 12:01 on the judge&#x27;s 11:55 report (two bodies that improved the fly on the biology card were held on standing alone): &#x27;will allowing falling down on some of the examples accelerate our research and make us land a biologically more accurate fly faster in the future too? if so then let&#x27;s do it.&#x27; The floor rather than a wider distance because a distance from the holder ratchets and a floor does not.</p><p class="scopeline">What that bar measured: everything v3.10 measured, with standing read against a fixed floor of 18 of 24 instead of a distance from the holder. What it never asked about: vision, flight, everything outside walking; a fall rate up to six in 24 is carried as a gap with an expiry rather than counted in the ordering. That is not a failure. It is simply outside the contest this fly entered.</p>
+<div class="tablewrap"><table class="card"><tbody><tr><td class="cardline" colspan="3">standing 22 of 24 on the paired judge block 30532-30555 (wl1 19 on the same seeds; two falls, 30532 and 30538, both seeds wl1 also falls on); 12 of 12 on the card&#x27;s own twelve seeds 30556-30567 against wl1&#x27;s 10 of 12</td></tr><tr><td class="cardline" colspan="3">qualifying 21 of 24 against wl1&#x27;s 17 (10 and 11 per battery); challenger-only 30541, 30546, 30548, 30549 and no holder-only seed</td></tr><tr><td class="cardline" colspan="3">open conflicts 7 against 7 under v3.10, the same rows on both arms; the qualifying count decides; gait.speed, gait.contra_phase, posture.nonfoot_force and rom.front_ctr_deg unreadable and counted for neither</td></tr><tr><td class="cardline" colspan="3">card veto: no regression and no improvement at the 0.25 share margin (cadence 11 of 12 against 10 of 10, speed 6 of 12 against 5 of 10, front FTi 12 of 12 against 9 of 10, gait signal quality 11 of 12 against 8 of 10, footfall separation 10 of 12 against 9 of 10, front CTr 11 of 12 against 9 of 10); floor veto no change read (heave paired shift 0.0068 over 19 pairs, worse on 11, sign p 0.65)</td></tr><tr><td class="cardline" colspan="3">card medians over twelve standing runs: speed 1.9411 mm/s, cadence 5.5 Hz, footfall separation 1.0978 body lengths, front FTi 97.44 degrees, front CTr 74.52, gait signal quality 0.1573, body height 1.1578 mm, straightness 0.2493, heave 0.6506, contralateral phase 0.289, non-foot force 0.0014</td></tr><tr><td class="cardline" colspan="3">the change: adh_gain 30.08132709972743 -&gt; 15.040663549863716, theta diff exactly [adh_gain], factory value 40.0; downforce 2.586 -&gt; 1.320 body weights on 15 of 15 paired standing seeds of lane C&#x27;s fresh block (p 6.1e-05)</td></tr><tr><td class="cardline" colspan="3">successor battery gate NOT_APPLICABLE (legacy scalars only); static row vision.t4_image_drive_sign CLOSED on both arms</td></tr><tr><td class="cardline" colspan="3">deterministic Metal engine (dylib c40c5e1a), joint_int exact, spike_reg 44, three workers; verdict of record the dry run over the committed receipts (a8e14f897), spread reading check clean</td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>Lane C measured the downforce twice before proposing the change: 2.63 body weights in the C-N392 contact-force read, 2.586 in the C-N400 dose, both on committed captures. That is a modelling constant of ours, not a connectome fact, and at that size it dominates the leg forces the cord actually commands. Halving it leaves everything else identical (theta diff exactly [adh_gain]) and buys standing and qualifying: on lane C&#x27;s own twenty-four fresh seeds 20 against 17 and 19 against 17, on the bar&#x27;s paired block 22 against 19 and 21 against 17, on the card 12 of 12 against 10 of 12.</p>
+<p class="defence"><b>It defended the title.</b> One matched: c-fti4-wm1 (2026-09-12 09:50 EEST, lane C&#x27;s C-N409, the knee drive denominator at four times the champion&#x27;s), SUCCESSOR BATTERY REFUSAL. The challenger stood 24 of 24 against wm1&#x27;s 22 and both its batteries passed, but the held-out hind femur-tibia working range is CONFLICT on wm1&#x27;s own card (64.29 against the 64.3 floor, 5 of 12) and cannot constrain a new block, and the challenger is worse on it (57.42, 0 of 12). Verdict of record lanes/judge/2026-09-12-verdict-c-fti4-wm1.log.</p>
+<h3>What it could not do</h3>
+<ul class="caveats"></ul>
+<p class="srcs"></p>
+</article><article class="champ" id="wl1">
+<div class="chead">
+  <span class="rank">22</span>
+  <div>
+    <h2>wl1 <span class="epithet">gives T4 the connectome&#x27;s own sign</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">It takes the title on the count by one row: 7 open conflicts against wk1&#x27;s 8, because the sign of the image drive onto the fly&#x27;s ON-motion detectors, T4, reads net excitatory as the connectome has it, where every champion since 2026-09-05 had it net inhibitory. It is wk1 with one change from lane C: the four T4 subtypes, 6,025 cells, taken out of the homeostatic balance rule. Nothing in the walk moved: standing 19 against 18 and qualifying 17 against 16 are seed noise, the same seven groups are open, left-right phase 19, 29 and 20 degrees per segment, the bob 0.65, body height 1.17 mm, the left hind foot planted.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">12 Sep 2026 to 12 Sep 2026</span>
+    <span class="rheld">same day</span></div>
+  <p class="rtail">Beaten by <a href="#wm1">wm1</a>, 12 Sep 2026. <span class="tagref">git tag <b>wl1</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-wl1-theta.json</span> &middot; sha256 <span class="mono">a6b3c901a22b4582&hellip;</span> &middot; <a href="/fly/champion-parameters#wl1">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://media.theuploadinglab.ai/walker_wl1_body.sha256-16e4e3b4d1c519e398df626db46e823aa5ad7b60649571b34dfaa955e6770340.mp4#t=0.1"></video>
+<figcaption>Judge battery 2 seed 30555, the median qualifying run of seventeen by speed rather than the best (the eighth and tenth of seventeen are 30542 at 1.9105 and 30535 at 1.9285 mm/s; fastest qualifying 2.6248 on 30536, slowest 0.9567 on 30537): 1.9117 mm/s of ground, 5.0 steps a second on the 10 ms read, tilt 16.17 degrees, 10.51 mm, front femur-tibia range 96.76 degrees; wk1 qualified on this seed too. Replay parity against the battery row: 10.5144 mm against 10.51, 16.1712 against 16.17 degrees (lanes/judge/2026-09-12-render-wl1.log).</figcaption>
+</figure>
+
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on title bar v3.11.</b> Every v3.10 clause. The standing gate becomes an absolute floor: over the 24 paired seeds a challenger standing fewer than 18 times is held whatever else it closes, and one at or above 18 is not held on standing however far below the holder it sits; a champion crowning below 24 of 24 standing opens gap.the_champion_falls with an owner and an expiry, and its record states its standing count beside the title. Robin&#x27;s decision of 2026-09-07 12:01 on the judge&#x27;s 11:55 report (two bodies that improved the fly on the biology card were held on standing alone): &#x27;will allowing falling down on some of the examples accelerate our research and make us land a biologically more accurate fly faster in the future too? if so then let&#x27;s do it.&#x27; The floor rather than a wider distance because a distance from the holder ratchets and a floor does not.</p><p class="scopeline">What that bar measured: everything v3.10 measured, with standing read against a fixed floor of 18 of 24 instead of a distance from the holder. What it never asked about: vision, flight, everything outside walking; a fall rate up to six in 24 is carried as a gap with an expiry rather than counted in the ordering. That is not a failure. It is simply outside the contest this fly entered.</p>
+<div class="tablewrap"><table class="card"><tbody><tr><td class="cardline" colspan="3">standing 19 of 24 on the paired judge block 30532-30555 (wk1 18 on the same seeds; five falls 30532, 30538, 30541, 30547, 30548); 10 of 12 on the card&#x27;s own twelve seeds 30556-30567 (30559 and 30564 fell)</td></tr><tr><td class="cardline" colspan="3">qualifying 17 of 24 against wk1&#x27;s 16 (9 and 8 per battery against 9 and 7); challenger-only 30534, 30542, 30552, 30554; holder-only 30532, 30541, 30547</td></tr><tr><td class="cardline" colspan="3">open conflicts 7 against 8 under v3.10: closes vision.t4_image_drive_sign (T4a +19,185.5, T4b +15,286.8, T4c +20,006.8, T4d +16,783.0 against -10,278.1, -18,060.1, -12,425.3, -7,780.7); the same seven groups open on both arms; speed and non-foot force unreadable, counted for neither</td></tr><tr><td class="cardline" colspan="3">card veto: no regression and no improvement (speed 5 of 10 in band against 3 of 10; cadence 10 of 10 against 9 of 10; footfall separation, front FTi and front CTr 9 of 10 against 10 of 10); floor veto no change read (contralateral phase -0.006 over 14 pairs, p 0.79; heave +0.018, p 1.0)</td></tr><tr><td class="cardline" colspan="3">card medians over ten standing runs: speed 1.9079 mm/s (5 of 10), cadence 5.3636 Hz (10 of 10), footfall separation 1.0929 body lengths (9 of 10), front FTi 100.97 degrees (9 of 10), front CTr 75.54 (9 of 10), body height 1.1686 mm, straightness 0.2365, heave 0.6387, contralateral phase 0.2568, abdomen lateral excursion 9.97 degrees (8 of 10), hind cadence 2.55 Hz left against 6.27 right (right faster 10 of 10), travel 10.49 mm, final tilt 12.3 degrees</td></tr><tr><td class="cardline" colspan="3">left-right phase per segment 19, 29 and 20 degrees on the paired battery against 178 to 180 (wk1 30, 25.5, 17.5); fixed-heading screen 17.5 (10 of 10 readable), 37 (6 of 10), 43 (7 of 10) against wk1&#x27;s 19, 23, 41</td></tr><tr><td class="cardline" colspan="3">successor freedom gate PASS: block bal_exempt, four categorical coordinates /bal_exempt/0..3, allowed values the four fafb_alignment_cell_type T4 specs, provenance measured (C-N353/N353b); held-out rows stride length 0.3841, middle CTr 18.21, middle FTi 18.90, hind CTr 45.98, hind FTi 66.28, all in band on both arms</td></tr><tr><td class="cardline" colspan="3">deterministic Metal engine (dylib c40c5e1a, engine 2b7e631c, main 010eed06d), joint_int exact, spike_reg 44, three workers; batteries 96.2 and 91.6 s, card 90.0 s; verdict of record the dry run over the committed receipts (31449e2b5, 04:01 EEST)</td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>The conflict was ours, not the animal&#x27;s. The connectome gives T4 a net-excitatory columnar image pool (T4a +19,186, T4b +15,287, T4c +20,007, T4d +16,783 with the balance off; Maisak 2013: T4 fires more to ON motion in its preferred direction) and the 2026-08-09 per-neuron balance rule, which made the network runnable, rescales inhibition onto every cell to one ratio and turned that pool net inhibitory on all four subtypes. Lane E built the scoped exemption the day the row opened (R360-R362); lane C measured the narrowest scope that closes it, the four T4 types themselves (C-N353, the same sums as the whole optic lobe&#x27;s 108,764 cells to the digit), audited every changed synapse (C-N353b, all inhibitory, all onto T4), and screened the arm against wk1 on twelve paired seeds with no graded row moved (C-N354). The bal_exempt block was adopted before the match with four categorical coordinates on measured provenance.</p>
+<p class="defence"><b>It defended the title.</b> Two matched, both lane B&#x27;s descending-silencing bodies and both on this body: b-dnnotcmd-wl1 (2026-09-12 06:54 EEST, SUCCESSOR BATTERY REFUSAL, it newly opens the held-out row rom.hind_fti_deg) and b-dnrest-wl1 (07:23, HELD BY THE CARD on one regression, flyscore.gait_signal_quality, while standing 21 of 24 against 19). Displaced 2026-09-12 08:24 EEST by wm1 on the qualifying count, 21 against 17, with the conflict count tied at 7.</p>
+<h3>What it could not do</h3>
+<ul class="caveats"></ul>
+<p class="srcs"></p>
+</article><article class="champ" id="wk1">
+<div class="chead">
+  <span class="rank">21</span>
+  <div>
+    <h2>wk1 <span class="epithet">opens the front knee, and six runs fall</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">It takes the title on the count by one row: 8 open conflicts against wj1&#x27;s 9, because the front femur-tibia range, open on every champion since the row was written, reads 103.5 degrees inside the animal&#x27;s 81.2 to 112. It is wj1 with one change from lane C: the joint&#x27;s working-range cap raised from 96.6 to 125 degrees. It pays for the row with standing (18 of 24 where wj1 stood 24, six early falls), qualifying (16 against 21) and card speed (3 of 10 in band against 10 of 12), and it moves nothing in the rhythm: left-right phase 30, 25.5 and 17.5 degrees per segment, the bob 0.64, body height 1.16 mm.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">11 Sep 2026 to 12 Sep 2026</span>
+    <span class="rheld">1 day</span></div>
+  <p class="rtail">Beaten by <a href="#wl1">wl1</a>, 12 Sep 2026. <span class="tagref">git tag <b>wk1</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-wk1-theta.json</span> &middot; sha256 <span class="mono">18dbba87a50a1b55&hellip;</span> &middot; <a href="/fly/champion-parameters#wk1">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://media.theuploadinglab.ai/walker_wk1_body.sha256-4de2328bdbff6c11323a0e5a527abef1fc2bdb46bc12a776150f624c68cf6e1a.mp4#t=0.1"></video>
+<figcaption>Judge battery 1 seed 30532, the upper median qualifying run of sixteen by speed rather than the best (the eighth and ninth of sixteen are 30533 at 1.8250 and 30532 at 1.8611 mm/s; fastest qualifying 2.4620 on 30553, slowest 1.2954 on 30544): 1.8611 mm/s of ground, 5.45 steps a second on the ten millisecond read, upright at 10.50 degrees, 10.24 mm travelled, front femur-tibia range 103.75 degrees. wj1 stood on this seed but failed the cadence clause at 4.73 Hz. Rendered by the judge on the deterministic engine with the replay&#x27;s displacement and tilt checked against the battery row (10.2359 mm against 10.24, 10.4983 against 10.50 degrees). Whole-CNS activity above the body in the site&#x27;s layer colours, brain at the top, six legs&#x27; ground loads underneath. Clip walker_wk1_body.mp4 rendered through lanes/judge/render_champion_clip.py (log lanes/judge/2026-09-11-render-wk1.log), published exact through publish_clip.py (8,340,424 bytes, public sha256 verified); receipt publication-receipts/walker_wk1_body.sha256-4de2328bdbff6c11323a0e5a527abef1fc2bdb46bc12a776150f624c68cf6e1a.publication.json.</figcaption>
+</figure>
+
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on title bar v3.11.</b> Every v3.10 clause. The standing gate becomes an absolute floor: over the 24 paired seeds a challenger standing fewer than 18 times is held whatever else it closes, and one at or above 18 is not held on standing however far below the holder it sits; a champion crowning below 24 of 24 standing opens gap.the_champion_falls with an owner and an expiry, and its record states its standing count beside the title. Robin&#x27;s decision of 2026-09-07 12:01 on the judge&#x27;s 11:55 report (two bodies that improved the fly on the biology card were held on standing alone): &#x27;will allowing falling down on some of the examples accelerate our research and make us land a biologically more accurate fly faster in the future too? if so then let&#x27;s do it.&#x27; The floor rather than a wider distance because a distance from the holder ratchets and a floor does not.</p><p class="scopeline">What that bar measured: everything v3.10 measured, with standing read against a fixed floor of 18 of 24 instead of a distance from the holder. What it never asked about: vision, flight, everything outside walking; a fall rate up to six in 24 is carried as a gap with an expiry rather than counted in the ordering. That is not a failure. It is simply outside the contest this fly entered.</p>
+<div class="tablewrap"><table class="card"><tbody><tr><td class="cardline" colspan="3">standing 18 of 24 on the paired judge block 30532-30555 (wj1 24 on the same seeds); 10 of 12 on the card&#x27;s own twelve seeds 30556-30567 (30561 and 30566 fell)</td></tr><tr><td class="cardline" colspan="3">qualifying 16 of 24 against wj1&#x27;s 21 (9 and 7 per battery against 10 and 11); challenger-only 30532, 30539, 30551; holder-only 30534, 30538, 30542, 30546, 30548, 30549, 30552, 30554</td></tr><tr><td class="cardline" colspan="3">open conflicts 8 against 9 under v3.10: closes rom.front_fti_deg (103.54 degrees, band 81.2 to 112; wj1 77.64); the same eight open on both arms; speed, contralateral phase and non-foot force unreadable</td></tr><tr><td class="cardline" colspan="3">card veto: one regression gait.speed (3 of 10 in band against 10 of 12; 1.9201 mm/s against 2.1441) against one improvement rom.front_fti_deg (10 of 10 against 2 of 12), not held; floor veto no change read on the heave (paired shift -0.003, 9 of 18, p 1.0)</td></tr><tr><td class="cardline" colspan="3">card medians over ten standing runs: cadence 5.4091 Hz (9 of 10), footfall separation 1.0907 body lengths (10 of 10), front CTr 74.97 degrees (10 of 10), gait signal quality 0.1692 (8 of 10), body height 1.1604 mm (0), straightness 0.2158 (0), heave 0.6549 (0), opposite-leg phase 0.2778 (0), abdomen lateral excursion 10.90 degrees (8 of 10), swing 51.25 ms, duty 0.6575, travel 10.56 mm, final tilt 12.0 degrees</td></tr><tr><td class="cardline" colspan="3">left-right phase per segment 30, 25.5 and 17.5 degrees on the paired battery against 178 to 180 (wj1 20, 36, 22); fixed-heading causal screen 19 (7 of 10 readable), 23 (5 of 10, invalid), 41 (7 of 10) against wj1&#x27;s 6.5, 20, 21</td></tr><tr><td class="cardline" colspan="3">successor freedom gate PASS: block rom_override, one coordinate /rom_override/FTi_pitch/f, box 96.6 to 137.5 degrees, provenance assumed; static row vision.t4_image_drive_sign OPEN on both arms</td></tr><tr><td class="cardline" colspan="3">deterministic Metal engine (dylib c40c5e1a, source 48ebcded0df39751), joint_int exact, spike_reg 44, three workers; batteries 93.1 and 88.0 s, card 92.8 s; verdict of record lanes/judge/2026-09-11-title-v311-c-fti125-verdict-DRYRUN.json (7eccad1e2)</td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>Lane C&#x27;s read: the front knee&#x27;s range was capped, not under-driven. The cord asks the joint for its full range and the body delivers 0.66 to 0.86 of the cap (C-N328, N329, N335, N337); with the cap at the Haustein walking range of 96.6 degrees the achieved range sat at 77.6, under the band&#x27;s start, on 10 of 12 card runs. The neural route to a wider knee (the command&#x27;s f0 ladder, C-N336) was a cliff, standing 11, 5, 2, 0 of 12; the cap at 125 degrees delivers 103.5 and stands 18 of 24. The rom_override block was adopted before the match with a one-coordinate box 96.6 to 137.5 degrees on an assumed provenance (C-N328&#x27;s transmission).</p>
+<p class="defence"><b>It defended the title.</b> Three held, all lane B&#x27;s adhesion-release doses on this body: b-ds080-adh-wk1 (2026-09-12 00:37 EEST, HELD BY THE CARD), b-ds055-adh-wk1 (00:54, HELD BY THE CARD), b-ds040-adh-wk1 (01:12, HOLDER KEEPS, equal conflicts 8, count 15 against 16). Displaced 2026-09-12 04:15 EEST by wl1 on the count, 7 against 8.</p>
+<h3>What it could not do</h3>
+<ul class="caveats"></ul>
+<p class="srcs"></p>
+</article><article class="champ" id="wj1">
+<div class="chead">
+  <span class="rank">20</span>
+  <div>
+    <h2>wj1 <span class="epithet">stands on all twenty-four, with the brain&#x27;s hold on the hind legs halved</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">The first champion to stand on every one of the 24 paired judge runs since Robin let a champion fall, and it takes the title on the count: 21 qualifying runs against wi1&#x27;s 17, with open conflicts equal at 8 each. It is wi1 with three changes from lane B: one cord interneuron type (INXXX466) at half its outgoing gain, the walking command rate a tenth higher (103.69 Hz), and the input of the brain&#x27;s 8,338 cholinergic cells onto the 3,811 cells of the hind-leg segment T3 (24,888 wired connections) at half strength. wi1 fell on five of the 24 runs; this body stood on all of them and on all twelve card runs. The three conflicts wi1 left open, body height, straightness and the vertical bob, are still open here, so this is a steadier fly, not a more animal-like one.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">11 Sep 2026 to 11 Sep 2026</span>
+    <span class="rheld">same day</span></div>
+  <p class="rtail">Beaten by <a href="#wk1">wk1</a>, 11 Sep 2026. <span class="tagref">git tag <b>wj1</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-wj1-theta.json</span> &middot; sha256 <span class="mono">70da11914ae3477c&hellip;</span> &middot; <a href="/fly/champion-parameters#wj1">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://media.theuploadinglab.ai/walker_wj1_body.sha256-8b5569d3896c63effc7ccbd020323c12aed71af7cafd8043e8088e11216ad6a2.mp4#t=0.1"></video>
+<figcaption>Judge battery 2 seed 30550, the median qualifying run of twenty-one by speed rather than the best (fastest 2.8926 mm/s on 30548, slowest qualifying 1.1451 on 30540): 2.1181 mm/s of ground, 6.0 steps a second on the ten millisecond read, upright at 8.25 degrees, 11.65 mm travelled. wi1 fell on this seed. Rendered by the judge on the deterministic engine with the replay&#x27;s displacement and tilt checked against the battery row (11.6498 mm against 11.65, 8.2509 against 8.25 degrees). Whole-CNS activity above the body in the site&#x27;s layer colours, brain at the top, six legs&#x27; ground loads underneath.</figcaption>
+</figure>
+
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on title bar v3.11.</b> Every v3.10 clause. The standing gate becomes an absolute floor: over the 24 paired seeds a challenger standing fewer than 18 times is held whatever else it closes, and one at or above 18 is not held on standing however far below the holder it sits; a champion crowning below 24 of 24 standing opens gap.the_champion_falls with an owner and an expiry, and its record states its standing count beside the title. Robin&#x27;s decision of 2026-09-07 12:01 on the judge&#x27;s 11:55 report (two bodies that improved the fly on the biology card were held on standing alone): &#x27;will allowing falling down on some of the examples accelerate our research and make us land a biologically more accurate fly faster in the future too? if so then let&#x27;s do it.&#x27; The floor rather than a wider distance because a distance from the holder ratchets and a floor does not.</p><p class="scopeline">What that bar measured: everything v3.10 measured, with standing read against a fixed floor of 18 of 24 instead of a distance from the holder. What it never asked about: vision, flight, everything outside walking; a fall rate up to six in 24 is carried as a gap with an expiry rather than counted in the ordering. That is not a failure. It is simply outside the contest this fly entered.</p>
+<div class="tablewrap"><table class="card"><tbody><tr><td class="cardline" colspan="3">standing 24 of 24 on the paired judge block 30532-30555 (wi1 19 on the same seeds); 12 of 12 on the card&#x27;s own twelve seeds 30556-30567</td></tr><tr><td class="cardline" colspan="3">qualifying 21 of 24 against wi1&#x27;s 17 (10 and 11 per battery against 9 and 8); challenger-only 30533, 30542, 30547, 30550, 30552, 30554; holder-only 30532, 30551; its three standing non-qualifying runs failed the cadence clause (30532 at 4.73 Hz, 30539 at 4.82, 30551 at 4.91)</td></tr><tr><td class="cardline" colspan="3">open conflicts 8 against 8 on the instrument&#x27;s 27 rows under v3.10, the same eight on both arms: body height, straightness, vertical bob, the left-right phase group (three rows, one fact), conduction delay from the cord period, hind knee stance direction, knee stance excursion, T4 image drive sign (static receipt)</td></tr><tr><td class="cardline" colspan="3">footfall separation 1.0993 body lengths, 10 of 12 in band, CLOSED (wi1 1.0686, 12 of 12; band 1.02 to 1.11)</td></tr><tr><td class="cardline" colspan="3">forward speed 2.1441 mm/s on the card, 10 of 12 in band (wi1 2.4427, 9 of 12); 2.1148 on the block; unreadable for the count under v3.10</td></tr><tr><td class="cardline" colspan="3">cadence 5.4091 Hz on the paired block over 24 standing runs (4.73 to 6.00), 5.2727 on the card, 11 of 12 in band (wi1 5.2727 and 10 of 12); unreadable for the count</td></tr><tr><td class="cardline" colspan="3">front femur-tibia range 77.64 degrees, 2 of 12 (wi1 80.73, 5 of 12); the card&#x27;s one regression; unreadable for the count</td></tr><tr><td class="cardline" colspan="3">gait signal quality 0.1516, 10 of 12 (wi1 0.144, 7 of 12); the card&#x27;s one improvement</td></tr><tr><td class="cardline" colspan="3">body height 1.1626 mm, 0 of 12, conflict (wi1 1.1962); straightness 0.3079, 0 of 12, conflict (wi1 0.287); vertical bounce 0.628 of body height on the card, 0 of 12, conflict (wi1 0.6327)</td></tr><tr><td class="cardline" colspan="3">opposite-leg phase 0.2788 on the card, 2 of 12 (wi1 0.2518, 1 of 12); per segment 20, 36 and 22 degrees against the animal&#x27;s 178 to 180; unreadable for the count</td></tr><tr><td class="cardline" colspan="3">abdomen lateral excursion 10.79 degrees, 10 of 12 (wi1 10.06, 12 of 12); front coxa-trochanter range 76.05, 10 of 12 (wi1 76.86, 12 of 12)</td></tr><tr><td class="cardline" colspan="3">held-out successor rows, all in band on both arms: stride length 0.4265 body lengths, middle CTr 18.16, middle FTi 18.97, hind CTr 46.73, hind FTi 64.84 degrees</td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>Lane B&#x27;s ladder today, all on its owned pair 81547/81548 and then on the judge&#x27;s block: halving INXXX466&#x27;s output made wi1 stand 22 of 24 but slowed it below the animal&#x27;s 2.0 mm/s (b-e2h, held by the card 10:15); a tenth more command rate put speed at 1.99 and standing 20 (b-e2h-cmd110, held 14:10); halving the brain&#x27;s cholinergic input onto T3 on that base lifted travel 41% and 6% on the owned pair, put card speed at 2.14 mm/s with 10 of 12 in band, and stood 24 of 24 on the block. B read the dose as non-monotone at two seeds (0.25 and 0.75 each reverse on one seed) and found no split of the seam (by descending-neuron group, by target class, by cholinergic prefix) that carries the gain, so the mechanism on record is the whole cholinergic drive from the brain onto T3 at half strength and nothing finer. The chain from a weaker brain-to-T3 drive to a body that never falls is not measured; the standing is, on 36 judge seeds.</p>
+<p class="defence"><b>It defended the title.</b> One held: b-delay330 (lane B, wj1 with the conduction delay scalar at 3.3 ms, 2026-09-11 18:57 EEST, HELD BY THE CARD on speed 3 of 8 against 10 of 12 and gait signal quality 3 of 8 against 10 of 12; standing 20 against 24). Displaced 2026-09-11 23:52 EEST by wk1 (this body with lane C&#x27;s front femur-tibia cap at 125 degrees) on the count, 9 open conflicts against 8; wj1 stood 24 against wk1&#x27;s 18 and qualified 21 against 16 on the same block.</p>
+<h3>What it could not do</h3>
+<ul class="caveats"></ul>
+<p class="srcs"></p>
+</article><article class="champ" id="wi1">
+<div class="chead">
+  <span class="rank">19</span>
+  <div>
+    <h2>wi1 <span class="epithet">the first to put its feet where the animal does, and the first to fall</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">The first fly here whose footfalls are as far apart as a real fly&#x27;s, and the first champion that falls over. It is wg1 with the claw afferent&#x27;s signal passed through the phasic transform at gain 1.25, two keys. Footfall separation, the lateral spread of the six footfalls in body lengths, has been out of band on every champion ever crowned; this one reads 1.0686 on 12 of 12 card runs inside the animal&#x27;s 1.02 to 1.11, where wg1 read 1.1485 on 0 of 12. It also falls on 5 of 24 paired runs where wg1 fell once, and qualifies 17 against 23, so under every bar before 12:01 today it is held, and was, at 11:43. Robin&#x27;s decision that closing a real conflict may cost a step, above a floor of 18 standing runs, is what crowns it.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">7 Sep 2026 to 11 Sep 2026</span>
+    <span class="rheld">4 days</span></div>
+  <p class="rtail">Beaten by <a href="#wj1">wj1</a>, 11 Sep 2026. <span class="tagref">git tag <b>wi1</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-wi1-theta.json</span> &middot; sha256 <span class="mono">ba18676b65b3db07&hellip;</span> &middot; <a href="/fly/champion-parameters#wi1">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://theuploadinglab.ai/fly/walker_wi1_body.mp4#t=0.1"></video>
+<figcaption>Judge seed 30555, the median qualifying run of seventeen by speed rather than the best: 2.26 mm/s of ground, 5.18 steps a second on the ten millisecond read, upright at 10.4 degrees, 12.43 mm travelled. Rendered by the judge on the deterministic engine with the replay&#x27;s displacement checked against the battery row. Whole-CNS activity above the body in the site&#x27;s layer colours, brain at the top, six legs&#x27; ground loads underneath.</figcaption>
+</figure>
+
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on title bar v3.11.</b> Every v3.10 clause. The standing gate becomes an absolute floor: over the 24 paired seeds a challenger standing fewer than 18 times is held whatever else it closes, and one at or above 18 is not held on standing however far below the holder it sits; a champion crowning below 24 of 24 standing opens gap.the_champion_falls with an owner and an expiry, and its record states its standing count beside the title. Robin&#x27;s decision of 2026-09-07 12:01 on the judge&#x27;s 11:55 report (two bodies that improved the fly on the biology card were held on standing alone): &#x27;will allowing falling down on some of the examples accelerate our research and make us land a biologically more accurate fly faster in the future too? if so then let&#x27;s do it.&#x27; The floor rather than a wider distance because a distance from the holder ratchets and a floor does not.</p><p class="scopeline">What that bar measured: everything v3.10 measured, with standing read against a fixed floor of 18 of 24 instead of a distance from the holder. What it never asked about: vision, flight, everything outside walking; a fall rate up to six in 24 is carried as a gap with an expiry rather than counted in the ordering. That is not a failure. It is simply outside the contest this fly entered.</p>
+<div class="tablewrap"><table class="card"><tbody><tr><td class="cardline" colspan="3">footfall separation 1.0686 body lengths, 12 of 12 in band, CLOSED (wg1: 1.1485, 0 of 12; every earlier champion out of band)</td></tr><tr><td class="cardline" colspan="3">standing 19 of 24 on the paired block against wg1&#x27;s 23; 12 of 12 on the card&#x27;s own twelve seeds 30556-30567</td></tr><tr><td class="cardline" colspan="3">cadence 5.2727 Hz on the paired block, 10 of 12 in band on the card (wg1 5.6818, 11 of 12)</td></tr><tr><td class="cardline" colspan="3">forward speed 2.4427 mm/s on the card, 9 of 12 in band (wg1 1.9666, 5 of 12); unreadable for the count under v3.10</td></tr><tr><td class="cardline" colspan="3">opposite-leg phase 0.2518 on the card, 1 of 12, conflict (wg1 0.3377, 5 of 12); per segment front 40.0, middle 36.5, hind 16.0 degrees against the animal&#x27;s 178 to 180</td></tr><tr><td class="cardline" colspan="3">vertical bounce 0.6327 of body height, 0 of 12, conflict, nearer the band than wg1&#x27;s 0.6576 on 14 of 18 paired seeds</td></tr><tr><td class="cardline" colspan="3">body height 1.1962 mm, 0 of 12, conflict, further out than wg1&#x27;s 1.0996</td></tr><tr><td class="cardline" colspan="3">Cruse rule 1 contralateral p = 0.0050, 11 of 12 runs significant, closed; rule 1 ipsilateral on the tip read 3 of 12 (load read 12 of 12)</td></tr><tr><td class="cardline" colspan="3">front femur-tibia range 80.73 degrees, 5 of 12 (wg1 81.99, 8 of 12); unreadable for the count under v3.10</td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>Lane D found on 2026-09-06 that routing the claw afferent, a tibia-position sense, through the phasic transform lands the feet closer together, 0.041 body lengths nearer the animal&#x27;s band on five of five paired seeds, and carried the two keys onto wg1. The judge matched it on fresh judge seeds, both arms, and built nothing. Open conflicts 3 against 4 on the instrument&#x27;s rows and 4 against 5 over all 22 readable registry rows; the footfall row is the difference by both counts.</p>
+<p class="defence"><b>It defended the title.</b> Four held: loco-09766 (lane B&#x27;s joint-walking centre, 2026-09-09 23:16), c-tw100 (lane C, tau_w 100, 2026-09-10 05:47), b-e2h (lane B, INXXX466 at half output, 2026-09-11 10:15, held by the card on speed while standing 22 against 19) and b-e2h-cmd110 (the same plus the command up a tenth, 14:10, held by the card on speed and front FTi while standing 20 and qualifying 20 against 17). Displaced 2026-09-11 15:50 EEST by wj1, that same body with the brain&#x27;s cholinergic input onto T3 at half gain: on the count 21 against 17 with open conflicts equal 8 against 8, standing 24 against wi1&#x27;s 19 on wi1&#x27;s own paired block.</p>
+<h3>What it could not do</h3>
+<ul class="caveats"></ul>
+<p class="srcs"></p>
+</article><article class="champ" id="wg1">
+<div class="chead">
+  <span class="rank">18</span>
+  <div>
+    <h2>wg1 <span class="epithet">the first to keep opposite legs out of step</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">The first fly here whose left and right legs avoid swinging together, and it is we1 with one number added: the presynaptic delay of every nerve-cord neuron multiplied by 0.70. Cruse rule 1 contralateral, a leg swings less often while the leg opposite it swings, has been open on every champion since 2026-09-03. we1 reads it at p = 0.67 on 0 of 12 runs; this one at p = 0.0075 on 10 of 12. It also stood 24 of 24 where we1 stood 23 and qualified 23 against 22, so it crowns on both scoreboards at once.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">6 Sep 2026 to 7 Sep 2026</span>
+    <span class="rheld">1 day</span></div>
+  <p class="rtail">Beaten by <a href="#wi1">wi1</a>, 7 Sep 2026. <span class="tagref">git tag <b>wg1</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-wg1-theta.json</span> &middot; sha256 <span class="mono">628b58cd965a4822&hellip;</span> &middot; <a href="/fly/champion-parameters#wg1">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://theuploadinglab.ai/fly/walker_wg1_body.mp4#t=0.1"></video>
+<figcaption>Lane E&#x27;s battery 1 seed 101595, the median qualifying run of twelve by speed rather than the best: 2.04 mm/s of ground, 5.73 steps a second on the ten millisecond read, upright at 12.3 degrees, 11.20 mm travelled. Rendered by lane E with the replay&#x27;s displacement checked against the battery row. Whole-CNS activity above the body in the site&#x27;s layer colours, brain at the top, six legs&#x27; ground loads underneath.</figcaption>
+</figure>
+
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on title bar v3.9.</b> Closeness to the animal outranks the qualifying count, above a standing gate. Robin&#x27;s decision of 2026-09-06 11:4x, relayed by Mistral: a body that closes a real conflict with measured data may cost a step. Order applied: the gates unchanged (each battery passes on its own, endogenous timing, Metal, exact joints, spike_reg 44, the paired-seed, fresh-block and family rules); a challenger standing three or more fewer than the holder over the paired seeds is held; above that, the title goes to the theta with FEWER OPEN CONFLICTS with measured data, read on every match from the registry rows the battery and the card compute, with the four left-right phase rows counted as one fact; the v3.7 and v3.8 vetoes still apply; the qualifying count breaks a tie in the conflict count and an equal count keeps the holder.</p><p class="scopeline">What that bar measured: everything v3.8 measured, ordered first on the count of open conflicts with measured data over the registry rows an instrument reads (22 at the time), then on the qualifying count. What it never asked about: vision, flight, everything outside walking; registry rows no instrument computes contribute nothing to either arm&#x27;s count. That is not a failure. It is simply outside the contest this fly entered.</p>
+<div class="tablewrap"><table class="card"><tbody><tr><td class="cardline" colspan="3">cadence 5.6818 Hz on the paired block, 11 of 12 in band on the card</td></tr><tr><td class="cardline" colspan="3">Cruse rule 1 contralateral p = 0.0075, 10 of 12 runs significant, CLOSED (we1: 0 of 12)</td></tr><tr><td class="cardline" colspan="3">opposite-leg phase 0.3085, 3 of 12, conflict; per segment front 134.5, middle 36.5, hind 20.0 degrees</td></tr><tr><td class="cardline" colspan="3">vertical bounce 0.6592 of body height, 0 of 12, conflict, better than we1&#x27;s 0.7325</td></tr><tr><td class="cardline" colspan="3">swing 48.75 ms, 12 of 12 in band, an improvement on we1&#x27;s 9 of 12</td></tr><tr><td class="cardline" colspan="3">standing 12 of 12 on the card&#x27;s twelve fresh seeds 30496-30507</td></tr><tr><td class="cardline" colspan="3">forward speed 2.1616 mm/s on the paired block but flat against we1 when paired, -0.0708 mm/s on 11 of 23 seeds; 7 of 12 in band on the card against we1&#x27;s 10</td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>Lane C measured, over 198 million synapses, that only 4.2 per cent of a cord neuron&#x27;s cable lies on the path between its inputs and its outputs against 6.6 per cent in the brain. The rig built every neuron&#x27;s delay from its TOTAL cable, so the cord was systematically too slow by about a third. Lane E searched the correction, found 0.70, and nominated it. The judge ran the match and built nothing.</p>
+<p class="defence"><b>It defended the title.</b> Two held on 2026-09-07, both on standing under v3.9&#x27;s gate: wh1 (lane A, the joint damping ratio 3.0 to 2.5) at 21 of 24 against 24, and wi1 (lane D, the claw afferent through the phasic transform) at 19 of 24 against 24 while leading on conflicts 3 against 4. Displaced 2026-09-07 12:49 by that same wi1, re-matched on fresh seeds under v3.11&#x27;s floor of 18: fewer open conflicts 3 against 4, standing 19 against wg1&#x27;s 23, qualifying 17 against 23.</p>
+<h3>What it could not do</h3>
+<ul class="caveats"></ul>
+<p class="srcs"></p>
+</article><article class="champ" id="we1">
+<div class="chead">
+  <span class="rank">17</span>
+  <div>
+    <h2>we1 <span class="epithet">the one that walked at the animal&#x27;s speed</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">The first fly here inside the real walking-speed band, and the first title decided AGAINST the qualifying count. It is wd2 with one number changed: the motor drive scale, which widens the joint sweep so each step carries the body 44 per cent further at the same cadence. On 24 fresh seeds both bodies stood 23 times; the champion qualified 23 runs and this one 22; but this one reads 2.1 mm/s where the champion read 1.5, which closes a conflict with measured data, and under the bar Robin set at noon that outranks a run.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">6 Sep 2026 to 6 Sep 2026</span>
+    <span class="rheld">same day</span></div>
+  <p class="rtail">Beaten by <a href="#wg1">wg1</a>, 6 Sep 2026. <span class="tagref">git tag <b>we1</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-we1-theta.json</span> &middot; sha256 <span class="mono">53c3ba95570cad57&hellip;</span> &middot; <a href="/fly/champion-parameters#we1">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://theuploadinglab.ai/fly/walker_we1_body.mp4#t=0.1"></video>
+<figcaption>Lane E&#x27;s battery 1 seed 101503, the MEDIAN qualifying run of eleven rather than the best: 2.27 mm/s of ground, 0.44 mm a step, 5.18 steps a second on the ten millisecond read, upright at 11.1 degrees. Rendered by lane E with the replay&#x27;s displacement checked against the battery row (12.4923 against 12.49 mm). Whole-CNS activity above the body in the site&#x27;s layer colours, brain at the top, six legs&#x27; ground loads underneath.</figcaption>
+</figure>
+
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on title bar v3.9.</b> Closeness to the animal outranks the qualifying count, above a standing gate. Robin&#x27;s decision of 2026-09-06 11:4x, relayed by Mistral: a body that closes a real conflict with measured data may cost a step. Order applied: the gates unchanged (each battery passes on its own, endogenous timing, Metal, exact joints, spike_reg 44, the paired-seed, fresh-block and family rules); a challenger standing three or more fewer than the holder over the paired seeds is held; above that, the title goes to the theta with FEWER OPEN CONFLICTS with measured data, read on every match from the registry rows the battery and the card compute, with the four left-right phase rows counted as one fact; the v3.7 and v3.8 vetoes still apply; the qualifying count breaks a tie in the conflict count and an equal count keeps the holder.</p><p class="scopeline">What that bar measured: everything v3.8 measured, ordered first on the count of open conflicts with measured data over the registry rows an instrument reads (22 at the time), then on the qualifying count. What it never asked about: vision, flight, everything outside walking; registry rows no instrument computes contribute nothing to either arm&#x27;s count. That is not a failure. It is simply outside the contest this fly entered.</p>
+<div class="tablewrap"><table class="card"><tbody><tr><td class="cardline" colspan="3">cadence 5.5455 Hz on the paired block, 12 of 12 in band on the card</td></tr><tr><td class="cardline" colspan="3">forward speed 2.1152 mm/s on the paired block, 10 of 12 in band on the card, CLOSED</td></tr><tr><td class="cardline" colspan="3">vertical bounce 0.7279 of body height, 0 of 12, conflict, worse than wd2 by 0.034</td></tr><tr><td class="cardline" colspan="3">contralateral phase 0.2549, 1 of 12, conflict</td></tr><tr><td class="cardline" colspan="3">swing 57.5 ms, 9 of 12 in band, a regression against wd2&#x27;s 12 of 12</td></tr><tr><td class="cardline" colspan="3">standing 12 of 12 on the card&#x27;s twelve fresh seeds 30472-30483</td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>Lane E measured that speed tracked cadence across eleven bodies (r = 0.905) and that no dial had moved step length, then found the one that does: drive_scale, 0.0059 to 0.0025, 11 of 12 standing on two batteries with no card row&#x27;s median leaving its band. Lane A, in the same hour, showed the other stride lever (the middle coxa cap) and that the full range-gap closure gives its gain back. The judge ran the match and built nothing.</p>
+<p class="defence"><b>It defended the title.</b> None yet. Crowned 2026-09-06 12:54.</p>
+<h3>What it could not do</h3>
+<ul class="caveats"></ul>
+<p class="srcs"></p>
+</article><article class="champ" id="wd2">
+<div class="chead">
+  <span class="rank">16</span>
+  <div>
+    <h2>wd2 <span class="epithet">the one that won by throwing things away</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">The first champion here to take the title by REMOVING parameters. Every challenger before it added a mechanism and paid for it somewhere on the card. This one deletes 27 of the previous champion&#x27;s 90 hand-set nerve-conduction delays, changes nothing else at all, and qualifies on 24 of 24 runs against 23 of 24 on the previous champion&#x27;s own test seeds. The whole margin is one seed, where wc6 falls onto its back at 172.68 degrees on three replays out of three and wd2 stands at 9.70 on three of three, reproduced independently by a second seat in its own worktree.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">6 Sep 2026 to 6 Sep 2026</span>
+    <span class="rheld">same day</span></div>
+  <p class="rtail">Beaten by <a href="#we1">we1</a>, 6 Sep 2026. <span class="tagref">git tag <b>wd2</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-wd2-theta.json</span> &middot; sha256 <span class="mono">c0aeddd3554dd265&hellip;</span> &middot; <a href="/fly/champion-parameters#wd2">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://theuploadinglab.ai/fly/walker_wd2_body.mp4#t=0.1"></video>
+<figcaption>Battery 1 seed 30344, the MEDIAN qualifying run of the twelve rather than the best: 5.55 steps a second on the ten millisecond read, 1.49 mm/s of ground, upright at 8.6 degrees. This champion crowned for carrying 27 fewer parameters than the one before it, not for walking better, so the clip shows a typical run. Whole-CNS activity above the body in the site&#x27;s layer colours, brain at the top, six legs&#x27; ground loads underneath.</figcaption>
+</figure>
+
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on title bar v3.8.</b> Every v3.7 clause and ordering items 1 to 9. A card row that is out of band for BOTH arms, where the in-band count cannot move, is graded on the paired battery runs: a regression when the challenger&#x27;s paired median sits further outside the band, the paired direction holds by a two-sided sign test at p under 0.05, and the shift exceeds the holder&#x27;s own between-battery spread; an improvement is the same three conditions reversed. Written by the judge 2026-09-06 00:24 on lane D&#x27;s read of the vertical bob (wc3 raised it 0.0767 body heights on 22 of 23 paired seeds while both arms sat at 0 of 11 in band and v3.7 saw nothing).</p><p class="scopeline">What that bar measured: everything v3.7 measured, with rows out of band on both sides read on the paired runs instead of the count. What it never asked about: vision, flight, everything outside walking. That is not a failure. It is simply outside the contest this fly entered.</p>
+<div class="tablewrap"><table class="card"><tbody><tr><td class="cardline" colspan="3">cadence 5.6818 Hz, 12 of 12 in band</td></tr><tr><td class="cardline" colspan="3">forward speed 1.5765 mm/s, 3 of 12 in band, conflict</td></tr><tr><td class="cardline" colspan="3">vertical bounce 0.6864 of body height, 0 of 12, conflict</td></tr><tr><td class="cardline" colspan="3">contralateral phase 0.2603, 0 of 12, conflict</td></tr><tr><td class="cardline" colspan="3">swing 50.0 ms and duty 0.6966, both 12 of 12</td></tr><tr><td class="cardline" colspan="3">standing 12 of 12 on the card&#x27;s twelve fresh seeds 30436-30447</td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>Lane A measured the 27 long-delay entries as contributing nothing: carried alone they give a cord rhythm of 3.864 Hz against 4.114 for no map at all. Removing them from the champion costs no card row, gains one (left-right asymmetry, 12 of 12 in band against 8 of 11), and gains a run. It is the delete-before-improving step landing on a champion parameter set rather than on scaffolding.</p>
+<p class="defence"><b>It defended the title.</b> None. Displaced 2026-09-06 12:54 by we1 (wd2 with one dial moved) under v3.9.</p>
+<h3>What it could not do</h3>
+<ul class="caveats"></ul>
+<p class="srcs"></p>
+</article><article class="champ" id="wc6">
+<div class="chead">
+  <span class="rank">15</span>
+  <div>
+    <h2>wc6 <span class="epithet">the one that stopped pretending its feet were muscles</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">The first champion here crowned for being closer to the animal rather than for stepping on more runs. It tied wb4 23-23 over twenty-four fresh seeds, tied 23-23 again over the twenty-four the tie-break drew, and stood equal at 46 of 48. The bar then asked which of the two carries fewer unresolved conflicts with real measurements, and wc6 carries one fewer: its campaniform load sensors are fed the leg&#x27;s actual ground load, where every champion before it fed them muscle activation as a stand-in, in a model that has had ground under its feet since the loop closed in August.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">6 Sep 2026 to 6 Sep 2026</span>
+    <span class="rheld">same day</span></div>
+  <p class="rtail">Beaten by <a href="#wd2">wd2</a>, 6 Sep 2026. <span class="tagref">git tag <b>wc6</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-wc6-theta.json</span> &middot; sha256 <span class="mono">29de9368f22312c3&hellip;</span> &middot; <a href="/fly/champion-parameters#wc6">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://theuploadinglab.ai/fly/walker_wc6_body.mp4#t=0.1"></video>
+<figcaption>Battery 1 seed 30347, a qualifying run and deliberately the MEDIAN of the twenty-three rather than the best: 5.91 steps a second on the ten millisecond read, 1.41 mm/s of ground, upright at 11.0 degrees. This is the first champion crowned for carrying one fewer conflict with measured data rather than for qualifying on more runs, so the clip shows a typical run and not a flattering one.</figcaption>
+</figure>
+
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on title bar v3.8.</b> Every v3.7 clause and ordering items 1 to 9. A card row that is out of band for BOTH arms, where the in-band count cannot move, is graded on the paired battery runs: a regression when the challenger&#x27;s paired median sits further outside the band, the paired direction holds by a two-sided sign test at p under 0.05, and the shift exceeds the holder&#x27;s own between-battery spread; an improvement is the same three conditions reversed. Written by the judge 2026-09-06 00:24 on lane D&#x27;s read of the vertical bob (wc3 raised it 0.0767 body heights on 22 of 23 paired seeds while both arms sat at 0 of 11 in band and v3.7 saw nothing).</p><p class="scopeline">What that bar measured: everything v3.7 measured, with rows out of band on both sides read on the paired runs instead of the count. What it never asked about: vision, flight, everything outside walking. That is not a failure. It is simply outside the contest this fly entered.</p>
+<div class="tablewrap"><table class="card"><tbody><tr><td class="cardline" colspan="3">cadence 5.73 Hz, 11 of 11 in band</td></tr><tr><td class="cardline" colspan="3">forward speed 1.50 mm/s, 1 of 11 in band, conflict</td></tr><tr><td class="cardline" colspan="3">vertical bounce 0.713 of body height, 0 of 11, conflict</td></tr><tr><td class="cardline" colspan="3">contralateral phase 0.266, 0 of 11, conflict</td></tr><tr><td class="cardline" colspan="3">duty 0.663 and swing 52.5 ms, both 11 of 11</td></tr><tr><td class="cardline" colspan="3">standing 11 of 12 on the card block</td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>Three labelled biology corrections and not one searched dial: matched load into the campaniform channel, a six-cell remotor transfer in the second thoracic segment, and one transmitter map. Nominated by lane E after it showed the same three corrections stand where the tuned version of them fell.</p>
+<p class="defence"><b>It defended the title.</b> None yet. Crowned 2026-09-06 03:45.</p>
+<h3>What it could not do</h3>
+<ul class="caveats"></ul>
+<p class="srcs"></p>
+</article><article class="champ" id="wb4">
+<div class="chead">
+  <span class="rank">14</span>
+  <div>
+    <h2>wb4 <span class="epithet">the one whose neurons tire</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">wb1m with one neural dial turned on: subthreshold adaptation, which cns.py had carried at zero since August because no theta could set it. Twenty-four of twenty-four qualifying on the holder&#x27;s own judge seeds against wb1m&#x27;s seventeen, every run standing, cadence half a hertz higher; forward speed about 0.6 mm/s lower on lane D&#x27;s paired seeds, recorded beside the count.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">5 Sep 2026 to 6 Sep 2026</span>
+    <span class="rheld">1 day</span></div>
+  <p class="rtail">Beaten by <a href="#wc6">wc6</a>, 6 Sep 2026. <span class="tagref">git tag <b>wb4</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-wb4-theta.json</span> &middot; sha256 <span class="mono">b1c25a568114735d&hellip;</span> &middot; <a href="/fly/champion-parameters#wb4">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://theuploadinglab.ai/fly/walker_wb4_body.mp4#t=0.1"></video>
+<figcaption>Battery 1 seed 30181, a qualifying run: 5.64 steps a second on the ten millisecond read, 9.3 mm travelled, upright at 10.6 degrees. Whole-CNS activity above the body in the site&#x27;s layer colours, brain at the top, six legs&#x27; ground loads underneath.</figcaption>
+</figure>
+<p>A parameter that had sat at zero since the loop closed in August, because the runner never read it from a theta, turned out to be the one that moves the count most. Lane D found it on its own paired seeds in an afternoon, twelve of twelve against three; the judge found that main could not even run it, ported the five lines that let a theta set it, and matched it on the holder&#x27;s seeds within the hour: twenty-four of twenty-four. The fly steps faster now and covers less ground, and the record says both.</p>
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on v3.6 (crowned); v3.7 holder.</b> </p>
+<div class="tablewrap"><table class="card"><tbody><tr><th scope=row>what it is</th><td class="cval">wb1m + adapt_a 2.0 (subthreshold adaptation at wb1m&#x27;s tau_w 270.977 ms)</td><td><span class="cnote">one key; lane D&#x27;s paired read and nomination, the judge&#x27;s port of the plumbing and the match</span></td></tr><tr><th scope=row>engine</th><td class="cval">Metal, exclusive lock per run, joint_int exact</td><td><span class="cnote">graded by lanes/judge/title_match_v36.py on the holder&#x27;s judge seeds 30171-30194</span></td></tr><tr><th scope=row>standing</th><td class="cval">12/12 and 12/12</td><td><span class="cnote">both batteries</span></td></tr><tr><th scope=row>qualifying</th><td class="cval">12/12 and 12/12</td><td><span class="cnote">wb1m 9/12 and 8/12 on the same seeds; 7 wins, 0 losses seed by seed</span></td></tr><tr><th scope=row>tip cadence (10 ms read)</th><td class="cval">5.636 and 5.682 Hz median</td><td><span class="cnote">5.000-6.364 over 24 standing runs</span></td></tr><tr><th scope=row>travel and forward speed</th><td class="cval">6.615 mm, 1.509 mm/s median</td><td><span class="cnote">wb1m 8.45 mm, 1.846 mm/s on the same seeds</span></td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>The bar asks for standing, lifts and a real-fly cadence with endogenous timing; adaptation is the mechanism the rhythm-generator literature names, and it lifts the champion&#x27;s cadence across the 5 Hz floor on every seed. The cost it carries, less ground per second, is the next conflict to fight and is written on the card.</p>
+<p class="defence"><b>It defended the title.</b> Five, all under ordering item 8 on fresh judge blocks with both arms run, and no challenger&#x27;s card was ever read because the count never led. wc1 the load-channel correction 24-22 (2026-09-05 19:10); wc2 the three labelled corrections 24-19 (21:38); wc3 the middle coxa-trochanter cap raised to the front leg&#x27;s range 24-23 (23:34); wc4 adaptation at half this champion&#x27;s dose 23-21 (2026-09-06 01:27); wc5 adaptation at a quarter 22-19 (01:56). THREE OF THE FIVE WALKED MEASURABLY FASTER THAN THIS CHAMPION and lost on the qualifying count, which counts steps and not ground: wc3 by 0.46 mm/s, wc4 by 0.30, wc5 by 0.56. Each of the three got there by lengthening the stride, 27 to 61 percent, on a body whose step is 0.208 mm where its step rate is already inside the animal&#x27;s band. The perfect 24-of-24 scores belong to the first two seed blocks and not to the body: on the two fresh blocks run afterwards this champion read 23 of 24 and 22 of 24.</p>
+<h3>What it could not do</h3>
+<ul class="caveats"></ul>
+<p class="srcs"></p>
+</article><article class="champ" id="wb1m">
+<div class="chead">
+  <span class="rank">13</span>
+  <div>
+    <h2>wb1m <span class="epithet">the one whose sensors were read by their names</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">The first title decided on the count: 17 against wa1&#x27;s 14 qualifying runs on wa1&#x27;s own 24 judge seeds, standing 24 of 24. wa1 with one correction, each leg sensory neuron routed to the modality its exact BANC cell type names (71 rows had been read by a coarser label). Two other corrections that were neutral alone lost narrowly, and all three together lost by thirteen.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">5 Sep 2026 to 5 Sep 2026</span>
+    <span class="rheld">same day</span></div>
+  <p class="rtail">Beaten by <a href="#wb4">wb4</a>, 5 Sep 2026. <span class="tagref">git tag <b>wb1m</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-wb1m-theta.json</span> &middot; sha256 <span class="mono">e30c663505f339b7&hellip;</span> &middot; <a href="/fly/champion-parameters#wb1m">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://theuploadinglab.ai/fly/walker_wb1m_body.mp4#t=0.1"></video>
+<figcaption>Battery 1 seed 30171, a qualifying run: 5.00 steps a second on the ten millisecond read, 11.2 mm travelled, upright at 9.8 degrees. Whole-CNS activity above the body in the site&#x27;s layer colours, brain at the top, six legs&#x27; ground loads underneath.</figcaption>
+</figure>
+<p>Three corrections to the fly&#x27;s sensors sat on the judge&#x27;s desk by noon, each measured by its lane to leave the walking count where it was: the strain sensors fed by load instead of a muscle stand-in, the leg sensors routed by their exact cell type, and a mirror-reversed typing of 25 cells on one leg set right. Bundled into one challenger they lost 4 to 14. Split one at a time on the same seeds, the load channel lost by two, the mirror WINS by 1, and the exact-type routing won 17 to 14 with all 24 runs standing. Paired with the mirror it fell to 3: two corrections to the same claw population that each help alone cancel together, the question the match left open.</p>
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on title bar v3.6.</b> Every v3.5 clause unchanged, with the cadence and lift clauses read on the hysteresis signal with a minimum swing episode of 10 ms (regression_walk.py freq_tip_h10 and lifts_h10; lanes/judge/title_match_v36.py grades on them). Ruled by the judge 2026-09-04 00:45 on lane A&#x27;s CD1-QZ (31 runs: 6.0 Hz on the hysteresis read, 4.27 Hz with the minimum, 0 of 31 at the floor) and the judge&#x27;s re-read of qh1&#x27;s 24 title seeds (5.82 against 4.45 Hz; 23 of 23 against 3 of 23 at the floor; one-tick taps 26% of the hysteresis count).</p><p class="scopeline">What that bar measured: standing (tilt), height, displacement, lifts at least 5 every foot and tip cadence 5-16 Hz on the 10 ms read, endogenous timing, two twelve-seed batteries, spike regularity k = 44, Metal engine. What it never asked about: vision, flight, everything outside walking. That is not a failure. It is simply outside the contest this fly entered.</p>
+<div class="tablewrap"><table class="card"><tbody><tr><th scope=row>what it is</th><td class="cval">wa1 + feco_modality_mode exact_type</td><td><span class="cnote">one key; lane E&#x27;s audit and seam, lane D&#x27;s port, the judge&#x27;s match</span></td></tr><tr><th scope=row>engine</th><td class="cval">Metal, exclusive lock per run, joint_int exact</td><td><span class="cnote">graded by lanes/judge/title_match_v36.py on the holder&#x27;s judge seeds 30171-30194</span></td></tr><tr><th scope=row>standing</th><td class="cval">12/12 and 12/12</td><td><span class="cnote">both batteries, no exclusions</span></td></tr><tr><th scope=row>qualifying</th><td class="cval">9/12 and 8/12</td><td><span class="cnote">wa1 8/12 and 6/12 on the same seeds; seven wins, four losses seed by seed</span></td></tr><tr><th scope=row>tip cadence (10 ms read)</th><td class="cval">5.091 and 5.000 Hz median</td><td><span class="cnote">4.182-5.455 over 24 standing runs</span></td></tr><tr><th scope=row>travel</th><td class="cval">8.45 mm median</td><td><span class="cnote">wa1 8.95 on the same seeds; speed is unchanged</span></td></tr><tr><th scope=row>replay and confirmation</th><td class="cval">standing 12/12, qualifying 9 on the same seeds, 11 of 12 seeds equal to the original on standing, cadence, lifts and travel (differing [30175]: 30175 4.18 against 4.55 Hz, both under the floor); a second exclusive replay: qualifying 9, 12 of 12 equal to the original (differing []); seed 30175 on NumPy (deterministic): 4.36 Hz, 10.46 mm, does not qualify. The decision quantity, the count, replays exactly; one non-qualifying seed&#x27;s trajectory does not, within the documented Metal behaviour of the relaxed-atomic scatter at this theta&#x27;s 28 ms levator delay near the 30 ms bound (engine rule item 2); recorded as a caveat, as qh1&#x27;s coronation recorded its own</td><td><span class="cnote">NumPy two seeds per arm: wb1m 30171 qualifies (5.27 Hz, 10.4 mm), 30184 qualifies (5.36 Hz, 5.8 mm); wa1 30171 does not qualify (4.91 Hz), 30184 qualifies (5.55 Hz)</span></td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>Under the realism directive a sensory neuron gets the model its own annotation supports, and this correction was made for that reason, not for the score. It was matched because a change to the champion is a change to a public record, and it won on the count, seven wins to four seed by seed, with every run standing.</p>
+
+<h3>What it could not do</h3>
+<ul class="caveats"></ul>
+<p class="srcs"></p>
+</article><article class="champ" id="wa1">
+<div class="chead">
+  <span class="rank">12</span>
+  <div>
+    <h2>wa1 <span class="epithet">the one that could feel its legs</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">The first fly to clear the v3.6 bar, and the first whose proprioceptive periphery is not switched off. Every champion before it delivered exactly zero claw position signal on four to five of its six legs; wa1 hears all five sensory channels and steps faster for it, 8 of 12 and 6 of 12 qualifying runs on two judge batteries with 12 of 12 standing in both.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">4 Sep 2026 to 5 Sep 2026</span>
+    <span class="rheld">1 day</span></div>
+  <p class="rtail">Beaten by <a href="#wb1m">wb1m</a>, 5 Sep 2026. <span class="tagref">git tag <b>wa1</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-wa1-theta.json</span> &middot; sha256 <span class="mono">36f80f67660a1fbd&hellip;</span> &middot; <a href="/fly/champion-parameters#wa1">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://theuploadinglab.ai/fly/walker_wa1_body.mp4#t=0.1"></video>
+<figcaption>Battery 1 seed 30181, a qualifying run: 5.09 steps a second on the ten millisecond read, 11.2 mm travelled, upright at 10.6 degrees. The whole-CNS activity panel is above the body in the site&#x27;s layer colours, brain at the top, and the six legs&#x27; ground loads scroll underneath.</figcaption>
+</figure>
+<p>The evening&#x27;s hunt was for a left-right asymmetry: two legs stepping at half the rate of their partners. Twelve explanations were killed, all of them about the connectome. The cause was in the encoder: a high-pass filter tuned above 1 clips a steady position signal to exactly zero, so most of the fly&#x27;s legs were reporting nothing at all. Turning the channels back on was expected to cost cadence, because proprioceptive feedback is known to mask the leg&#x27;s own rhythm and every channel reaches the motor pools through majority inhibition. It did the opposite. The one thing that had to be right for it to work was reading each claw cell&#x27;s tuning from BANC&#x27;s own annotation rather than splitting them by row parity: the same restoration flips from 0 of 10 seeds up to 10 of 10 on that key alone, at matched drive. The asymmetry BANC&#x27;s annotation carries is not a defect in the copy; it is load-bearing.</p>
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on title bar v3.6.</b> Every v3.5 clause unchanged, with the cadence and lift clauses read on the hysteresis signal with a minimum swing episode of 10 ms (regression_walk.py freq_tip_h10 and lifts_h10; lanes/judge/title_match_v36.py grades on them). Ruled by the judge 2026-09-04 00:45 on lane A&#x27;s CD1-QZ (31 runs: 6.0 Hz on the hysteresis read, 4.27 Hz with the minimum, 0 of 31 at the floor) and the judge&#x27;s re-read of qh1&#x27;s 24 title seeds (5.82 against 4.45 Hz; 23 of 23 against 3 of 23 at the floor; one-tick taps 26% of the hysteresis count).</p><p class="scopeline">What that bar measured: standing (tilt), height, displacement, lifts at least 5 every foot and tip cadence 5-16 Hz on the 10 ms read, endogenous timing, two twelve-seed batteries, spike regularity k = 44, Metal engine. What it never asked about: vision, flight, everything outside walking. That is not a failure. It is simply outside the contest this fly entered.</p>
+<div class="tablewrap"><table class="card"><tbody><tr><th scope=row>what it is</th><td class="cval">qh1 + BANC claw typing + all five channels live + the reciprocal delay split</td><td><span class="cnote">three changes, none of them a new mechanism; each measured before the title run</span></td></tr><tr><th scope=row>engine</th><td class="cval">Metal, exclusive lock per run, joint_int exact</td><td><span class="cnote">graded by lanes/judge/title_match_v36.py on fresh judge seeds 30171-30194</span></td></tr><tr><th scope=row>standing</th><td class="cval">12/12 and 12/12</td><td><span class="cnote">both batteries, no exclusions</span></td></tr><tr><th scope=row>qualifying</th><td class="cval">8/12 and 6/12</td><td><span class="cnote">the clause asks for 2 of 12 on each</span></td></tr><tr><th scope=row>tip cadence (10 ms read)</th><td class="cval">5.045 and 4.955 Hz median</td><td><span class="cnote">4.545-5.455 over 24 standing runs</span></td></tr><tr><th scope=row>fewest lifts, any foot</th><td class="cval">16 and 19</td><td><span class="cnote">the clause asks for 5</span></td></tr><tr><th scope=row>travel</th><td class="cval">8.34 mm median</td><td><span class="cnote">battery 1; the clip&#x27;s seed travels 11.22</span></td></tr><tr><th scope=row>what it hears</th><td class="cval">claw 64.7, hook 34.7, club 64.1, hair 7.5, campaniform 45.0 Hz</td><td><span class="cnote">qh1 delivered claw 0.0 Hz on four to five of six legs</span></td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>The bar it cleared was raised twice on the same day it was cleared, both times against the holder: v3.6 at 00:45 added a 10 ms minimum swing episode after 26% of the champion&#x27;s counted lifts turned out to be one-tick taps, and v3.6.1 at 01:05 fixed the joint integrator. wa1 is the first body to meet that bar, and it does so with the sensory channels its predecessors ran without.</p>
+<p class="defence"><b>It defended the title.</b> [&quot;2026-09-05 01:26 EEST: defended 14 to 11 over the holder&#x27;s 24 paired judge seeds against a one-key challenger that returned campaniform to the phasic high-pass. Both challenger batteries passed the clause alone; the paired count decided it. On the challenger&#x27;s own seed block the same arm had read 9 of 12 against 4, which is the 12-seed count&#x27;s own spread rather than a real reversal.&quot;]</p>
+<h3>What it could not do</h3>
+<ul class="caveats"><li>Nothing in the v3.6 clause is speed, and wa1&#x27;s speed is flat against qh1. The speed conflict, 0.9 to 1.5 mm/s against a real 2-45, is not closed by this fly.</li><li>Its open conflicts are carried from qh1 and were not re-read on wa1 at coronation: the card read follows.</li><li>The three changes were measured separately and composed; lane A&#x27;s own note is that its record on composing measured facts into a predicted intervention is poor, which is why the stack was run rather than argued.</li></ul>
+<p class="srcs">lanes/judge/2026-09-04-title-v36-wa1-battery1.json &middot; lanes/judge/2026-09-04-title-v36-wa1-battery2.json &middot; lanes/A/2026-09-04-2306-cd1wl-result.md &middot; lanes/A/2026-09-04-2316-cd1wn-result.md</p>
+</article><article class="champ" id="qh1">
+<div class="chead">
+  <span class="rank">11</span>
+  <div>
+    <h2>qh1 <span class="epithet">the one the abdomen steadied</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">Second champion under v3.5 and the first whose abdomen is driven by its own abdominal motor neurons: 23 of 24 qualifying on the paired judge seeds against qg1&#x27;s 22, both arms run one battery at a time under the exclusive GPU lock, by adding one gain, abd_gain 0.2, to qg1.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">3 Sep 2026 to 4 Sep 2026</span>
+    <span class="rheld">1 day</span></div>
+  <p class="rtail">Beaten by <a href="#wa1">wa1</a>, 4 Sep 2026. <span class="tagref">git tag <b>qh1</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-qh1-theta.json</span> &middot; sha256 <span class="mono">4c2c10563661055d&hellip;</span> &middot; <a href="/fly/champion-parameters#qh1">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://theuploadinglab.ai/fly/walker_qh1_body.mp4#t=0.1"></video>
+<figcaption>The real body, replaying seed 30020 under the exclusive lock: qg1 falls on this seed at 155.7 degrees, qh1 stands and steps at 7.00 Hz on the hysteresis read. The whole-CNS activity panel is above it in the site&#x27;s layer colours, brain at the top; the six legs&#x27; ground loads scroll under the body.</figcaption>
+</figure>
+<p>Every champion since nk1 carried one flyscore conflict: posture variability 0.015 radians against the real 0.026-0.086, because the walker&#x27;s abdomen never moved. BANC holds 168 abdominal motor neurons with no muscle label. The judge folded them onto the body&#x27;s five abdomen links by neuromere (12:30) and lane D searched the gain: 1.0 toppled the fly, 0.3 put posture in band with a standing cost on five seeds, and a five-seed screen at 0.15-0.30 read the same cost and dropped the route. Lane D then ran the bar&#x27;s own instrument on twelve paired fresh seeds at 0.2 and found the opposite: the small abdomen swing stood the vigorous body up on four seeds where qg1 fell, and it nominated. On the judge&#x27;s 24 paired seeds the abdomen-driven body qualified 23 against 22.</p>
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on title bar v3.5.</b> Every v3.4 clause unchanged (tilt-based standing, height, displacement, all-feet lifts and tip cadence 5-16 Hz read with hysteresis, endogenous timing, two independent 12-seed batteries, measured spike regularity k=44, ordering items 1-6), run on the Metal engine: lanes/judge/title_match_v35.py runs both arms with backend metal, and the holder&#x27;s pair is its Metal record. Ruled by the judge 2026-09-03 16:08 under Robin&#x27;s 15:4x engine instruction (every run as short as possible): Metal 21.9 s against NumPy 119.7 s on one seed, and the two engines were not distinguishable on any readout at n = 24. Correction 2026-09-03 19:12: relaxed atomic float scatter is load-dependent, so the earlier exact-across-process claim is withdrawn. Decision-grade Metal runs now take an exclusive cross-worktree lock; routine BUILD runs take a shared lock. Historical title counts are not regraded without an isolated replay. A nominee carrying a mechanism the Metal port refuses is matched on NumPy for both arms.</p><p class="scopeline">What that bar measured: standing (tilt), all-feet lifts (hysteresis), tip cadence 5-16 Hz, endogenous, hysteresis, displacement. What it never asked about: walking speed, posture (nonfoot), vision, flight. That is not a failure. It is simply outside the contest this fly entered.</p>
+<div class="tablewrap"><table class="card"><tbody><tr><th scope=row>what it is</th><td class="cval">qg1 + abd_gain 0.2</td><td><span class="cnote">one added key; every other key identical to qg1; the abdomen adapter&#x27;s map, range and signs are assumed, the gain is searched</span></td></tr><tr><th scope=row>engine</th><td class="cval">Metal, exclusive lock per run</td><td><span class="cnote">walk_search.py 311a0d8f754eda9d, cns.py 6b0a676fb4dea450, dylib e4d8240aa14cae58, commit b22495039</span></td></tr><tr><th scope=row>standing</th><td class="cval">11/12 and 12/12</td><td><span class="cnote">23/24 paired; fell 30009 (171.5 deg) where qg1 stood; qg1 fell 30010 and 30020 where qh1 stood</span></td></tr><tr><th scope=row>qualifying</th><td class="cval">11/12 and 12/12</td><td><span class="cnote">23/24 paired against qg1&#x27;s 22/24; lane D&#x27;s paired twelve predicted the sign (11 against 8)</span></td></tr><tr><th scope=row>tip cadence (hysteresis)</th><td class="cval">5.82 Hz median</td><td><span class="cnote">5.00-7.45 Hz over 23 standing runs, all inside 5-16; four within 0.5 Hz of the floor; qg1 6.77 Hz on the same seeds</span></td></tr><tr><th scope=row>speed</th><td class="cval">1.14 mm/s median</td><td><span class="cnote">0.30-1.68 over 23 standing runs; qg1 1.12 on the same seeds; still under the real 2-45 band, orders nothing under the bar</span></td></tr><tr><th scope=row>endogenous timing</th><td class="cval">yes</td><td><span class="cnote">no commanded step frequency in the theta</span></td></tr><tr><th scope=row>spike regularity</th><td class="cval">k = 44</td><td><span class="cnote">Fisch 2012 anchor, set at battery time</span></td></tr><tr><th scope=row>lifts (hysteresis)</th><td class="cval">&gt;= 16 every foot</td><td><span class="cnote">every standing run, every foot</span></td></tr><tr><th scope=row>holder&#x27;s arm</th><td class="cval">replayed in isolation</td><td><span class="cnote">qg1&#x27;s isolated batteries equal its 17:3x parallel record on every field of every seed: the load caveat on that record is discharged for that load</span></td></tr><tr><th scope=row>wall</th><td class="cval">352.7 + 106.5 s</td><td><span class="cnote">exclusive lock held per Metal run with three lane processes interleaving; qg1&#x27;s replay 129.0 + 105.8 s</span></td></tr><tr><th scope=row>margin</th><td class="cval">one seed</td><td><span class="cnote">2 discordant against 1 on 24 paired seeds; the clause is a count rule and no other quantity orders</span></td></tr><tr><th scope=row>post-coronation card (judge, 12 fresh seeds)</th><td class="cval">11/12 stood</td><td><span class="cnote">closed: posture variability 0.0346 rad in band 11/11, swing 22.5 ms, footfall 1.0942 BL; open: speed 0.9819 mm/s, straightness 0.1526, body height 1.2245 mm, front knee 75.5203 deg, tip-stance R1i, contralateral phase 24-57 deg where the real fly is 180, left hind 4.364 Hz</span></td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>The recorded v3.5 verdict on the paired judge seeds is 23 qualifying against 22, with both challenger batteries passing on their own (11/12 then 12/12 standing and qualifying). Not an equal count, so item 5 did not run; items 6 and 7 were not reached.</p>
+<p class="defence"><b>It defended the title.</b> [{&#x27;date&#x27;: &#x27;2026-09-03 22:37 EEST&#x27;, &#x27;challenger&#x27;: &quot;qh1 + 24 per-row presynaptic gains (lane E&#x27;s R230 permuted leaf)&quot;, &#x27;result&#x27;: &#x27;qh1 keeps, 23 against 16 on the paired seeds&#x27;, &#x27;reading&#x27;: &#x27;the challenger fell on eight seeds where qh1 stood and stood on one where qh1 fell&#x27;}]</p>
+<h3>What it could not do</h3>
+<ul class="caveats"><li>Re-read 2026-09-04 with a 10 ms minimum swing episode: 4.45 Hz median and 3 of 24 qualifying where the hysteresis read gave 5.82 Hz and 23 of 24; one-tick taps were 26% of the counted lifts. The v3.5 title closed with qh1 as its last champion; the v3.6 title is vacant.</li><li>Posture variability closed on the champion&#x27;s own runs (judge card, 0.0346 rad median, 11 of 11 in band); the three contralateral phase rows are open (qh1 steps both sides of each segment together where the real fly alternates), and the left hind steps under the 5 Hz floor at the median.</li><li>One-seed margin on 24 paired seeds (2 discordant against 1).</li><li>Cadence moved down toward the 5 Hz floor: median 5.82 against qg1&#x27;s 6.77, four runs within 0.5 Hz of the floor, 30017 at exactly 5.00.</li><li>Speed 1.14 mm/s median against the real 2-45 mm/s; the oldest conflict on the card is unchanged.</li><li>The abdominal range (about 25 degrees or more) is the one assumed quantity the posture closure rests on; the ten signs and the neuron-to-joint map are not load-bearing for standing or cadence (lane D, five seeds each).</li><li>Every open row on qg1&#x27;s card is carried unread: bilaterally in-phase gait, hind left-right asymmetry, body height, R1i, front-knee sweep, FeCO flexion population.</li><li>2026-09-04 23:32 EEST: succeeded by wa1, the first champion under v3.6. Measured on the way there: qh1 delivers exactly zero claw position signal to its cord on four to five of its six legs, because its phasic high-pass at 1.967 clips a tonic position coder to zero against its own baseline. Its cadence is therefore the rate of a cord whose position sense is switched off.</li></ul>
+<p class="srcs">MODELCARD-qh1.md &middot; diary/53-the-abdomen-steadied-the-fly.md &middot; lanes/judge/2026-09-03-title-v35-qg1abd02-battery1.json &middot; lanes/judge/2026-09-03-title-v35-qg1abd02-battery2.json &middot; lanes/judge/2026-09-03-title-v35-qg1-isolated-battery1.json &middot; lanes/judge/2026-09-03-title-v35-qg1-isolated-battery2.json &middot; results-qh1-theta.json &middot; lanes/D/theta-qg1-abd02-nomination.json &middot; exchange/2026-09-03-1959-laneD-judge-packet.md &middot; lanes/judge/2026-09-03-card-qh1-metal.json &middot; lanes/judge/2026-09-03-card-qh1-numpy-confirm.json</p>
+</article><article class="champ" id="qg1">
+<div class="chead">
+  <span class="rank">10</span>
+  <div>
+    <h2>qg1 <span class="epithet">the one that stepped in the real band</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">First champion under v3.5 and the first to step at real-fly cadence on the hysteresis read: recorded title verdict 22 of 24 qualifying on the holder&#x27;s Metal record seeds against nc1&#x27;s 0, median 6.78 Hz, by compressing the motor-pool force gain from 770-fold to 10-fold.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">3 Sep 2026 to 3 Sep 2026</span>
+    <span class="rheld">same day</span></div>
+  <p class="rtail">Beaten by <a href="#qh1">qh1</a>, 3 Sep 2026. <span class="tagref">git tag <b>qg1</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-qg1-theta.json</span> &middot; sha256 <span class="mono">87d11ca5ef4f972c&hellip;</span> &middot; <a href="/fly/champion-parameters#qg1">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://theuploadinglab.ai/fly/walker_qg1_body.mp4#t=0.1"></video>
+<figcaption>The real body, replaying seed 30003 at 7.37 mm and 7.27 Hz on the hysteresis read, the first seed of the block where nc1 fell and qg1 stood. This replay matched the recorded distance; a later contention probe means exact replay of the full historical title battery is not established. The whole-CNS activity panel is above it in the site layer colours, with six-leg ground loads under the body.</figcaption>
+</figure>
+<p>Lane A read nc1&#x27;s motor pools spike by spike (CD1-QE, 17:00) and found that under the champion&#x27;s drive the largest motor neurons in each pool never fire and the small ones fire at 36-78 Hz. The body&#x27;s force gain follows Azevedo 2020&#x27;s measured 770-fold per-spike twitch range across a pool, so the cells doing the firing delivered 1/250 to 1/770 of a large cell&#x27;s force and the hind levator pool summed to 0.001 activation: the hind legs were commanded and could not lift. Compressing the range to 10-fold (CD1-QF, 17:03, six seeds; CD1-QG, 17:13, twelve more) put 16 of 18 fresh seeds inside the real cadence band where nc1 had 0, and lane A nominated at 17:20 with a frozen hash and a prediction of 18-22 of 24 on the judge&#x27;s seeds. The judge ported the seam onto main under the bit-identity probe, ran both batteries on Metal in three minutes, and counted 22. The compression is a stand-in: a first-order activation has no tetanic summation, so slow motor neurons at 36-70 Hz produce a twitch&#x27;s worth of force instead of the fused force real muscle holds at those rates. The ledger row mn.size_gain_span records the value as searched and names the force-frequency curves that would replace it.</p>
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on title bar v3.5.</b> Every v3.4 clause unchanged (tilt-based standing, height, displacement, all-feet lifts and tip cadence 5-16 Hz read with hysteresis, endogenous timing, two independent 12-seed batteries, measured spike regularity k=44, ordering items 1-6), run on the Metal engine: lanes/judge/title_match_v35.py runs both arms with backend metal, and the holder&#x27;s pair is its Metal record. Ruled by the judge 2026-09-03 16:08 under Robin&#x27;s 15:4x engine instruction (every run as short as possible): Metal 21.9 s against NumPy 119.7 s on one seed, and the two engines were not distinguishable on any readout at n = 24. Correction 2026-09-03 19:12: relaxed atomic float scatter is load-dependent, so the earlier exact-across-process claim is withdrawn. Decision-grade Metal runs now take an exclusive cross-worktree lock; routine BUILD runs take a shared lock. Historical title counts are not regraded without an isolated replay. A nominee carrying a mechanism the Metal port refuses is matched on NumPy for both arms.</p><p class="scopeline">What that bar measured: standing (tilt), all-feet lifts (hysteresis), tip cadence 5-16 Hz, endogenous, hysteresis, displacement. What it never asked about: walking speed, posture (nonfoot), vision, flight. That is not a failure. It is simply outside the contest this fly entered.</p>
+<div class="tablewrap"><table class="card"><tbody><tr><th scope=row>what it is</th><td class="cval">nc1 + size_span 10.0</td><td><span class="cnote">one added key; every other key identical to nc1</span></td></tr><tr><th scope=row>engine</th><td class="cval">Metal</td><td><span class="cnote">walk_search.py 311a0d8f754eda9d, cns.py 6b0a676fb4dea450, dylib e4d8240aa14cae58, commit 48e6f69ce</span></td></tr><tr><th scope=row>standing</th><td class="cval">11/12 and 11/12</td><td><span class="cnote">22/24 paired; falls 30010 (77.6 deg) and 30020 (155.7 deg) where nc1 stood; nc1 fell 30003 and 30014 where qg1 stood</span></td></tr><tr><th scope=row>qualifying</th><td class="cval">11/12 and 11/12</td><td><span class="cnote">22/24 paired against nc1&#x27;s 0/24; lane A predicted 18-22 before any judge seed</span></td></tr><tr><th scope=row>tip cadence (hysteresis)</th><td class="cval">6.77 Hz median</td><td><span class="cnote">5.55-9.45 Hz over 22 standing runs, all inside 5-16; nc1 3.64 Hz median on the same seeds, all under 5</span></td></tr><tr><th scope=row>displacement</th><td class="cval">6.14 mm median</td><td><span class="cnote">6 s standing runs; nc1 4.31 mm on the same seeds; orders nothing under the bar, still under the real 2-45 mm/s band</span></td></tr><tr><th scope=row>endogenous timing</th><td class="cval">yes</td><td><span class="cnote">no commanded step frequency in the theta</span></td></tr><tr><th scope=row>spike regularity</th><td class="cval">k = 44</td><td><span class="cnote">Fisch 2012 anchor, set at battery time</span></td></tr><tr><th scope=row>lifts (hysteresis)</th><td class="cval">&gt;= 17 every foot</td><td><span class="cnote">every standing run, every foot; minimum 17 (30005 left middle)</span></td></tr><tr><th scope=row>wall</th><td class="cval">178.4 + 176.1 s</td><td><span class="cnote">historical batteries ran in parallel, about 15 s per seed on Metal</span></td></tr><tr><th scope=row>post-coronation card</th><td class="cval">10/12 stood</td><td><span class="cnote">footfall 1.089 body lengths and hysteresis swing 16.25 ms are candidate passes held for isolated replay; front knee 74.4 deg, speed 1.43 mm/s, body height 1.224 mm, straightness 0.3689 and tip-stance ipsilateral coordination conflict</span></td></tr><tr><th scope=row>coordination read</th><td class="cval">tri_index PASS</td><td><span class="cnote">median +0.0875, 9/11 inside the real band; tripod contrast in band 11/11; five of six legs have median cadence in band</span></td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>The recorded v3.5 verdict on the holder&#x27;s own Metal record seeds is 22 qualifying against 0, with both batteries passing on their own (11/12 standing, 11/12 qualifying, twice). No tie, so items 5 and 6 were not reached. A later contention correction makes exact replay of the historical parallel match unproven; it did not regrade the count.</p>
+
+<h3>What it could not do</h3>
+<ul class="caveats"><li>Two falls of 24 (30010, 30020) where nc1 stood; nc1 fell on two other seeds (30003, 30014). Standing count equal at 22/24.</li><li>The post-coronation card reads net speed 1.43 mm/s and straightness 0.3689, both below their real bands. The left and right hind feet still drag forward while loaded. Front FTi ROM, body height and tip-stance ipsilateral coordination also conflict.</li><li>Footfall separation 1.089 body lengths (10/10) and hysteresis swing 16.25 ms (7/10) are observed candidate passes, but registry promotion is held for one isolated Metal replay. Duty, contralateral phase, tip-stance contralateral coordination, both load-channel coordination rows, load reflex R5 (8/10), non-foot force and five joint ROM rows pass.</li><li>tri_index is no longer an open conflict: median +0.0875 with 9/11 inside the real band, and tripod contrast is in band on 11/11. Posture variability remains below band with the abdomen off; qg1 plus abd_gain 0.3 stood 4/5 in a five-seed screen and put the metric in band on the standing runs, at a cost of about one cadence leg, so it is not a champion closure.</li><li>Metal relaxed atomic scatter is load-dependent. Seed 201060 split 4-to-2 between two exact output families under six-way contention; the earlier exact-across-process claim is withdrawn. The recorded 22-0 title verdict stands and no count was regraded, but exact replay of the historical parallel match is unproven. Decision-grade runs now take an exclusive cross-worktree lock.</li><li>Lane E R222 found no compatible isolated neural-fidelity component on reused seed 100273, so it produced no defence or theta change. size_span is a searched value (10) chosen from two points (10, 30); the dial is otherwise unsearched, and 30 stood 18 of 18 while missing cadence on the floor.</li><li>Not re-read under v3.6; qh1 (qg1 plus the abdomen) shows the same one-tick taps on the hysteresis read, so qg1&#x27;s 22 of 24 presumably carries them too. No number regraded.</li></ul>
+<p class="srcs">MODELCARD-qg1.md &middot; lanes/judge/2026-09-03-title-v35-span10-battery1.json &middot; lanes/judge/2026-09-03-title-v35-span10-battery2.json &middot; lanes/judge/2026-09-03-title-v35-nc1-metal-battery1.json &middot; lanes/judge/2026-09-03-title-v35-nc1-metal-battery2.json &middot; results-qg1-theta.json &middot; lanes/A/theta-cd1qg-span10.json &middot; exchange/2026-09-03-1720-laneA-judge-packet.md &middot; lanes/A/2026-09-03-1659-cd1qe-result.md &middot; lanes/A/2026-09-03-1719-cd1qg-result.md &middot; lanes/A/2026-09-03-cd1qi-qg1-card.json &middot; lanes/judge/2026-09-03-qg1-perleg-replay-laneD-seeds.json &middot; lanes/A/2026-09-03-1815-metal-replay-under-contention.md &middot; lanes/E/2026-09-03-nc1-size-span-fidelity-decomposition-r222-result.json</p>
+</article><article class="champ" id="nc1">
+<div class="chead">
+  <span class="rank">9</span>
+  <div>
+    <h2>nc1 <span class="epithet">the hip that set the pace</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">ng1 with one added number: the six coxa-trochanter joints&#x27; muscle activation time constant set to 6 ms where every joint had shared 12.3 ms. On nk1&#x27;s own 24 paired judge seeds it stood and qualified on all 24 against nk1&#x27;s 19, and stepped faster on 14 of the 23 seeds where both stood, median 6.36 against 5.55 Hz.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">3 Sep 2026 to 3 Sep 2026</span>
+    <span class="rheld">same day</span></div>
+  <p class="rtail">Beaten by <a href="#qg1">qg1</a>, 3 Sep 2026. <span class="tagref">git tag <b>nc1</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-nc1-theta.json</span> &middot; sha256 <span class="mono">df85435cc9a494ca&hellip;</span> &middot; <a href="/fly/champion-parameters#nc1">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://theuploadinglab.ai/fly/walker_nc1_body.mp4#t=0.1"></video>
+<figcaption>The real body, replaying the exact verified title-battery trajectory on seed 30011 (4.18 mm, tip cadence 5.73 Hz), the one seed of the 24 where nk1 fell; the whole-CNS activity panel beside it; slow motion.</figcaption>
+</figure>
+<p>Lane B screened the coxa-trochanter body on twelve lane seeds and it went 12 for 12 against ng1&#x27;s 7, so the judge froze the hash at 09:34 and put it on nk1&#x27;s 24 seeds twenty minutes after nk1 was crowned. Every seed stood and every seed qualified. nk1&#x27;s four under-floor seeds and its one fall on that block were the five it lost. The title changed hands twice in one morning, both times to a lane B body that differs from ng1 by one number on six joints.</p>
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on battery bar v3.3.</b> Everything in v3.2 (tilt-based standing, height, displacement, all-feet lifts, two independent 12-seed batteries, measured spike regularity k=44) plus: tip cadence counts only when step timing is a model output. A commanded step generator&#x27;s echo qualifies at no value. Ruled by the judge 2026-09-02 under authority delegated by Robin. Ordering clause (judge, 2026-09-02 19:21): a challenger runs the holder&#x27;s 24 paired judge seeds on the holder&#x27;s engine; the higher qualifying count over the 24 takes the title, a tie keeps the holder, and the challenger must still pass each 12-seed battery on its own. Item 5 (judge, 2026-09-03 08:36): a tie on the 24 paired seeds goes to the next 24 judge seeds, both arms run; the higher combined count over 48 takes the title, equal keeps the holder; one extension per nomination.</p><p class="scopeline">What that bar measured: standing (tilt), all-feet lifts, tip cadence 5-16 Hz, endogenous, displacement.</p>
+<div class="tablewrap"><table class="card"><tbody><tr><th scope=row>v3.3 title batteries</th><td class="cval">12/12 + 12/12 standing</td><td><span class="cnote">12/12 + 12/12 qualifying (bar: &gt;=2 each); judge-run on judge-block seeds 30001-30024</span></td></tr><tr><th scope=row>paired against the holder</th><td class="cval">24/24 vs nk1 19/24</td><td><span class="cnote">five discordant seeds, all nc1&#x27;s; exact two-sided p 0.0625</span></td></tr><tr><th scope=row>cadence</th><td class="cval">median 6.36 Hz tip-measured</td><td><span class="cnote">endogenous: theta commands no step frequency; band 5-16; slowest 5.00 Hz on two seeds, on the inclusive floor</span></td></tr><tr><th scope=row>what changed from ng1</th><td class="cval">coxa-trochanter activation 6 ms (was 12.3 ms shared)</td><td><span class="cnote">body_joint_tau_act_ms on the six CTr_pitch joints; the other 36 joints unchanged; nk1 put the same number on the knees instead</span></td></tr><tr><th scope=row>standing</th><td class="cval">24/24 vs nk1 23/24</td><td><span class="cnote">no falls; final tilt 5.78 to 10.77 degrees</span></td></tr><tr><th scope=row>displacement</th><td class="cval">median 4.15 mm over 24 runs</td><td><span class="cnote">nk1 4.11 on the same seeds; displacement orders nothing under the clause</span></td></tr><tr><th scope=row>known limits</th><td class="cval">MN rest physiology open (rows 27/28); FeCO flexion population CONFLICT; tri_index CONFLICT carried unread</td><td><span class="cnote">not ROM-graded; vision clamped; no flyscore screen on this body before the crown; knee-plus-hip body untested</span></td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>The same 6 ms that nk1 put on the knee, put on the coxa-trochanter joint instead, keeps the fly up on every seed and moves its step rate up by about 0.9 Hz. The knee constant had changed stance and not cadence; the hip constant changes both. Cadence is the sharpest measured quantity the bar holds, and this is the first title change that moved it.</p>
+
+<h3>What it could not do</h3>
+<ul class="caveats"><li>Same substrate and open conflicts as nk1, plus the tri_index conflict now carried on a third champion unread. Two of the 24 runs sit exactly on the 5.00 Hz floor, at the tip instrument&#x27;s 1/11 Hz resolution (gap.tip_cadence_floor_resolution). The paired count is 5-0 on discordant seeds, exact p 0.0625; the title changes hands on the count rule. Lane B&#x27;s own 12 on 80528-80539 agree in direction. No Metal receipt exists for this body; the title rests on NumPy, as the clause requires. 2026-09-03 14:59 EEST: last champion under v3.3. Read with the v3.4 hysteresis instrument its cadence is 3.5 Hz, under the 5 Hz floor on 12 of 12 of lane A&#x27;s runs; the 6.36 Hz on this card is the threshold read the title was won on and is not re-read. Lost the live title 2026-09-03 17:45 EEST to qg1 (its own body with size_span 10.0) on the v3.5 clause, 0 against 22 on its own Metal record seeds: every nc1 standing run is under the 5 Hz floor on the hysteresis read. nc1 is the last champion under v3.3; its scored clip is re-scored at tier 3.</li></ul>
+<p class="srcs">MODELCARD-nc1.md &middot; lanes/judge/2026-09-03-title-v33-ctr-tau6-battery1.json &middot; lanes/judge/2026-09-03-title-v33-ctr-tau6-battery2.json &middot; results-nc1-theta.json &middot; lanes/B/2026-09-03-proto-ng1-ctr-tau6-numpy12-80528-result.json &middot; lanes/judge/theta-ng1-ctr-tau6-challenger.json</p>
+</article><article class="champ" id="nk1">
+<div class="chead">
+  <span class="rank">8</span>
+  <div>
+    <h2>nk1 <span class="epithet">the knee that answered a tie</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">ng1 with one added number: the six knee joints&#x27; muscle activation time constant set to 6 ms where every joint had shared 12.3 ms. Tied ng1 19-19 on the holder&#x27;s 24 paired seeds, the first tie on record, then won the 24-seed extension the judge wrote a rule for that morning, 17 to 12; 36 to 31 over 48.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">3 Sep 2026 to 3 Sep 2026</span>
+    <span class="rheld">same day</span></div>
+  <p class="rtail">Beaten by <a href="#nc1">nc1</a>, 3 Sep 2026. <span class="tagref">git tag <b>nk1</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-nk1-theta.json</span> &middot; sha256 <span class="mono">7dadaafeee77d385&hellip;</span> &middot; <a href="/fly/champion-parameters#nk1">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://theuploadinglab.ai/fly/walker_nk1_body.mp4#t=0.1"></video>
+<figcaption>The real body, replaying the exact verified title-battery trajectory on seed 30012 (5.43 mm, tip cadence 5.36 Hz), one of the seeds where ng1 stepped under the floor at 4.73 Hz; the whole-CNS activity panel beside it; slow motion.</figcaption>
+</figure>
+<p>Lane B screened the knee change on its own GPU seeds twice and it beat ng1 both times, so the judge nominated it with a frozen hash at 08:14 and ran it on ng1&#x27;s 24 seeds. It tied, 19 to 19, and the clause said a tie keeps the holder. But the engine is deterministic per seed, so a tied challenger could never win a re-match; the judge wrote item 5 at 08:36, drew the next 24 seeds, ran both flies on them, and nk1 won 17 to 12. First title decided by an extension, first champion with a muscle model that differs per joint.</p>
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on battery bar v3.3.</b> Everything in v3.2 (tilt-based standing, height, displacement, all-feet lifts, two independent 12-seed batteries, measured spike regularity k=44) plus: tip cadence counts only when step timing is a model output. A commanded step generator&#x27;s echo qualifies at no value. Ruled by the judge 2026-09-02 under authority delegated by Robin. Ordering clause (judge, 2026-09-02 19:21): a challenger runs the holder&#x27;s 24 paired judge seeds on the holder&#x27;s engine; the higher qualifying count over the 24 takes the title, a tie keeps the holder, and the challenger must still pass each 12-seed battery on its own. Item 5 (judge, 2026-09-03 08:36): a tie on the 24 paired seeds goes to the next 24 judge seeds, both arms run; the higher combined count over 48 takes the title, equal keeps the holder; one extension per nomination.</p><p class="scopeline">What that bar measured: standing (tilt), all-feet lifts, tip cadence 5-16 Hz, endogenous, displacement.</p>
+<div class="tablewrap"><table class="card"><tbody><tr><th scope=row>v3.3 title batteries</th><td class="cval">11/12 + 12/12 + 11/12 + 11/12 standing</td><td><span class="cnote">8/12 + 11/12 + 8/12 + 9/12 qualifying (bar: &gt;=2 each); judge-run on judge-block seeds 30001-30048</span></td></tr><tr><th scope=row>paired against the holder</th><td class="cval">36/48 vs ng1 31/48</td><td><span class="cnote">item 5: 19-19 on the base 24, 17-12 on the extension; nk1-only 12 seeds, ng1-only 7</span></td></tr><tr><th scope=row>cadence</th><td class="cval">median 5.45 Hz tip-measured</td><td><span class="cnote">endogenous: theta commands no step frequency; band 5-16</span></td></tr><tr><th scope=row>what changed from ng1</th><td class="cval">knee activation 6 ms (was 12.3 ms shared)</td><td><span class="cnote">body_joint_tau_act_ms on the six FTi_pitch joints; the other 36 joints unchanged</span></td></tr><tr><th scope=row>standing</th><td class="cval">45/48 vs ng1 41/48</td><td><span class="cnote">three falls against seven; every loss it takes is a standing body under the 5 Hz floor</span></td></tr><tr><th scope=row>displacement</th><td class="cval">median 4.17 mm over 48 standing runs</td><td><span class="cnote">ng1 4.35 on the same seeds; displacement orders nothing under the clause</span></td></tr><tr><th scope=row>known limits</th><td class="cval">MN rest physiology open (rows 27/28); FeCO flexion population CONFLICT</td><td><span class="cnote">not ROM-graded; vision clamped; one per-joint point, not a map of activation per joint</span></td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>The body&#x27;s single 12.3 ms activation time constant was derived from a measurement that includes nerve conduction and neuromuscular delay, so real activation is faster. Lane B put a faster constant on one joint, the knee, and the fly fell less often on the same seeds. It did not step faster: every loss it takes against ng1 is a standing body a fraction of a hertz under the cadence floor.</p>
+<p class="defence"><b>It defended the title.</b> [&#x27;none: lost to nc1, the first challenger, 19-24 on its own paired seeds (2026-09-03 09:58 EEST)&#x27;]</p>
+<h3>What it could not do</h3>
+<ul class="caveats"><li>Same substrate and open conflicts as ng1, plus the FeCO flexion population conflict carried from lane A&#x27;s 04:47 read. Three seeds fall outright. The paired difference over 48 (12 vs 7 discordant, McNemar two-sided p about 0.36) is not by itself strong evidence that the knee constant matters; the title changes hands on the count rule item 5 states. Lane B&#x27;s Metal screens ranked the two flies further apart than NumPy does; every Metal count is a different fly per seed. The clip&#x27;s footer line carries ng1&#x27;s battery counts (12/12 + 10/12 standing, 11 + 8 qualifying) where nk1&#x27;s were 11/12 + 12/12 and 8 + 11: a label copied from the ng1 renderer; the receipts are the record and the clip is not re-rendered.</li></ul>
+<p class="srcs">MODELCARD-nk1.md &middot; lanes/judge/2026-09-03-title-v33-fti-tau6-battery1.json &middot; lanes/judge/2026-09-03-title-v33-fti-tau6-battery2.json &middot; lanes/judge/2026-09-03-title-v33-fti-tau6-battery3.json &middot; lanes/judge/2026-09-03-title-v33-fti-tau6-battery4.json &middot; results-nk1-theta.json &middot; lanes/D/2026-09-03-ftitau6-challenger-flyscore-result.json</p>
+</article><article class="champ" id="ng1">
+<div class="chead">
+  <span class="rank">7</span>
+  <div>
+    <h2>ng1 <span class="epithet">the fly the search had asked for</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">nl1 with the three graded-transmission dials its own search had stated (graded_every 5, graded_v50 -49.38, graded_slope 4.60) applied by the runner, where nl1 had run the engine defaults. Every other key identical. Took the title on the holder&#x27;s 24 paired seeds, 19 qualifying against 15, under the ordering clause ruled at 19:21.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">2 Sep 2026 to 3 Sep 2026</span>
+    <span class="rheld">1 day</span></div>
+  <p class="rtail">Beaten by <a href="#nk1">nk1</a>, 3 Sep 2026. <span class="tagref">git tag <b>ng1</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-ng1-theta.json</span> &middot; sha256 <span class="mono">9f6a0e87818bbdf9&hellip;</span> &middot; <a href="/fly/champion-parameters#ng1">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://theuploadinglab.ai/fly/walker_ng1_body.mp4#t=0.1"></video>
+<figcaption>The real body, replaying the exact verified title-battery trajectory on seed 30003 (5.5 mm, tip cadence 5.0 Hz), the whole-CNS activity panel beside it; slow motion.</figcaption>
+</figure>
+<p>The 18:30 correction found that main&#x27;s walk_search.py never read graded_every, graded_v50 or graded_slope, so nl1&#x27;s two title batteries and its clip had run the engine defaults while lane A&#x27;s search had run the stated values. The judge ruled an ordering clause at 19:21 so that two flies passing the same bar could be ranked, ran the stated-dials fly on nl1&#x27;s 24 paired seeds at 19:26, and it won 19 to 15. Lane A had registered 3-7 qualifying per battery; battery 1 gave 11, falsifying the prediction from above.</p>
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on battery bar v3.3.</b> Everything in v3.2 (tilt-based standing, height, displacement, all-feet lifts, two independent 12-seed batteries, measured spike regularity k=44) plus: tip cadence counts only when step timing is a model output. A commanded step generator&#x27;s echo qualifies at no value. Ruled by the judge 2026-09-02 under authority delegated by Robin. Ordering clause (judge, 2026-09-02 19:21): a challenger runs the holder&#x27;s 24 paired judge seeds on the holder&#x27;s engine; the higher qualifying count over the 24 takes the title, a tie keeps the holder, and the challenger must still pass each 12-seed battery on its own. Item 5 (judge, 2026-09-03 08:36): a tie on the 24 paired seeds goes to the next 24 judge seeds, both arms run; the higher combined count over 48 takes the title, equal keeps the holder; one extension per nomination.</p><p class="scopeline">What that bar measured: standing (tilt), all-feet lifts, tip cadence 5-16 Hz, endogenous, displacement.</p>
+<div class="tablewrap"><table class="card"><tbody><tr><th scope=row>v3.3 title batteries</th><td class="cval">12/12 + 10/12 standing</td><td><span class="cnote">11/12 + 8/12 qualifying (bar: &gt;=2 each); judge-run on judge-block seeds 30001-30024</span></td></tr><tr><th scope=row>paired against the holder</th><td class="cval">19/24 vs nl1 15/24</td><td><span class="cnote">ordering clause: higher qualifying count over the holder&#x27;s 24 paired seeds; ng1-only 7 seeds, nl1-only 3</span></td></tr><tr><th scope=row>cadence</th><td class="cval">median 5.45 Hz tip-measured</td><td><span class="cnote">endogenous: theta commands no step frequency; band 5-16</span></td></tr><tr><th scope=row>what changed from nl1</th><td class="cval">graded dials 5 / -49.38 mV / 4.60 applied</td><td><span class="cnote">nl1 ran 1 / -48.0 / 2.5 because main&#x27;s runner had not read the keys (corrected 18:30)</span></td></tr><tr><th scope=row>displacement</th><td class="cval">median 4.375 + 3.85 mm standing runs</td><td><span class="cnote">nl1 on the same seeds 3.79 + 4.165; displacement orders nothing under the clause</span></td></tr><tr><th scope=row>known limits</th><td class="cval">MN rest physiology open (rows 27/28)</td><td><span class="cnote">not ROM-graded; vision clamped; the graded dials are one searched point, not a map of the space</span></td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>The graded-transmission search dials that lane A&#x27;s CD1-NH search chose, and the CD1-NL confirmation measured, were never applied by the runner on main; nl1 was crowned on the default dials by accident of a missing pass-through. Once the pass-through landed, the fly the search had actually optimised could be title-matched, and on the same 24 seeds it qualifies more often.</p>
+<p class="defence"><b>It defended the title.</b> [&#x27;union-graded body 18-19 (2026-09-03 06:13)&#x27;, &#x27;slope 8 body 17-19 (06:37)&#x27;, &#x27;R154 13B -50 mV body 17-19 (02:20)&#x27;, &#x27;and five more, all on the 24 paired seeds; see CONSTRAINT-REGISTRY.json _live_titles.BANC.past_holders&#x27;, &#x27;lost to nk1 on the item 5 extension, 31-36 over 48 (2026-09-03 09:11 EEST)&#x27;]</p>
+<h3>What it could not do</h3>
+<ul class="caveats"><li>Same substrate, same open conflicts as nl1: motor neurons silent at rest against a measured ~30 Hz (rows 27/28); one seed in each battery falls outright and one battery-2 seed lifts a foot only twice; vision clamped; not ROM-graded. The paired difference (7 vs 3 discordant seeds, McNemar two-sided p about 0.34) is not by itself strong evidence that the graded dials matter; the title changes hands on the count rule the clause states. inh_gain 1.0 is stated in the theta of record for the shape clause; it changes no run.</li></ul>
+<p class="srcs">MODELCARD-ng1.md &middot; lanes/judge/2026-09-02-title-v33-ng1-battery1.json &middot; lanes/judge/2026-09-02-title-v33-ng1-battery2.json &middot; results-ng1-theta.json</p>
+</article><article class="champ" id="nl1">
+<div class="chead">
+  <span class="rank">6</span>
+  <div>
+    <h2>nl1 <span class="epithet">the first fly whose cadence is its own</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">The first champion whose step timing is a model output - no commanded step frequency anywhere in the theta - and the first crowned on the whole 188,508-neuron CNS. Produced by lane A&#x27;s clause-shaped search (489 iterations) and confirmed out of sample before the bar existed.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">2 Sep 2026 to 2 Sep 2026</span>
+    <span class="rheld">same day</span></div>
+  <p class="rtail">Beaten by <a href="#ng1">ng1</a>, 2 Sep 2026. <span class="tagref">git tag <b>nl1</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-nl1-theta.json</span> &middot; sha256 <span class="mono">8988c520dade63ae&hellip;</span> &middot; <a href="/fly/champion-parameters#nl1">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://theuploadinglab.ai/fly/walker_nl1.mp4#t=0.1"></video>
+<figcaption>The real body, replaying the exact verified title-battery trajectory (parity 1.6334 vs recorded 1.63 mm). Tip cadence 6.64 Hz from the body&#x27;s own dynamics; slow motion.</figcaption>
+</figure>
+<p>Lane A&#x27;s clause-shaped search ran 489 iterations from the r23 champion and its best theta survived twelve fresh paired seeds at p = 0.0327 - the first search candidate ever to survive out of sample. Hours later Robin delegated the title bar to the judge, v3.3 was ruled, and the same candidate passed both title batteries the same afternoon.</p>
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on battery bar v3.3.</b> Everything in v3.2 (tilt-based standing, height, displacement, all-feet lifts, two independent 12-seed batteries, measured spike regularity k=44) plus: tip cadence counts only when step timing is a model output. A commanded step generator&#x27;s echo qualifies at no value. Ruled by the judge 2026-09-02 under authority delegated by Robin. Ordering clause (judge, 2026-09-02 19:21): a challenger runs the holder&#x27;s 24 paired judge seeds on the holder&#x27;s engine; the higher qualifying count over the 24 takes the title, a tie keeps the holder, and the challenger must still pass each 12-seed battery on its own. Item 5 (judge, 2026-09-03 08:36): a tie on the 24 paired seeds goes to the next 24 judge seeds, both arms run; the higher combined count over 48 takes the title, equal keeps the holder; one extension per nomination.</p><p class="scopeline">What that bar measured: standing (tilt), all-feet lifts, tip cadence 5-16 Hz, endogenous, displacement.</p>
+<div class="tablewrap"><table class="card"><tbody><tr><th scope=row>v3.3 title batteries</th><td class="cval">11/12 + 12/12 standing</td><td><span class="cnote">9/12 + 6/12 qualifying (bar: &gt;=2 each); judge-run on judge-block seeds 30001-30024</span></td></tr><tr><th scope=row>cadence</th><td class="cval">median 5.45 Hz tip-measured</td><td><span class="cnote">endogenous: theta commands no step frequency; band 5-16</span></td></tr><tr><th scope=row>lineage</th><td class="cval">r23 -&gt; CD1-NH search -&gt; CD1-NL</td><td><span class="cnote">out-of-sample p=0.0327, standing 9-&gt;11/12, displacement -26% (registered trade)</span></td></tr><tr><th scope=row>mechanisms carried</th><td class="cval">signs=measured, per-neuron length delays, conductances+shunting, graded set</td><td><span class="cnote">the measured-structure directive expressed in a winning theta</span></td></tr><tr><th scope=row>known limits</th><td class="cval">MN rest physiology open (rows 27/28)</td><td><span class="cnote">displacement trade documented; not ROM-graded; vision clamped</span></td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>v3.3 is the first bar to require step timing be a model output. This theta commands no step frequency; its 5-16 Hz tip cadence comes from searched joint dynamics on the whole CNS.</p>
+
+<h3>What it could not do</h3>
+<ul class="caveats"><li>Motor neurons are silent at rest against a measured ~30 Hz (species-level rows 27/28); standing was bought with a 26% displacement cost, registered in advance; one battery seed falls outright; vision clamped; not ROM-graded. Corrected 2026-09-02 18:30: the graded_every/graded_v50/graded_slope shown are the values the engine applied at the title batteries (1, -48.0, 2.5); the search file stated 5/-49.38/4.60 and the runner on main did not read them (CHAMPION.json &#x27;corrections&#x27;).</li></ul>
+<p class="srcs">MODELCARD-nl1.md &middot; lanes/judge/2026-09-02-title-v33-battery1.json &middot; lanes/judge/2026-09-02-title-v33-battery2.json</p>
+</article><article class="champ" id="r23">
+<div class="chead">
+  <span class="rank">5</span>
+  <div>
+    <h2>r23 <span class="epithet">the first fly at fly cadence</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">The first champion required to step at real-fly cadence, and the first crowned over its own failing batteries -- reported, not hidden.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">24 Aug 2026 to 2 Sep 2026</span>
+    <span class="rheld">9 days</span></div>
+  <p class="rtail">Beaten by <a href="#nl1">nl1</a>, 2 Sep 2026. <span class="tagref">git tag <b>r23</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-r23-theta.json</span> &middot; sha256 <span class="mono">2b0242217bdd850d&hellip;</span> &middot; <a href="/fly/champion-parameters#r23">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://theuploadinglab.ai/fly/walker_r23_scored.mp4#t=0.1"></video>
+<figcaption>Judge seed 30173, 4.05 mm, upright 0.98, stepping at fly cadence. Parity-gated 4.0479 vs recorded 4.0500.</figcaption>
+</figure>
+<p>Nineteen mechanisms died before it. The lane that built it had just proved the bar&#x27;s own two clauses trade off against each other (-0.675), then changed its search protocol -- re-rank the shortlist on held-out seeds instead of trusting the chamber maximum -- and the third-ranked candidate came through. The re-ranking&#x27;s own top pick failed both its batteries.</p>
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on v3.1.</b> </p>
+<div class="tablewrap"><table class="card"><tbody><tr><th scope=row>v3.2 title batteries</th><td class="cval">10/12 + 9/12 standing</td><td><span class="cnote">8/12 + 9/12 qualifying; confirmation reproduced exactly by the judge</span></td></tr><tr><th scope=row>clause batteries</th><td class="cval">4 of 5 MET</td><td><span class="cnote">lane A 9/12, B 6/12, C 5/12 FAIL, D 10/12; judge 9/12</span></td></tr><tr><th scope=row>pooled standing</th><td class="cval">39/60 = 0.65</td><td><span class="cnote">clause needs a true rate ~0.54 for even odds</span></td></tr><tr><th scope=row>cadence</th><td class="cval">5.05-5.23 Hz</td><td><span class="cnote">in band 5-16; one to five grid steps above the edge (grid 1/22 Hz)</span></td></tr><tr><th scope=row>judge battery v1</th><td class="cval">VOID</td><td><span class="cnote">ran adh_gain 31.4 as 40: the main battery instrument could not express the theta; fixed, probed bit-identical, re-run</span></td></tr><tr><th scope=row>selection</th><td class="cval">1 of 45 candidates</td><td><span class="cnote">held-out re-ranking; multiplicity registered before the batteries</span></td></tr><tr><th scope=row>net speed</th><td class="cval">0.662 mm/s</td><td><span class="cnote">OPEN CONFLICT: title-seed median; band 2-45. Path speed 8.80 is inside; the fly is lost, not slow</span></td></tr><tr><th scope=row>tortuosity</th><td class="cval">12.62 median</td><td><span class="cnote">nine standing title-confirmation runs; same-seed diagnostic, not an independent battery</span></td></tr><tr><th scope=row>raw yaw shape</th><td class="cval">WANDERING</td><td><span class="cnote">nine standing title seeds; median path 1226.6 degrees, absolute net 61.7 degrees, efficiency 0.049; unsmoothed and final-posture gated</span></td></tr><tr><th scope=row>yaw-rate spectrum</th><td class="cval">STEP_YAW</td><td><span class="cnote">nine standing title seeds; median peak 6.91 Hz, SNR 12.71, range 5.28-11.46 Hz; broad-band overlap only, with no phase or coherence test</span></td></tr><tr><th scope=row>smoothed gated yaw path</th><td class="cval">630.4 degrees</td><td><span class="cnote">nine standing title seeds; causal 25 ms smoothing and simultaneous posture/contact gate; angular path only</span></td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>Because v3.1 asks for two honest batteries at measured input statistics and r23 has four, three from the lane and one from the judge on a corrected instrument. And because the record shows every failure beside every pass: that is what distinguishes a marginal champion from a lucky one.</p>
+<p class="defence"><b>It defended the title.</b> The unchanged theta met the replacement v3.2 posture bar on 2026-08-31. Two independent batteries recorded 10/12 standing with 8/12 qualifying and 9/12 standing with 9/12 qualifying. The judge reran the reserved confirmation seeds and reproduced every scientific field exactly. The older quaternion gate would have counted only 5/12 standing in the confirmation battery.</p>
+<h3>What it could not do</h3>
+<ul class="caveats"><li>Marginal by construction: at a true standing rate near 0.65, one battery in several will fail the clause, and one did (C, 5/12, cadence 4.73). The judge&#x27;s first battery also failed (4/12) and was VOIDED for cause: main&#x27;s battery instrument silently dropped adh_gain, a ledgered mechanism the theta carries at 31.4 -- the gap was found, fixed on main, bit-identity probed, and the re-run battery met the clause at 9/12 with cadence 5.18. Cadence sits one to five grid steps above the band edge. spike_reg 44 per v3.1: this is the first champion measured under non-Poisson afferents.</li><li>2026-08-25 audit addendum: the co-temporal-gate defect found by the lane&#x27;s own audit was Tier-1 re-run by the judge across all 48 battery seeds (48/48 exact reproduction): computed co-temporally, pooled standing RISES 30/48 to 33/48 and no battery verdict changes - the crown is robust to the defect and net-favored by fixing it.</li><li>2026-08-31 heading addendum: the registered WANDERING reading is an operational classifier over unsmoothed Euler yaw sampled every 2.5 ms. Selection uses final posture rather than simultaneous posture and contact, so it does not establish grounded planar wandering, reversal count or the steering mechanism.</li><li>2026-08-31 yaw-rate addendum: the registered STEP_YAW reading means only that the dominant detrended yaw-rate spectral peak falls inside 5-16 Hz with SNR at least 3. No cross-spectrum, coherence or phase relation to footfalls was measured, so step locking, per-step reversals and cancellation remain unproved.</li><li>2026-08-31 gated-yaw addendum: the 630.4-degree smoothed, co-temporally gated yaw path reproduces. LOW_REVERSE does not: its counter only sees adjacent 2.5 ms rates that jump directly across both sides of a 50 deg/s deadzone. A smooth 5 Hz synthetic reversal scores zero, and deadzone-hysteresis reanalysis changes the title-seed median from 3 to 83. Physical reversal count and mechanism remain open.</li></ul>
+<p class="srcs">lanes/A/MODELCARD-r23.md &middot; lanes/A/2026-08-23-cd1fh-r23-qualA.json &middot; lanes/A/2026-08-23-cd1fh-r23-qualB.json &middot; lanes/A/2026-08-23-cd1fi-r23-qualC.json &middot; lanes/A/2026-08-23-cd1fi-r23-qualD.json &middot; exchange/2026-08-24-morning-judge-report.md &middot; lanes/B/2026-08-31-v32-r23-title-nomination-result.json &middot; lanes/B/2026-08-31-v32-r23-title-confirmation-result.json &middot; exchange/feedback/2026-08-31-1148-lane-b-judge.md &middot; lanes/B/2026-08-31-r23-lost-path-result.json &middot; lanes/B/2026-08-31-r23-lost-path-result.md &middot; lanes/B/2026-08-31-r23-heading-shape-preregister.md &middot; lanes/B/2026-08-31-r23-heading-shape-result.json &middot; lanes/B/2026-08-31-r23-heading-shape-result.md &middot; exchange/feedback/2026-08-31-1541-lane-b-judge.md &middot; lanes/B/2026-08-31-r23-yaw-rate-clock-preregister.md &middot; lanes/B/2026-08-31-r23-yaw-rate-clock-result.json &middot; lanes/B/2026-08-31-r23-yaw-rate-clock-result.md &middot; exchange/feedback/2026-08-31-1623-lane-b-judge.md &middot; lanes/B/2026-08-31-r23-gated-yaw-preregister.md &middot; lanes/B/2026-08-31-r23-gated-yaw-result.json &middot; lanes/B/2026-08-31-r23-gated-yaw-result.md &middot; exchange/feedback/2026-08-31-1701-lane-b-judge.md</p>
+</article><article class="champ" id="f23">
+<div class="chead">
+  <span class="rank">4</span>
+  <div>
+    <h2>f23 <span class="epithet">the fast-joint fly</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">The first fly ever to take the title from another fly, and its own record says the win was not clean.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">18 Aug 2026 to 24 Aug 2026</span>
+    <span class="rheld">6 days</span></div>
+  <p class="rtail">Beaten by <a href="#r23">r23</a>, 24 Aug 2026. <span class="tagref">git tag <b>f23</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-f23-theta.json</span> &middot; sha256 <span class="mono">3c2e00f6cb21d6ca&hellip;</span> &middot; <a href="/fly/champion-parameters#f23">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://theuploadinglab.ai/fly/walker_f23_scored.mp4#t=0.1"></video>
+<figcaption>Seed 2209, 1.85 mm, all six feet, 9 to 29 lifts. Watch the body graze the floor: that is the nonfoot conflict, visible.</figcaption>
+</figure>
+<p>f23 is the first fly in this project&#x27;s history to take the title off another fly. Everything before it had inherited an empty throne.</p><p>It won because somebody finally pointed the search at the right thing. Every earlier search had been told to chase distance, on the hope that a fly which travels far is probably also a fly that stays up. This one was told to count how often the fly stayed on its feet, which is what the title has always actually measured, and it walked straight to a winner: eight runs in twelve, twice over, on two separate sets of random starts.</p><p>And then the record wrote down, in its own words, that it was not a clean win. It is slower than the fly it beat. On the tie-breaking measure the two are dead level. And it drags: about fifteen percent of the time it is resting on its body or the thick part of a leg rather than standing on its feet, which is one way to look like you are balancing when you are not. You can see it in the clip.</p>
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on title bar v2.</b> 12 fresh seeds. standing &gt;= 6/12 AND &gt;= 2 standing runs that lift all feet &gt;= 5 times. A challenger takes the title only by STRICTLY exceeding the incumbent on a paired-seed decider, same seeds, fresh for both.</p><p class="scopeline">What that bar measured: standing rate, all-feet stepping. What it never asked about: cadence, walking speed, posture (nonfoot). That is not a failure. It is simply outside the contest this fly entered.</p>
+<div class="tablewrap"><table class="card"><tbody><tr><th scope=row>standing</th><td class="cval">8/12</td><td><span class="cnote">bar was 6/12</span></td></tr><tr><th scope=row>qualifying runs</th><td class="cval">7</td><td><span class="cnote">bar was 2</span></td></tr><tr><th scope=row>replication</th><td class="cval">8/12 twice</td><td><span class="cnote">two independent batteries: 2201-2213 and 3000-3012</span></td></tr><tr><th scope=row>paired decider vs p150</th><td class="cval">8 vs 5</td><td><span class="cnote">same 12 seeds, fresh for both</span></td></tr><tr><th scope=row>qualifying, paired</th><td class="cval">5 vs 5</td><td><span class="cnote">TIE</span></td></tr><tr><th scope=row>speed</th><td class="cval">0.45 vs 0.58</td><td><span class="cnote">SLOWER than the fly it replaced</span></td></tr><tr><th scope=row>nonfoot</th><td class="cval">0.158 vs 0.003</td><td><span class="cnote">it drags</span></td></tr><tr><th scope=row>cadence</th><td class="cval">3.05 Hz</td><td><span class="cnote">open conflict, band 5-16</span></td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>Two things changed, and the second matters more. Its joint is fast: f0 15 Hz against the 10.5 of the fly it took the title from, and it is the first champion whose joint speed does not conflict with measured Drosophila muscle kinetics. But the real change was in the chamber that found it. Every earlier search optimised distance and hoped the standing rate would follow. This one scored the quantity the title actually measures, the rate of qualifying standing runs, and the search walked straight to a winner. It is the first champion found by an instrument pointed at the thing being judged.</p>
+<p class="defence"><b>It defended the title.</b> None. The bar changed under it. Cadence joined the title bar the same day, as bar v3, and f23 has never been measured against cadence.</p>
+<h3>What it could not do</h3>
+<ul class="caveats"><li>It wins on ONE thing: how often it stays up. Qualifying runs tie 5-5.</li><li>It is slower than the fly it replaced, 0.45 against 0.58 mm/s.</li><li>It drags. nonfoot 0.158 against p150&#x27;s 0.003 means it rests on its body or proximal leg segments about 15% of the time, and part of its standing advantage is bought exactly that way. Watch the body graze the floor in the clip.</li><li>A later measurement softened this: it brushes rather than drags, and the force-weighted posture measure moves it from conflict to pass. Both readings are in the ledger.</li><li>Its own model card records previous champions at f0 6 to 10.5 Hz, but t025&#x27;s committed theta is 19.89. The claim that f23 is the fastest-jointed champion does not survive the table below. Flagged, not edited: the ledger is theirs to amend.</li></ul>
+<p class="srcs">CONSTRAINTS.md: CHAMPIONSHIP CHANGE, 2026-08-18 &middot; MODELCARD-f23.md &middot; VIDEOS.md #18 &middot; tag f23</p>
+</article><article class="champ" id="p150">
+<div class="chead">
+  <span class="rank">3</span>
+  <div>
+    <h2>p150 <span class="epithet">the phasic fly</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">It broke the trade nobody could break: better balance and double the speed, at the same time.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">17 Aug 2026 to 18 Aug 2026</span>
+    <span class="rheld">1 day</span></div>
+  <p class="rtail">Beaten by <a href="#f23">f23</a>, 18 Aug 2026. <span class="tagref">git tag <b>p150</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-p150-theta.json</span> &middot; sha256 <span class="mono">2b8780671efba4c3&hellip;</span> &middot; <a href="/fly/champion-parameters#p150">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://theuploadinglab.ai/fly/walker_p150_scored.mp4#t=0.1"></video>
+<figcaption>Seed 824, 7.08 mm, all six feet, min 9 lifts. The longest standing walk the project had produced.</figcaption>
+</figure>
+<p>Every fly before p150 was stuck in the same trap. Tune one to balance and it stopped walking. Tune it to walk and it fell over. The two goals traded against each other so reliably that it started to look like a law.</p><p>p150 broke it, and the way it broke it is the interesting part. It was not commanded differently and it was not scored differently. What changed is how sharply it feels its own body moving. Turn the sensitivity of its motion sensing up, and the same wiring both balanced better and walked twice as fast. The trade was never a law. It was a symptom of a fly that could not feel itself properly.</p>
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on battery bar v1.</b> 6 fresh seeds. Working-fly status on the battery card: all-feet lifts, joint ranges against the measured fly, duty, contralateral phase, load reflex. Standing rate reported but not a gate.</p><p class="scopeline">What that bar measured: all-feet stepping, six joint ROMs, duty, contra phase, load reflex R5, distance.</p>
+<div class="tablewrap"><table class="card"><tbody><tr><th scope=row>standing</th><td class="cval">3/6</td><td><span class="cnote">beat t025&#x27;s 2/6</span></td></tr><tr><th scope=row>speed</th><td class="cval">1.03 mm/s</td><td><span class="cnote">twice t025</span></td></tr><tr><th scope=row>all-feet lifts</th><td class="cval">min 9</td><td><span class="cnote">PASS</span></td></tr><tr><th scope=row>all six joint ROMs</th><td class="cval">PASS</td><td></td></tr><tr><th scope=row>swing</th><td class="cval">38.75 ms</td><td><span class="cnote">PASS</span></td></tr><tr><th scope=row>contra phase</th><td class="cval">PASS</td><td></td></tr><tr><th scope=row>load reflex R5</th><td class="cval">3/3</td><td><span class="cnote">PASS</span></td></tr><tr><th scope=row>cadence</th><td class="cval">3.64 Hz</td><td><span class="cnote">open conflict, band 5-16</span></td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>Two sensing numbers do the work. Its phasic transduction, how much its sensory neurons respond to change rather than to steady position, sits pinned at the highest value the search was allowed to try. And its campaniform gain, how loudly the strain sensors in its legs report load, is three times t025&#x27;s. Neither of those is a command and neither is an objective. The fly simply feels its own motion more sharply, and that alone bought both halves of the trade at once. That the search pushed one of them to the ceiling is a message: it wanted more than we let it have.</p>
+<p class="defence"><b>It defended the title.</b> Defended three times, the last one under a harder bar than it was crowned on. Re-graded on 12 fresh seeds under bar v2 it stood 6/12, the bar exactly to the digit, with all six standing runs qualifying and nonfoot 0.001.</p>
+<h3>What it could not do</h3>
+<ul class="caveats"><li>Its coronation speed of 1.03 mm/s was seed-lucky. Re-measured on 12 fresh seeds the honest median is 0.62.</li><li>Cadence 3.64 Hz sits below the measured 5-16 Hz band. It steps too slowly to be a real fly.</li><li>R1i 0 of 6 standing runs, and 0 of 10 across its lifetime: the same-side swing-avoidance rule it never passed.</li></ul>
+<p class="srcs">CONSTRAINTS.md: ROUND 18 VERDICT (2026-08-17) &middot; CONSTRAINTS.md: TITLE MATCH v2 RESULTS (2026-08-18) &middot; VIDEOS.md #14 &middot; tag p150</p>
+</article><article class="champ" id="t025">
+<div class="chead">
+  <span class="rank">2</span>
+  <div>
+    <h2>t025 <span class="epithet">the working fly</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">The first fly to move like the real animal, and it still fell over two times in three.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">16 Aug 2026 to 17 Aug 2026</span>
+    <span class="rheld">1 day</span></div>
+  <p class="rtail">Beaten by <a href="#p150">p150</a>, 17 Aug 2026. <span class="tagref">git tag <b>t025</b></span></p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-t025-theta.json</span> &middot; sha256 <span class="mono">e27fcf3b9df9d313&hellip;</span> &middot; <a href="/fly/champion-parameters#t025">every cell type&#x27;s values and the full theta</a></p>
+
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://theuploadinglab.ai/fly/walker_t025_scored.mp4#t=0.1"></video>
+<figcaption>Seed 635, 4.12 mm, all six feet, 13 to 42 lifts. Closed loop: the connectome drives everything.</figcaption>
+</figure>
+<p>t025 is the first fly in the project that moved like the animal it came from. There are six joint angles you can measure on a real walking fly, and until this one no simulated fly had matched all six at once. It matched all six. Its scorecard was the best anything had produced, and every search that came after it started from its numbers.</p><p>It also could not stand up. It stayed upright in two runs out of six, which is worse than a coin. That combination, a fly that walks correctly and falls over anyway, set the problem the next two champions spent their whole reigns on.</p>
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on battery bar v1.</b> 6 fresh seeds. Working-fly status on the battery card: all-feet lifts, joint ranges against the measured fly, duty, contralateral phase, load reflex. Standing rate reported but not a gate.</p><p class="scopeline">What that bar measured: all-feet stepping, six joint ROMs, duty, contra phase, load reflex R5, distance.</p>
+<div class="tablewrap"><table class="card"><tbody><tr><th scope=row>all six joint ROMs</th><td class="cval">PASS</td><td><span class="cnote">first time on any fly: fFTi 83.7, fCTr 78.4, mFTi 17.0, mCTr 21.0, hFTi 82.4, hCTr 44.7</span></td></tr><tr><th scope=row>tempo</th><td class="cval">8.18 Hz</td><td><span class="cnote">in band</span></td></tr><tr><th scope=row>duty</th><td class="cval">0.73</td><td><span class="cnote">PASS</span></td></tr><tr><th scope=row>contra phase</th><td class="cval">0.38</td><td><span class="cnote">PASS</span></td></tr><tr><th scope=row>all-feet lifts</th><td class="cval">min 12</td><td><span class="cnote">PASS</span></td></tr><tr><th scope=row>load reflex R5</th><td class="cval">PASS</td><td></td></tr><tr><th scope=row>speed</th><td class="cval">0.52 mm/s</td><td><span class="cnote">open conflict, real floor 2.0</span></td></tr><tr><th scope=row>standing</th><td class="cval">2/6</td><td><span class="cnote">open conflict</span></td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>It was not searched from scratch. t025 is a blend: three parts one earlier fly, one part another, mixed because each parent held half of what a walking fly needs and neither held both. Blending them is a cheap move that should not have worked as well as it did, and the fact that it did is a hint that the space of working parameter sets is smoother than it looks.</p>
+
+<h3>What it could not do</h3>
+<ul class="caveats"><li>Stood only 2 runs in 6. It walked well and balanced badly.</li><li>Its swing measure was later found to be a chatter artifact of the measuring signal, not a property of the fly. Battery v2 re-read the card.</li><li>Speed 0.52 mm/s against a real-fly floor of 2.0: still 4x slow, down from 13x.</li></ul>
+<p class="srcs">CONSTRAINTS.md: t025 IS THE WORKING FLY (2026-08-16) &middot; VIDEOS.md #12 &middot; tag t025</p>
+</article><article class="champ" id="cand5">
+<div class="chead">
+  <span class="rank">1</span>
+  <div>
+    <h2>cand5 <span class="epithet">the glued fly</span></h2>
+    <p class="animal-of">BANC female</p>
+  </div>
+</div>
+<p class="headline">The first fly to hold a title, and the reason the project stopped trusting distance.</p>
+<div class="reignbox">
+  <div class="reignspan"><span class="rlabel">Champion</span>
+    <span class="rdates">11 Aug 2026 to 16 Aug 2026</span>
+    <span class="rheld">5 days</span></div>
+  <p class="rtail">Beaten by <a href="#t025">t025</a>, 16 Aug 2026. </p>
+</div>
+<p class="params">Parameters: theta <span class="mono">results-cand5-theta.json</span> &middot; sha256 <span class="mono">e948d79c91cd9daf&hellip;</span> &middot; <a href="/fly/champion-parameters#cand5">every cell type&#x27;s values and the full theta</a></p>
+<p class="erawarn">Read this card differently from the ones below. This fly&#x27;s feet were stuck to the floor and the simulation counted time in steps too coarse to measure a real leg. Both were found and fixed a few days later, and both had been quietly flattering every number it scored. Its distances and its tempo cannot be compared to any fly that came after it. It is here because it happened, not because it ranks.</p>
+<figure class="vid">
+<video controls playsinline preload="metadata" src="https://theuploadinglab.ai/fly/walker_core_scored.mp4#t=0.1"></video>
+<figcaption>5.77 mm, the distance record of the glued era. The feet never release, which is the whole problem with it.</figcaption>
+</figure>
+<p>Before there was a proper contest there was a shootout. Two parameter sets were run head to head on the same thirty random starts, and this one stood in sixteen of them against the other&#x27;s eight. It won a second time three days later, in a match that asked a different and rather good question: if you throw away every connection that only shows up in one fly and keep the reliable sixteen percent of the wiring, does the model get worse? It got better. Sixteen out of thirty against the full wiring&#x27;s thirteen.</p><p>Then somebody looked at the footage properly. Its feet had been glued to the floor the whole time, and the clock the simulation ran on was too coarse, which together had been inflating how far it travelled and how fast it stepped. Nothing about the win was fraudulent and nothing was taken back. But every number this fly ever scored became incomparable to everything that followed, and the project learned the lesson that shaped every bar since: distance is the easiest thing to fake, so stop scoring it.</p>
+<h3>What it had to beat</h3>
+<p class="judged"><b>Judged on pre-battery era.</b> No fixed bar. Titles were decided by head-to-head theta matches on paired seeds. Feet were glued to the floor and the integrator ran at a 5 ms tick, both of which inflated distance and tempo. Discovered and fixed 2026-08-14/15.</p><p class="scopeline">What that bar measured: distance, standing.</p>
+<div class="tablewrap"><table class="card"><tbody><tr><th scope=row>standing, first title</th><td class="cval">16/30</td><td><span class="cnote">against the previous best&#x27;s 8/30, identical seeds</span></td></tr><tr><th scope=row>standing, connectome title</th><td class="cval">16/30</td><td><span class="cnote">reliable-wiring core, against the full wiring&#x27;s 13/30</span></td></tr><tr><th scope=row>best standing distance</th><td class="cval">2.96 mm</td><td><span class="cnote">glued-feet era, not comparable to later flies</span></td></tr><tr><th scope=row>mechanism</th><td class="cval">two-channel muscle split</td><td><span class="cnote">with load-closed per-leg stiffness</span></td></tr></tbody></table></div>
+<h3>Why it was built this way</h3>
+<p>Its winning idea was about muscles, not brains. Real fly muscle is not one thing being pulled harder or softer, so the model was split into two channels driven separately, and leg stiffness was closed around the load the leg was actually carrying. Its second title was won on a different axis entirely: run the same fly on only the connections reliable enough to appear across individuals, and it stood more often than on the complete map. That is a statement about connectomes, not about this fly, and it survived.</p>
+
+<h3>What it could not do</h3>
+<ul class="caveats"><li>Its feet were glued to the floor. Adhesion was always on, so it could not fall the way a real fly falls.</li><li>The simulation clock ran at 5 ms per step, coarse enough to invent tempo that was not there.</li><li>Both faults were found on 2026-08-14 and 15. Its numbers were never withdrawn and were never repeated.</li></ul>
+<p class="srcs">CHAMPION.json &middot; VIDEOS.md #3 &middot; CONSTRAINTS.md: TITLE MATCH 2026-08-11 and TITLE MATCH 2 2026-08-14</p>
+</article>
+
+<div class="sectitle">Every champion, side by side</div>
+<div class="tablewrap"><table class="cmp"><thead><tr><th scope=col>parameter</th><th>cand5</th><th>t025</th><th>p150</th><th>f23</th><th>r23</th><th>nl1</th><th>ng1</th><th>nk1</th><th>nc1</th><th>qg1</th><th>qh1</th><th>wa1</th><th>wb1m</th><th>wb4</th><th>wc6</th><th>wd2</th><th>we1</th><th>wg1</th><th>wi1</th><th>wj1</th><th>wk1</th><th>wl1</th><th>wm1</th></tr></thead><tbody><tr><th scope=row>joint natural frequency <span class="unit">Hz</span></th><td>none</td><td>19.9</td><td>10.5</td><td>15</td><td>17.7</td><td>20.6</td><td>20.6</td><td>20.6</td><td>20.6</td><td>20.6</td><td>20.6</td><td>20.6</td><td>20.6</td><td>20.6</td><td>20.6</td><td>20.6</td><td>20.6</td><td>20.6</td><td>20.6</td><td>20.6</td><td>20.6</td><td>20.6</td><td>20.6</td></tr><tr><th scope=row>joint damping</th><td>none</td><td>1.13</td><td>1.09</td><td>1.08</td><td>1.48</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td></tr><tr><th scope=row>phasic transduction</th><td>none</td><td>none</td><td>1.50</td><td>1.50</td><td>1.50</td><td>1.97</td><td>1.97</td><td>1.97</td><td>1.97</td><td>1.97</td><td>1.97</td><td>1.97</td><td>1.97</td><td>1.97</td><td>1.97</td><td>1.97</td><td>1.97</td><td>1.97</td><td>1.25</td><td>1.25</td><td>1.25</td><td>1.25</td><td>1.25</td></tr><tr><th scope=row>campaniform gain</th><td>25.3</td><td>12.1</td><td>36.2</td><td>25.0</td><td>28.3</td><td>85.3</td><td>85.3</td><td>85.3</td><td>85.3</td><td>85.3</td><td>85.3</td><td>85.3</td><td>85.3</td><td>85.3</td><td>85.3</td><td>85.3</td><td>85.3</td><td>85.3</td><td>85.3</td><td>85.3</td><td>85.3</td><td>85.3</td><td>85.3</td></tr><tr><th scope=row>command rate <span class="unit">Hz</span></th><td>98.4</td><td>94.7</td><td>77.0</td><td>62.9</td><td>80.5</td><td>94.3</td><td>94.3</td><td>94.3</td><td>94.3</td><td>94.3</td><td>94.3</td><td>94.3</td><td>94.3</td><td>94.3</td><td>94.3</td><td>94.3</td><td>94.3</td><td>94.3</td><td>94.3</td><td>103.7</td><td>103.7</td><td>103.7</td><td>103.7</td></tr><tr><th scope=row>command neuron</th><td>MDN</td><td>DNg100</td><td>DNg100</td><td>DNg100</td><td>DNg100</td><td>DNg100</td><td>DNg100</td><td>DNg100</td><td>DNg100</td><td>DNg100</td><td>DNg100</td><td>DNg100</td><td>DNg100</td><td>DNg100</td><td>DNg100</td><td>DNg100</td><td>DNg100</td><td>DNg100</td><td>DNg100</td><td>DNg100</td><td>DNg100</td><td>DNg100</td><td>DNg100</td></tr><tr><th scope=row>adhesion release</th><td>none</td><td>0.638</td><td>1.23</td><td>1.74</td><td>1.69</td><td>1.92</td><td>1.92</td><td>1.92</td><td>1.92</td><td>1.92</td><td>1.92</td><td>1.92</td><td>1.92</td><td>1.92</td><td>1.92</td><td>1.92</td><td>1.92</td><td>1.92</td><td>1.92</td><td>1.92</td><td>1.92</td><td>1.92</td><td>1.92</td></tr><tr><th scope=row>stiffness gain</th><td>62.0</td><td>148.3</td><td>132.2</td><td>141.5</td><td>385.6</td><td>140.1</td><td>140.1</td><td>140.1</td><td>140.1</td><td>140.1</td><td>140.1</td><td>140.1</td><td>140.1</td><td>140.1</td><td>140.1</td><td>140.1</td><td>140.1</td><td>140.1</td><td>140.1</td><td>140.1</td><td>140.1</td><td>140.1</td><td>140.1</td></tr><tr><th scope=row>stiffness floor</th><td>38.1</td><td>39.8</td><td>36.2</td><td>33.2</td><td>36.9</td><td>40.8</td><td>40.8</td><td>40.8</td><td>40.8</td><td>40.8</td><td>40.8</td><td>40.8</td><td>40.8</td><td>40.8</td><td>40.8</td><td>40.8</td><td>40.8</td><td>40.8</td><td>40.8</td><td>40.8</td><td>40.8</td><td>40.8</td><td>40.8</td></tr><tr><th scope=row>joint time constant <span class="unit">ms</span></th><td>15.8</td><td>28.8</td><td>23.8</td><td>26.5</td><td>41.5</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td></tr><tr><th scope=row>spike adaptation</th><td>0.859</td><td>1.74</td><td>0.806</td><td>0.175</td><td>1.04</td><td>1.04</td><td>1.04</td><td>1.04</td><td>1.04</td><td>1.04</td><td>1.04</td><td>1.04</td><td>1.04</td><td>1.04</td><td>1.04</td><td>1.04</td><td>1.04</td><td>1.04</td><td>1.04</td><td>1.04</td><td>1.04</td><td>1.04</td><td>1.04</td></tr><tr><th scope=row>drive scale</th><td>0.008</td><td>0.012</td><td>0.008</td><td>0.007</td><td>0.010</td><td>0.006</td><td>0.006</td><td>0.006</td><td>0.006</td><td>0.006</td><td>0.006</td><td>0.006</td><td>0.006</td><td>0.006</td><td>0.006</td><td>0.006</td><td>0.003</td><td>0.003</td><td>0.003</td><td>0.003</td><td>0.003</td><td>0.003</td><td>0.003</td></tr><tr><th scope=row>force reference</th><td>29.2</td><td>109.2</td><td>80</td><td>62.7</td><td>77.8</td><td>58.4</td><td>58.4</td><td>58.4</td><td>58.4</td><td>58.4</td><td>58.4</td><td>58.4</td><td>58.4</td><td>58.4</td><td>58.4</td><td>58.4</td><td>58.4</td><td>58.4</td><td>58.4</td><td>58.4</td><td>58.4</td><td>58.4</td><td>58.4</td></tr><tr><th scope=row>stiffness force reference</th><td>64.6</td><td>32.9</td><td>19.8</td><td>51.8</td><td>16.8</td><td>9.69</td><td>9.69</td><td>9.69</td><td>9.69</td><td>9.69</td><td>9.69</td><td>9.69</td><td>9.69</td><td>9.69</td><td>9.69</td><td>9.69</td><td>9.69</td><td>9.69</td><td>9.69</td><td>9.69</td><td>9.69</td><td>9.69</td><td>9.69</td></tr><tr><th scope=row>secondary conductance</th><td>none</td><td>0.140</td><td>0.141</td><td>0</td><td>0.078</td><td>1.98e-04</td><td>1.98e-04</td><td>1.98e-04</td><td>1.98e-04</td><td>1.98e-04</td><td>1.98e-04</td><td>1.98e-04</td><td>1.98e-04</td><td>1.98e-04</td><td>1.98e-04</td><td>1.98e-04</td><td>1.98e-04</td><td>1.98e-04</td><td>1.98e-04</td><td>1.98e-04</td><td>1.98e-04</td><td>1.98e-04</td><td>1.98e-04</td></tr></tbody></table></div>
+
+</div>

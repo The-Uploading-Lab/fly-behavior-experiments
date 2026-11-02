@@ -1,0 +1,262 @@
+{
+  "date": "2026-10-31",
+  "status": "complete retrospective replay",
+  "arms": [
+    {
+      "arm": "base",
+      "n": 6,
+      "standing": 6,
+      "archived_standing": 6,
+      "replayed_speed_median_mm_s": 0.9375206696414431,
+      "archived_speed_median_mm_s": 0.9375206696414431,
+      "exact_five_field_matches": 6,
+      "differences": []
+    },
+    {
+      "arm": "flat6",
+      "n": 6,
+      "standing": 6,
+      "archived_standing": 6,
+      "replayed_speed_median_mm_s": 0.39508847580664946,
+      "archived_speed_median_mm_s": 0.40006785011781876,
+      "exact_five_field_matches": 4,
+      "differences": [
+        {
+          "seed": 201304,
+          "fields": {
+            "speed": {
+              "archived": 0.32981066683234145,
+              "replayed": 0.3198519182100029
+            },
+            "freq_tip_h10": {
+              "archived": 3.7272727272727275,
+              "replayed": 3.4545454545454546
+            },
+            "duty_tip_h10": {
+              "archived": 0.7547727272727273,
+              "replayed": 0.7752272727272728
+            },
+            "final_tilt_deg": {
+              "archived": 10.32,
+              "replayed": 8.35
+            }
+          }
+        },
+        {
+          "seed": 201308,
+          "fields": {
+            "speed": {
+              "archived": 0.9073217447893012,
+              "replayed": 0.6655019141870496
+            },
+            "duty_tip_h10": {
+              "archived": 0.7920454545454545,
+              "replayed": 0.7865909090909091
+            },
+            "final_tilt_deg": {
+              "archived": 11.41,
+              "replayed": 10.54
+            }
+          }
+        }
+      ]
+    },
+    {
+      "arm": "flat15",
+      "n": 6,
+      "standing": 6,
+      "archived_standing": 5,
+      "replayed_speed_median_mm_s": 0.45147471454178856,
+      "archived_speed_median_mm_s": 0.4083406968579954,
+      "exact_five_field_matches": 2,
+      "differences": [
+        {
+          "seed": 201303,
+          "fields": {
+            "speed": {
+              "archived": null,
+              "replayed": 0.6410409464646275
+            },
+            "standing_v32": {
+              "archived": false,
+              "replayed": true
+            },
+            "freq_tip_h10": {
+              "archived": null,
+              "replayed": 3.3636363636363638
+            },
+            "duty_tip_h10": {
+              "archived": null,
+              "replayed": 0.73
+            },
+            "final_tilt_deg": {
+              "archived": 169.38,
+              "replayed": 8.77
+            }
+          }
+        },
+        {
+          "seed": 201304,
+          "fields": {
+            "speed": {
+              "archived": 0.34100954920471865,
+              "replayed": 0.45561577161031563
+            },
+            "freq_tip_h10": {
+              "archived": 3.0,
+              "replayed": 2.727272727272727
+            },
+            "duty_tip_h10": {
+              "archived": 0.7018181818181819,
+              "replayed": 0.6893181818181818
+            },
+            "final_tilt_deg": {
+              "archived": 10.41,
+              "replayed": 12.54
+            }
+          }
+        },
+        {
+          "seed": 201305,
+          "fields": {
+            "speed": {
+              "archived": 0.438186292408522,
+              "replayed": 0.37138469732058216
+            },
+            "duty_tip_h10": {
+              "archived": 0.6990909090909091,
+              "replayed": 0.7252272727272728
+            },
+            "final_tilt_deg": {
+              "archived": 12.84,
+              "replayed": 8.67
+            }
+          }
+        },
+        {
+          "seed": 201307,
+          "fields": {
+            "speed": {
+              "archived": 0.4083406968579954,
+              "replayed": 0.44733365747326154
+            },
+            "freq_tip_h10": {
+              "archived": 2.909090909090909,
+              "replayed": 3.090909090909091
+            },
+            "final_tilt_deg": {
+              "archived": 11.44,
+              "replayed": 9.88
+            }
+          }
+        }
+      ]
+    },
+    {
+      "arm": "noshort",
+      "n": 6,
+      "standing": 6,
+      "archived_standing": 6,
+      "replayed_speed_median_mm_s": 0.9494153472443326,
+      "archived_speed_median_mm_s": 0.9494153472443326,
+      "exact_five_field_matches": 6,
+      "differences": []
+    },
+    {
+      "arm": "nolong",
+      "n": 6,
+      "standing": 6,
+      "archived_standing": 6,
+      "replayed_speed_median_mm_s": 0.5216818903656942,
+      "archived_speed_median_mm_s": 0.5068293477855028,
+      "exact_five_field_matches": 4,
+      "differences": [
+        {
+          "seed": 201303,
+          "fields": {
+            "speed": {
+              "archived": 0.46065218941216346,
+              "replayed": 0.49035727457254646
+            },
+            "freq_tip_h10": {
+              "archived": 2.5454545454545454,
+              "replayed": 3.1818181818181817
+            },
+            "duty_tip_h10": {
+              "archived": 0.7547727272727273,
+              "replayed": 0.7352272727272727
+            },
+            "final_tilt_deg": {
+              "archived": 11.6,
+              "replayed": 10.36
+            }
+          }
+        },
+        {
+          "seed": 201305,
+          "fields": {
+            "speed": {
+              "archived": 0.582073486138396,
+              "replayed": 0.7610163974231617
+            },
+            "duty_tip_h10": {
+              "archived": 0.7418181818181818,
+              "replayed": 0.7636363636363637
+            },
+            "final_tilt_deg": {
+              "archived": 9.8,
+              "replayed": 13.87
+            }
+          }
+        }
+      ]
+    },
+    {
+      "arm": "perm",
+      "n": 6,
+      "standing": 6,
+      "archived_standing": 6,
+      "replayed_speed_median_mm_s": 0.34583149941422703,
+      "archived_speed_median_mm_s": 0.34583149941422703,
+      "exact_five_field_matches": 6,
+      "differences": []
+    }
+  ],
+  "paired": {
+    "flat6": {
+      "base_minus_arm_mm_s": [
+        0.70951400709744,
+        0.653231046618916,
+        0.19310633121030352,
+        0.21418956681332146,
+        1.1457411795500394,
+        0.2364564602669177
+      ],
+      "median_paired_difference_mm_s": 0.4448437534429168,
+      "positive_pairs": 6
+    },
+    "perm": {
+      "base_minus_arm_mm_s": [
+        0.9668648209583208,
+        0.6484391091620665,
+        0.6123939632251354,
+        0.3174954570550158,
+        0.8182809013251737,
+        0.5287641608820702
+      ],
+      "median_paired_difference_mm_s": 0.6304165361936009,
+      "positive_pairs": 6
+    }
+  },
+  "total_trials": 36,
+  "exact_five_field_matches": 28,
+  "source_sha256": "3c11016cd9302b9a6cac13ffa74b8075dae3f232a9dc6afbe7d29069923a9e8d",
+  "conclusion": "The principal speed contrast recurs. Numerical reproducibility is incomplete.",
+  "next_discriminating_test": "Repeat discrepant seeds under isolated historical execution, then compare with the deterministic engine using pinned identical parameters and environment. Do not infer the cause from a discrepancy alone.",
+  "limits": [
+    "Speed is the archive metric among standing trials; it is not biological prediction error.",
+    "The real assignment and one fixed permutation were selected historically; this is not an independent permutation test.",
+    "No new fit or held-out biological comparison was performed.",
+    "The five-field comparison does not establish equality of every state variable to the original run."
+  ]
+}
