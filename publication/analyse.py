@@ -86,10 +86,27 @@ def analyse():
     walking = {"trace_phase_combinations": len(obs),
                "combinations_with_half_second_bin_support": sum(
                    any(r["has_half_second_support"] for r in x["rows"]) for x in obs)}
+    inhibitory = {}
+    seeds = set(range(223689, 223713))
+    for arm in read("inhibitory-scaling-summaries.json")["arms"]:
+        s = arm["standing"]
+        af, bf = set(s["arm_fell_on"]), set(s["body_fell_on"])
+        if not af <= seeds or not bf <= seeds or s["n"] != len(seeds):
+            raise ValueError("Inhibitory comparison uses unexpected seed identities")
+        if len(seeds - af) != s["arm"] or len(seeds - bf) != s["body"]:
+            raise ValueError("Inhibitory standing count disagrees with archived failure identities")
+        inhibitory[arm["arm"]] = {
+            "n_pairs": len(seeds), "alternative_standing": len(seeds - af),
+            "reference_standing": len(seeds - bf),
+            "alternative_only_standing_seeds": sorted(bf - af),
+            "reference_only_standing_seeds": sorted(af - bf),
+            "standing_fraction_difference": (len(bf) - len(af)) / len(seeds),
+            "archived_conditional_speed_median_mm_s": arm["speed_card"]["arm"]["median"],
+            "speed_limit": "Reported from an archived summary, not recomputed from per-seed speed traces"}
     return {"kind": "recalculation of stored results; no new simulation or animal experiment",
             "verified_input_files": verified, "muscle": muscle_result,
             "delay_arms": delay, "delay_paired": paired, "calcium": cal,
-            "walking_support": walking}
+            "walking_support": walking, "inhibitory_standing": inhibitory}
 
 
 if __name__ == "__main__":

@@ -2,7 +2,7 @@
 
 Built by **TimeFlies**: Karolina Gustavsson, Ali Onur Özkan and Robin Gustafsson.
 
-The [research history](research-history/README.md) preserves 101 dated website diary entries, six page snapshots and their tracked media. The [publication evidence package](publication/README.md) adds archived result tables, executable reanalysis and a portable September delay simulation. The [later evaluation supplement](research-history/later-evaluations.md) records corrections and limits found during manuscript preparation.
+The [research history](research-history/README.md) preserves 101 dated website diary entries, six page snapshots and their tracked media. The [publication package](publication/README.md) supplies runnable muscle, delay and inhibitory-scaling comparisons with null controls, archived result tables and reanalysis. The [later evaluation supplement](research-history/later-evaluations.md) records corrections and limits found during manuscript preparation.
 
 **The [model review guide](model-review/README.md) covers the neuron, muscle and sensory models.** It includes the formal champion's parameters, the newer retained research configuration from 15 October 2026, matching research source, and known limitations. The runnable hackathon experiments below keep their original September model.
 

@@ -1,0 +1,79 @@
+{
+  "source_commit": "4f024efc52119717c1add15517e175b5b00fde7d",
+  "results_commit": "57289be60c147c8d109e8b3cefb78d4a55a50c42",
+  "range_input_provenance": "The range file was untracked on 11 August and was recovered and first committed on 30 August at the recorded revision. The inspected Git history supplies no August-11 input hash. Original environment/backups would be additional routes for establishing that historical identity.",
+  "files": [
+    {
+      "path": "body.py",
+      "sha256": "b5bd2fa57a12f0ab8f12b7d1cf3955500cc3c5fdcd8bd05f1ef356a00f174035",
+      "source_commit": "4f024efc52119717c1add15517e175b5b00fde7d",
+      "transformation": "none"
+    },
+    {
+      "path": "closed_loop.py",
+      "sha256": "8bd4e395daa949787a9bdbf0ec62ea8641857680780454a0a64c8b8f3c2e7380",
+      "source_commit": "4f024efc52119717c1add15517e175b5b00fde7d",
+      "transformation": "none"
+    },
+    {
+      "path": "cns.py",
+      "sha256": "0766730eb4cce846914b085480d1b90d5226b33b03c1ce1cfa95e0f8bab159dc",
+      "source_commit": "4f024efc52119717c1add15517e175b5b00fde7d",
+      "transformation": "none"
+    },
+    {
+      "path": "data/dof_ranges.json",
+      "sha256": "19632554b1059887de8c442b37d3a83d255528f260bd59a293069527a8c58223",
+      "source_commit": "321cb78a100a45f91a1143f409412ab741b8af99",
+      "transformation": "none"
+    },
+    {
+      "path": "load_loop.py",
+      "sha256": "611299330fbfea842ad18d5cc1c6603775d3a13994f89aee8fb7d6b9c142277a",
+      "source_commit": "4f024efc52119717c1add15517e175b5b00fde7d",
+      "transformation": "none"
+    },
+    {
+      "path": "motormap.py",
+      "sha256": "79ad66dc4773ea08ee690486954ae09ffea33a8056f053f8a355d1cae585b0d1",
+      "source_commit": "4f024efc52119717c1add15517e175b5b00fde7d",
+      "transformation": "none"
+    },
+    {
+      "path": "muscle_split.py",
+      "sha256": "106ee00b74237e7c67148c32516208affb544a991e1abe77dc03663fd5c62fc1",
+      "source_commit": "4f024efc52119717c1add15517e175b5b00fde7d",
+      "transformation": "none"
+    },
+    {
+      "path": "nobody.py",
+      "sha256": "7f8f3f4b907e63df9918b7b222e72959a0d121aa09ebf43094c44f30e483cf6e",
+      "source_commit": "4f024efc52119717c1add15517e175b5b00fde7d",
+      "transformation": "none"
+    },
+    {
+      "path": "rhythm_detect.py",
+      "sha256": "b4fe7331dd03aa4cde0d590daa698220d7cfcbf2862fcd8a02f53b873f552722",
+      "source_commit": "4f024efc52119717c1add15517e175b5b00fde7d",
+      "transformation": "none"
+    },
+    {
+      "path": "stage0.py",
+      "sha256": "061104f7e5e70f3a2dc5fc3d16d529676dcabc45da8162f23e04a04019607259",
+      "source_commit": "4f024efc52119717c1add15517e175b5b00fde7d",
+      "transformation": "none"
+    },
+    {
+      "path": "title_match.py",
+      "sha256": "20843e7fed04466555cab743f87fd9d0c9109e884a9843cebe094fae4735ef3a",
+      "source_commit": "4f024efc52119717c1add15517e175b5b00fde7d",
+      "transformation": "none"
+    },
+    {
+      "path": "walk_search.py",
+      "sha256": "0728b40ce310625b804e238ac1c891daecb11a0a7c0aa0aa7cb7a36d73803838",
+      "source_commit": "4f024efc52119717c1add15517e175b5b00fde7d",
+      "transformation": "none"
+    }
+  ]
+}

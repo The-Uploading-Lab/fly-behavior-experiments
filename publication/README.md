@@ -1,6 +1,29 @@
 # Publication evidence and reproduction
 
-This package accompanies the review draft *Construction and retrospective evaluation of an embodied Drosophila connectome model*. It contains historical result rows, executable reanalysis, the September delay simulator and a later evaluation supplement. The manuscript is still under scientific review. The records describe several frozen builds; their results cannot be combined as validation of one model.
+This package accompanies the review draft *Construction and retrospective evaluation of an embodied Drosophila connectome model*. It contains the frozen simulator, muscle interface, executable null controls, historical result rows and reanalysis. The manuscript is still under scientific review. The records describe several frozen builds; their results cannot be combined as validation of one model.
+
+The [claim-to-command map](REPRODUCIBILITY.md) distinguishes complete simulation routes, recalculation from saved observations and pipelines still needing export.
+
+## Run the muscle model and null controls
+
+```sh
+uv sync --locked
+uv run python publication/reproduce.py
+uv run python publication/analyse_controls.py outputs/publication/controls
+```
+
+This runs nine paired six-second trials: the original model, an identity replay, fixed mean stiffness, activation-driven stiffness, shifted stiffness, uniform delays, shuffled delays, disabled inhibitory rescaling and zero neural motor drive. Both leg and abdominal neural drive are removed in the motor null. The fixed-stiffness arm preserves the two-channel antagonist interface. See the [frozen protocol](PROTOCOL.md) for intervention definitions, endpoints and expanded seed commands.
+
+Every case saves its full configuration, simulated body and neural traces, applied stiffness and delay vectors, inhibitory factors, motor drive, achieved and target joint angles, actuator forces, limits and checksums. The analyser rejects missing cases, changed outputs or incomplete runs. It reports paired displacement changes for all cases, including falls. The default is a one-seed execution pilot, not a statistical claim about flies or model superiority. Null controls that equal or exceed the original remain in the results.
+
+Run the smaller implementation checks without downloading the connectome:
+
+```sh
+uv run python publication/test_reproduce.py
+uv run python publication/timing_fixture.py
+```
+
+These check the actual muscle laws and actuator equilibrium, inhibitory rescaling, null transformations and a two-neuron delay circuit. The delay fixture tests 64 combinations of timestep, source delay, target delay and queue/bucket delivery; its output is `outputs/publication/timing-fixture.json`. These are implementation checks, distinct from the whole-model null experiments.
 
 ## Recalculate the reported comparisons
 
@@ -10,7 +33,7 @@ From the repository root, using Python 3.12:
 python3 publication/analyse.py
 ```
 
-This command needs no third-party libraries, data download or credentials. It verifies the history and evidence manifests, then writes `outputs/publication/summary.json`. It recomputes the paired muscle standing counts, the exact discordance test, all six delay-arm speed medians, paired speed differences, calcium feature errors and the walking speed-bin support check.
+This command needs no third-party libraries, data download or credentials. It verifies the history and evidence manifests, then writes `outputs/publication/summary.json`. It recomputes the paired muscle standing counts, the exact discordance test, all six delay-arm speed medians, paired speed differences, calcium feature errors and the count of saved walking speed-bin support decisions. It also reconstructs the October inhibitory-arm standing counts and paired discordances from saved failure-seed identities; those speed medians remain quoted archive summaries.
 
 To generate the two manuscript figures:
 
@@ -32,7 +55,19 @@ uv run python publication/replay_delay.py --arm base --seed 201303
 
 The command creates a separate working copy under `outputs/publication/delay/base-201303/`, runs six simulated seconds and writes `result.json` plus compressed body and neural traces. It refuses to overwrite an existing trial. Other arms are `flat6`, `flat15`, `noshort`, `nolong` and `perm`; the archived comparison uses seeds 201303 through 201308 in every arm. Each invocation is one trial. The default takes substantially longer than six wall-clock seconds and loads the whole connectome.
 
-The manuscript's independent replay used the Metal backend. CPU random-number generation and numerical differences can change trajectories, so successful execution of this portable release is not a claim of identical CPU and Metal outcomes. The archived replay rows remain the source for its numerical tables. The included historical Metal adapter is part of the unchanged import closure; the supported launcher selects NumPy and does not build or require the native Metal library. The `delay-model` files implement many historical optional modes; only this frozen delay experiment is the supported entry point in this export.
+The manuscript's independent replay used the Metal backend. CPU random-number generation and numerical differences can change trajectories, so successful execution of this portable release is not a claim of identical CPU and Metal outcomes. The archived replay rows remain the source for its numerical tables. The included historical Metal adapter is part of the unchanged import closure; the supported launchers select NumPy and do not build or require the native Metal library. The `delay-model` files implement many historical optional modes; the frozen delay experiment and controlled reproduction protocol above are the supported entry points in this export.
+
+## Reconstruct the August muscle comparison
+
+```sh
+uv run python publication/replay_muscle.py --seeds 46
+```
+
+This runs both original configurations on one shared seed. To reconstruct the complete 60-trial comparison, use `--seeds 46-75 --out outputs/publication/muscle-history-all`. The output records the four original metrics, archived values and their numerical differences for every trial. Exceptions stop the run and remain failures; they do not become zero-valued observations. A run refuses to overwrite existing output.
+
+The eleven source modules are unchanged from `4f024efc52119717c1add15517e175b5b00fde7d`; results were committed at `57289be60c147c8d109e8b3cefb78d4a55a50c42`. The joint-range input was initially untracked and was recovered and first committed on 30 August. Its later source and digest are explicit in `muscle-model/manifest.json`. The inspected Git history supplies no 11 August range-file hash; original environment backups are an additional route for checking that identity. The current pinned environment is also later than the original experiment. The launcher therefore compares computed outcomes with the archive instead of assuming numerical equality.
+
+This historical experiment changed command identity and several other parameters together with the muscle interface. Its replay cannot isolate a stiffness effect. The September protocol above supplies matched interventions on a separate frozen model.
 
 For the separate September hackathon experiments, follow the [root README](../README.md). The [October model review](../model-review/README.md) describes a later implementation. Its component tests do not reproduce every whole-network experiment in that later build.
 
@@ -40,7 +75,8 @@ For the separate September hackathon experiments, follow the [root README](../RE
 
 | Comparison | Available evidence | Interpretation limit |
 |---|---|---|
-| August muscle interface | 60 stored rows, both configurations, paired reanalysis | 16/30 versus 8/30 standing; command identity and several parameters changed with stiffness |
+| Controlled September muscle, delay and inhibition interventions | Executable paired protocol, raw-output export and integrity-checked analysis | One frozen configuration; no refitting or independent-animal validation |
+| August muscle interface | 60 stored rows, original source and configurations, serial replay launcher, paired reanalysis | 16/30 versus 8/30 archived standing; command and other parameters changed; recovered range input and later environment limit historical equivalence |
 | September delay assignment | 36 independently replayed rows and historical source | One selected model, six noise seeds and one shuffled assignment; 28/36 trials matched five original outcomes exactly |
 | October inhibitory scaling | Extracted 24-seed arm summaries and parameter definitions | Summaries were not independently rerun; speed is conditional on standing |
 | H4 visual calcium | Saved model and animal summary features | Exposed development data, a separate model, no raw fluorescence trace error or independent-animal inference |
