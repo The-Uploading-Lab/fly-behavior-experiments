@@ -1,0 +1,228 @@
+{
+  "status": "bootstrap complete; full follow-up results pending",
+  "source_commit": "c855d05c5e3656ee70e2333d46e538de5af9f2e4",
+  "bootstrap": {
+    "status": "complete",
+    "commit": "c855d05c5e3656ee70e2333d46e538de5af9f2e4",
+    "host": "freighter-compute02",
+    "python": "3.12.13 (main, Apr 16 2026, 00:00:00) [GCC 14.3.1 20251022 (Red Hat 14.3.1-4)]",
+    "packages": {
+      "numpy": "2.4.6",
+      "scipy": "1.18.0",
+      "pandas": "3.0.5",
+      "mujoco": "3.9.0",
+      "flygym": "2.1.0"
+    },
+    "environment": {
+      "OPENBLAS_CORETYPE": "Haswell",
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "MUJOCO_GL": "glfw"
+    },
+    "job_id": "37839",
+    "baseline": {
+      "historical_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+      "backend": "numpy",
+      "arm": "base",
+      "seed": 201303,
+      "timing_seconds": {
+        "import_and_initialization": 1.6573117149528116,
+        "simulation_and_trace_export": 477.880153039936,
+        "total": 479.5374647548888
+      },
+      "record": {
+        "seed": 201303,
+        "raw": 5.18,
+        "up": 0.71,
+        "standing": false,
+        "final_tilt_deg": 9.31,
+        "standing_v32": true,
+        "commanded_step_hz": null,
+        "endogenous_timing": true,
+        "nonfoot": 0.0036,
+        "nonfoot_force": 0.0002,
+        "freq": 12.363636363636363,
+        "swing_ms": 5.0,
+        "duty": 0.5845454545454545,
+        "contra": 0.38461538461538464,
+        "freq_tip": 5.272727272727273,
+        "swing_tip_ms": 30.0,
+        "duty_tip": 0.7356818181818181,
+        "contra_tip": 0.32700760777683857,
+        "speed": 0.9412898722727095,
+        "rom": {
+          "fFTi": 83.98113423060006,
+          "fCTr": 85.32374774454,
+          "mFTi": 18.693135325073936,
+          "mCTr": 19.552026319776836,
+          "hFTi": 72.86306288421073,
+          "hCTr": 47.51974699880148
+        },
+        "lifts": [
+          15,
+          20,
+          34,
+          28,
+          31,
+          34
+        ],
+        "freq_tip_h": 4.090909090909091,
+        "swing_tip_h_ms": 51.25,
+        "duty_tip_h": 0.7020454545454546,
+        "contra_tip_h": 0.4084507042253521,
+        "lifts_h": [
+          14,
+          20,
+          23,
+          24,
+          27,
+          23
+        ],
+        "freq_tip_h10": 3.7272727272727275,
+        "swing_tip_h10_ms": 55.0,
+        "duty_tip_h10": 0.7034090909090909,
+        "lifts_h10": [
+          13,
+          17,
+          21,
+          22,
+          26,
+          23
+        ],
+        "one_tick_frac_h": 0.0076,
+        "flicker_frac": 0.0429,
+        "R1i": 0.005,
+        "R1c": 0.005,
+        "R1i_tip": 0.1891,
+        "R1c_tip": 0.005,
+        "R5": 0.005,
+        "trace_rows": 11345,
+        "dng100_spikes": {
+          "720575941626500746": 747,
+          "720575941500851362": 758
+        },
+        "qualifies_v35": false,
+        "arm": "base",
+        "delay_vec": {
+          "mean": 6.2401,
+          "min": 0.118,
+          "max": 23.623,
+          "n_over_6.24": 58578
+        },
+        "n_intersegmental_edges": [
+          0
+        ],
+        "wall_seconds": 477.9
+      },
+      "comparison_limit": "Historical archived replay used Metal. Backend RNG and numerical differences require comparison before numerical equivalence is claimed."
+    },
+    "lock_sha256": "17d56a53130632b4b9b9d78457826bba682290a354534d882a34bf9e088ae34e"
+  },
+  "timing_fixture_cases": 64,
+  "transport_hashes_verified": {
+    "cluster-bootstrap-receipt.json": "eaba8858cced15cca6cc59e7c9f8bcff0fb57762b891844e24c32a7d0a0d3b17",
+    "timing-fixture.json": "bfe4752a3213fc4e33a2e429074c3ceeab93bd404af1677d4523d87fb0ae39ad",
+    "baseline/result.json": "9077756adfb7561493b869773fb0c4b397a0aa1001133fb33db5b51396f342ac",
+    "baseline/traces/base-201303.npz": "26fd8cd7de06bb0a40d5bfb84ebac5f09b6e89b64d1003e15b0f6c307a513b35",
+    "baseline/traces/trace-base-201303.npz": "8e1efd36606eaca70dd4324fddd988f4f8e0936a5f538a8b84578f916f2dfc1d"
+  },
+  "baseline_comparison_to_mac_pilot": {
+    "neural": {
+      "rows": {
+        "shape": [
+          11345
+        ],
+        "exact": true,
+        "max_absolute_difference": 0.0
+      },
+      "trace": {
+        "shape": [
+          1200,
+          11345
+        ],
+        "exact": true,
+        "max_absolute_difference": 0.0
+      },
+      "sign": {
+        "shape": [
+          11345
+        ],
+        "exact": true,
+        "max_absolute_difference": 0.0
+      },
+      "ids": {
+        "exact_serialized_bytes": true,
+        "method": "NPY member bytes compared without loading pickle"
+      }
+    },
+    "body": {
+      "body": {
+        "shape": [
+          2400,
+          3
+        ],
+        "exact": false,
+        "max_absolute_difference": 2.2918840159036336e-09
+      },
+      "quat": {
+        "shape": [
+          2400,
+          4
+        ],
+        "exact": false,
+        "max_absolute_difference": 1.0557043017556111e-09
+      },
+      "jtheta": {
+        "shape": [
+          2400,
+          42
+        ],
+        "exact": false,
+        "max_absolute_difference": 8.881784197001252e-16
+      },
+      "loads": {
+        "shape": [
+          2400,
+          6
+        ],
+        "exact": false,
+        "max_absolute_difference": 3.723507965958106e-06
+      },
+      "tipz": {
+        "shape": [
+          2400,
+          6
+        ],
+        "exact": false,
+        "max_absolute_difference": 5.314286288804482e-09
+      },
+      "a_flex": {
+        "shape": [
+          2400,
+          42
+        ],
+        "exact": false,
+        "max_absolute_difference": 1.1102230246251565e-16
+      },
+      "a_ext": {
+        "shape": [
+          2400,
+          42
+        ],
+        "exact": false,
+        "max_absolute_difference": 1.1102230246251565e-16
+      },
+      "tips": {
+        "shape": [
+          2400,
+          6,
+          3
+        ],
+        "exact": false,
+        "max_absolute_difference": 5.314286288804482e-09
+      }
+    }
+  },
+  "limit": "One baseline case only. Does not establish whole-experiment equivalence or independent biological validation."
+}
