@@ -1,0 +1,59 @@
+{
+  "checked_utc": "2026-11-02T22:44:54.333116+00:00",
+  "source_content_commit": "cff837d2088bb4344ef7f26696a9f0a1a7e9f30b",
+  "pilot_source_hashes_match_commit": true,
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "hardware": "Apple M5 Pro",
+  "status": "nine full six-second controls completed",
+  "noise_seeds": [
+    201303
+  ],
+  "assignment_seeds": [
+    9001
+  ],
+  "identity_replay": {
+    "operation": "identity",
+    "all_mechanical_arrays_identical": true,
+    "neural_activity_identical": true
+  },
+  "implementation_checks": {
+    "existing_repository": 8,
+    "October_components": 6,
+    "control_adapter": 7,
+    "delay_timing_cases": 64,
+    "clean_checkout_install": "uv sync --locked; all tests and timing cases passed; public input cache from prior clean download reused with checksums"
+  },
+  "development_failures": [
+    "Initial preflight used the wrong contact-threshold assertion; corrected before simulation.",
+    "First instrumented baseline exposed 42 leg captures versus 52 total actuator limits; corrected to match leg order before the complete pilot."
+  ],
+  "archive": {
+    "filename": "fly-controls-pilot-20261103.tar.gz",
+    "bytes": 70945816,
+    "sha256": "1d1a234d3e6ba7493c34bd854b6db9af2ec2fa63bafdf2c69730ede60edf8c70",
+    "url": "https://github.com/The-Uploading-Lab/fly-behavior-experiments/releases/download/publication-controls-2026-11-03/fly-controls-pilot-20261103.tar.gz"
+  },
+  "expected_files": {
+    "publication/expected/controls-pilot-analysis.json": "c8574aff75e7893bc9c83bae4a4ece4e524e156e404da52515f4d4076b6c3408",
+    "publication/expected/controls-pilot-summary.json": "d52550de9b6f87aa464a52fd98f080ca7b77c60c4d30c79382979ddc0718999b",
+    "publication/expected/muscle-history-seed46.json": "5a90e9b49414c1f26e2416b8c4bbdd5e68e8c2b351c94b408b10dd9a9a280aeb"
+  },
+  "limits": [
+    "One noise seed and one randomized assignment; no model-family superiority or animal-level inference.",
+    "The frozen protocol calls the pre-quantization mean matched. Delivery-slot means are 6.238163367071955 ms for the base and 6.2 ms for the uniform arm.",
+    "The historical standing_v32 gate also requires displacement; the motor-zero model stays upright and stationary.",
+    "The time-shift null includes the startup portion of the stiffness sequence.",
+    "No refitting; the October and raw calcium/walking pipelines are separate remaining exports."
+  ],
+  "august_replay": {
+    "seed": 46,
+    "configurations": 2,
+    "all_four_metrics_exact_for_both": true,
+    "source_content_commit": "cff837d",
+    "environment": "fresh checkout and new locked environment; checksum-verified public input cache",
+    "remaining": "The other 29 seed pairs have a runnable command but were not rerun in this release check."
+  },
+  "modulated_leg_axes": 36,
+  "motor_zero_late_mean_height_mm": 1.128263337294648,
+  "motor_zero_late_mean_tilt_deg": 2.1
+}

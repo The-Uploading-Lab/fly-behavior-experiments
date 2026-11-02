@@ -1,0 +1,886 @@
+{
+  "historical_source_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+  "backend": "numpy",
+  "release_commit": "6bd0af9ad3472a9197cef4b3885a6d315917dd7d",
+  "source_hashes": {
+    "publication/reproduce.py": "ae70eac4398d6361c13cc559b3ac22e5c366ea13e8989c8006bb357968ac2d4f",
+    "publication/PROTOCOL.md": "b1ef02a196ba0e9dd5b9f41d2b10df5ec7605babbbd90841c1252309d2300ced",
+    "publication/manifest.json": "6d128e5eccc098aa2c0d1af763d9c90395d5c1f1475341b1f5a6c3c8a63515ec",
+    "uv.lock": "17d56a53130632b4b9b9d78457826bba682290a354534d882a34bf9e088ae34e"
+  },
+  "python": "3.12.13 (main, Jul 23 2026, 14:33:47) [Clang 22.1.3 ]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "packages": {
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "mujoco": "3.9.0",
+    "flygym": "2.1.0"
+  },
+  "noise_seeds": [
+    201303
+  ],
+  "null_seeds": [
+    9001
+  ],
+  "duration_ms": 6000,
+  "status": "complete",
+  "rows": [
+    {
+      "case": "base-201303",
+      "mode": "base",
+      "seed": 201303,
+      "null_seed": null,
+      "parameter_overrides": {
+        "joint_int": "exact"
+      },
+      "intervention": {},
+      "neural_counts_sha256": "998cdac1a006434044eca0a7211c6c823948248e6b5282e80cb07ef9a71d5cab",
+      "wall_seconds": 100.6442792909802,
+      "historical_metrics": {
+        "seed": 201303,
+        "raw": 5.18,
+        "up": 0.71,
+        "standing": false,
+        "final_tilt_deg": 9.31,
+        "standing_v32": true,
+        "commanded_step_hz": null,
+        "endogenous_timing": true,
+        "nonfoot": 0.0036,
+        "nonfoot_force": 0.0002,
+        "freq": 12.363636363636363,
+        "swing_ms": 5.0,
+        "duty": 0.5845454545454545,
+        "contra": 0.38461538461538464,
+        "freq_tip": 5.272727272727273,
+        "swing_tip_ms": 30.0,
+        "duty_tip": 0.7356818181818181,
+        "contra_tip": 0.32700760777683857,
+        "speed": 0.9412898723620272,
+        "rom": {
+          "fFTi": 83.98113423060006,
+          "fCTr": 85.32374774454,
+          "mFTi": 18.693135325073936,
+          "mCTr": 19.552026319776836,
+          "hFTi": 72.86306288421073,
+          "hCTr": 47.51974699880148
+        },
+        "lifts": [
+          15,
+          20,
+          34,
+          28,
+          31,
+          34
+        ],
+        "freq_tip_h": 4.090909090909091,
+        "swing_tip_h_ms": 51.25,
+        "duty_tip_h": 0.7020454545454546,
+        "contra_tip_h": 0.4084507042253521,
+        "lifts_h": [
+          14,
+          20,
+          23,
+          24,
+          27,
+          23
+        ],
+        "freq_tip_h10": 3.7272727272727275,
+        "swing_tip_h10_ms": 55.0,
+        "duty_tip_h10": 0.7034090909090909,
+        "lifts_h10": [
+          13,
+          17,
+          21,
+          22,
+          26,
+          23
+        ],
+        "one_tick_frac_h": 0.0076,
+        "flicker_frac": 0.0429,
+        "R1i": 0.005,
+        "R1c": 0.005,
+        "R1i_tip": 0.1891,
+        "R1c_tip": 0.005,
+        "R5": 0.005,
+        "trace_rows": 11345,
+        "dng100_spikes": {
+          "720575941626500746": 747,
+          "720575941500851362": 758
+        },
+        "qualifies_v35": false,
+        "arm": "base-201303",
+        "delay_vec": {
+          "mean": 6.24007056827972,
+          "min": 0.11811373412688651,
+          "max": 23.622746825377302
+        },
+        "n_intersegmental_edges": [
+          0
+        ],
+        "wall_seconds": 100.5
+      },
+      "mechanical_metrics": {
+        "sustained_posture_loss_s": 0.5650000000000001,
+        "displacement_before_posture_loss_mm": 0.24372381596399267,
+        "net_displacement_mm": 5.177094297991149,
+        "joint_tracking_rmse_rad": 0.024650417379579237,
+        "actuator_force_limit_fraction": 0.0,
+        "positive_actuator_work_model_units": 772.1229385896996,
+        "negative_actuator_work_model_units": -472.55996000588084,
+        "contact_tip_speed_mean_mm_s": 4.921745826691858
+      },
+      "files": {
+        "base-201303-201303.npz": "e3d133b9bded66fd8575f811c3f454d06c96340fb3bd7740f4797bf3652f6807",
+        "mechanics.npz": "4268b0235e1ef6619d324dca51eb75565209c36b5b3a25bfccd90cf10f5c127e",
+        "parameters.json": "b9683500560b4098efe04d18bbcc03b228684660e7674cf49959c84f63132681",
+        "run.log": "5158144144d481fa2d8260a3f0bc77c9f15f244fc2a821e40dcc63db26e64a27",
+        "trace-base-201303-201303.npz": "62e5379dc8f1ec91eb8f9cf4a125fc27204057a0f4c0d241067cbbd50ea5a1c9"
+      }
+    },
+    {
+      "case": "stiffness-replay-201303",
+      "mode": "stiffness-replay",
+      "seed": 201303,
+      "null_seed": null,
+      "parameter_overrides": {
+        "joint_int": "exact"
+      },
+      "intervention": {
+        "operation": "identity",
+        "all_mechanical_arrays_identical": true,
+        "neural_activity_identical": true
+      },
+      "neural_counts_sha256": "998cdac1a006434044eca0a7211c6c823948248e6b5282e80cb07ef9a71d5cab",
+      "wall_seconds": 98.2766573750414,
+      "historical_metrics": {
+        "seed": 201303,
+        "raw": 5.18,
+        "up": 0.71,
+        "standing": false,
+        "final_tilt_deg": 9.31,
+        "standing_v32": true,
+        "commanded_step_hz": null,
+        "endogenous_timing": true,
+        "nonfoot": 0.0036,
+        "nonfoot_force": 0.0002,
+        "freq": 12.363636363636363,
+        "swing_ms": 5.0,
+        "duty": 0.5845454545454545,
+        "contra": 0.38461538461538464,
+        "freq_tip": 5.272727272727273,
+        "swing_tip_ms": 30.0,
+        "duty_tip": 0.7356818181818181,
+        "contra_tip": 0.32700760777683857,
+        "speed": 0.9412898723620272,
+        "rom": {
+          "fFTi": 83.98113423060006,
+          "fCTr": 85.32374774454,
+          "mFTi": 18.693135325073936,
+          "mCTr": 19.552026319776836,
+          "hFTi": 72.86306288421073,
+          "hCTr": 47.51974699880148
+        },
+        "lifts": [
+          15,
+          20,
+          34,
+          28,
+          31,
+          34
+        ],
+        "freq_tip_h": 4.090909090909091,
+        "swing_tip_h_ms": 51.25,
+        "duty_tip_h": 0.7020454545454546,
+        "contra_tip_h": 0.4084507042253521,
+        "lifts_h": [
+          14,
+          20,
+          23,
+          24,
+          27,
+          23
+        ],
+        "freq_tip_h10": 3.7272727272727275,
+        "swing_tip_h10_ms": 55.0,
+        "duty_tip_h10": 0.7034090909090909,
+        "lifts_h10": [
+          13,
+          17,
+          21,
+          22,
+          26,
+          23
+        ],
+        "one_tick_frac_h": 0.0076,
+        "flicker_frac": 0.0429,
+        "R1i": 0.005,
+        "R1c": 0.005,
+        "R1i_tip": 0.1891,
+        "R1c_tip": 0.005,
+        "R5": 0.005,
+        "trace_rows": 11345,
+        "dng100_spikes": {
+          "720575941626500746": 747,
+          "720575941500851362": 758
+        },
+        "qualifies_v35": false,
+        "arm": "stiffness-replay-201303",
+        "delay_vec": {
+          "mean": 6.24007056827972,
+          "min": 0.11811373412688651,
+          "max": 23.622746825377302
+        },
+        "n_intersegmental_edges": [
+          0
+        ],
+        "wall_seconds": 98.1
+      },
+      "mechanical_metrics": {
+        "sustained_posture_loss_s": 0.5650000000000001,
+        "displacement_before_posture_loss_mm": 0.24372381596399267,
+        "net_displacement_mm": 5.177094297991149,
+        "joint_tracking_rmse_rad": 0.024650417379579237,
+        "actuator_force_limit_fraction": 0.0,
+        "positive_actuator_work_model_units": 772.1229385896996,
+        "negative_actuator_work_model_units": -472.55996000588084,
+        "contact_tip_speed_mean_mm_s": 4.921745826691858
+      },
+      "files": {
+        "mechanics.npz": "4268b0235e1ef6619d324dca51eb75565209c36b5b3a25bfccd90cf10f5c127e",
+        "parameters.json": "b9683500560b4098efe04d18bbcc03b228684660e7674cf49959c84f63132681",
+        "run.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stiffness-replay-201303-201303.npz": "e3d133b9bded66fd8575f811c3f454d06c96340fb3bd7740f4797bf3652f6807",
+        "trace-stiffness-replay-201303-201303.npz": "62e5379dc8f1ec91eb8f9cf4a125fc27204057a0f4c0d241067cbbd50ea5a1c9"
+      }
+    },
+    {
+      "case": "stiffness-mean-201303",
+      "mode": "stiffness-mean",
+      "seed": 201303,
+      "null_seed": null,
+      "parameter_overrides": {
+        "joint_int": "exact"
+      },
+      "intervention": {
+        "operation": "per-joint temporal mean"
+      },
+      "neural_counts_sha256": "31f6eae309c4ce4dcfb30cceb4a23147f6c50ca7942b90e3ef843d7a6fe6ceb9",
+      "wall_seconds": 95.09893112495774,
+      "historical_metrics": {
+        "seed": 201303,
+        "raw": 5.05,
+        "up": 0.61,
+        "standing": false,
+        "final_tilt_deg": 11.89,
+        "standing_v32": true,
+        "commanded_step_hz": null,
+        "endogenous_timing": true,
+        "nonfoot": 0.0,
+        "nonfoot_force": 0.0,
+        "freq": 10.272727272727273,
+        "swing_ms": 5.0,
+        "duty": 0.6570454545454545,
+        "contra": 0.42307692307692313,
+        "freq_tip": 4.636363636363637,
+        "swing_tip_ms": 36.25,
+        "duty_tip": 0.7781818181818182,
+        "contra_tip": 0.35772357723577236,
+        "speed": 0.9173595249336938,
+        "rom": {
+          "fFTi": 72.93797151197295,
+          "fCTr": 74.77243863252328,
+          "mFTi": 17.596894103690886,
+          "mCTr": 19.508840722848785,
+          "hFTi": 75.32655212632004,
+          "hCTr": 49.10735509163571
+        },
+        "lifts": [
+          16,
+          13,
+          27,
+          24,
+          29,
+          28
+        ],
+        "freq_tip_h": 3.1818181818181817,
+        "swing_tip_h_ms": 63.75,
+        "duty_tip_h": 0.7424999999999999,
+        "contra_tip_h": 0.34967320261437906,
+        "lifts_h": [
+          15,
+          11,
+          19,
+          21,
+          20,
+          17
+        ],
+        "freq_tip_h10": 3.0,
+        "swing_tip_h10_ms": 65.0,
+        "duty_tip_h10": 0.7443181818181819,
+        "lifts_h10": [
+          15,
+          11,
+          18,
+          19,
+          20,
+          16
+        ],
+        "one_tick_frac_h": 0.0,
+        "flicker_frac": 0.0435,
+        "R1i": 0.0647,
+        "R1c": 0.01,
+        "R1i_tip": 0.3881,
+        "R1c_tip": 0.005,
+        "R5": 0.005,
+        "trace_rows": 11345,
+        "dng100_spikes": {
+          "720575941626500746": 792,
+          "720575941500851362": 803
+        },
+        "qualifies_v35": false,
+        "arm": "stiffness-mean-201303",
+        "delay_vec": {
+          "mean": 6.24007056827972,
+          "min": 0.11811373412688651,
+          "max": 23.622746825377302
+        },
+        "n_intersegmental_edges": [
+          0
+        ],
+        "wall_seconds": 94.9
+      },
+      "mechanical_metrics": {
+        "sustained_posture_loss_s": 1.3475,
+        "displacement_before_posture_loss_mm": 1.3817274463610119,
+        "net_displacement_mm": 5.045477387135316,
+        "joint_tracking_rmse_rad": 0.02994729908001121,
+        "actuator_force_limit_fraction": 0.0,
+        "positive_actuator_work_model_units": 698.5711808548903,
+        "negative_actuator_work_model_units": -476.52207322250763,
+        "contact_tip_speed_mean_mm_s": 4.050004099455013
+      },
+      "files": {
+        "mechanics.npz": "2ebfeb5288c11310adb958f70328ea27a33654befbd69236207fe94bdc3b777e",
+        "parameters.json": "b9683500560b4098efe04d18bbcc03b228684660e7674cf49959c84f63132681",
+        "run.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stiffness-mean-201303-201303.npz": "e2d2520d809cbd0925830546589d3082df9fd2a3d5fdf128a086790417dc5e3d",
+        "trace-stiffness-mean-201303-201303.npz": "c4ee12d5e113e91ee44be18a4461609f01cb3d09f97371dd2a0f8c5c194e14fb"
+      }
+    },
+    {
+      "case": "activation-201303",
+      "mode": "activation",
+      "seed": 201303,
+      "null_seed": null,
+      "parameter_overrides": {
+        "joint_int": "exact",
+        "k_mode": "cocon"
+      },
+      "intervention": {},
+      "neural_counts_sha256": "d689fb052330ebdca73d3a9ec63c2b77235356df9eeb488630e9975fa9189337",
+      "wall_seconds": 101.57480199995916,
+      "historical_metrics": {
+        "seed": 201303,
+        "raw": 6.51,
+        "up": 0.97,
+        "standing": true,
+        "final_tilt_deg": 11.58,
+        "standing_v32": true,
+        "commanded_step_hz": null,
+        "endogenous_timing": true,
+        "nonfoot": 0.0,
+        "nonfoot_force": 0.0,
+        "freq": 9.454545454545455,
+        "swing_ms": 5.0,
+        "duty": 0.6272727272727272,
+        "contra": 0.41379310344827586,
+        "freq_tip": 3.909090909090909,
+        "swing_tip_ms": 52.5,
+        "duty_tip": 0.7465909090909091,
+        "contra_tip": 0.5909090909090908,
+        "speed": 1.1837953340017966,
+        "rom": {
+          "fFTi": 64.87968210857085,
+          "fCTr": 81.81435667735524,
+          "mFTi": 18.193613403294055,
+          "mCTr": 19.09696316655851,
+          "hFTi": 71.0227345572004,
+          "hCTr": 46.73528648621742
+        },
+        "lifts": [
+          15,
+          12,
+          22,
+          20,
+          26,
+          26
+        ],
+        "freq_tip_h": 3.272727272727273,
+        "swing_tip_h_ms": 75.0,
+        "duty_tip_h": 0.7136363636363636,
+        "contra_tip_h": 0.5198675496688743,
+        "lifts_h": [
+          12,
+          10,
+          17,
+          18,
+          21,
+          20
+        ],
+        "freq_tip_h10": 3.090909090909091,
+        "swing_tip_h10_ms": 85.0,
+        "duty_tip_h10": 0.715,
+        "lifts_h10": [
+          12,
+          10,
+          17,
+          16,
+          21,
+          20
+        ],
+        "one_tick_frac_h": 0.0,
+        "flicker_frac": 0.0164,
+        "R1i": 0.0149,
+        "R1c": 0.005,
+        "R1i_tip": 0.0945,
+        "R1c_tip": 0.005,
+        "R5": 0.005,
+        "trace_rows": 11345,
+        "dng100_spikes": {
+          "720575941626500746": 737,
+          "720575941500851362": 746
+        },
+        "qualifies_v35": false,
+        "arm": "activation-201303",
+        "delay_vec": {
+          "mean": 6.24007056827972,
+          "min": 0.11811373412688651,
+          "max": 23.622746825377302
+        },
+        "n_intersegmental_edges": [
+          0
+        ],
+        "wall_seconds": 101.4
+      },
+      "mechanical_metrics": {
+        "sustained_posture_loss_s": 3.085,
+        "displacement_before_posture_loss_mm": 2.8845642849443913,
+        "net_displacement_mm": 6.510874337009881,
+        "joint_tracking_rmse_rad": 0.03194515656188158,
+        "actuator_force_limit_fraction": 0.0,
+        "positive_actuator_work_model_units": 674.6980551795567,
+        "negative_actuator_work_model_units": -503.31568737583564,
+        "contact_tip_speed_mean_mm_s": 4.197551449833106
+      },
+      "files": {
+        "activation-201303-201303.npz": "ead25a8b318a528f656d6b3761632755e160dbe6162b5056b174029ef552f3e8",
+        "mechanics.npz": "85e1032ea7c2248fc55c118c6d1000cbb81c9e7eeb75731f1df56e366f391db5",
+        "parameters.json": "48a1565bb4a4518d62d5dbef32a5d7a2d6a5b1de4fa03c9f4b7e58f9d94ce0d1",
+        "run.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "trace-activation-201303-201303.npz": "05c7c9b3f4a02e0b17a39f38f5f0538791d2abb1e3f054ed224e16104edeff34"
+      }
+    },
+    {
+      "case": "delay-uniform-201303",
+      "mode": "delay-uniform",
+      "seed": 201303,
+      "null_seed": null,
+      "parameter_overrides": {
+        "joint_int": "exact"
+      },
+      "intervention": {},
+      "neural_counts_sha256": "fe4ee2aaf6b13cb7e9ed76fd1a6642105359a470c036237f0a19e1f24bd9aa30",
+      "wall_seconds": 98.33256095804973,
+      "historical_metrics": {
+        "seed": 201303,
+        "raw": 3.08,
+        "up": 0.92,
+        "standing": true,
+        "final_tilt_deg": 10.82,
+        "standing_v32": true,
+        "commanded_step_hz": null,
+        "endogenous_timing": true,
+        "nonfoot": 0.0,
+        "nonfoot_force": 0.0,
+        "freq": 11.272727272727273,
+        "swing_ms": 5.0,
+        "duty": 0.6036363636363636,
+        "contra": 0.4151846785225719,
+        "freq_tip": 4.545454545454546,
+        "swing_tip_ms": 38.75,
+        "duty_tip": 0.7411363636363637,
+        "contra_tip": 0.3809041835357625,
+        "speed": 0.5607034090554908,
+        "rom": {
+          "fFTi": 80.85140417149478,
+          "fCTr": 78.35368719720562,
+          "mFTi": 19.747955434711585,
+          "mCTr": 20.461506072119306,
+          "hFTi": 67.79872567614031,
+          "hCTr": 45.830055885930506
+        },
+        "lifts": [
+          16,
+          25,
+          25,
+          35,
+          19,
+          29
+        ],
+        "freq_tip_h": 3.6363636363636367,
+        "swing_tip_h_ms": 50.0,
+        "duty_tip_h": 0.7113636363636364,
+        "contra_tip_h": 0.4611454992915206,
+        "lifts_h": [
+          14,
+          21,
+          17,
+          29,
+          19,
+          22
+        ],
+        "freq_tip_h10": 3.4545454545454546,
+        "swing_tip_h10_ms": 52.5,
+        "duty_tip_h10": 0.7118181818181818,
+        "lifts_h10": [
+          13,
+          20,
+          17,
+          29,
+          18,
+          21
+        ],
+        "one_tick_frac_h": 0.0,
+        "flicker_frac": 0.0533,
+        "R1i": 0.005,
+        "R1c": 0.005,
+        "R1i_tip": 0.0149,
+        "R1c_tip": 0.005,
+        "R5": 0.005,
+        "trace_rows": 11345,
+        "dng100_spikes": {
+          "720575941626500746": 751,
+          "720575941500851362": 745
+        },
+        "qualifies_v35": false,
+        "arm": "delay-uniform-201303",
+        "delay_vec": {
+          "mean": 6.240070568279721,
+          "min": 6.24007056827972,
+          "max": 6.24007056827972
+        },
+        "n_intersegmental_edges": [
+          0
+        ],
+        "wall_seconds": 98.1
+      },
+      "mechanical_metrics": {
+        "sustained_posture_loss_s": 0.935,
+        "displacement_before_posture_loss_mm": 1.1509617689327838,
+        "net_displacement_mm": 3.083868749805199,
+        "joint_tracking_rmse_rad": 0.024403329807771965,
+        "actuator_force_limit_fraction": 0.0,
+        "positive_actuator_work_model_units": 793.2226890675511,
+        "negative_actuator_work_model_units": -495.3207975542191,
+        "contact_tip_speed_mean_mm_s": 4.66683275953657
+      },
+      "files": {
+        "delay-uniform-201303-201303.npz": "a769f379a307b193bc9665755a8ed3cd87b19006f4fb925f6a81b3de84d717c9",
+        "mechanics.npz": "c23e32efbe154bdf6b0485d0c9b16c99aeeaf24bb29aa3884f502971399a6713",
+        "parameters.json": "b9683500560b4098efe04d18bbcc03b228684660e7674cf49959c84f63132681",
+        "run.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "trace-delay-uniform-201303-201303.npz": "14e1d73668a6ba45982cd2e72ed769f364b176875f02abe0cba9cb672795d465"
+      }
+    },
+    {
+      "case": "inhibition-unscaled-201303",
+      "mode": "inhibition-unscaled",
+      "seed": 201303,
+      "null_seed": null,
+      "parameter_overrides": {
+        "joint_int": "exact",
+        "bal_target": 0.0
+      },
+      "intervention": {},
+      "neural_counts_sha256": "ced91f2e686b9166cb201f6cf2498b6442102cc702ce0f96a08fc2f8d34c2f63",
+      "wall_seconds": 143.40713912498904,
+      "historical_metrics": {
+        "seed": 201303,
+        "raw": 1.33,
+        "up": 0.18,
+        "standing": false,
+        "final_tilt_deg": 139.49,
+        "standing_v32": false,
+        "commanded_step_hz": null,
+        "endogenous_timing": true,
+        "nonfoot": 0.9714,
+        "nonfoot_force": 0.8881,
+        "trace_rows": 11345,
+        "dng100_spikes": {
+          "720575941626500746": 713,
+          "720575941500851362": 746
+        },
+        "qualifies_v35": false,
+        "arm": "inhibition-unscaled-201303",
+        "delay_vec": {
+          "mean": 6.24007056827972,
+          "min": 0.11811373412688651,
+          "max": 23.622746825377302
+        },
+        "n_intersegmental_edges": [
+          0
+        ],
+        "wall_seconds": 143.0
+      },
+      "mechanical_metrics": {
+        "sustained_posture_loss_s": 0.5025000000000001,
+        "displacement_before_posture_loss_mm": 0.0,
+        "net_displacement_mm": 1.3349601211500532,
+        "joint_tracking_rmse_rad": 0.005055536639157393,
+        "actuator_force_limit_fraction": 0.0,
+        "positive_actuator_work_model_units": 124.57151062474598,
+        "negative_actuator_work_model_units": -10.193811391175279,
+        "contact_tip_speed_mean_mm_s": 2.771199373409571
+      },
+      "files": {
+        "inhibition-unscaled-201303-201303.npz": "0a3373c193f21a64231f8b39feea18aa69ed84de7f42b67d16212e9ab63f9b19",
+        "mechanics.npz": "a5a07efe681dcd8ee9bbb3095846a4c00ae54c36d71263c76f45d25afdf43aa3",
+        "parameters.json": "0081b8bdd5bb314fc3ac6a2c5656776a5a08782930ed337b18d83844c351a451",
+        "run.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "trace-inhibition-unscaled-201303-201303.npz": "a29c69a5bad22a01cea264d6db4ca1a393aa3e443af279e7a8d6bc5cef7f12d1"
+      }
+    },
+    {
+      "case": "motor-zero-201303",
+      "mode": "motor-zero",
+      "seed": 201303,
+      "null_seed": null,
+      "parameter_overrides": {
+        "joint_int": "exact",
+        "neural_motor_scale": 0.0
+      },
+      "intervention": {},
+      "neural_counts_sha256": "945349fe102113bd72a51fc55e4ef9e8e29384b489c6bcb1f3f1490e1cc6b259",
+      "wall_seconds": 115.731910625007,
+      "historical_metrics": {
+        "seed": 201303,
+        "raw": 0.0,
+        "up": 1.0,
+        "standing": false,
+        "final_tilt_deg": 2.1,
+        "standing_v32": false,
+        "commanded_step_hz": null,
+        "endogenous_timing": true,
+        "nonfoot": 0.0,
+        "nonfoot_force": 0.0,
+        "trace_rows": 11345,
+        "dng100_spikes": {
+          "720575941626500746": 766,
+          "720575941500851362": 773
+        },
+        "qualifies_v35": false,
+        "arm": "motor-zero-201303",
+        "delay_vec": {
+          "mean": 6.24007056827972,
+          "min": 0.11811373412688651,
+          "max": 23.622746825377302
+        },
+        "n_intersegmental_edges": [
+          0
+        ],
+        "wall_seconds": 115.5
+      },
+      "mechanical_metrics": {
+        "sustained_posture_loss_s": null,
+        "displacement_before_posture_loss_mm": 3.2721348808213227e-09,
+        "net_displacement_mm": 3.2721348808213227e-09,
+        "joint_tracking_rmse_rad": 0.005128439296326514,
+        "actuator_force_limit_fraction": 0.0,
+        "positive_actuator_work_model_units": 5.128661264494335e-08,
+        "negative_actuator_work_model_units": -1.3089682173530774e-08,
+        "contact_tip_speed_mean_mm_s": 3.6166917713925293e-09
+      },
+      "files": {
+        "mechanics.npz": "910274830b5b25da455f5aac2d0aec897856ff7a3d684e7eadf2b05bbc4b396b",
+        "motor-zero-201303-201303.npz": "4ccb1d26f0fc9da7ef7900d72b8fc21920f08c8f846d5e2f110130c2d53ca13a",
+        "parameters.json": "418e38cdb26d596f4d90c99acc0016bab1199e820724dc73b3dbbfc87326767b",
+        "run.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "trace-motor-zero-201303-201303.npz": "8417e86647b29a76e4f61aa4cae0f28548cbdaa71e17d7fe39f3336420f6c534"
+      }
+    },
+    {
+      "case": "stiffness-shift-201303-null9001",
+      "mode": "stiffness-shift",
+      "seed": 201303,
+      "null_seed": 9001,
+      "parameter_overrides": {
+        "joint_int": "exact"
+      },
+      "intervention": {
+        "operation": "common circular time shift",
+        "offset_ticks": 893
+      },
+      "neural_counts_sha256": "8977f92b705b16e84da56e1588a8acdd83cbe72ddca89172bfa9d787ae8e3d60",
+      "wall_seconds": 120.7081302080187,
+      "historical_metrics": {
+        "seed": 201303,
+        "raw": 5.23,
+        "up": 0.93,
+        "standing": true,
+        "final_tilt_deg": 10.19,
+        "standing_v32": true,
+        "commanded_step_hz": null,
+        "endogenous_timing": true,
+        "nonfoot": 0.0,
+        "nonfoot_force": 0.0,
+        "freq": 13.90909090909091,
+        "swing_ms": 5.0,
+        "duty": 0.705,
+        "contra": 0.4,
+        "freq_tip": 3.8181818181818183,
+        "swing_tip_ms": 32.5,
+        "duty_tip": 0.8706818181818181,
+        "contra_tip": 0.4487179487179487,
+        "speed": 0.9500534042912888,
+        "rom": {
+          "fFTi": 74.46466807104278,
+          "fCTr": 74.96110481575784,
+          "mFTi": 18.54573117159363,
+          "mCTr": 18.221566574065637,
+          "hFTi": 65.02679632750629,
+          "hCTr": 51.413445182101746
+        },
+        "lifts": [
+          12,
+          14,
+          39,
+          32,
+          18,
+          23
+        ],
+        "freq_tip_h": 3.0,
+        "swing_tip_h_ms": 42.5,
+        "duty_tip_h": 0.85,
+        "contra_tip_h": 0.39855072463768115,
+        "lifts_h": [
+          11,
+          14,
+          26,
+          25,
+          15,
+          18
+        ],
+        "freq_tip_h10": 2.8181818181818183,
+        "swing_tip_h10_ms": 46.25,
+        "duty_tip_h10": 0.8513636363636363,
+        "lifts_h10": [
+          11,
+          13,
+          25,
+          25,
+          15,
+          16
+        ],
+        "one_tick_frac_h": 0.0,
+        "flicker_frac": 0.0719,
+        "R1i": 0.005,
+        "R1c": 0.005,
+        "R1i_tip": 0.2786,
+        "R1c_tip": 0.005,
+        "R5": 0.005,
+        "trace_rows": 11345,
+        "dng100_spikes": {
+          "720575941626500746": 785,
+          "720575941500851362": 790
+        },
+        "qualifies_v35": false,
+        "arm": "stiffness-shift-201303-null9001",
+        "delay_vec": {
+          "mean": 6.24007056827972,
+          "min": 0.11811373412688651,
+          "max": 23.622746825377302
+        },
+        "n_intersegmental_edges": [
+          0
+        ],
+        "wall_seconds": 120.5
+      },
+      "mechanical_metrics": {
+        "sustained_posture_loss_s": 0.5025000000000001,
+        "displacement_before_posture_loss_mm": 0.0,
+        "net_displacement_mm": 5.225293723602088,
+        "joint_tracking_rmse_rad": 0.03249934536691605,
+        "actuator_force_limit_fraction": 0.0,
+        "positive_actuator_work_model_units": 840.989246681647,
+        "negative_actuator_work_model_units": -548.239577331406,
+        "contact_tip_speed_mean_mm_s": 4.647515969068945
+      },
+      "files": {
+        "mechanics.npz": "40f2a1f58bd486d43bef2a842ab54c0ae6da55f8e36db09c64e4a76cf34932d3",
+        "parameters.json": "b9683500560b4098efe04d18bbcc03b228684660e7674cf49959c84f63132681",
+        "run.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stiffness-shift-201303-null9001-201303.npz": "1b0d58741c4638e34f83fc4df0ab60cbf7f6056182040bfcd49a7fb378c1b5e4",
+        "trace-stiffness-shift-201303-null9001-201303.npz": "7ec5ed0ef1f94cec3d20a05ee6649b2152d48ad011a848f14c337fc73929ff21"
+      }
+    },
+    {
+      "case": "delay-shuffle-201303-null9001",
+      "mode": "delay-shuffle",
+      "seed": 201303,
+      "null_seed": 9001,
+      "parameter_overrides": {
+        "joint_int": "exact"
+      },
+      "intervention": {},
+      "neural_counts_sha256": "0adcfa65b4a0c28648256697b8432c2398484b6b276eeb261961f65f223ec9f1",
+      "wall_seconds": 195.31105600000592,
+      "historical_metrics": {
+        "seed": 201303,
+        "raw": 4.75,
+        "up": 0.06,
+        "standing": false,
+        "final_tilt_deg": 170.95,
+        "standing_v32": false,
+        "commanded_step_hz": null,
+        "endogenous_timing": true,
+        "nonfoot": 0.3264,
+        "nonfoot_force": 0.0604,
+        "trace_rows": 11345,
+        "dng100_spikes": {
+          "720575941626500746": 803,
+          "720575941500851362": 810
+        },
+        "qualifies_v35": false,
+        "arm": "delay-shuffle-201303-null9001",
+        "delay_vec": {
+          "mean": 6.24007056827972,
+          "min": 0.11811373412688651,
+          "max": 23.622746825377302
+        },
+        "n_intersegmental_edges": [
+          0
+        ],
+        "wall_seconds": 195.0
+      },
+      "mechanical_metrics": {
+        "sustained_posture_loss_s": 0.8,
+        "displacement_before_posture_loss_mm": 0.556100951226857,
+        "net_displacement_mm": 4.749187372644214,
+        "joint_tracking_rmse_rad": 0.020510857053266995,
+        "actuator_force_limit_fraction": 0.0,
+        "positive_actuator_work_model_units": 574.269754019791,
+        "negative_actuator_work_model_units": -331.253044955178,
+        "contact_tip_speed_mean_mm_s": 4.381397392167883
+      },
+      "files": {
+        "delay-shuffle-201303-null9001-201303.npz": "d907aace87a56f476c105c8d51b80091164bb9146b0ed006d5bac88e0751eb68",
+        "mechanics.npz": "ffbc27b4dcd6bfe69afe9a45465ee0131810b581b887f993b39f0a68bc789511",
+        "parameters.json": "b9683500560b4098efe04d18bbcc03b228684660e7674cf49959c84f63132681",
+        "run.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "trace-delay-shuffle-201303-null9001-201303.npz": "d62551aa9f0725ca85a2f535b30d400c372c12f701d3a923a8ff1b6437d3346d"
+      }
+    }
+  ],
+  "initialization_seconds": 0.7303192079998553
+}

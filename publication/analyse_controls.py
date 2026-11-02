@@ -39,7 +39,7 @@ def analyse(path):
             nominal_mean = float(delays.mean())
             delivered_mean = float(slots_ms.mean())
         comparisons.append({"case": r["case"], "mode": r["mode"], "noise_seed": r["seed"], "null_seed": r["null_seed"],
-                            "standing": r["historical_metrics"]["standing_v32"],
+                            "historical_standing_and_motion_gate": r["historical_metrics"]["standing_v32"],
                             "net_displacement_mm": r["mechanical_metrics"]["net_displacement_mm"],
                             "arm_minus_base_displacement_mm": r["mechanical_metrics"]["net_displacement_mm"] - b["mechanical_metrics"]["net_displacement_mm"],
                             "historical_speed_if_standing_mm_s": r["historical_metrics"].get("speed"),
@@ -49,6 +49,7 @@ def analyse(path):
     return {"kind": "paired conditional simulation sensitivity; not animal replication",
             "noise_blocks": len(seeds), "assignment_seeds": len(null_seeds), "trials": len(rows),
             "median_trial_wall_seconds": statistics.median(r["wall_seconds"] for r in rows),
+            "gate_definition": "Historical standing_v32 also requires at least 0.3 mm displacement; a stationary upright model fails this gate without falling",
             "inference": "Descriptive only; shared reference trials are not independent assignment replicates",
             "comparisons": comparisons}
 

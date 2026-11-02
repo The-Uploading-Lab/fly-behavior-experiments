@@ -94,9 +94,13 @@ Calcium observations: Ketkar et al., [eLife 2022](https://doi.org/10.7554/eLife.
 
 The model uses FlyGym and MuJoCo. Existing dependency license notices and vendored compatibility code are documented in [THIRD_PARTY.md](../THIRD_PARTY.md) and `provenance/dependency-licenses.json`. Project-authored code and records follow the repository license; upstream data and software retain their original licenses. The private scientific-review manuscript and meeting notes are not distributed in this package.
 
+Scientific Agent Skills informed the experimental-design and reporting workflow: Kassis, Agarwal, He, Patel and Brueckner, [Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents](https://doi.org/10.48550/arXiv.2609.00065), 2026. This is a software-workflow reference, not evidence about the fly model.
+
 ## Release checks
 
-The [verification receipt](verification.json) records a fresh clone and dependency installation, public input downloads, all eight repository tests and all six model-component tests. The reanalysis and figure commands completed. A six-second NumPy trial also completed in each of two installations, with identical body and neural trace hashes. Its speed was 0.9413 mm/s; the archived Metal result for the same nominal seed was 1.0226 mm/s. Only this one CPU arm and seed was rerun for the export. The source commit tested and command receipts are recorded explicitly.
+The [controlled pilot](CONTROL_RESULTS.md) completed all nine six-second trials and retained every null result. Identity stiffness replay matched all mechanical arrays and neural activity exactly. A fresh checkout passed 21 implementation tests and all 64 timing cases. Both reconstructed August configurations at seed 46 reproduced their four archived metrics exactly, including the candidate failure. The full 30-pair August replay remains a separate run. The [new receipt](controls-verification.json) records these checks and the raw trace archive.
+
+The [verification receipt](verification.json) records a fresh clone and dependency installation, public input downloads, all eight repository tests and all six model-component tests. The reanalysis and figure commands completed. A six-second NumPy trial also completed in each of two installations, with identical body and neural trace hashes. Its speed was 0.9413 mm/s; the archived Metal result for the same nominal seed was 1.0226 mm/s. That initial receipt covers one CPU arm and seed; the newer controlled pilot is documented separately above. The source commit tested and command receipts are recorded explicitly.
 
 ## Dependency security status
 

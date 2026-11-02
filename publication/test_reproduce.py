@@ -44,7 +44,7 @@ class ControlTests(unittest.TestCase):
             (root / "summary.json").write_text(json.dumps(summary))
             result = analyse(root)
             self.assertEqual(result["trials"], 9)
-            self.assertFalse(next(r for r in result["comparisons"] if r["mode"] == "motor-zero")["standing"])
+            self.assertFalse(next(r for r in result["comparisons"] if r["mode"] == "motor-zero")["historical_standing_and_motion_gate"])
             (root / "motor-zero/trace.bin").write_bytes(b"changed")
             with self.assertRaisesRegex(ValueError, "Changed output"):
                 analyse(root)
