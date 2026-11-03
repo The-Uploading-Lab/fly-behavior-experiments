@@ -1,5 +1,11 @@
 # Follow-up execution record
 
+## Completion
+
+All six Slurm tasks completed with exit code zero. The complete 138-trial analysis passed every prespecified invariant, and all six summary transport hashes match. [Results and raw data](FOLLOWUP_RESULTS.md) are released with a [verification receipt](followup-verification.json). No simulation was rerun or excluded.
+
+## Initial launch record
+
 At the initial status check on 3 November 2026, three workers were running the first three noise blocks of the 138-trial [follow-up protocol](FOLLOWUP_PROTOCOL.md). The remaining three blocks were queued under the concurrency limit. No complete follow-up comparison is reported here.
 
 The scientific source is frozen at `c855d05c5e3656ee70e2333d46e538de5af9f2e4`. Later commits add tests and execution records; the running checkout is unchanged. Slurm array 37883 has six tasks, at most three concurrent workers, one requested CPU and 6 GB per task, and a 4 hour 45 minute limit per task. There is no automatic requeue. Each task runs all 23 interventions for one noise seed. The complete experiment contains six noise seeds and four crossed assignment seeds.

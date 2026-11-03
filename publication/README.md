@@ -6,7 +6,7 @@ The [claim-to-command map](REPRODUCIBILITY.md) distinguishes complete simulation
 
 ## Replicated follow-up
 
-The [follow-up protocol](FOLLOWUP_PROTOCOL.md) fixes six noise blocks and four independent null assignments before execution. It adds a startup-preserving temporal shift and a narrow delay distribution with exactly the original timestep-rounded mean. `followup.py` runs each complete block and `analyse_followup.py` checks the full 138-trial grid, then reports paired effects with crossed noise/assignment resampling. The [execution record](FOLLOWUP_EXECUTION.md) documents the completed bootstrap and running follow-up; no complete follow-up comparison is yet reported.
+The [follow-up protocol](FOLLOWUP_PROTOCOL.md) fixes six noise blocks and four independent null assignments before execution. It adds a startup-preserving temporal shift and a narrow delay distribution with exactly the original timestep-rounded mean. `followup.py` runs each complete block and `analyse_followup.py` checks the full 138-trial grid, then reports paired effects with crossed noise/assignment resampling. All 138 planned trials completed. The [results](FOLLOWUP_RESULTS.md) retain successful nulls and posture failures, with full paired differences and raw traces. The [execution record](FOLLOWUP_EXECUTION.md) preserves setup failures and runtime checks.
 
 ## Run the muscle model and null controls
 

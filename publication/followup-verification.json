@@ -1,0 +1,621 @@
+{
+  "status": "complete; full planned grid and all analysis invariants passed",
+  "checked_utc": "2026-11-03T09:48:00.203034+00:00",
+  "source_commit": "c855d05c5e3656ee70e2333d46e538de5af9f2e4",
+  "historical_model_commit": "88fc005eecd0e181f44f7e828750605d36ef8745",
+  "protocol": "FOLLOWUP_PROTOCOL.md",
+  "trials": 138,
+  "noise_blocks": 6,
+  "assignment_seeds": 4,
+  "identity_replays_exact": 6,
+  "startup_control_prefixes_and_distributions_preserved": 24,
+  "clock_mean_controls_preserve_exact_slot_sum": 24,
+  "startup_saved_state_check": {
+    "checks": [
+      {
+        "case": "stiffness-shift-after-startup-2026110301-null2026110311",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110301-null2026110312",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110301-null2026110313",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110301-null2026110314",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110302-null2026110311",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110302-null2026110312",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110302-null2026110313",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110302-null2026110314",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110303-null2026110311",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110303-null2026110312",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110303-null2026110313",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110303-null2026110314",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110304-null2026110311",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110304-null2026110312",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110304-null2026110313",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110304-null2026110314",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110305-null2026110311",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110305-null2026110312",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110305-null2026110313",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110305-null2026110314",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110306-null2026110311",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110306-null2026110312",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110306-null2026110313",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      },
+      {
+        "case": "stiffness-shift-after-startup-2026110306-null2026110314",
+        "startup_state_exact": true,
+        "fields": [
+          "body",
+          "quat",
+          "target_joint_angle",
+          "loads",
+          "tips",
+          "actuator_force",
+          "achieved_joint_angle",
+          "motor_drive",
+          "stiffness",
+          "abdomen_drive"
+        ]
+      }
+    ],
+    "audit_setup_correction": "An initial extra-audit attempt requested jtheta, which is not a mechanics.npz key. The corrected audit enumerates all arrays with 2400 control ticks. No simulation or prespecified analysis changed."
+  },
+  "all_planned_outcomes_retained": true,
+  "no_simulation_reruns": true,
+  "remote_summary_transport": [
+    {
+      "path": "followup-2026110301/summary.json",
+      "sha256": "b510e9a340ad593746b6570ece0152d5fe34f8d7815d1e4537742927c1a79238",
+      "status": "complete",
+      "trials": 23,
+      "python": "3.12.13 (main, Apr 16 2026, 00:00:00) [GCC 14.3.1 20251022 (Red Hat 14.3.1-4)]",
+      "packages": {
+        "numpy": "2.4.6",
+        "scipy": "1.18.0",
+        "pandas": "3.0.5",
+        "mujoco": "3.9.0",
+        "flygym": "2.1.0"
+      },
+      "machine": "x86_64",
+      "host": "freighter-compute02",
+      "environment": {
+        "OPENBLAS_CORETYPE": "Haswell",
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NPY_DISABLE_CPU_FEATURES": null
+      },
+      "release_commit": "c855d05c5e3656ee70e2333d46e538de5af9f2e4",
+      "source_hashes": {
+        "publication/reproduce.py": "ccfc753fe15c9021cfba73af0ac94b1c2dd9dc6bfb50401275fd6afd1b6071a8",
+        "publication/FOLLOWUP_PROTOCOL.md": "8227301666a428b6a5f16be484c8fac01aadf2c6328ce838aa889d6ab7f1c793",
+        "publication/manifest.json": "6d128e5eccc098aa2c0d1af763d9c90395d5c1f1475341b1f5a6c3c8a63515ec",
+        "uv.lock": "17d56a53130632b4b9b9d78457826bba682290a354534d882a34bf9e088ae34e",
+        "publication/followup.py": "bb8f3d05dc7bbea289aa1e568e7eab4d6d10bc403024f3a9ef99d7c6977f999e",
+        "publication/analyse_followup.py": "be1f6f0289bda3304bc253cc9bc3fc6cb84fbb85b55b27fd7fc8e0778ec040f7",
+        "publication/analyse_controls.py": "dce65e9bed1ea640a1a4cd7ad0e7f2ddcf1697021c1fbb112aa6caacdd106337"
+      }
+    },
+    {
+      "path": "followup-2026110302/summary.json",
+      "sha256": "af941545141a26defb1ab74bc18db36e1535e5469931eb900a87824c5f3ed6f1",
+      "status": "complete",
+      "trials": 23,
+      "python": "3.12.13 (main, Apr 16 2026, 00:00:00) [GCC 14.3.1 20251022 (Red Hat 14.3.1-4)]",
+      "packages": {
+        "numpy": "2.4.6",
+        "scipy": "1.18.0",
+        "pandas": "3.0.5",
+        "mujoco": "3.9.0",
+        "flygym": "2.1.0"
+      },
+      "machine": "x86_64",
+      "host": "freighter-compute02",
+      "environment": {
+        "OPENBLAS_CORETYPE": "Haswell",
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NPY_DISABLE_CPU_FEATURES": null
+      },
+      "release_commit": "c855d05c5e3656ee70e2333d46e538de5af9f2e4",
+      "source_hashes": {
+        "publication/reproduce.py": "ccfc753fe15c9021cfba73af0ac94b1c2dd9dc6bfb50401275fd6afd1b6071a8",
+        "publication/FOLLOWUP_PROTOCOL.md": "8227301666a428b6a5f16be484c8fac01aadf2c6328ce838aa889d6ab7f1c793",
+        "publication/manifest.json": "6d128e5eccc098aa2c0d1af763d9c90395d5c1f1475341b1f5a6c3c8a63515ec",
+        "uv.lock": "17d56a53130632b4b9b9d78457826bba682290a354534d882a34bf9e088ae34e",
+        "publication/followup.py": "bb8f3d05dc7bbea289aa1e568e7eab4d6d10bc403024f3a9ef99d7c6977f999e",
+        "publication/analyse_followup.py": "be1f6f0289bda3304bc253cc9bc3fc6cb84fbb85b55b27fd7fc8e0778ec040f7",
+        "publication/analyse_controls.py": "dce65e9bed1ea640a1a4cd7ad0e7f2ddcf1697021c1fbb112aa6caacdd106337"
+      }
+    },
+    {
+      "path": "followup-2026110303/summary.json",
+      "sha256": "249412ff4cb5ff13be9c7dab37a3cb9ca2b5ec533ea0a5818f64bb4a32a667ba",
+      "status": "complete",
+      "trials": 23,
+      "python": "3.12.13 (main, Apr 16 2026, 00:00:00) [GCC 14.3.1 20251022 (Red Hat 14.3.1-4)]",
+      "packages": {
+        "numpy": "2.4.6",
+        "scipy": "1.18.0",
+        "pandas": "3.0.5",
+        "mujoco": "3.9.0",
+        "flygym": "2.1.0"
+      },
+      "machine": "x86_64",
+      "host": "freighter-compute02",
+      "environment": {
+        "OPENBLAS_CORETYPE": "Haswell",
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NPY_DISABLE_CPU_FEATURES": null
+      },
+      "release_commit": "c855d05c5e3656ee70e2333d46e538de5af9f2e4",
+      "source_hashes": {
+        "publication/reproduce.py": "ccfc753fe15c9021cfba73af0ac94b1c2dd9dc6bfb50401275fd6afd1b6071a8",
+        "publication/FOLLOWUP_PROTOCOL.md": "8227301666a428b6a5f16be484c8fac01aadf2c6328ce838aa889d6ab7f1c793",
+        "publication/manifest.json": "6d128e5eccc098aa2c0d1af763d9c90395d5c1f1475341b1f5a6c3c8a63515ec",
+        "uv.lock": "17d56a53130632b4b9b9d78457826bba682290a354534d882a34bf9e088ae34e",
+        "publication/followup.py": "bb8f3d05dc7bbea289aa1e568e7eab4d6d10bc403024f3a9ef99d7c6977f999e",
+        "publication/analyse_followup.py": "be1f6f0289bda3304bc253cc9bc3fc6cb84fbb85b55b27fd7fc8e0778ec040f7",
+        "publication/analyse_controls.py": "dce65e9bed1ea640a1a4cd7ad0e7f2ddcf1697021c1fbb112aa6caacdd106337"
+      }
+    },
+    {
+      "path": "followup-2026110304/summary.json",
+      "sha256": "1bdcc9fc282d1f5c2537e7ada3b1e7229d2892013b0322e32a3642338456a3e8",
+      "status": "complete",
+      "trials": 23,
+      "python": "3.12.13 (main, Apr 16 2026, 00:00:00) [GCC 14.3.1 20251022 (Red Hat 14.3.1-4)]",
+      "packages": {
+        "numpy": "2.4.6",
+        "scipy": "1.18.0",
+        "pandas": "3.0.5",
+        "mujoco": "3.9.0",
+        "flygym": "2.1.0"
+      },
+      "machine": "x86_64",
+      "host": "freighter-compute01",
+      "environment": {
+        "OPENBLAS_CORETYPE": "Haswell",
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NPY_DISABLE_CPU_FEATURES": null
+      },
+      "release_commit": "c855d05c5e3656ee70e2333d46e538de5af9f2e4",
+      "source_hashes": {
+        "publication/reproduce.py": "ccfc753fe15c9021cfba73af0ac94b1c2dd9dc6bfb50401275fd6afd1b6071a8",
+        "publication/FOLLOWUP_PROTOCOL.md": "8227301666a428b6a5f16be484c8fac01aadf2c6328ce838aa889d6ab7f1c793",
+        "publication/manifest.json": "6d128e5eccc098aa2c0d1af763d9c90395d5c1f1475341b1f5a6c3c8a63515ec",
+        "uv.lock": "17d56a53130632b4b9b9d78457826bba682290a354534d882a34bf9e088ae34e",
+        "publication/followup.py": "bb8f3d05dc7bbea289aa1e568e7eab4d6d10bc403024f3a9ef99d7c6977f999e",
+        "publication/analyse_followup.py": "be1f6f0289bda3304bc253cc9bc3fc6cb84fbb85b55b27fd7fc8e0778ec040f7",
+        "publication/analyse_controls.py": "dce65e9bed1ea640a1a4cd7ad0e7f2ddcf1697021c1fbb112aa6caacdd106337"
+      }
+    },
+    {
+      "path": "followup-2026110305/summary.json",
+      "sha256": "7098c136c335f7b07cf25a4fa17163e50e3b825f35fe28fd36a11f856462a011",
+      "status": "complete",
+      "trials": 23,
+      "python": "3.12.13 (main, Apr 16 2026, 00:00:00) [GCC 14.3.1 20251022 (Red Hat 14.3.1-4)]",
+      "packages": {
+        "numpy": "2.4.6",
+        "scipy": "1.18.0",
+        "pandas": "3.0.5",
+        "mujoco": "3.9.0",
+        "flygym": "2.1.0"
+      },
+      "machine": "x86_64",
+      "host": "freighter-compute01",
+      "environment": {
+        "OPENBLAS_CORETYPE": "Haswell",
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NPY_DISABLE_CPU_FEATURES": null
+      },
+      "release_commit": "c855d05c5e3656ee70e2333d46e538de5af9f2e4",
+      "source_hashes": {
+        "publication/reproduce.py": "ccfc753fe15c9021cfba73af0ac94b1c2dd9dc6bfb50401275fd6afd1b6071a8",
+        "publication/FOLLOWUP_PROTOCOL.md": "8227301666a428b6a5f16be484c8fac01aadf2c6328ce838aa889d6ab7f1c793",
+        "publication/manifest.json": "6d128e5eccc098aa2c0d1af763d9c90395d5c1f1475341b1f5a6c3c8a63515ec",
+        "uv.lock": "17d56a53130632b4b9b9d78457826bba682290a354534d882a34bf9e088ae34e",
+        "publication/followup.py": "bb8f3d05dc7bbea289aa1e568e7eab4d6d10bc403024f3a9ef99d7c6977f999e",
+        "publication/analyse_followup.py": "be1f6f0289bda3304bc253cc9bc3fc6cb84fbb85b55b27fd7fc8e0778ec040f7",
+        "publication/analyse_controls.py": "dce65e9bed1ea640a1a4cd7ad0e7f2ddcf1697021c1fbb112aa6caacdd106337"
+      }
+    },
+    {
+      "path": "followup-2026110306/summary.json",
+      "sha256": "8835c2fd7b079aef489befbab37bbde0a600777466724c73dd8dfc4571f553e6",
+      "status": "complete",
+      "trials": 23,
+      "python": "3.12.13 (main, Apr 16 2026, 00:00:00) [GCC 14.3.1 20251022 (Red Hat 14.3.1-4)]",
+      "packages": {
+        "numpy": "2.4.6",
+        "scipy": "1.18.0",
+        "pandas": "3.0.5",
+        "mujoco": "3.9.0",
+        "flygym": "2.1.0"
+      },
+      "machine": "x86_64",
+      "host": "freighter-compute01",
+      "environment": {
+        "OPENBLAS_CORETYPE": "Haswell",
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NPY_DISABLE_CPU_FEATURES": null
+      },
+      "release_commit": "c855d05c5e3656ee70e2333d46e538de5af9f2e4",
+      "source_hashes": {
+        "publication/reproduce.py": "ccfc753fe15c9021cfba73af0ac94b1c2dd9dc6bfb50401275fd6afd1b6071a8",
+        "publication/FOLLOWUP_PROTOCOL.md": "8227301666a428b6a5f16be484c8fac01aadf2c6328ce838aa889d6ab7f1c793",
+        "publication/manifest.json": "6d128e5eccc098aa2c0d1af763d9c90395d5c1f1475341b1f5a6c3c8a63515ec",
+        "uv.lock": "17d56a53130632b4b9b9d78457826bba682290a354534d882a34bf9e088ae34e",
+        "publication/followup.py": "bb8f3d05dc7bbea289aa1e568e7eab4d6d10bc403024f3a9ef99d7c6977f999e",
+        "publication/analyse_followup.py": "be1f6f0289bda3304bc253cc9bc3fc6cb84fbb85b55b27fd7fc8e0778ec040f7",
+        "publication/analyse_controls.py": "dce65e9bed1ea640a1a4cd7ad0e7f2ddcf1697021c1fbb112aa6caacdd106337"
+      }
+    }
+  ],
+  "slurm_accounting_cluster_local": "37883_0|COMPLETED|0:0|2026-11-03T01:11:23|2026-11-03T04:20:23|03:09:00||freighter-compute02\n37883_0.batch|COMPLETED|0:0|2026-11-03T01:11:23|2026-11-03T04:20:23|03:09:00|3213752K|freighter-compute02\n37883_0.extern|COMPLETED|0:0|2026-11-03T01:11:23|2026-11-03T04:20:23|03:09:00||freighter-compute02\n37883_1|COMPLETED|0:0|2026-11-03T01:11:23|2026-11-03T04:19:11|03:07:48||freighter-compute02\n37883_1.batch|COMPLETED|0:0|2026-11-03T01:11:23|2026-11-03T04:19:11|03:07:48|3254088K|freighter-compute02\n37883_1.extern|COMPLETED|0:0|2026-11-03T01:11:23|2026-11-03T04:19:11|03:07:48||freighter-compute02\n37883_2|COMPLETED|0:0|2026-11-03T01:11:23|2026-11-03T04:16:51|03:05:28||freighter-compute02\n37883_2.batch|COMPLETED|0:0|2026-11-03T01:11:23|2026-11-03T04:16:51|03:05:28|3218240K|freighter-compute02\n37883_2.extern|COMPLETED|0:0|2026-11-03T01:11:23|2026-11-03T04:16:51|03:05:28||freighter-compute02\n37883_3|COMPLETED|0:0|2026-11-03T04:16:51|2026-11-03T07:38:46|03:21:55||freighter-compute01\n37883_3.batch|COMPLETED|0:0|2026-11-03T04:16:51|2026-11-03T07:38:46|03:21:55|3846348K|freighter-compute01\n37883_3.extern|COMPLETED|0:0|2026-11-03T04:16:51|2026-11-03T07:38:46|03:21:55||freighter-compute01\n37883_4|COMPLETED|0:0|2026-11-03T04:19:11|2026-11-03T07:37:21|03:18:10||freighter-compute01\n37883_4.batch|COMPLETED|0:0|2026-11-03T04:19:11|2026-11-03T07:37:21|03:18:10|3216172K|freighter-compute01\n37883_4.extern|COMPLETED|0:0|2026-11-03T04:19:11|2026-11-03T07:37:21|03:18:10||freighter-compute01\n37883_5|COMPLETED|0:0|2026-11-03T04:20:23|2026-11-03T07:33:45|03:13:22||freighter-compute01\n37883_5.batch|COMPLETED|0:0|2026-11-03T04:20:23|2026-11-03T07:33:45|03:13:22|3175724K|freighter-compute01\n37883_5.extern|COMPLETED|0:0|2026-11-03T04:20:23|2026-11-03T07:33:45|03:13:22||freighter-compute01\n",
+  "archive": {
+    "name": "fly-followup-20261103.tar.gz",
+    "bytes": 1101707969,
+    "sha256": "e1c8df7b682dfcbb6eaac3ec4ada87d66d5782b1498b12105e285e1ac4d329ea",
+    "files_verified_against_collected_data": 840,
+    "contents": "All six summaries, all 138 case records, parameters, simulation logs, neural/body/mechanical traces; model source and pinned inputs obtained separately from the source commit",
+    "url": "https://github.com/The-Uploading-Lab/fly-behavior-experiments/releases/download/publication-followup-2026-11-03/fly-followup-20261103.tar.gz"
+  },
+  "analysis_sha256": "013c511150ad99f08de16b03bc9da9ad3cf4bf0df0360425f8421e059fc157e6",
+  "limitations": [
+    "Exploratory sensitivity of one frozen selected model; no refitting",
+    "Six noise realizations crossed with four assignment realizations, not animal replicates",
+    "Two Linux hosts; same frozen source and numerical environment; pairs remain on a host",
+    "Small-sample percentile bootstrap intervals; no equivalence or animal validation claim",
+    "Posture, displacement and historical conditional speed are separate outcomes"
+  ]
+}
