@@ -17,17 +17,24 @@ analytic), true shunting (split conductances), adaptation, per-neuron
 membrane / threshold / refractory / synaptic-decay vectors, per-neuron
 delays of either delivery flavour, graded release with per-neuron or
 scalar curves, graded feedback rows and graded drive (the visual
-hs_graded_opponent relay), Poisson and Erlang-renewal drive, drive_fn with
-feedback rows, force_spikes, first_spike, record, record_trace_every and
+hs_graded_opponent relay), Poisson and Erlang-renewal drive (scalar, or
+the per-neuron regularity vector: ported 2026-11-17 for the portable copy,
+checked by tests/test_gpu.py), drive_fn with
+feedback rows, force_spikes, force_spikes_fn, first_spike, record, record_trace_every and
 record_voltage (voltage after the refractory clamp, before thresholding),
 absolute or cell-relative command membrane drive, and the coincidence seam
 (coincidence_gain with its target / fast / slow pools; ported 2026-09-05,
 gate `gpu/gate_v0.py --coincidence`, per-target deterministic gather so the
 sums run in the numpy engine's order).
 
-Refused loudly (NotImplementedError), never silently approximated: gap
-junctions, short-term depression, exponential integrate-and-fire,
-graded_phasic and force_spikes_fn. Add them to the kernels with their own fingerprint before
+Metal also carries electrical coupling with Euler integration: symmetric or
+directed G, scalar or per-pair weights, delayed spikelets and the reference's
+presynaptic AP waveform. The gate is gpu/gate_timing.py. Callback forcing uses
+the same read-only feedback snapshot, row validation and tick cadence as NumPy.
+
+Refused loudly (NotImplementedError), never silently approximated: analytic
+integration with gaps, CUDA gaps, short-term depression, exponential integrate-and-fire,
+and graded_phasic. Add them to the kernels with their own fingerprint before
 lifting a refusal. A graded cell in the drive set was refused until 2026-09-06
 and now runs: see the note at the drive clamp.
 
@@ -60,6 +67,7 @@ import os
 import time
 import weakref
 from contextlib import contextmanager
+from fractions import Fraction
 from pathlib import Path
 
 import numpy as np
@@ -182,6 +190,12 @@ class _Desc(ctypes.Structure):
         ("coin_gain", ctypes.c_float), ("coin_decay", ctypes.c_float),
         ("coin_lag", ctypes.c_uint32),
         ("tonic_ge", ctypes.c_void_p),
+        ("n_gap", ctypes.c_uint32), ("gap_tgt", ctypes.c_void_p),
+        ("gap_indptr", ctypes.c_void_p), ("gap_src", ctypes.c_void_p),
+        ("gap_weight", ctypes.c_void_p), ("gap_deg", ctypes.c_void_p),
+        ("gap_scale", ctypes.c_float), ("gap_spikelet", ctypes.c_float),
+        ("gap_delay", ctypes.c_uint32), ("gap_n_ap", ctypes.c_uint32),
+        ("gap_ap_off", ctypes.c_uint32), ("gap_ap_wave", ctypes.c_void_p),
     ]
 
 
@@ -230,6 +244,10 @@ def _lib():
         L.cns_engine_uniform_mask.restype = ctypes.c_uint32
         L.cns_engine_uniform_mask.argtypes = [ctypes.c_void_p]
         L.cns_engine_profile.argtypes = [ctypes.c_void_p, ctypes.c_void_p, ctypes.c_void_p]
+        if _MAC:
+            L.cns_engine_gap_profile.argtypes = [
+                ctypes.c_void_p, ctypes.c_void_p, ctypes.c_void_p]
+            L.cns_engine_gap_profile.restype = None
         L.cns_engine_coin_stats.argtypes = [ctypes.c_void_p, ctypes.c_void_p]
         L.cns_engine_coin_stats.restype = None
         L.cns_engine_device.restype = ctypes.c_char_p
@@ -279,13 +297,13 @@ class MetalEngine:
         # --- refusals: mechanisms the kernels do not carry ------------------
         if p.delta_T > 0:
             raise NotImplementedError("metal backend: exponential IF (delta_T)")
-        if net.G is not None:
-            raise NotImplementedError("metal backend: gap junctions")
+        if net.G is not None and not _MAC:
+            raise NotImplementedError("CUDA backend: gap junctions are not yet ported")
+        if net.G is not None and getattr(p, "conductance_integrator", "euler") == "analytic":
+            raise NotImplementedError(
+                "metal backend: analytic integration with gap junctions lacks exact voltage parity")
         if p.std_U > 0:
             raise NotImplementedError("metal backend: short-term depression")
-        if getattr(p, "spike_reg_per_neuron", None) is not None:
-            raise NotImplementedError(
-                "metal backend: per-neuron spike regularity not yet ported")
         if getattr(p, "presynaptic_inhibition_rows", None) is not None:
             raise NotImplementedError(
                 "metal backend: presynaptic inhibition not yet ported")
@@ -424,6 +442,22 @@ class MetalEngine:
                 raise ValueError("tonic_exc_conductance_per_neuron requires "
                                  "conductance_based=True")
         self.tonic_arr = tonic_arr
+        self.n_gap = 0
+        gap_arrays = {}
+        if net.G is not None:
+            if net.G.format != "csr":
+                raise RuntimeError("net.G must be CSR on the target axis")
+            # Include source-only rows of a directed junction so its AP can
+            # be stored without allocating a full-CNS voltage-history ring.
+            targets = np.union1d(np.flatnonzero(np.diff(net.G.indptr)), net.G.indices)
+            gap = net.G[targets, :]
+            self.n_gap = len(targets)
+            gap_arrays = dict(
+                gap_tgt=np.ascontiguousarray(targets, dtype=np.int32),
+                gap_indptr=np.ascontiguousarray(gap.indptr, dtype=np.int64),
+                gap_src=np.ascontiguousarray(np.searchsorted(targets, gap.indices), dtype=np.int32),
+                gap_weight=np.ascontiguousarray(gap.data, dtype=np.float32),
+                gap_deg=np.ascontiguousarray(net.gap_deg[targets], dtype=np.float32))
         W = net.W
         if W.format != "csc":
             raise RuntimeError("net.W must be CSC on the presynaptic axis")
@@ -483,6 +517,32 @@ class MetalEngine:
         d.n_reltap = 0 if self.reltap_pos is None else int(len(self.reltap_pos))
         d.reltap_pos = _ptr(self.reltap_pos)
         keep.update(coin_arrays)
+        keep.update(gap_arrays)
+        d.n_gap = self.n_gap
+        for k in ("gap_tgt", "gap_indptr", "gap_src", "gap_weight", "gap_deg"):
+            setattr(d, k, _ptr(gap_arrays.get(k)))
+        if self.n_gap:
+            d.gap_scale = float(net.gap_scale)
+            d.gap_spikelet = float(p.gap_spikelet)
+            delay_ms = float(getattr(p, "gap_delay_ms", 0.0))
+            if d.gap_spikelet and delay_ms > 0.0:
+                delay = int(round(delay_ms / p.dt))
+                if delay < 1:
+                    raise ValueError("gap_delay_ms must be at least one timestep")
+                if delay >= 2**32 - 1:
+                    raise ValueError("gap delay exceeds the native tick range")
+                d.gap_delay = delay
+            if float(getattr(p, "gap_ap_mv", 0.0)) > 0.0:
+                n_ap = max(int(round(float(p.gap_ap_ms) / p.dt)), 2)
+                n_rise = max(n_ap // 3, 1)
+                up = np.linspace(0.0, 1.0, n_rise + 1)[1:]
+                down = np.linspace(1.0, 0.0, n_ap - n_rise + 1)[1:]
+                wave = (np.concatenate([up, down]) * float(p.gap_ap_mv)).astype(np.float32)
+                ap_off = int(round(delay_ms / p.dt)) if delay_ms > 0.0 else 0
+                if ap_off + len(wave) >= 2**32 - 1:
+                    raise ValueError("gap AP history exceeds the native tick range")
+                keep["gap_ap_wave"] = wave
+                d.gap_n_ap, d.gap_ap_off, d.gap_ap_wave = len(wave), ap_off, _ptr(wave)
         d.n_coin = self.n_coin
         for k in ("coin_tgt", "coin_fast_indptr", "coin_fast_src", "coin_fast_w",
                   "coin_slow_indptr", "coin_slow_src", "coin_slow_w"):
@@ -575,6 +635,12 @@ class MetalEngine:
         names = ("step", "scatter", "graded", "fold", "coin")
         secs = np.zeros(5); cnt = np.zeros(5, dtype=np.uint64)
         self._L.cns_engine_profile(self.h, _ptr(secs), _ptr(cnt))
+        if _MAC:
+            gap_secs = np.zeros(2)
+            gap_cnt = np.zeros(2, dtype=np.uint64)
+            self._L.cns_engine_gap_profile(self.h, _ptr(gap_secs), _ptr(gap_cnt))
+            names += ("gap_current", "gap_spikelet")
+            secs, cnt = np.r_[secs, gap_secs], np.r_[cnt, gap_cnt]
         return dict(zip(names, secs)), dict(zip(names, cnt))
 
     def coin_stats(self):
@@ -652,6 +718,9 @@ class _InputRecorder:
     _SPEC_KEYS = {"target_rows", "route_by_source", "route_names", "window_ms"}
 
     def __init__(self, net, spec, n_steps, dt):
+        if net.G is not None:
+            raise NotImplementedError(
+                "record_input cannot attribute gap-junction current to chemical source routes")
         if not isinstance(spec, dict) or set(spec) != self._SPEC_KEYS:
             raise ValueError(
                 "record_input requires exactly target_rows, route_by_source, "
@@ -1002,8 +1071,6 @@ def _run_metal_unlocked(net, duration_ms, drive=None, seed=0, record=None,
             "synaptic decay; use the NumPy engine")
     requested_vrec = (None if record_voltage is None
                       else np.asarray(record_voltage, dtype=np.int64))
-    if force_spikes_fn is not None:
-        raise NotImplementedError("metal backend: force_spikes_fn")
     graded = net.graded
     graded_idx = getattr(net, "graded_idx", np.empty(0, np.int64))
     fb_graded_rows = (None if feedback_graded_release_rows is None
@@ -1032,7 +1099,17 @@ def _run_metal_unlocked(net, duration_ms, drive=None, seed=0, record=None,
         engine_vrec = np.unique(np.concatenate(
             [requested_vrec, input_recorder.target_rows])).astype(np.int64)
     fb_every = max(1, int(round(drive_every_ms / dt)))
-    window = fb_every if drive_fn is not None else min(n_steps, 256)
+    if force_spikes_fn is not None:
+        if drive_fn is not None:
+            raise ValueError("drive_fn and force_spikes_fn are mutually exclusive")
+        if feedback_rows is None:
+            raise ValueError("force_spikes_fn requires feedback_rows")
+        cadence = Fraction(str(drive_every_ms)) / Fraction(str(p.dt))
+        if cadence <= 0 or cadence.denominator != 1:
+            raise ValueError("force_spikes_fn cadence must be a positive integral number of CNS steps")
+        fb_every = int(cadence)
+    window = (fb_every if drive_fn is not None or force_spikes_fn is not None
+              else min(n_steps, 256))
     # every run starts from rest, like run(); the engine holds state, so a
     # fresh one is built per run (graph upload is ~0.1 s against the run)
     # Every engine this process still holds, not only the one on this net:
@@ -1086,11 +1163,29 @@ def _run_metal_unlocked(net, duration_ms, drive=None, seed=0, record=None,
         input_recorder.bind(eng, state_columns, recorder_reltap_columns)
     g_every = max(1, int(p.graded_every))
 
-    use_reg = float(getattr(p, "spike_reg", 1.0)) > 1.0
+    # Afferent regularity: scalar Erlang-k renewal, or the per-neuron vector
+    # (renewal rows where the vector exceeds 1, Poisson elsewhere). The draws
+    # run here on the host in cns.run()'s order, so the random stream is the
+    # NumPy engine's.
+    _spike_reg_vector = getattr(p, "spike_reg_per_neuron", None)
+    use_reg_vector = _spike_reg_vector is not None
+    if use_reg_vector:
+        spike_reg_vector = np.asarray(_spike_reg_vector, dtype=np.float64)
+        if (spike_reg_vector.shape != (N,)
+                or not np.all(np.isfinite(spike_reg_vector))
+                or np.any(spike_reg_vector < 1.0)):
+            raise ValueError(
+                "spike_reg_per_neuron must be a finite (N,) array >= 1")
+        use_reg = bool(np.any(spike_reg_vector > 1.0))
+    else:
+        spike_reg_vector = None
+        use_reg = float(getattr(p, "spike_reg", 1.0)) > 1.0
     if use_reg:
-        _kreg = int(round(float(p.spike_reg)))
+        _kreg = (None if use_reg_vector else
+                 int(round(float(p.spike_reg))))
         reg_acc = None
         reg_thr = None
+    drive_reg = np.empty(0, dtype=np.float64)
     force_ms = ({round(float(k), 3): np.asarray(v, dtype=np.int64)
                  for k, v in force_spikes.items()} if force_spikes else None)
     t_first = np.full(N, -1, dtype=np.int32) if first_spike else None
@@ -1107,6 +1202,8 @@ def _run_metal_unlocked(net, duration_ms, drive=None, seed=0, record=None,
         drive_idx = np.concatenate(di)
         drive_prob = np.concatenate(dp)
         drive_rate = drive_prob * (1000.0 / dt)
+        if use_reg_vector:
+            drive_reg = spike_reg_vector[drive_idx]
     if drive_window is None:
         step_on, step_off = 0, n_steps
     else:
@@ -1145,7 +1242,8 @@ def _run_metal_unlocked(net, duration_ms, drive=None, seed=0, record=None,
 
     words = eng.words
     cand = np.zeros((window, words), dtype=np.uint32)
-    force = np.zeros((window, words), dtype=np.uint32) if force_ms else None
+    force = (np.zeros((window, words), dtype=np.uint32)
+             if force_ms or force_spikes_fn is not None else None)
 
     def _set_bits(bits, ks, ids):
         ids = np.asarray(ids, dtype=np.int64)
@@ -1240,6 +1338,25 @@ def _run_metal_unlocked(net, duration_ms, drive=None, seed=0, record=None,
         any_force = False
         if force is not None:
             force[:nt] = 0
+        if force_spikes_fn is not None:
+            # Each window begins at a callback tick. The callback sees only
+            # prior ticks; forced rows enter this tick, not the whole window.
+            # A bytes-backed snapshot is read-only and cannot alter feedback.
+            callback_counts = np.frombuffer(
+                fb_accum.astype(np.int64, copy=False).tobytes(order="C"),
+                dtype=np.int64)
+            returned = force_spikes_fn(w0 * dt, callback_counts)
+            if (type(returned) is not np.ndarray or returned.ndim != 1
+                    or returned.dtype != np.dtype(np.int64)):
+                raise ValueError("force_spikes_fn must return an exact 1-D np.int64 array")
+            if len(returned) and ((returned < 0).any() or (returned >= N).any()):
+                raise IndexError("force_spikes_fn returned row out of bounds")
+            if len(returned) != len(np.unique(returned)):
+                raise ValueError("force_spikes_fn returned duplicate rows")
+            if len(returned):
+                _set_bits(force, np.zeros(len(returned), dtype=np.int64), returned)
+                any_force = True
+            fb_accum[:] = 0
         if drive_fn is not None and w0 % fb_every == 0:
             # windows are fb_every ticks, so the callback lands on tick w0
             # and the rates hold for the whole window, as in run()
@@ -1250,6 +1367,8 @@ def _run_metal_unlocked(net, duration_ms, drive=None, seed=0, record=None,
                 raise ValueError(
                     "drive_fn indices and rates must have matching shapes")
             drive_prob = drive_rate * dt / 1000.0
+            if use_reg_vector:
+                drive_reg = spike_reg_vector[drive_idx]
             if not np.all(np.isfinite(drive_prob)):
                 bad = drive_idx[~np.isfinite(drive_prob)]
                 raise FloatingPointError(
@@ -1322,6 +1441,40 @@ def _run_metal_unlocked(net, duration_ms, drive=None, seed=0, record=None,
                     if len(kk):
                         cand_k.append(kk + k0)
                         cand_id.append(spiking_idx[ee])
+                elif use_reg_vector:
+                    # Mixed boundary statistics, tick by tick in cns.run()'s
+                    # draw order: the Poisson rows' uniforms, then gamma
+                    # thresholds for the renewal rows that crossed.
+                    spiking_reg = (drive_reg if spiking_mask is None
+                                   else drive_reg[spiking_mask])
+                    renew = spiking_reg > 1.0
+                    poisson = ~renew
+                    n_poisson = int(poisson.sum())
+                    any_renew = bool(renew.any())
+                    if reg_acc is None or len(reg_acc) != n_e:
+                        reg_acc = np.zeros(n_e)
+                        reg_thr = np.full(n_e, np.nan)
+                        if any_renew:
+                            reg_thr[renew] = rng.gamma(
+                                spiking_reg[renew], 1.0 / spiking_reg[renew])
+                    for k in range(k0, k1):
+                        crossed = np.zeros(n_e, dtype=bool)
+                        if n_poisson:
+                            crossed[poisson] = (
+                                rng.random(n_poisson) < spiking_prob[poisson])
+                        if any_renew:
+                            reg_acc[renew] += spiking_prob[renew]
+                            renew_crossed = renew & (reg_acc >= reg_thr)
+                            crossed |= renew_crossed
+                            if renew_crossed.any():
+                                reg_acc[renew_crossed] = 0.0
+                                reg_thr[renew_crossed] = rng.gamma(
+                                    spiking_reg[renew_crossed],
+                                    1.0 / spiking_reg[renew_crossed])
+                        if crossed.any():
+                            hit = spiking_idx[crossed]
+                            cand_k.append(np.full(len(hit), k))
+                            cand_id.append(hit)
                 else:
                     if reg_acc is None or len(reg_acc) != n_e:
                         reg_acc = np.zeros(n_e)

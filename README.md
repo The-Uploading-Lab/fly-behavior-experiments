@@ -73,6 +73,25 @@ MP4s and preview PNGs appear in each experiment's `videos/` folder. Walking play
 
 Completed runs are checked and reused when adding videos or resuming. To repeat into a fresh directory, use `--out outputs/my-repeat`. An incomplete run is not silently reused; choose a fresh output directory after an interrupted simulation. Films follow the displayed body; the internal sensory body is checked separately for standing. Wingbeats, attitude support and landing contain programmed control.
 
+## Run on a Mac GPU
+
+On Apple Silicon, `--gpu` runs the neural network on the Mac's GPU through Metal. The body simulation stays on the CPU.
+
+```bash
+uv run python run.py aging --days 0 30 90 --gpu
+```
+
+`--gpu` works with every command above, including `--video`. The first use compiles the engine library from `simulator/gpu/`, which needs Xcode's command-line tools (`xcode-select --install`). Results go to `outputs/<experiment>-gpu/`.
+
+Measured on an M5 Pro MacBook Pro, seed 0 control:
+
+| Protocol | CPU | GPU |
+|---|---|---|
+| 3-second escape | 68 s | 45 s |
+| 6-second walk | 136 s | 72 s |
+
+For both runs, every recorded body pose was bit-identical between the two engines. The network advances one 0.1 ms step per GPU dispatch because the gap-junction current reads every coupled voltage before each step, which limits the gain. Linux and Windows run on the CPU only.
+
 ## Check the implementation
 
 ```bash

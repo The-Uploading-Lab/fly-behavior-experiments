@@ -12,7 +12,7 @@ import numpy as np
 from portable_integrity import ROOT, sha, verify_sources, verify_data
 
 
-def simulate(out, condition="control", protocol="walk", age=None):
+def simulate(out, condition="control", protocol="walk", age=None, backend="numpy"):
     from lanes.longevity.ageing import integrated_probe as IP
     from lanes.longevity.ageing import escape_membrane as EM
     from lanes.longevity.ageing import global_ageing as GA
@@ -66,6 +66,10 @@ def simulate(out, condition="control", protocol="walk", age=None):
         if set(difference) != expected:
             raise ValueError("Unexpected treatment parameter delta")
         changes.append(difference)
+        if backend != "numpy":
+            # The engine choice is not a model change: it stays out of the
+            # treatment-delta check above and is recorded in the manifest.
+            changed = {**changed, "backend": backend}
         return changed
 
     def neural_wrapper(net, *a, **kw):
@@ -97,7 +101,7 @@ def simulate(out, condition="control", protocol="walk", age=None):
             (out / name).write_text(json.dumps(value, indent=2, allow_nan=False) + "\n")
         manifest = {
             "schema": "portable-fly-experiment-v1", "created_utc": datetime.now(timezone.utc).isoformat(),
-            "condition": condition, "protocol": protocol, "age_days": age, "seed": 0,
+            "condition": condition, "protocol": protocol, "age_days": age, "seed": 0, "backend": backend,
             "duration_ms": duration, "source_manifest_sha256": verify_sources(),
             "files": {p.name: sha(p) for p in out.iterdir()}, "theta_changes": changes[0],
             "live_neural_parameters": live[0], "aging": result.get("global_ageing"),
