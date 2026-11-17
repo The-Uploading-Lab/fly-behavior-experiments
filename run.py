@@ -59,15 +59,22 @@ def main():
     ap.add_argument("--video", action="store_true", help="Also render MP4s from the computed poses")
     ap.add_argument("--days", type=int, nargs="+", help="Aging subset from 0,10,...,90; default is all ten ages")
     ap.add_argument("--condition", choices=("control", "ibuprofen", "deprivation_b_half"), default="control", help=argparse.SUPPRESS)
+    ap.add_argument("--gpu", action="store_true", help="Run the neural network on the Mac GPU (Metal); see README")
     ap.add_argument("--protocol", choices=("walk", "puff", "sham"), default="walk", help=argparse.SUPPRESS)
     args = ap.parse_args()
     if args.experiment == "download":
         download()
         return
+    if args.gpu:
+        if sys.platform != "darwin":
+            ap.error("--gpu uses Metal and runs only on macOS; omit it to run on the CPU")
+        # Builds the engine once; the driver refuses a library built from other sources.
+        subprocess.run(["make", "-s", "-C", str(ROOT / "simulator/gpu"), "libcnsengine.dylib"], check=True)
     if args.experiment == "_case":
         from simulate import simulate
         os.chdir(ROOT / "simulator")
-        simulate(args.out, args.condition, args.protocol, args.days[0] if args.days else None)
+        simulate(args.out, args.condition, args.protocol, args.days[0] if args.days else None,
+                 "metal" if args.gpu else "numpy")
         return
     if args.days and args.experiment != "aging":
         ap.error("--days applies only to aging")
@@ -76,7 +83,7 @@ def main():
         ap.error("Ages must be 0,10,...,90")
     verify_sources()
     download()
-    out = (args.out or ROOT / "outputs" / args.experiment).resolve()
+    out = (args.out or ROOT / "outputs" / (args.experiment + ("-gpu" if args.gpu else ""))).resolve()
     out.mkdir(parents=True, exist_ok=True)
     jobs = ([(f"{c}-{p}", c, p, None) for c in ("control", "ibuprofen", "deprivation_b_half") for p in ("walk", "puff")]
             if args.experiment == "wetlab" else
@@ -91,6 +98,8 @@ def main():
                    "--condition", condition, "--protocol", protocol]
         if day is not None:
             command += ["--days", str(day)]
+        if args.gpu:
+            command.append("--gpu")
         subprocess.run(command, cwd=ROOT, check=True)
     os.chdir(ROOT / "simulator")
     from statistics_output import wetlab, aging

@@ -5,3 +5,4 @@ __pycache__/
 outputs/
 simulator/data/*.feather
 *.part
+simulator/gpu/libcnsengine.dylib
